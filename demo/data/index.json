@@ -10,7 +10,7 @@
       "n_shots": 7,
       "n_segments": 16,
       "timeline_duration_s": 59.5,
-      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=dmG%2FlvLKryznsU4skLUvC5QVdr8%3D"
+      "poster_url": "https://net-oss.akclau.de/videorlm-msve-demo/20260514-migrated-from-wlcb/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4"
     },
     {
       "demo_id": "ex19_wan",
@@ -22,7 +22,7 @@
       "n_shots": 8,
       "n_segments": 15,
       "timeline_duration_s": 52.2,
-      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex19_wan/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=iyCbh5bKnG3ynOu1xcy44kbuLfs%3D"
+      "poster_url": "https://net-oss.akclau.de/videorlm-msve-demo/20260514-migrated-from-wlcb/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex19_wan/final.mp4"
     },
     {
       "demo_id": "ex10_happyhorse_rerun",
@@ -34,7 +34,7 @@
       "n_shots": 12,
       "n_segments": 22,
       "timeline_duration_s": 76.1,
-      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex10_happyhorse_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=sfNVTc8byK%2FuVQV74%2F3PTcobEvc%3D"
+      "poster_url": "https://net-oss.akclau.de/videorlm-msve-demo/20260514-migrated-from-wlcb/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex10_happyhorse_rerun/final.mp4"
     },
     {
       "demo_id": "ex00_wan_rerun",
@@ -46,7 +46,7 @@
       "n_shots": 5,
       "n_segments": 14,
       "timeline_duration_s": 73.7,
-      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=reZT5BXUa%2Bnl2S%2FpyVTDPwXGumQ%3D"
+      "poster_url": "https://net-oss.akclau.de/videorlm-msve-demo/20260514-migrated-from-wlcb/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4"
     },
     {
       "demo_id": "ex01_seedance_rerun",
@@ -58,7 +58,7 @@
       "n_shots": 18,
       "n_segments": 30,
       "timeline_duration_s": 69.8,
-      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260503-videorlm-version-2-2-seedance-i2v-preview/20260513-155358-30d-refresh/assets/good_ex_01_seedance_run/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920174&Signature=XDtJ0vLtwuUtlMDJ6EHJePe2WZQ%3D"
+      "poster_url": "https://net-oss.akclau.de/videorlm-msve-demo/20260514-migrated-from-wlcb/new-videos/20260503-videorlm-version-2-2-seedance-i2v-preview/20260513-155358-30d-refresh/assets/good_ex_01_seedance_run/final.mp4"
     }
   ],
   "generated_at": "2026-05-14T05:22:54.083005+00:00"
