@@ -1,0 +1,226 @@
+{
+  "preview_src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/shot-preview-plan/battle_of_the_heavenly_titans.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=jR7mo80tccLjD2NHTNLr3vzN6tA%3D",
+  "total_duration_s": 260.417,
+  "shots": [
+    {
+      "shot_id": "shot01_back_clash",
+      "duration_s": 10
+    },
+    {
+      "shot_id": "shot02_weapon_lock_close",
+      "duration_s": 5
+    },
+    {
+      "shot_id": "shot03_faces_roar",
+      "duration_s": 6
+    },
+    {
+      "shot_id": "shot04_separated_standoff",
+      "duration_s": 6
+    },
+    {
+      "shot_id": "shot05_ascent_through_clouds",
+      "duration_s": 28
+    },
+    {
+      "shot_id": "shot06_cloud_counter",
+      "duration_s": 14
+    },
+    {
+      "shot_id": "shot07_high_sky_battle",
+      "duration_s": 24
+    },
+    {
+      "shot_id": "shot08_mountain_staff_press",
+      "duration_s": 12
+    },
+    {
+      "shot_id": "shot09_counter_knockdown",
+      "duration_s": 9
+    },
+    {
+      "shot_id": "shot10_wukong_fall_impact",
+      "duration_s": 14
+    },
+    {
+      "shot_id": "shot11_giant_ape_transformation",
+      "duration_s": 18
+    },
+    {
+      "shot_id": "shot12_yangjian_fatian",
+      "duration_s": 18
+    },
+    {
+      "shot_id": "shot13_titan_clash",
+      "duration_s": 22
+    },
+    {
+      "shot_id": "shot14_clone_siege",
+      "duration_s": 20
+    },
+    {
+      "shot_id": "shot15_third_eye_scan",
+      "duration_s": 16
+    },
+    {
+      "shot_id": "shot16_true_body_counter",
+      "duration_s": 7
+    },
+    {
+      "shot_id": "shot17_aftermath_standoff",
+      "duration_s": 18
+    },
+    {
+      "shot_id": "shot18_final_ready",
+      "duration_s": 12
+    }
+  ],
+  "bridges": [
+    {
+      "from": "shot01_back_clash",
+      "to": "shot02_weapon_lock_close",
+      "mode": "cut"
+    },
+    {
+      "from": "shot02_weapon_lock_close",
+      "to": "shot03_faces_roar",
+      "mode": "cut"
+    },
+    {
+      "from": "shot03_faces_roar",
+      "to": "shot04_separated_standoff",
+      "mode": "cut"
+    },
+    {
+      "from": "shot04_separated_standoff",
+      "to": "shot05_ascent_through_clouds",
+      "mode": "cut"
+    },
+    {
+      "from": "shot05_ascent_through_clouds",
+      "to": "shot06_cloud_counter",
+      "mode": "cut"
+    },
+    {
+      "from": "shot06_cloud_counter",
+      "to": "shot07_high_sky_battle",
+      "mode": "cut"
+    },
+    {
+      "from": "shot07_high_sky_battle",
+      "to": "shot08_mountain_staff_press",
+      "mode": "cut"
+    },
+    {
+      "from": "shot08_mountain_staff_press",
+      "to": "shot09_counter_knockdown",
+      "mode": "cut"
+    },
+    {
+      "from": "shot09_counter_knockdown",
+      "to": "shot10_wukong_fall_impact",
+      "mode": "cut"
+    },
+    {
+      "from": "shot10_wukong_fall_impact",
+      "to": "shot11_giant_ape_transformation",
+      "mode": "cut"
+    },
+    {
+      "from": "shot11_giant_ape_transformation",
+      "to": "shot12_yangjian_fatian",
+      "mode": "cut"
+    },
+    {
+      "from": "shot12_yangjian_fatian",
+      "to": "shot13_titan_clash",
+      "mode": "cut"
+    },
+    {
+      "from": "shot13_titan_clash",
+      "to": "shot14_clone_siege",
+      "mode": "cut"
+    },
+    {
+      "from": "shot14_clone_siege",
+      "to": "shot15_third_eye_scan",
+      "mode": "cut"
+    },
+    {
+      "from": "shot15_third_eye_scan",
+      "to": "shot16_true_body_counter",
+      "mode": "cut"
+    },
+    {
+      "from": "shot16_true_body_counter",
+      "to": "shot17_aftermath_standoff",
+      "mode": "cut"
+    },
+    {
+      "from": "shot17_aftermath_standoff",
+      "to": "shot18_final_ready",
+      "mode": "cut"
+    }
+  ],
+  "highlights": [
+    {
+      "time_s": 5,
+      "title": "Shot 01: readable weapon clash",
+      "text": "Both faces, the locked weapons, and the opposing body lines are visible in the opening contact beat.",
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot01_0005.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ST8ezOUTsPmZT54RYpiq5PEEcxw%3D"
+    },
+    {
+      "time_s": 78,
+      "title": "Shot 07: clear aerial combat relation",
+      "text": "The low-angle sky shot keeps the two fighters and the staff lock in one continuous action line.",
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot07_0078.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=etC3pokaeFtD8IXA0QZjl8T%2FJnA%3D"
+    },
+    {
+      "time_s": 109,
+      "title": "Shot 09: large-scale counter beat",
+      "text": "The central figure, raised weapon, golden halo, and cloud arena make the counterattack read at mythic scale.",
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot09_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=PAugMqqhbuKR47kzSaB4f5GsdgI%3D"
+    },
+    {
+      "time_s": 214,
+      "title": "Shot 15: legible detection payoff",
+      "text": "The frontal pose, glowing eye, and battlefield backdrop make the scan feel like a deliberate story action.",
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot15_0214.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=vLFSHuBS4s4XtnzRAef4q13jOHg%3D"
+    }
+  ],
+  "frames": [
+    {
+      "time_s": 21,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0021.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Yw0ygzdIHmYkIMfsWwU4Sp65Fwk%3D"
+    },
+    {
+      "time_s": 47,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0047.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=4%2FpHcLeZLzu2R1YR%2FPVgMGZnbyI%3D"
+    },
+    {
+      "time_s": 78,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0078.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=MmvATQWGfGzqA239Js2KxosV0qg%3D"
+    },
+    {
+      "time_s": 109,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=NPdUOeYiJ1nsRezz7TEsghpWFzA%3D"
+    },
+    {
+      "time_s": 143,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0143.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=zzm6BCtS9iNMDEBhVth5O19gplE%3D"
+    },
+    {
+      "time_s": 177,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0177.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ktbrlzh5jVg%2B08eF7NuUGL8WxDc%3D"
+    },
+    {
+      "time_s": 208,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0208.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=0rDT6C9pHXOjhHGwqJY%2BnMKouuU%3D"
+    },
+    {
+      "time_s": 240,
+      "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/shot-preview-plan/battle_of_the_heavenly_titans_0240.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=1kjQPZrbX0ZTj2XHNmX2e75hG04%3D"
+    }
+  ],
+  "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/battle_of_the_heavenly_titans.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=7wxUnK4rI558n%2BwQ%2BLqc1zDhKZs%3D"
+}

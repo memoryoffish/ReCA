@@ -1,0 +1,33 @@
+{
+  "pipeline_ready": false,
+  "backends": {
+    "portrait":     ["wan2.7-image"],
+    "anchor_image": ["wan2.7-image"],
+    "image_edit":   ["wan2.7-image"],
+    "segment_r2v":  ["happyhorse-1.0-r2v", "wan2.7-r2v", "seedance-i2v"],
+    "segment_i2v":  ["happyhorse-1.0-i2v"],
+    "bridge":       ["wan2.7-i2v"],
+    "video_edit":   []
+  },
+  "validators": {
+    "anchor":  true,
+    "segment": false
+  },
+  "estimate_constants": {
+    "chars_per_shot":     280,
+    "segments_per_shot":  2.0,
+    "seconds_per_shot":   240,
+    "planner_fixed_s":    90,
+    "yuan_per_segment":   4.0,
+    "yuan_per_anchor":    1.5
+  },
+  "limits": {
+    "story_chars":        [50, 1500],
+    "max_concurrent_jobs": 4,
+    "per_ip_per_hour":     2,
+    "per_key_per_hour":    4
+  },
+  "demo_count": 5,
+  "schema_version": 1,
+  "note": "Static-deploy snapshot mirroring future/server.py::GET /api/capabilities. Flip pipeline_ready=true once the videorlm backend (future/server.py) is wired up and the deployment switches off pure-static."
+}

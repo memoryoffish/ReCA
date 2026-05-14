@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReCA Demonstration</title>
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Ccircle cx="16" cy="16" r="15" fill="%23030406"/%3E%3Cpath d="M9 8h14l-6 7 7 9H10l6-8z" fill="%23d8ff4f"/%3E%3C/svg%3E'>
+    <link rel="stylesheet" href="./styles.css?v=20260514-hero">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Page navigation">
+      <a class="brand" href="./" aria-label="ReCA home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>ReCA</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#benchmark">Comparison</a>
+      </nav>
+      <span id="dataStatus" class="data-status" hidden>Preparing demo</span>
+      <a class="try-demo-cta" href="./demo/">
+        <span>Try Interactive Demo</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-label="Large Seedance-style hero video">
+          <video
+            id="heroVideo"
+            class="hero-video"
+            src="https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/world_landmarks.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=gz275PhIUNlTdA2P0oli76ujzJA%3D"
+            poster="https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/world_landmarks.png"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Recursive Context Allocation</p>
+          <h1 id="hero-title">ReCA: multi-shot video extrapolation with coherent long-range state.</h1>
+          <p class="hero-lede">
+            ReCA expands multiple visual anchors into a long, multi-shot continuation while preserving
+            identity, scene state, object relations, and event causality across the generated sequence.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#timeline">Explore Shot Preview</a>
+            <a class="button" href="#benchmark">Compare Frameworks</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section capability-band" aria-labelledby="capability-title">
+        <div class="section-kicker">Capability Chapters</div>
+        <div class="wide-heading">
+          <h2 id="capability-title">ReCA decomposes multi-shot video extrapolation into context-bounded shot jobs.</h2>
+          <p>
+            The method keeps task state outside the frozen video generator, plans the long continuation as a tree
+            of shots, allocates a per-shot context window to each leaf, and writes the tail frame back into state
+            so the next leaf can pick up where the last one left off.
+          </p>
+        </div>
+        <div class="capability-terms" aria-label="ReCA terminology and execution model">
+          <div class="terms-lead">
+            <span>Terminology</span>
+            <h3>Shot, segment, and parallel execution.</h3>
+            <p>
+              ReCA separates the movie timeline from the short-video calls that render it, then
+              decides which units need a boundary handoff and which can run at the same time.
+            </p>
+          </div>
+          <div class="term-grid">
+            <article>
+              <span>Shot</span>
+              <p>
+                A cinematic unit in the final long video. The system chooses its goal,
+                duration, boundary condition, and preserved state.
+              </p>
+            </article>
+            <article>
+              <span>Segment</span>
+              <p>
+                An executable leaf call to the frozen short-video generator. A long shot can be
+                divided into several budgeted segments.
+              </p>
+            </article>
+            <article>
+              <span>Parallel Execution</span>
+              <p>
+                Parallelism is at the <em>shot</em> level: shots whose anchor frames are independent
+                render together through the frozen generator. Segments inside a single shot stay
+                serial — each segment's first frame is the previous segment's tail.
+              </p>
+            </article>
+          </div>
+        </div>
+        <figure class="capability-hero-figure">
+          <img
+            src="./assets/fig_reca_main.png"
+            alt="Recursive Context Allocation: recursive planning, leaf execution, parallel/sequential logic, adaptive state update, single-leaf detail"
+          >
+        </figure>
+        <div class="capability-stages">
+          <article class="capability-stage">
+            <span>01 / Plan</span>
+            <h3>Root-to-shot recursive planning</h3>
+            <p>
+              Starting from multiple visual anchors and narrative intent, ReCA builds a shot schedule with semantic goals,
+              durations, boundary conditions, and dependency links. The schedule keeps each generator call inside
+              prompt and duration budgets instead of sending the whole story at once.
+            </p>
+          </article>
+          <article class="capability-stage">
+            <span>02 / Allocate</span>
+            <h3>Local-global context allocation</h3>
+            <p>
+              Each shot receives a compact context slice — character / location identity references,
+              the anchor frame, and the most recent state-memory entries — packed into a per-shot
+              system message. The planner never sees the whole movie at once, so per-call token
+              budgets stay bounded.
+            </p>
+          </article>
+          <article class="capability-stage">
+            <span>03 / Render</span>
+            <h3>Shot-level parallel rendering</h3>
+            <p>
+              Once contexts are assigned, each shot is an independent leaf job: render the anchor frame
+              first, then walk its segments serially — each segment's first frame is the previous
+              segment's tail.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section timeline-band" aria-labelledby="timeline-title">
+        <div class="section-kicker">Shot Preview / Timeline</div>
+        <div class="wide-heading">
+          <h2 id="timeline-title">Shot Preview Plan for the 18-shot Heavenly Titans sequence.</h2>
+          <p>
+            The sequence expands a single duel into cloud combat, titan-scale transformations, and
+            a final standoff while keeping the same characters, weapons, and action state readable.
+          </p>
+        </div>
+        <div class="timeline-shell">
+          <div class="timeline-stage">
+            <div class="timeline-video-wrap">
+              <video
+                id="shotVideo"
+                class="timeline-video"
+                poster="https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/battle_of_the_heavenly_titans.png"
+                controls
+                muted
+                playsinline
+                preload="none"
+              ></video>
+            </div>
+            <aside class="shot-copy" aria-label="Evidence timeline and selected shot">
+              <div id="highlightList" class="highlight-list"></div>
+              <div class="selected-shot-note">
+                <p class="panel-label">Selected Shot</p>
+                <h3 id="currentShotTitle">Preparing shot preview</h3>
+                <p id="currentShotText">Select a beat to inspect its role in the long-range continuation.</p>
+              </div>
+            </aside>
+          </div>
+          <div class="timeline-progress" aria-hidden="true">
+            <span id="timelineFill"></span>
+          </div>
+          <div id="shotRail" class="shot-rail" aria-label="Shot timeline"></div>
+          <div id="previewMeta" class="preview-meta" aria-label="Shot preview metadata"></div>
+        </div>
+      </section>
+
+      <section id="showcase" class="section showcase-band" aria-labelledby="showcase-title">
+        <div class="section-kicker">Featured ReCA Cases</div>
+        <div class="wide-heading">
+          <h2 id="showcase-title">Multi-shot continuations across landmarks, action, food, and dialogue.</h2>
+          <p>
+            Each case starts from a compact visual premise and asks the model to carry long-range
+            state through several camera changes, scene transitions, and narrative beats.
+          </p>
+        </div>
+        <div id="showcaseList" class="showcase-list"></div>
+      </section>
+
+      <section id="benchmark" class="section benchmark-band" aria-labelledby="benchmark-title">
+        <div class="section-kicker">Model Performance / Compare</div>
+        <div class="wide-heading">
+          <h2 id="benchmark-title">Framework comparison on multi-anchor video extrapolation.</h2>
+          <p>
+            ReCA is compared with VGoT, Mora, and MovieAgent on identity consistency, scene handoff,
+            object-state continuity, and narrative causality across long generated sequences.
+          </p>
+        </div>
+        <div id="benchmarkTabs" class="benchmark-tabs" role="tablist" aria-label="Comparison cases"></div>
+        <div id="benchmarkSummary" class="benchmark-summary"></div>
+        <div id="comparisonGrid" class="comparison-grid"></div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <span>ReCA Demonstration</span>
+      <span>Multi-shot video extrapolation</span>
+    </footer>
+
+    <script src="./app.js?v=20260514-hero" defer></script>
+  </body>
+</html>

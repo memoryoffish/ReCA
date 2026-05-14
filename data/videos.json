@@ -1,0 +1,1114 @@
+{
+  "frameworkComparisons": [
+    {
+      "case": "EX01 Battle of the Heavenly Titans",
+      "prompt": "Battle sequence with cross-shot identity and action continuity.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=cacZ3IlkMyXb0a%2BVBtIY5Bg%2FU9I%3D",
+          "duration_s": 300.483,
+          "evidence": [
+            {
+              "time_s": 217,
+              "title": "Identity splits into three Wukong-like figures",
+              "text": "The duel no longer preserves the two original roles: the frame contains multiple monkey-like bodies and a tiny foreground figure.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_vgot_0217.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=tFLGqDQJKxKVUlWTrSpFBlC8LsM%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 24,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0024.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Nhqid239XqJ5NzIDa3KrJjbXDoE%3D"
+            },
+            {
+              "time_s": 54,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0054.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ly8itn9LvKrE6A%2FzUaWJYxTYCuU%3D"
+            },
+            {
+              "time_s": 90,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0090.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=f%2BxwiO6svdHJ1MdSIujt7ORRTcE%3D"
+            },
+            {
+              "time_s": 126,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0126.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=FbDZxd4RtkWjjC86XoYI2Te2Ie8%3D"
+            },
+            {
+              "time_s": 165,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0165.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=gzgu8uVaqRONraira3hlEHQsoe8%3D"
+            },
+            {
+              "time_s": 204,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0204.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=3eBvaRecDZPVsF8ylLqb4k9pNSU%3D"
+            },
+            {
+              "time_s": 240,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0240.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=g6vltiU0Av9f6WPpBazTxecKEdo%3D"
+            },
+            {
+              "time_s": 276,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0276.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=jS0uKSzjxRAZp6VhYGfCbduM8lg%3D"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_mora.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=94uMIq90V9ZoOXEEQCOqPmxWtUc%3D",
+          "duration_s": 120.207,
+          "evidence": [
+            {
+              "time_s": 74,
+              "title": "Golden staff turns into the wrong weapon",
+              "text": "The weapon state changes from the expected staff relation into a glowing vertical blade-like form.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_mora_0074.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=kA%2F0iLEC6XyCpLQKpdPSF02fVc4%3D"
+            },
+            {
+              "time_s": 84,
+              "title": "Weapon direction no longer explains the hit",
+              "text": "The oversized weapon points through the frame, but the attacker-target relation is hard to infer.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_mora_0084.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=d8qZhrHgFCqUXJFNujCel7KjFq8%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 10,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0010.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=7U7XFHJZAdq4X32h0ZeP4Xu%2B%2FhI%3D"
+            },
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0022.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=6TJdixjstl%2FdeZhORz4fHZbFPqs%3D"
+            },
+            {
+              "time_s": 36,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0036.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=EdIVIielBo3qVJSHJOirGpNneBo%3D"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0050.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ibda12RkGVqYEqXCsV1SpwK1fSc%3D"
+            },
+            {
+              "time_s": 66,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0066.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=pmYSL6SB73iDWErOjfcETkdEoko%3D"
+            },
+            {
+              "time_s": 82,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0082.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=DdgStqgrvZQUosP3XalkO1HXMJs%3D"
+            },
+            {
+              "time_s": 96,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0096.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=8wcRWeELYBoNPPNE704pgkOZo9s%3D"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0111.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=503KGjFYZ2LG17DOL6CgN2ZGl2E%3D"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=BNIGMJBPvpQ08dECi14tVmzQLek%3D",
+          "duration_s": 1081.679,
+          "evidence": [
+            {
+              "time_s": 8,
+              "title": "Three-person setup replaces the duel",
+              "text": "The opening frame introduces an extra body and a different spacing pattern before the battle continuity is established.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_movieagent_0008.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2F2AnC4PmFxRBinZFvjhn1bMm4PI%3D"
+            },
+            {
+              "time_s": 109,
+              "title": "Character identity changes completely",
+              "text": "By 1:49 the figure, costume silhouette, and combat layout no longer match the starting battle state.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_movieagent_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=4sxFkz8%2FTgqgvvyztLUrjJn%2FWBs%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 87,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0087.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=vHP9xvKugQ2tRx9ftPyAXTHRI3A%3D"
+            },
+            {
+              "time_s": 195,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0195.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ZE1g1RS029W4bsARWA25vWTx3Cc%3D"
+            },
+            {
+              "time_s": 325,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0325.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=0UtiSr6lbov%2B9r4QuQIuvc%2BYRGM%3D"
+            },
+            {
+              "time_s": 454,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0454.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=TY3OnuOXmwkyjq5lHY8H7mlat%2F8%3D"
+            },
+            {
+              "time_s": 595,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0595.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=nl%2Fw7x8iaMDKSvEci59nR1F%2F480%3D"
+            },
+            {
+              "time_s": 736,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0736.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=agJCb7a5ZXokgEuekHId1gUKv%2FE%3D"
+            },
+            {
+              "time_s": 865,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0865.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=9asKr640EelVJXvqsTwsm1GGhgE%3D"
+            },
+            {
+              "time_s": 995,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0995.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=75UAs2PbIdqFS07HHzGuZkigIxI%3D"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_ours.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=OhXCjBokS0wGHCfZLaFWUaG6eZs%3D",
+          "duration_s": 260.417,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/ex01_battle_of_the_heavenly_titans_ours.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=9ysfHpx%2BjAc9aUjh2Qld3cp1D1s%3D",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 5,
+              "title": "Anchored opening clash",
+              "text": "Faces, locked weapons, and opposing body lines keep the continuation tied to the observed battle state.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot01_0005.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ST8ezOUTsPmZT54RYpiq5PEEcxw%3D"
+            },
+            {
+              "time_s": 78,
+              "title": "Aerial combat remains readable",
+              "text": "Both fighters and the staff lock stay in one clear action line as the camera moves into the sky battle.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot07_0078.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=etC3pokaeFtD8IXA0QZjl8T%2FJnA%3D"
+            },
+            {
+              "time_s": 214,
+              "title": "Late story action pays off",
+              "text": "The detection beat reads as a deliberate continuation of the duel rather than a disconnected spectacle shot.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot15_0214.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=vLFSHuBS4s4XtnzRAef4q13jOHg%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 21,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0021.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=VnDFRxKjq5XGXKw%2BjL%2BWVLH9No4%3D"
+            },
+            {
+              "time_s": 47,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0047.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=xOTIkrVD8Irzz3RKbZoR8DsQEyE%3D"
+            },
+            {
+              "time_s": 78,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0078.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=UzhUcKzP9ElBuAqS4nGKukqHXWU%3D"
+            },
+            {
+              "time_s": 109,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=MWblJllHnjInKCj3OcmJ5tO14RQ%3D"
+            },
+            {
+              "time_s": 143,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0143.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=RqGfB%2Bz0KAbFtraR9x37lo9y%2Ffk%3D"
+            },
+            {
+              "time_s": 177,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0177.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Dvqcy5mb%2BSZqHV%2FeZaDKmzalj6g%3D"
+            },
+            {
+              "time_s": 208,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0208.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=LO7gGMkkr0%2FsmxiXnkCMUauATmg%3D"
+            },
+            {
+              "time_s": 240,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0240.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=A67YNoniWyP1%2BPsgOupd9sM0h8A%3D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EX02 Boxing",
+      "prompt": "Boxing motion sequence with stable character pose, rhythm, and event causality.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_vgot.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=DC5OfoDe9TMjXx35T3T76dATNq4%3D",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 66,
+              "compare_time_s": 12,
+              "title": "Face identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_vgot_0066.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=yfbbKrHRP7roEZ1PguCVuFRzmgU%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_vgot_0012.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=hbm9Pm2DWBqz%2FCTQKjItmD8Ev3k%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0007.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Tp5wgC4sCDCygzySi2tAO81faDY%3D"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0016.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=QhzDeg5%2FozuRDdOOVdC82kd7Gmc%3D"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0027.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=rdjKSDHWxVd1pXa1JWXg6thKkT8%3D"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0038.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=lQdAMJeq%2BuvmW9Hs4etn%2B43QUzQ%3D"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0050.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Od3hBxu8bPzH%2FgPd7sWTQFsSf9o%3D"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0061.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=PELsGg7jd1aVxMFawnEk5gu9O9s%3D"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0072.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=k6miH92pFx8IPS9JjYOeV9NdIQY%3D"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0083.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=D3mO%2F%2BWXmCtukdg9SolwPULVQZM%3D"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_mora.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=YYry7XrGu6ejZZpCreD8K6IqU2s%3D",
+          "duration_s": 75.138,
+          "evidence": [
+            {
+              "time_s": 62,
+              "compare_time_s": 28,
+              "title": "Face/body and object inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_mora_0062.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=aj%2FFAF1bWpD9TRM7yguj0C6nZgc%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_mora_0028.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=xq5aKeaiaH%2B52zY0xp04q%2FWs9iU%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 6,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0006.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=S3E09BJcYbcx%2FLssVI3eyg%2BRJ6M%3D"
+            },
+            {
+              "time_s": 14,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0014.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ig4YUuW4b2DGNg5CdnWJ4ic5ZSY%3D"
+            },
+            {
+              "time_s": 23,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0023.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=6%2B6jybDtRYhZBEV%2FCsWJ49fi5Xs%3D"
+            },
+            {
+              "time_s": 32,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0032.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=xIWAAw6BqXtS4h%2BhWNPl2YKRlcY%3D"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0041.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=MN9%2BGAq15X30ceWFiMZN1hvHVNw%3D"
+            },
+            {
+              "time_s": 51,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0051.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=fEqKALv%2BAcdjGGtcvLd%2Bx%2BihQbU%3D"
+            },
+            {
+              "time_s": 60,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0060.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ezIouD%2B2UXfrqS8PHpm2IBHtHm4%3D"
+            },
+            {
+              "time_s": 69,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0069.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=w3zfrV2iQ%2Brxh4Iv6h%2FyW7uhfxA%3D"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_movieagent.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=Z20n4dCNopzY1f7zLk4Z%2F3ybrHQ%3D",
+          "duration_s": 375.598,
+          "evidence": [
+            {
+              "time_s": 87,
+              "title": "Punching bag leaves a ghosted duplicate",
+              "text": "The bag/action cue appears doubled, making the training hit visually unstable.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0087.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=4r2OP%2Bsn4UX3ENS%2Bqbg8bfibGAk%3D"
+            },
+            {
+              "time_s": 53,
+              "compare_time_s": 0,
+              "title": "Face identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0053.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=kSLaytKF%2F1OATxHjx3IWZVrRu0s%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0000.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=V7m759YuppmQpEndG4HFuc0myIA%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 30,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0030.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=z1oa%2FCZ%2B8TQCf0Gld5wd7ngynYo%3D"
+            },
+            {
+              "time_s": 68,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0068.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=b6Z%2FQ7g8%2F0cc87V17XWrEa5OuLs%3D"
+            },
+            {
+              "time_s": 113,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0113.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=FeDr5ltmNU9eBA6er9lrKCpte2U%3D"
+            },
+            {
+              "time_s": 158,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0158.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=qn2W42YHkFIIVZNylcrYAUg92aA%3D"
+            },
+            {
+              "time_s": 207,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0207.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=R1Lpwtueh2PVitkI%2B2XjcEK5YcY%3D"
+            },
+            {
+              "time_s": 255,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0255.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ClM9AYMhi5HzgGCuLo7mOTyRA%2BI%3D"
+            },
+            {
+              "time_s": 300,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0300.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=OphQcUZTdUld1bZ%2BOyZc8rIBI00%3D"
+            },
+            {
+              "time_s": 346,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0346.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=VvI%2FUG%2F5NNZTln719zQZ21ZXOno%3D"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/boxing.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=zjvIU7Ai3O62rcVB0zjmpdl05dI%3D",
+          "duration_s": 160.256,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/boxing.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=LSpWDXjLvOgKkl%2BwvFZT27j%2BvY8%3D",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 29,
+              "title": "Boxer and bag stay in one setup",
+              "text": "The athlete, heavy bag, timer, and gym framing remain aligned as a continuous training scene.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Row%2BPJYQ1N6oBLbW4auQGvi8mrc%3D"
+            },
+            {
+              "time_s": 72,
+              "title": "Close-up preserves the same fighter",
+              "text": "The tighter shot changes camera distance without losing the boxer identity or the gym environment.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=XBxDWrBq5vel%2BMlUYw94MSlr5cY%3D"
+            },
+            {
+              "time_s": 115,
+              "title": "Reaction beat follows the workout",
+              "text": "The later shot reads as a consequence of the training rather than a reset to a new scene.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=hDgVhTeO6FOc97PwnZXs2tBgut8%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 13,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0013.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=GQ913rRLpZ0avnHuuaaYVQv09is%3D"
+            },
+            {
+              "time_s": 29,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Row%2BPJYQ1N6oBLbW4auQGvi8mrc%3D"
+            },
+            {
+              "time_s": 48,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0048.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=lBe3pFIAFKy0%2BunNtXjhipNl8eE%3D"
+            },
+            {
+              "time_s": 67,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=XBxDWrBq5vel%2BMlUYw94MSlr5cY%3D"
+            },
+            {
+              "time_s": 88,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0088.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=TlWGA44p2xGkev0z7ZFF0AMMKCc%3D"
+            },
+            {
+              "time_s": 109,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=hDgVhTeO6FOc97PwnZXs2tBgut8%3D"
+            },
+            {
+              "time_s": 128,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0128.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Vt9tK3QA%2BmuGVqGF%2FM10ss0U0Sk%3D"
+            },
+            {
+              "time_s": 147,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0147.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=kn4KnR31K12gyK2uwuPUqJ78KMY%3D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EX19 Dumplings",
+      "prompt": "Food-making sequence requiring object state, hand motion, and scene continuity.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_vgot.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=k3XKpfjyKPDRlUQrfhxR9JeeHK4%3D",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 79,
+              "compare_time_s": 1,
+              "title": "Scene and character inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_vgot_0079.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=asVHTOsZDerPOM%2F8EY7KuCzgfkM%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_vgot_0001.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=QJ2rIf7%2FbL%2BUEum39hGGy4ZbkCk%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0007.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=1tloO1ydyIrmMBmq5dFBe87GRS0%3D"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0016.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=XcRerQNTa9b6I9EDyjUazJfhjhk%3D"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0027.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=C7C3xhvwTqSPiSKtC83Gq5G5vM4%3D"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0038.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=nnqSxlenea8QeOOl3C2n3L%2Fs%2FZA%3D"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0050.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2F5%2FlInTZhvNmk9iW%2FWh1jaKbYuI%3D"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0061.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=e4Y3nnOQT29kF9CyiNTyWe%2Fi5E8%3D"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0072.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=t%2FbXght11hFhDCQvwhObitETZ7E%3D"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0083.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=CDihLMKzHPxB4vTEmsCP0%2Fyq50w%3D"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_mora.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=ReWfvBhAw1dS71wJhqOk2ySc%2F4g%3D",
+          "duration_s": 120.207,
+          "evidence": [
+            {
+              "time_s": 86,
+              "compare_time_s": 9,
+              "title": "Character inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_mora_0086.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=KBa%2FZWFRtSNgVBmPR0uP5q%2B9P8M%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_mora_0009.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=zs63aTtUj3JI9Ut2kLVhloxtoqM%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 10,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0010.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=PVWcbbIVqr29yTvzATqzKwRjeZA%3D"
+            },
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0022.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=9x92leNiD%2Fl7oaX3OqXM24I6XgA%3D"
+            },
+            {
+              "time_s": 36,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0036.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=mSGZFKDiDHVXQiIIw5TT%2F4Supog%3D"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0050.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Ugtg4RS4F3v33Q5HcTm2sgFA6Og%3D"
+            },
+            {
+              "time_s": 66,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0066.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=iR0GYcRILb77ovE9vuQDyDAdNrA%3D"
+            },
+            {
+              "time_s": 82,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0082.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=TNlkc%2FhyHAz9PvER8Fv3D4pj%2F1g%3D"
+            },
+            {
+              "time_s": 96,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0096.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=FVCHPbPk36Frtr4nqwP2L%2FzqqPI%3D"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0111.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=bNBSqGMU1j4%2BdcKEcNljR1xFJ1c%3D"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_movieagent.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=ZE5gTZF9VB8vBdI6cJOGKj89oDc%3D",
+          "duration_s": 661.035,
+          "evidence": [
+            {
+              "time_s": 0,
+              "title": "Sequence is over-extended",
+              "text": "The generated video runs much longer than the compact continuation needed for this cooking example.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0005.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=y7ULsqrtBALZHAxJN0ZR%2BprpEZs%3D",
+              "duration_issue": true,
+              "duration_label": "10:09 long output"
+            },
+            {
+              "time_s": 52,
+              "compare_time_s": 5,
+              "title": "Character identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0052.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=yEWpSFCVxF3VSE513eNn%2BjzokXk%3D",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0005.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=y7ULsqrtBALZHAxJN0ZR%2BprpEZs%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 53,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0053.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=HlRi7KCyRjqJoqRTwnTz2TrOeG0%3D"
+            },
+            {
+              "time_s": 119,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0119.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=gh%2Bu8GxZhyB6kLmIhMqKxvmwMuk%3D"
+            },
+            {
+              "time_s": 198,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0198.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=XZfTlGW9iHf1VOsXdA2c4OFMtD4%3D"
+            },
+            {
+              "time_s": 278,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0278.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=K77kUjFFrNEp3SunvQBhWx8YbGc%3D"
+            },
+            {
+              "time_s": 364,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0364.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=TuxA5ik2i%2B9UqRqCdo5S5agwyco%3D"
+            },
+            {
+              "time_s": 450,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0450.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=qhoK%2BNlcADkZZ4yzhcRy43p14xI%3D"
+            },
+            {
+              "time_s": 529,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0529.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=6lSUNJrb6IM32Z78CHWGuzl4PzE%3D"
+            },
+            {
+              "time_s": 608,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0608.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=fCuSdbupL34SEU8TH%2B%2FwKauXT7o%3D"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/dumplings.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=EV4Y%2FiO8ZGqhL%2BUaCX7OWwQ4C%2BA%3D",
+          "duration_s": 138.321,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/dumplings.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=lnM4vdNabNFqkVuSp35NVl%2Fpobk%3D",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 25,
+              "title": "Hands, dough, and table stay connected",
+              "text": "The close working surface keeps the dumpling process tied to the same kitchen activity.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=67fWP%2FknbABDyk9E8Xd6xFQkdjk%3D"
+            },
+            {
+              "time_s": 62,
+              "title": "Family table relation remains stable",
+              "text": "The adults and child continue the same food-preparation scene with consistent table placement.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ijYkCyZDSiLUjNzyz%2FkgcDIgtWA%3D"
+            },
+            {
+              "time_s": 102,
+              "title": "Later shot still shows process progress",
+              "text": "The accumulated dumplings and hand motion make the sequence feel like continued preparation.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791017459&Signature=HABeZEOUXZgRGouMgExAeNapvrA%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 11,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0011.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=bVTedpmV3SuxJ7HMrbF74%2BfK7fI%3D"
+            },
+            {
+              "time_s": 25,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=67fWP%2FknbABDyk9E8Xd6xFQkdjk%3D"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0041.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=eEKfxgZJ8VsFVxzkd1FT1dtvZJI%3D"
+            },
+            {
+              "time_s": 58,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ijYkCyZDSiLUjNzyz%2FkgcDIgtWA%3D"
+            },
+            {
+              "time_s": 76,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0076.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=qTX2Vk5WHWfjKecLbpbdHZUf298%3D"
+            },
+            {
+              "time_s": 102,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791017459&Signature=HABeZEOUXZgRGouMgExAeNapvrA%3D"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0111.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=IViDM%2BC%2BP0x9Qr62tyNvobrlzeQ%3D"
+            },
+            {
+              "time_s": 122,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0122.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791017459&Signature=bQvQ0n%2B28nhD%2FdxSN4wE8tzi9pg%3D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EXPending World Landmarks",
+      "prompt": "World landmark sequence requiring long-range scene handoff and coherent visual progression.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_vgot.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=IvRvyaJts1GzZ1j%2BXgMAWM%2F1F3o%3D",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 16,
+              "title": "Landmark fades into a ghosted overlay",
+              "text": "The cliffs and water blend with a transparent building image, making the destination handoff look unresolved.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0016.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=2dIPygT3CVniHKdZ6v9kOBdv4sQ%3D"
+            },
+            {
+              "time_s": 41,
+              "title": "City appears as a hard reset",
+              "text": "The skyline at night arrives without a visible spatial bridge from the previous landscape.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0038.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ELulfYiWM%2BV2Evlv0uhKuNrfR2Q%3D"
+            },
+            {
+              "time_s": 65,
+              "title": "Bridge view lacks transition context",
+              "text": "The harbor landmark is visible, but the sequence does not preserve a clear route from the earlier location.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0061.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=oc7g61c3TO%2F%2BMlt4ktEg8Rh02nY%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0007.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=a5p1nJT5TiXsdD7KyrY6b6tXRmo%3D"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0016.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=2dIPygT3CVniHKdZ6v9kOBdv4sQ%3D"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0027.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=f8BcyGxDq7wCFdxqn%2BMFp3hYsWc%3D"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0038.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ELulfYiWM%2BV2Evlv0uhKuNrfR2Q%3D"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0050.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=RJTTvGkI4eiUTNGFZ8Xsgp4Anec%3D"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0061.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=oc7g61c3TO%2F%2BMlt4ktEg8Rh02nY%3D"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0072.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=sGM%2FHWDfvdtB4bSlRvaE%2BtI17jI%3D"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0083.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=YWuTBcogwwZZkEabMZSg%2B6MtDHw%3D"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_mora.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=VLZpkjLZjeOLcFIVyxEphwTmQJ4%3D",
+          "duration_s": 75.138,
+          "evidence": [
+            {
+              "time_s": 14,
+              "title": "Atmosphere hides the landmark handoff",
+              "text": "The distant skyline is heavily softened by haze, so the transition reads more like a mood shot than a clear location continuation.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0014.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=6wKom9rx2upFVMK3dG%2BH93ARsZE%3D"
+            },
+            {
+              "time_s": 34,
+              "title": "Landscape reset without geographic bridge",
+              "text": "The fjord-like view is coherent by itself, but it does not carry visible cues from the previous landmark.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0032.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=NSS%2B0LLctunibK%2BF1M%2FrkHaF%2BNc%3D"
+            },
+            {
+              "time_s": 54,
+              "title": "Night skyline changes the visual thread",
+              "text": "The lighting and city identity shift sharply, weakening the sense of one planned landmark tour.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0051.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ulBdMhs9iUzJaD9HNdni6q8a064%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 6,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0006.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ljuWp3AIP5RFb6%2FuZIBlUKm%2FFfg%3D"
+            },
+            {
+              "time_s": 14,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0014.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=6wKom9rx2upFVMK3dG%2BH93ARsZE%3D"
+            },
+            {
+              "time_s": 23,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0023.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=PHHPTW3MJBupyGxnguIqUlu%2Bez0%3D"
+            },
+            {
+              "time_s": 32,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0032.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=NSS%2B0LLctunibK%2BF1M%2FrkHaF%2BNc%3D"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0041.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=srLhKvY3wXeFFE%2FE8phosKBdp3E%3D"
+            },
+            {
+              "time_s": 51,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0051.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ulBdMhs9iUzJaD9HNdni6q8a064%3D"
+            },
+            {
+              "time_s": 60,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0060.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Y3FNf0%2B4K9TrcKZYiipMmrK1KRY%3D"
+            },
+            {
+              "time_s": 69,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0069.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=9Tsu6B0i2guHXLWUp2zfqHdWEuM%3D"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_movieagent.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=kH%2FFfedVGdNRWcQiy2qgtELC5yM%3D",
+          "duration_s": 270.437,
+          "evidence": [
+            {
+              "time_s": 49,
+              "title": "Iconic structure appears as a standalone cut",
+              "text": "The building is recognizable, but the frame does not explain how it follows from the previous geography.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0049.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=4vbAHOR95mH%2Fi%2BexHGYeun984wU%3D"
+            },
+            {
+              "time_s": 122,
+              "title": "Spatial context resets again",
+              "text": "The harbor bridge shot is clean, but it feels inserted rather than connected to the earlier landmark path.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0114.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2FycL54QCq7OHY%2BAIzuwImBRMR5U%3D"
+            },
+            {
+              "time_s": 195,
+              "title": "Late view drifts into generic skyline",
+              "text": "The final city-water frame loses the specific landmark progression established earlier.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0184.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=FuJ72A0ruF5YDJkKP5QhJT1q7Qo%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0022.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=OAZ1iHk1TM3aN6slG0iOpd7BWHM%3D"
+            },
+            {
+              "time_s": 49,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0049.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=4vbAHOR95mH%2Fi%2BexHGYeun984wU%3D"
+            },
+            {
+              "time_s": 81,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0081.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Az8C9VA0lhUBvZPZnAXv5yUq4mo%3D"
+            },
+            {
+              "time_s": 114,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0114.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2FycL54QCq7OHY%2BAIzuwImBRMR5U%3D"
+            },
+            {
+              "time_s": 149,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0149.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=LY41BbLac3b3ELfAOPSOnsbGY68%3D"
+            },
+            {
+              "time_s": 184,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0184.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=FuJ72A0ruF5YDJkKP5QhJT1q7Qo%3D"
+            },
+            {
+              "time_s": 216,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0216.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2B9TIH6%2FtCbEORoE%2BkLxA3vYSqxo%3D"
+            },
+            {
+              "time_s": 249,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0249.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=9wWeKWC9iMEakHMqhB9bOEoRYIE%3D"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/world_landmarks.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=gz275PhIUNlTdA2P0oli76ujzJA%3D",
+          "duration_s": 161.079,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/world_landmarks.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=CDZofo1YY8A4MBt%2FA6b3Ez%2BitWI%3D",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 29,
+              "title": "Opera House and harbor stay explicit",
+              "text": "The Sydney Opera House, bridge, and waterline remain clear in the same wide establishing view.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2B4P3qkUf09mv0wrRJ1VmYuTHkpM%3D"
+            },
+            {
+              "time_s": 72,
+              "title": "Location shift keeps water and skyline cues",
+              "text": "The camera changes viewpoint while keeping the harbor structure and city context readable.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=84M4Thailll6RjrNcGvim8QdiFc%3D"
+            },
+            {
+              "time_s": 116,
+              "title": "Late shot preserves landmark identity",
+              "text": "The bridge, skyline, and water reflections stay tied to the same destination instead of becoming a generic city shot.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ySg47xARc3RhlIKlV7R36Ty3OTA%3D"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 13,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0013.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ZjAqrdJFq07fP7QPJtMsmnFmWAs%3D"
+            },
+            {
+              "time_s": 29,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2B4P3qkUf09mv0wrRJ1VmYuTHkpM%3D"
+            },
+            {
+              "time_s": 48,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0048.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=jWnJfI46SJl4JFjCDjgL47eCHkU%3D"
+            },
+            {
+              "time_s": 68,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=84M4Thailll6RjrNcGvim8QdiFc%3D"
+            },
+            {
+              "time_s": 89,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0089.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ZWOSNNvONDraR1M1NehzbNzOwVA%3D"
+            },
+            {
+              "time_s": 110,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ySg47xARc3RhlIKlV7R36Ty3OTA%3D"
+            },
+            {
+              "time_s": 129,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0129.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=X9JhzSehRKbkNPqvcvXnp0lYNvg%3D"
+            },
+            {
+              "time_s": 148,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0148.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=RXXsh7g4yxUEA9DIEdaeY%2Fm%2B0l8%3D"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "heroDemos": [
+    {
+      "eyebrow": "Main Demo",
+      "title": "World Landmarks",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/world_landmarks.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=gz275PhIUNlTdA2P0oli76ujzJA%3D",
+      "duration_s": 161.079,
+      "frames": [
+        {
+          "time_s": 13,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0013.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ZjAqrdJFq07fP7QPJtMsmnFmWAs%3D"
+        },
+        {
+          "time_s": 29,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=%2B4P3qkUf09mv0wrRJ1VmYuTHkpM%3D"
+        },
+        {
+          "time_s": 48,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0048.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=jWnJfI46SJl4JFjCDjgL47eCHkU%3D"
+        },
+        {
+          "time_s": 68,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=84M4Thailll6RjrNcGvim8QdiFc%3D"
+        },
+        {
+          "time_s": 89,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0089.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ZWOSNNvONDraR1M1NehzbNzOwVA%3D"
+        },
+        {
+          "time_s": 110,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ySg47xARc3RhlIKlV7R36Ty3OTA%3D"
+        },
+        {
+          "time_s": 129,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0129.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=X9JhzSehRKbkNPqvcvXnp0lYNvg%3D"
+        },
+        {
+          "time_s": 148,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0148.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=RXXsh7g4yxUEA9DIEdaeY%2Fm%2B0l8%3D"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/world_landmarks.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=CDZofo1YY8A4MBt%2FA6b3Ez%2BitWI%3D"
+    },
+    {
+      "eyebrow": "Other Demo 1",
+      "title": "Boxing",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/boxing.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=zjvIU7Ai3O62rcVB0zjmpdl05dI%3D",
+      "duration_s": 160.256,
+      "frames": [
+        {
+          "time_s": 13,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0013.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=GQ913rRLpZ0avnHuuaaYVQv09is%3D"
+        },
+        {
+          "time_s": 29,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Row%2BPJYQ1N6oBLbW4auQGvi8mrc%3D"
+        },
+        {
+          "time_s": 48,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0048.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=lBe3pFIAFKy0%2BunNtXjhipNl8eE%3D"
+        },
+        {
+          "time_s": 67,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=XBxDWrBq5vel%2BMlUYw94MSlr5cY%3D"
+        },
+        {
+          "time_s": 88,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0088.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=TlWGA44p2xGkev0z7ZFF0AMMKCc%3D"
+        },
+        {
+          "time_s": 109,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=hDgVhTeO6FOc97PwnZXs2tBgut8%3D"
+        },
+        {
+          "time_s": 128,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0128.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Vt9tK3QA%2BmuGVqGF%2FM10ss0U0Sk%3D"
+        },
+        {
+          "time_s": 147,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0147.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=kn4KnR31K12gyK2uwuPUqJ78KMY%3D"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/boxing.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=LSpWDXjLvOgKkl%2BwvFZT27j%2BvY8%3D"
+    },
+    {
+      "eyebrow": "Other Demo 2",
+      "title": "Dumplings",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/dumplings.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=EV4Y%2FiO8ZGqhL%2BUaCX7OWwQ4C%2BA%3D",
+      "duration_s": 138.321,
+      "frames": [
+        {
+          "time_s": 11,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0011.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=bVTedpmV3SuxJ7HMrbF74%2BfK7fI%3D"
+        },
+        {
+          "time_s": 25,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=67fWP%2FknbABDyk9E8Xd6xFQkdjk%3D"
+        },
+        {
+          "time_s": 41,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0041.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=eEKfxgZJ8VsFVxzkd1FT1dtvZJI%3D"
+        },
+        {
+          "time_s": 58,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=ijYkCyZDSiLUjNzyz%2FkgcDIgtWA%3D"
+        },
+        {
+          "time_s": 76,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0076.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=qTX2Vk5WHWfjKecLbpbdHZUf298%3D"
+        },
+        {
+          "time_s": 102,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791017459&Signature=HABeZEOUXZgRGouMgExAeNapvrA%3D"
+        },
+        {
+          "time_s": 111,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0111.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=IViDM%2BC%2BP0x9Qr62tyNvobrlzeQ%3D"
+        },
+        {
+          "time_s": 122,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0122.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791017459&Signature=bQvQ0n%2B28nhD%2FdxSN4wE8tzi9pg%3D"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/dumplings.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=lnM4vdNabNFqkVuSp35NVl%2Fpobk%3D"
+    },
+    {
+      "eyebrow": "Other Demo 3",
+      "title": "Couple",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/couple.mp4?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1790999840&Signature=Pq0KMqEjMP%2Bpq0sGKr3WP66QSLg%3D",
+      "duration_s": 176.033,
+      "frames": [
+        {
+          "time_s": 14,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0014.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=OumirP8%2BONOM6n%2FNFOdls6yPJG4%3D"
+        },
+        {
+          "time_s": 32,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0032.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=RF4elorVg0R9vBu2zQUeGEoXJvU%3D"
+        },
+        {
+          "time_s": 53,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0053.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=71tGX0Phko36rXRu0GvEXGhuBO4%3D"
+        },
+        {
+          "time_s": 93,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0093.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791018661&Signature=dCpZQQ7VVSe8FIhCCgSvYtctmYM%3D"
+        },
+        {
+          "time_s": 74,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0074.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=dl1vt9DPGL%2BDi%2Fqq2FGh%2B%2FinEcM%3D"
+        },
+        {
+          "time_s": 120,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0120.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=82wXCIdEr%2FmZz4SjI%2BI0Lh3VNqI%3D"
+        },
+        {
+          "time_s": 141,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0141.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=wkHskeyD1Revo3pbNsPNZ6Ff36I%3D"
+        },
+        {
+          "time_s": 162,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0162.jpg?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=uBvSlKQBjA%2FDxtLTUwRHjj%2FQtak%3D"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/couple.png?OSSAccessKeyId=LTAI5tH3yxPgCdZXupqhfGJp&Expires=1791015372&Signature=Ibsq4g7734OPrJE4KhW0vluTacM%3D"
+    }
+  ]
+}

@@ -1,0 +1,2130 @@
+{
+  "demo_id": "ex00_wan_rerun",
+  "slug": "world-landmarks",
+  "title": "World Landmarks",
+  "summary": "同剧情 Wan2.7 后端 + validator。final.mp4 走 OSS（本地 40GB 是 scratch）。",
+  "backend": "wan2.7-r2v",
+  "is_rerun": true,
+  "oss_prefix": "new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page",
+  "oss_asset_id": "good_ex00_wan_rerun",
+  "signed_at": "2026-05-14T05:22:53.600941+00:00",
+  "expires_at": "2026-07-13T05:22:53.600962+00:00",
+  "n_shots": 5,
+  "n_segments": 14,
+  "skeleton": {
+    "source": {
+      "input_path": "",
+      "n_shots": 5,
+      "per_shot_duration_s": [
+        28,
+        30,
+        26,
+        28,
+        30
+      ],
+      "seed": 0
+    },
+    "portrait_plan": [
+      {
+        "id": "no_human_presence",
+        "name": "无人叙事基调",
+        "reference_role": "supporting_portrait",
+        "prompt": "写实电影感航拍风光参考，不出现人物，不出现可识别面孔，不出现游客或飞行员；画面重点为空间、地标、自然地形、水岸关系和城市灯光，保持纪录片式真实比例与清晰空气透视。",
+        "negative_prompt": "人物, 人脸, 游客, 飞行员, 卡通, 动漫, 夸张比例, 低清晰度, 文字, 水印"
+      }
+    ],
+    "location_plan": {
+      "sydney_harbour": {
+        "id": "sydney_harbour",
+        "reference_name": "悉尼港与悉尼歌剧院",
+        "key_zones": [
+          {
+            "id": "zone_sydney_harbour_water",
+            "name": "悉尼港水面",
+            "prompt": "白天晴朗的悉尼港蓝色海水，水面有细碎阳光反光，远处可见 Bennelong Point 岬角、悉尼歌剧院白色帆形屋顶、海港大桥钢铁弧线和城市楼群，真实航拍视角，空气通透。",
+            "negative_prompt": "人物, 游客特写, 错误地标, 室内, 阴雨, 浑浊水面, 文字, 水印, 畸变建筑"
+          }
+        ],
+        "props": {
+          "prop_sydney_opera_house": {
+            "name": "悉尼歌剧院",
+            "owner": "sydney_harbour",
+            "prompt": "悉尼歌剧院白色帆形壳体建筑，位于伸入悉尼港的 Bennelong Point 岬角，三面临水，阳光照亮曲面屋顶，高光清楚，阴影柔和，比例真实。",
+            "negative_prompt": "错误位置, 藏在街区内, 彩色屋顶, 变形屋顶, 文字, 水印"
+          },
+          "prop_sydney_harbour_bridge": {
+            "name": "悉尼海港大桥",
+            "owner": "sydney_harbour",
+            "prompt": "悉尼海港大桥钢铁拱形结构横跨港湾，远景尺度真实，桥身与水面、歌剧院、城市天际线形成清楚地理关系。",
+            "negative_prompt": "错误桥型, 断裂桥梁, 过度科幻, 文字, 水印"
+          },
+          "prop_sydney_boats": {
+            "name": "港湾小船",
+            "owner": "sydney_harbour",
+            "prompt": "悉尼港湾里的几艘白色小船，船体很小，水面后方拖出细长白色航迹线，真实航拍尺度。",
+            "negative_prompt": "巨型船只, 军舰, 拥挤船队, 人物特写, 文字, 水印"
+          }
+        },
+        "prompt": "白天晴朗的悉尼港航拍风光，蓝色海水、Bennelong Point 岬角、白色帆形悉尼歌剧院、远处海港大桥和城市楼群共同构成经典港湾地理关系，写实电影感，清澈空气与自然日光。",
+        "negative_prompt": "人物, 游客, 错误地标位置, 室内视角, 卡通, 过曝, 低清晰度, 文字, 水印"
+      },
+      "norway_fjord": {
+        "id": "norway_fjord",
+        "reference_name": "挪威峡湾",
+        "key_zones": [
+          {
+            "id": "zone_norway_fjord_waterway",
+            "name": "峡湾冷色水道",
+            "prompt": "挪威狭长峡湾冷色海水，两侧近乎垂直的高山压向水面，山腰深绿色森林，山顶残留白雪，灰蓝云雾贴着山腰，远处可见细长瀑布，真实自然航拍。",
+            "negative_prompt": "普通湖泊, 平缓丘陵, 热带植物, 城市高楼, 人物, 文字, 水印, 过度饱和"
+          }
+        ],
+        "props": {
+          "prop_fjord_waterfall": {
+            "name": "岩壁细瀑",
+            "owner": "norway_fjord",
+            "prompt": "挪威峡湾岩壁上的细长瀑布，从高处垂直落下，在深色山体背景中像明亮白线，远景尺度真实。",
+            "negative_prompt": "巨大水幕, 人工喷泉, 热带瀑布, 文字, 水印"
+          },
+          "prop_snow_peaks": {
+            "name": "远处雪山",
+            "owner": "norway_fjord",
+            "prompt": "峡湾远处的白色雪山山顶，冷色天空下边缘柔和，云雾半遮，倒影隐约落在深色水面。",
+            "negative_prompt": "沙漠山, 火山喷发, 城市建筑, 文字, 水印"
+          }
+        },
+        "prompt": "挪威海水峡湾航拍，深冷色水面伸入高山之间，垂直山壁、深绿色森林、山顶积雪、移动云雾和岩壁细瀑构成狭长山间海湾，画面冷静开阔。",
+        "negative_prompt": "人物, 船只拥挤, 普通淡水湖, 热带海岛, 卡通, 低清晰度, 文字, 水印"
+      },
+      "toronto_lakefront": {
+        "id": "toronto_lakefront",
+        "reference_name": "多伦多安大略湖夜景",
+        "key_zones": [
+          {
+            "id": "zone_toronto_lake_approach",
+            "name": "安大略湖面外侧",
+            "prompt": "夜晚安大略湖上方航拍视角，深蓝黑色湖水在前景展开，多伦多市中心灯光沿湖岸形成明亮边线，CN Tower 作为最清楚竖直轮廓立在天际线中，薄雾和低云增加空气感。",
+            "negative_prompt": "白天, 错误城市, 人物, 室内, 过度锐化, 文字, 水印, 霓虹乱码"
+          }
+        ],
+        "props": {
+          "prop_cn_tower": {
+            "name": "CN Tower",
+            "owner": "toronto_lakefront",
+            "prompt": "多伦多 CN Tower 夜景，细长高塔轮廓清楚，塔身灯光明亮但不过曝，位于湖岸后方城市天际线核心位置。",
+            "negative_prompt": "错误塔形, 双塔, 倾斜塔身, 文字, 水印"
+          },
+          "prop_toronto_skyline": {
+            "name": "多伦多市中心楼群",
+            "owner": "toronto_lakefront",
+            "prompt": "多伦多湖岸市中心玻璃高楼夜景，窗口灯光层次分明，港口水面与楼群倒影可见，低云薄雾笼罩远处。",
+            "negative_prompt": "纽约曼哈顿误置, 迪拜塔误置, 白天, 文字, 水印"
+          }
+        },
+        "prompt": "多伦多夜晚湖岸航拍，安大略湖深蓝黑水面、滨水区灯带、CN Tower、玻璃高楼和港口倒影保持稳定地理关系，城市像从湖面后方升起，写实电影质感。",
+        "negative_prompt": "人物, 近景车辆, 穿楼视角, 错误地标, 过曝灯光, 文字, 水印"
+      },
+      "new_york_manhattan": {
+        "id": "new_york_manhattan",
+        "reference_name": "纽约曼哈顿夜景",
+        "key_zones": [
+          {
+            "id": "zone_manhattan_river_aerial",
+            "name": "曼哈顿河道高空",
+            "prompt": "纽约夜景高空航拍，曼哈顿长形岛屿位于哈德逊河与东河之间，黑色河道在两侧展开，密集高楼和笔直街道网格覆盖岛身，桥梁连接周围城区，金色窗口灯光成片。",
+            "negative_prompt": "白天, 错误城市, 单栋楼特写, 人物, 街面视角, 文字, 水印, 畸变街网"
+          }
+        ],
+        "props": {
+          "prop_manhattan_bridges": {
+            "name": "曼哈顿桥梁群",
+            "owner": "new_york_manhattan",
+            "prompt": "纽约曼哈顿周边桥梁夜景，桥面灯光横跨黑色河道，连接岛屿与周围城区，远景航拍尺度真实。",
+            "negative_prompt": "断桥, 未来科幻桥, 白天, 文字, 水印"
+          },
+          "prop_manhattan_grid": {
+            "name": "曼哈顿街道网格",
+            "owner": "new_york_manhattan",
+            "prompt": "曼哈顿笔直街道网格夜景，车流光线沿街道形成连续金色线条，高楼窗口密集发亮，整体像城市灯网纹理。",
+            "negative_prompt": "弯曲街网, 乡村道路, 空城, 文字, 水印"
+          }
+        },
+        "prompt": "纽约曼哈顿夜间高空航拍，长形岛屿被哈德逊河和东河夹住，桥梁、水面反光、高楼窗口、街道网格和车流光带形成极高城市密度，远处轻雾柔化楼群边缘。",
+        "negative_prompt": "人物, 低空街拍, 错误地标, 白天, 过度锐化, 文字, 水印"
+      },
+      "dubai_downtown": {
+        "id": "dubai_downtown",
+        "reference_name": "迪拜市中心夜景",
+        "key_zones": [
+          {
+            "id": "zone_dubai_downtown_high_aerial",
+            "name": "迪拜市中心高空",
+            "prompt": "迪拜夜景高空航拍，哈利法塔作为最高垂直核心立在画面中央，周围高楼、道路和人工湖围绕展开，暖金色灯光规整明亮，远处隐约可见黑色海岸夜面与暗色沙漠边缘。",
+            "negative_prompt": "纽约误置, 白天, 人物, 街面视角, 错误塔形, 文字, 水印, 过度科幻"
+          }
+        ],
+        "props": {
+          "prop_burj_khalifa": {
+            "name": "哈利法塔",
+            "owner": "dubai_downtown",
+            "prompt": "迪拜哈利法塔夜景，极高细长的垂直塔身位于市中心核心，灯光清晰，周围高楼明显低于它，比例真实。",
+            "negative_prompt": "错误塔形, 双塔, 过度弯曲, 文字, 水印"
+          },
+          "prop_dubai_fountain_lake": {
+            "name": "迪拜人工湖",
+            "owner": "dubai_downtown",
+            "prompt": "哈利法塔下方的迪拜市中心人工湖夜景，水面反射周围建筑暖金色灯光，曲线湖岸与道路围绕高楼展开。",
+            "negative_prompt": "自然峡湾, 大海误置, 白天, 文字, 水印"
+          },
+          "prop_dubai_roads": {
+            "name": "迪拜道路光带",
+            "owner": "dubai_downtown",
+            "prompt": "迪拜市中心夜间道路系统，暖金色车流光带像发光脉络向外扩散，路线规整，连接高楼群与远处暗色区域。",
+            "negative_prompt": "混乱街网, 纽约街网误置, 文字, 水印"
+          }
+        },
+        "prompt": "迪拜市中心夜景航拍，哈利法塔居中作为垂直锚点，人工湖、高楼、道路光带、远处海岸夜面与沙漠边缘形成清楚地理层次，暖金色灯光与轻微沙尘夜雾。",
+        "negative_prompt": "人物, 白天, 错误地标, 过曝, 科幻城市, 文字, 水印"
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_sydney_opera_start",
+          "reference_inputs": {
+            "portrait": "no_human_presence",
+            "place": "zone_sydney_harbour_water",
+            "prop": "prop_sydney_opera_house,prop_sydney_harbour_bridge,prop_sydney_boats"
+          },
+          "prompt": "静态单帧，24mm / 深景深 / 高空平视略俯。前景：悉尼港蓝色水面铺满画面下方，几艘小船留下细长白色水线。中景：Bennelong Point 岬角上的悉尼歌剧院白色帆形屋顶露出一部分，三面临水关系清楚。背景：海港大桥钢铁弧线与城市楼群远远虚实分层。光照：晴天日光约5600K，水面银蓝反光，屋顶边缘有清晰高光。",
+          "negative_prompt": "人物, 游客, 歌剧院位置错误, 室内, 阴雨, 低清晰度, 文字, 水印, 过曝"
+        },
+        {
+          "id": "a02_norway_fjord_start",
+          "reference_inputs": {
+            "portrait": "no_human_presence",
+            "place": "zone_norway_fjord_waterway",
+            "prop": "prop_fjord_waterfall,prop_snow_peaks"
+          },
+          "prompt": "静态单帧，24mm / 深景深 / 低空平视。前景：冷灰蓝色峡湾海水占据画面下半部，水面平静有暗色倒影。中景：两侧近乎垂直的山壁夹住狭长水道，山腰覆盖深绿色森林，一条细长瀑布贴在右侧岩壁。背景：远处雪山被灰蓝云雾半遮，山谷向深处收束。光照：阴天冷色漫射光约6500K，云雾压低亮度。",
+          "negative_prompt": "普通湖泊, 热带海岛, 城市建筑, 人物, 船只拥挤, 文字, 水印, 过饱和"
+        },
+        {
+          "id": "a03_toronto_lakefront_start",
+          "reference_inputs": {
+            "portrait": "no_human_presence",
+            "place": "zone_toronto_lake_approach",
+            "prop": "prop_cn_tower,prop_toronto_skyline"
+          },
+          "prompt": "静态单帧，35mm / 深景深 / 高空平视略俯。前景：安大略湖深蓝黑色水面平整展开，薄雾贴近水面。中景：多伦多湖岸灯光形成一条明亮边线，港口水面有细碎倒影。背景：CN Tower 作为细长竖直轮廓立在市中心天际线中，玻璃高楼灯窗层次分明。光照：夜景冷蓝环境光约4200K，城市灯光暖白点缀。",
+          "negative_prompt": "白天, 错误城市, 人物, 穿楼, 单栋楼特写, 文字, 水印, 霓虹乱码"
+        },
+        {
+          "id": "a04_new_york_manhattan_start",
+          "reference_inputs": {
+            "portrait": "no_human_presence",
+            "place": "zone_manhattan_river_aerial",
+            "prop": "prop_manhattan_bridges,prop_manhattan_grid"
+          },
+          "prompt": "静态单帧，24mm / 深景深 / 高空俯视。前景与两侧：哈德逊河和东河呈黑色水道包夹画面，水面反射零散灯光。中景：曼哈顿长形岛屿被密集高楼和笔直街道网格填满，桥梁横跨河面连接周围城区。背景：远处城市灯光在轻雾中变软。光照：夜景暖金与深蓝黑对比，窗口灯光像连续发光墙面。",
+          "negative_prompt": "白天, 人物, 街面近景, 错误城市, 畸变岛屿, 文字, 水印, 过度锐化"
+        },
+        {
+          "id": "a05_dubai_night_start",
+          "reference_inputs": {
+            "portrait": "no_human_presence",
+            "place": "zone_dubai_downtown_high_aerial",
+            "prop": "prop_burj_khalifa,prop_dubai_fountain_lake,prop_dubai_roads"
+          },
+          "prompt": "静态单帧，35mm / 深景深 / 高空俯视。前景：迪拜市中心暖金色道路光带呈放射脉络。中景：哈利法塔立在画面中央作为最高垂直核心，周围高楼和人工湖围绕展开，湖面反射建筑灯光。背景：远处黑色海岸夜面与暗色沙漠边缘隐约分层。光照：夜景暖金约3000K，轻微沙尘夜雾降低远处锐度。",
+          "negative_prompt": "人物, 白天, 错误塔形, 纽约街网, 过度科幻, 文字, 水印, 过曝"
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_sydney_opera_harbour_rise",
+        "duration_s": 28,
+        "story_goal": "建立旅行航拍蒙太奇的开阔基调，并清楚呈现悉尼歌剧院、悉尼港、海港大桥和城市楼群之间的地理关系。",
+        "start_state": "悉尼港蓝色水面铺满画面下方，几艘小船留下细长白色水线，Bennelong Point 岬角上的悉尼歌剧院白色帆形屋顶露出一部分，远处有海港大桥和城市楼群。",
+        "end_state": "无人机升高后的悉尼港全貌清楚展开，悉尼歌剧院完整位于三面临水的岬角上，白色帆形屋顶在阳光下有清晰高光，海港大桥横跨远处港湾，城市楼群立在背后。",
+        "visual_intent": "无人机从港口水面上方缓慢垂直升起，节奏稳定舒展，写实电影航拍风格；重点让蓝色水面、白色屋顶、桥梁弧线和晴朗天空形成明快层次，色彩保持日光蓝白对比，末段让水面反光逐渐占据切换区域。"
+      },
+      {
+        "id": "shot02_norway_fjord_forward",
+        "duration_s": 30,
+        "story_goal": "从明亮港湾过渡到冷峻自然地貌，展示峡湾作为海水深入高山形成的狭长空间，以及水道、山壁、森林、瀑布和雪山的纵深关系。",
+        "start_state": "冷灰蓝色峡湾海水平静展开，两侧近乎垂直的山壁夹住狭长水道，山腰覆盖深绿色森林，右侧岩壁有细长瀑布，远处雪山被灰蓝云雾半遮。",
+        "end_state": "狭窄峡湾水道展开成更宽阔的山间海湾，深色水面映出云影和山体倒影，远处雪山占据画面上方，山腰云雾压低整体亮度。",
+        "visual_intent": "无人机低空贴近水面沿峡湾向前飞行，全段只做平稳前飞；节奏缓慢沉静，写实自然纪录片质感，冷灰蓝色调主导，山体倒影和云雾移动提供细微变化，末段用冷雾压暗画面。"
+      },
+      {
+        "id": "shot03_toronto_lakefront_approach",
+        "duration_s": 26,
+        "story_goal": "进入夜间城市段，明确安大略湖、滨水区、CN Tower 和多伦多市中心楼群的相对位置，让城市从湖岸后方建立起来。",
+        "start_state": "安大略湖深蓝黑色水面在前景展开，湖面有薄雾，多伦多湖岸灯光形成一条明亮边线，CN Tower 作为远处最清楚的细长竖直轮廓立在天际线中。",
+        "end_state": "无人机靠近并略微升高后的多伦多夜景层次更完整，玻璃高楼、湖岸线、港口水面和 CN Tower 倒影清楚分开，低云和远处车流光带让城市有空气感。",
+        "visual_intent": "无人机从安大略湖外侧平稳前飞并轻微升高，不穿入楼群；节奏平顺克制，夜景写实电影感，深蓝黑湖水与暖白城市灯光对比，薄雾软化远处轮廓，末段保留湖面倒影和夜空黑区作为遮挡。"
+      },
+      {
+        "id": "shot04_new_york_manhattan_lateral",
+        "duration_s": 28,
+        "story_goal": "强化夜间城市密度的变化，从多伦多湖岸城市转入曼哈顿河岛结构，突出长形岛屿、双河夹持、桥梁连接和笔直街网的独特空间秩序。",
+        "start_state": "高空俯瞰的曼哈顿长形岛屿位于哈德逊河和东河之间，黑色河道出现在画面两侧，密集高楼和笔直街道网格占据岛身，桥梁连接周围城区。",
+        "end_state": "曼哈顿在稍远的高空视角中变成巨大的金色城市灯网，车流在街道上形成连续光线，桥梁横跨黑色河面，远处轻雾让高楼边缘更有层次。",
+        "visual_intent": "无人机在河面上方缓慢横移并略微拉远，全段保持高空俯视的稳定航拍；节奏开阔但信息密集，写实夜景电影风格，金色窗口与黑色河道形成强对比，末段让城市灯网铺满画面。"
+      },
+      {
+        "id": "shot05_dubai_burj_khalifa_orbit_rise",
+        "duration_s": 30,
+        "story_goal": "作为蒙太奇结尾，以迪拜更暖、更规整的金色夜景回应纽约灯网，并用哈利法塔作为垂直锚点收束五个地点的旅行航拍质感。",
+        "start_state": "迪拜市中心夜景从高空展开，哈利法塔立在画面中央作为最高垂直核心，周围高楼、道路和人工湖围绕它展开，暖金色灯光比纽约更整齐。",
+        "end_state": "无人机升高后的迪拜夜景变成一整片发光城市图案，哈利法塔仍然保持中心锚点，人工湖反射建筑灯光，远处黑色海岸夜面和暗色沙漠边缘隐约可见。",
+        "visual_intent": "无人机从高空缓慢环绕迪拜市中心并逐渐升高，全段使用单一环绕上升运动；节奏稳定宏阔，写实电影夜景风格，暖金色道路光带像发光脉络向外扩散，轻微沙尘夜雾降低远处锐度，结尾停留在高空远景余韵。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward",
+        "from_shot": "shot01_sydney_opera_harbour_rise",
+        "to_shot": "shot02_norway_fjord_forward",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "悉尼港明亮水面反光在画面下方逐渐放大，蓝白色碎光铺满整个画面；反光高亮慢慢冷却为灰蓝色，水纹方向变得更长、更平静，城市轮廓和桥梁在亮斑中淡出；同样的水面纹理保留连续性，色温从晴天蓝白过渡到挪威峡湾的冷灰蓝，远处暗色山壁和低云从水面倒影里显现。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 文字, 水印, 画面撕裂, 过曝"
+      },
+      {
+        "id": "tr02_norway_fjord_forward_to_toronto_lakefront_approach",
+        "from_shot": "shot02_norway_fjord_forward",
+        "to_shot": "shot03_toronto_lakefront_approach",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "挪威峡湾山腰的灰蓝冷雾向画面中央压下，雪山和岩壁被雾气柔化成深浅层次；雾中的水面倒影逐渐变暗，冷灰蓝色过渡为深蓝黑夜色；在雾层下方慢慢浮现一条细密的城市湖岸灯线，远处竖直的 CN Tower 灯光从薄雾中显出，山体暗影自然替换为多伦多夜空和安大略湖面薄雾。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 错误地标混叠, 文字, 水印, 强烈闪烁"
+      },
+      {
+        "id": "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral",
+        "from_shot": "shot03_toronto_lakefront_approach",
+        "to_shot": "shot04_new_york_manhattan_lateral",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "多伦多湖面上的灯光倒影和夜空黑色区域逐渐占据画面，CN Tower 与湖岸线被黑蓝色水雾吞没；水面反光拉长成更密集的金色线条，黑色湖面在视觉上分裂为两侧河道；随着夜色遮挡消散，曼哈顿长形岛屿的高楼灯墙和笔直街网从金色倒影中显现，两侧黑色水道保持与前一段湖面色彩连续。",
+        "negative_prompt": "瞬间换景, 快速闪切, 黑屏, 人物, 白天, 文字, 水印, 城市地标混乱"
+      },
+      {
+        "id": "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise",
+        "from_shot": "shot04_new_york_manhattan_lateral",
+        "to_shot": "shot05_dubai_burj_khalifa_orbit_rise",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "曼哈顿密集金色街道灯网在高空视角中逐渐拉远，笔直网格的线条变得抽象；金色纹理缓慢升温，冷蓝黑河道暗部收缩为更规整的城市阴影，灯线重新排列成放射状道路脉络；轻雾中出现更暖的沙尘金色，中央一根极高竖直光柱从灯网核心显现并稳定为哈利法塔，周围人工湖反光接住纽约夜景残留的金色亮度。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 地标重叠错误, 文字, 水印, 过度科幻"
+      }
+    ]
+  },
+  "render_plan": {
+    "source": {
+      "input_path": "",
+      "n_shots": 5,
+      "per_shot_duration_s": [
+        28,
+        30,
+        26,
+        28,
+        30
+      ],
+      "seed": 0
+    },
+    "portrait_plan": {
+      "no_human_presence": {
+        "id": "no_human_presence",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "no_human_presence",
+          "kind": "portrait",
+          "prompt": "写实电影感航拍风光参考，不出现人物，不出现可识别面孔，不出现游客或飞行员；画面重点为空间、地标、自然地形、水岸关系和城市灯光，保持纪录片式真实比例与清晰空气透视。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/portraits/no_human_presence.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 人脸, 游客, 飞行员, 卡通, 动漫, 夸张比例, 低清晰度, 文字, 水印",
+          "prompt_extend": false,
+          "name": "无人叙事基调"
+        }
+      }
+    },
+    "location_plan": {
+      "sydney_harbour": {
+        "id": "sydney_harbour",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "sydney_harbour",
+          "kind": "anchor_image",
+          "prompt": "白天晴朗的悉尼港航拍风光，蓝色海水、Bennelong Point 岬角、白色帆形悉尼歌剧院、远处海港大桥和城市楼群共同构成经典港湾地理关系，写实电影感，清澈空气与自然日光。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/locations/sydney_harbour.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 游客, 错误地标位置, 室内视角, 卡通, 过曝, 低清晰度, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "norway_fjord": {
+        "id": "norway_fjord",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "norway_fjord",
+          "kind": "anchor_image",
+          "prompt": "挪威海水峡湾航拍，深冷色水面伸入高山之间，垂直山壁、深绿色森林、山顶积雪、移动云雾和岩壁细瀑构成狭长山间海湾，画面冷静开阔。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/locations/norway_fjord.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 船只拥挤, 普通淡水湖, 热带海岛, 卡通, 低清晰度, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "toronto_lakefront": {
+        "id": "toronto_lakefront",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "toronto_lakefront",
+          "kind": "anchor_image",
+          "prompt": "多伦多夜晚湖岸航拍，安大略湖深蓝黑水面、滨水区灯带、CN Tower、玻璃高楼和港口倒影保持稳定地理关系，城市像从湖面后方升起，写实电影质感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/locations/toronto_lakefront.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 近景车辆, 穿楼视角, 错误地标, 过曝灯光, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "new_york_manhattan": {
+        "id": "new_york_manhattan",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "new_york_manhattan",
+          "kind": "anchor_image",
+          "prompt": "纽约曼哈顿夜间高空航拍，长形岛屿被哈德逊河和东河夹住，桥梁、水面反光、高楼窗口、街道网格和车流光带形成极高城市密度，远处轻雾柔化楼群边缘。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/locations/new_york_manhattan.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 低空街拍, 错误地标, 白天, 过度锐化, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "dubai_downtown": {
+        "id": "dubai_downtown",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "dubai_downtown",
+          "kind": "anchor_image",
+          "prompt": "迪拜市中心夜景航拍，哈利法塔居中作为垂直锚点，人工湖、高楼、道路光带、远处海岸夜面与沙漠边缘形成清楚地理层次，暖金色灯光与轻微沙尘夜雾。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/locations/dubai_downtown.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 白天, 错误地标, 过曝, 科幻城市, 文字, 水印",
+          "prompt_extend": false
+        }
+      }
+    },
+    "prop_plan": {
+      "prop_sydney_opera_house": {
+        "id": "prop_sydney_opera_house",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_sydney_opera_house",
+          "kind": "anchor_image",
+          "prompt": "悉尼歌剧院白色帆形壳体建筑，位于伸入悉尼港的 Bennelong Point 岬角，三面临水，阳光照亮曲面屋顶，高光清楚，阴影柔和，比例真实。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_sydney_opera_house.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "错误位置, 藏在街区内, 彩色屋顶, 变形屋顶, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_sydney_harbour_bridge": {
+        "id": "prop_sydney_harbour_bridge",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_sydney_harbour_bridge",
+          "kind": "anchor_image",
+          "prompt": "悉尼海港大桥钢铁拱形结构横跨港湾，远景尺度真实，桥身与水面、歌剧院、城市天际线形成清楚地理关系。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_sydney_harbour_bridge.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "错误桥型, 断裂桥梁, 过度科幻, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_sydney_boats": {
+        "id": "prop_sydney_boats",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_sydney_boats",
+          "kind": "anchor_image",
+          "prompt": "悉尼港湾里的几艘白色小船，船体很小，水面后方拖出细长白色航迹线，真实航拍尺度。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_sydney_boats.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "巨型船只, 军舰, 拥挤船队, 人物特写, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_fjord_waterfall": {
+        "id": "prop_fjord_waterfall",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_fjord_waterfall",
+          "kind": "anchor_image",
+          "prompt": "挪威峡湾岩壁上的细长瀑布，从高处垂直落下，在深色山体背景中像明亮白线，远景尺度真实。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_fjord_waterfall.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "巨大水幕, 人工喷泉, 热带瀑布, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_snow_peaks": {
+        "id": "prop_snow_peaks",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_snow_peaks",
+          "kind": "anchor_image",
+          "prompt": "峡湾远处的白色雪山山顶，冷色天空下边缘柔和，云雾半遮，倒影隐约落在深色水面。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_snow_peaks.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "沙漠山, 火山喷发, 城市建筑, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_cn_tower": {
+        "id": "prop_cn_tower",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_cn_tower",
+          "kind": "anchor_image",
+          "prompt": "多伦多 CN Tower 夜景，细长高塔轮廓清楚，塔身灯光明亮但不过曝，位于湖岸后方城市天际线核心位置。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_cn_tower.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "错误塔形, 双塔, 倾斜塔身, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_toronto_skyline": {
+        "id": "prop_toronto_skyline",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_toronto_skyline",
+          "kind": "anchor_image",
+          "prompt": "多伦多湖岸市中心玻璃高楼夜景，窗口灯光层次分明，港口水面与楼群倒影可见，低云薄雾笼罩远处。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_toronto_skyline.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "纽约曼哈顿误置, 迪拜塔误置, 白天, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_manhattan_bridges": {
+        "id": "prop_manhattan_bridges",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_manhattan_bridges",
+          "kind": "anchor_image",
+          "prompt": "纽约曼哈顿周边桥梁夜景，桥面灯光横跨黑色河道，连接岛屿与周围城区，远景航拍尺度真实。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_manhattan_bridges.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "断桥, 未来科幻桥, 白天, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_manhattan_grid": {
+        "id": "prop_manhattan_grid",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_manhattan_grid",
+          "kind": "anchor_image",
+          "prompt": "曼哈顿笔直街道网格夜景，车流光线沿街道形成连续金色线条，高楼窗口密集发亮，整体像城市灯网纹理。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_manhattan_grid.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "弯曲街网, 乡村道路, 空城, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_burj_khalifa": {
+        "id": "prop_burj_khalifa",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_burj_khalifa",
+          "kind": "anchor_image",
+          "prompt": "迪拜哈利法塔夜景，极高细长的垂直塔身位于市中心核心，灯光清晰，周围高楼明显低于它，比例真实。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_burj_khalifa.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "错误塔形, 双塔, 过度弯曲, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_dubai_fountain_lake": {
+        "id": "prop_dubai_fountain_lake",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_dubai_fountain_lake",
+          "kind": "anchor_image",
+          "prompt": "哈利法塔下方的迪拜市中心人工湖夜景，水面反射周围建筑暖金色灯光，曲线湖岸与道路围绕高楼展开。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_dubai_fountain_lake.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "自然峡湾, 大海误置, 白天, 文字, 水印",
+          "prompt_extend": false
+        }
+      },
+      "prop_dubai_roads": {
+        "id": "prop_dubai_roads",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "prop_dubai_roads",
+          "kind": "anchor_image",
+          "prompt": "迪拜市中心夜间道路系统，暖金色车流光带像发光脉络向外扩散，路线规整，连接高楼群与远处暗色区域。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/props/prop_dubai_roads.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "混乱街网, 纽约街网误置, 文字, 水印",
+          "prompt_extend": false
+        }
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_sydney_opera_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a01_sydney_opera_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 深景深 / 高空俯角约 25 度，无人机视角。前景：Bennelong Point 岬角上悉尼歌剧院占据画面中下偏左，五片白色帆形屋顶分层展开，曲面在阳光下高光锐利、阴影柔和，米色基座广场清楚。中景：环绕岬角的深蓝色港湾水面铺展，水面有细密银蓝反光。背景左：悉尼海港大桥钢铁拱形横跨远处水面，桥身灰黑色钢架结构清楚。背景右：悉尼 CBD 现代玻璃高楼天际线呈灰白色塔楼分层。光照：晴天午后 5600K 直射光，色彩饱满，深蓝水面与白色屋顶形成强对比。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "no_human_presence"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "zone_sydney_harbour_water"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_sydney_opera_house"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_sydney_harbour_bridge"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_sydney_boats"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/anchors/a01_sydney_opera_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 游客, 室内, 阴雨, 低清晰度, 文字, 水印, 过曝, 地标变形",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_sydney_harbour_water",
+          "prop": "prop_sydney_opera_house,prop_sydney_harbour_bridge,prop_sydney_boats"
+        }
+      },
+      {
+        "id": "a02_norway_fjord_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a02_norway_fjord_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，24mm / 深景深 / 低空平视。前景：冷灰蓝色峡湾海水占据画面下半部，水面平静有暗色倒影。中景：两侧近乎垂直的山壁夹住狭长水道，山腰覆盖深绿色森林，一条细长瀑布贴在右侧岩壁。背景：远处雪山被灰蓝云雾半遮，山谷向深处收束。光照：阴天冷色漫射光约6500K，云雾压低亮度。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "no_human_presence"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "zone_norway_fjord_waterway"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_fjord_waterfall"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_snow_peaks"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/anchors/a02_norway_fjord_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "普通湖泊, 热带海岛, 城市建筑, 人物, 船只拥挤, 文字, 水印, 过饱和",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_norway_fjord_waterway",
+          "prop": "prop_fjord_waterfall,prop_snow_peaks"
+        }
+      },
+      {
+        "id": "a03_toronto_lakefront_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a03_toronto_lakefront_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 深景深 / 高空平视略俯。前景：安大略湖深蓝黑色水面平整展开，薄雾贴近水面。中景：多伦多湖岸灯光形成一条明亮边线，港口水面有细碎倒影。背景：CN Tower 作为细长竖直轮廓立在市中心天际线中，玻璃高楼灯窗层次分明。光照：夜景冷蓝环境光约4200K，城市灯光暖白点缀。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "no_human_presence"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "zone_toronto_lake_approach"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_cn_tower"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_toronto_skyline"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/anchors/a03_toronto_lakefront_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "白天, 错误城市, 人物, 穿楼, 单栋楼特写, 文字, 水印, 霓虹乱码",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_toronto_lake_approach",
+          "prop": "prop_cn_tower,prop_toronto_skyline"
+        }
+      },
+      {
+        "id": "a04_new_york_manhattan_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a04_new_york_manhattan_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，24mm / 深景深 / 高空俯视。前景与两侧：哈德逊河和东河呈黑色水道包夹画面，水面反射零散灯光。中景：曼哈顿长形岛屿被密集高楼和笔直街道网格填满，桥梁横跨河面连接周围城区。背景：远处城市灯光在轻雾中变软。光照：夜景暖金与深蓝黑对比，窗口灯光像连续发光墙面。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "no_human_presence"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "zone_manhattan_river_aerial"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_manhattan_bridges"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_manhattan_grid"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/anchors/a04_new_york_manhattan_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "白天, 人物, 街面近景, 错误城市, 畸变岛屿, 文字, 水印, 过度锐化",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_manhattan_river_aerial",
+          "prop": "prop_manhattan_bridges,prop_manhattan_grid"
+        }
+      },
+      {
+        "id": "a05_dubai_night_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a05_dubai_night_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 深景深 / 高空俯视。前景：迪拜市中心暖金色道路光带呈放射脉络。中景：哈利法塔立在画面中央作为最高垂直核心，周围高楼和人工湖围绕展开，湖面反射建筑灯光。背景：远处黑色海岸夜面与暗色沙漠边缘隐约分层。光照：夜景暖金约3000K，轻微沙尘夜雾降低远处锐度。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "no_human_presence"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "zone_dubai_downtown_high_aerial"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_burj_khalifa"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_dubai_fountain_lake"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "prop_dubai_roads"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/anchors/a05_dubai_night_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "人物, 白天, 错误塔形, 纽约街网, 过度科幻, 文字, 水印, 过曝",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_dubai_downtown_high_aerial",
+          "prop": "prop_burj_khalifa,prop_dubai_fountain_lake,prop_dubai_roads"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_sydney_opera_harbour_rise",
+        "duration_s": 28,
+        "story_goal": "建立旅行航拍蒙太奇的开阔基调，并清楚呈现悉尼歌剧院、悉尼港、海港大桥和城市楼群之间的地理关系。",
+        "start_state": "悉尼港蓝色水面铺满画面下方，几艘小船留下细长白色水线，Bennelong Point 岬角上的悉尼歌剧院白色帆形屋顶露出一部分，远处有海港大桥和城市楼群。",
+        "end_state": "无人机升高后的悉尼港全貌清楚展开，悉尼歌剧院完整位于三面临水的岬角上，白色帆形屋顶在阳光下有清晰高光，海港大桥横跨远处港湾，城市楼群立在背后。",
+        "visual_intent": "无人机从港口水面上方缓慢垂直升起，节奏稳定舒展，写实电影航拍风格；重点让蓝色水面、白色屋顶、桥梁弧线和晴朗天空形成明快层次，色彩保持日光蓝白对比，末段让水面反光逐渐占据切换区域。"
+      },
+      {
+        "id": "shot02_norway_fjord_forward",
+        "duration_s": 30,
+        "story_goal": "从明亮港湾过渡到冷峻自然地貌，展示峡湾作为海水深入高山形成的狭长空间，以及水道、山壁、森林、瀑布和雪山的纵深关系。",
+        "start_state": "冷灰蓝色峡湾海水平静展开，两侧近乎垂直的山壁夹住狭长水道，山腰覆盖深绿色森林，右侧岩壁有细长瀑布，远处雪山被灰蓝云雾半遮。",
+        "end_state": "狭窄峡湾水道展开成更宽阔的山间海湾，深色水面映出云影和山体倒影，远处雪山占据画面上方，山腰云雾压低整体亮度。",
+        "visual_intent": "无人机低空贴近水面沿峡湾向前飞行，全段只做平稳前飞；节奏缓慢沉静，写实自然纪录片质感，冷灰蓝色调主导，山体倒影和云雾移动提供细微变化，末段用冷雾压暗画面。"
+      },
+      {
+        "id": "shot03_toronto_lakefront_approach",
+        "duration_s": 26,
+        "story_goal": "进入夜间城市段，明确安大略湖、滨水区、CN Tower 和多伦多市中心楼群的相对位置，让城市从湖岸后方建立起来。",
+        "start_state": "安大略湖深蓝黑色水面在前景展开，湖面有薄雾，多伦多湖岸灯光形成一条明亮边线，CN Tower 作为远处最清楚的细长竖直轮廓立在天际线中。",
+        "end_state": "无人机靠近并略微升高后的多伦多夜景层次更完整，玻璃高楼、湖岸线、港口水面和 CN Tower 倒影清楚分开，低云和远处车流光带让城市有空气感。",
+        "visual_intent": "无人机从安大略湖外侧平稳前飞并轻微升高，不穿入楼群；节奏平顺克制，夜景写实电影感，深蓝黑湖水与暖白城市灯光对比，薄雾软化远处轮廓，末段保留湖面倒影和夜空黑区作为遮挡。"
+      },
+      {
+        "id": "shot04_new_york_manhattan_lateral",
+        "duration_s": 28,
+        "story_goal": "强化夜间城市密度的变化，从多伦多湖岸城市转入曼哈顿河岛结构，突出长形岛屿、双河夹持、桥梁连接和笔直街网的独特空间秩序。",
+        "start_state": "高空俯瞰的曼哈顿长形岛屿位于哈德逊河和东河之间，黑色河道出现在画面两侧，密集高楼和笔直街道网格占据岛身，桥梁连接周围城区。",
+        "end_state": "曼哈顿在稍远的高空视角中变成巨大的金色城市灯网，车流在街道上形成连续光线，桥梁横跨黑色河面，远处轻雾让高楼边缘更有层次。",
+        "visual_intent": "无人机在河面上方缓慢横移并略微拉远，全段保持高空俯视的稳定航拍；节奏开阔但信息密集，写实夜景电影风格，金色窗口与黑色河道形成强对比，末段让城市灯网铺满画面。"
+      },
+      {
+        "id": "shot05_dubai_burj_khalifa_orbit_rise",
+        "duration_s": 30,
+        "story_goal": "作为蒙太奇结尾，以迪拜更暖、更规整的金色夜景回应纽约灯网，并用哈利法塔作为垂直锚点收束五个地点的旅行航拍质感。",
+        "start_state": "迪拜市中心夜景从高空展开，哈利法塔立在画面中央作为最高垂直核心，周围高楼、道路和人工湖围绕它展开，暖金色灯光比纽约更整齐。",
+        "end_state": "无人机升高后的迪拜夜景变成一整片发光城市图案，哈利法塔仍然保持中心锚点，人工湖反射建筑灯光，远处黑色海岸夜面和暗色沙漠边缘隐约可见。",
+        "visual_intent": "无人机从高空缓慢环绕迪拜市中心并逐渐升高，全段使用单一环绕上升运动；节奏稳定宏阔，写实电影夜景风格，暖金色道路光带像发光脉络向外扩散，轻微沙尘夜雾降低远处锐度，结尾停留在高空远景余韵。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward",
+        "from_shot": "shot01_sydney_opera_harbour_rise",
+        "to_shot": "shot02_norway_fjord_forward",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "悉尼港明亮水面反光在画面下方逐渐放大，蓝白色碎光铺满整个画面；反光高亮慢慢冷却为灰蓝色，水纹方向变得更长、更平静，城市轮廓和桥梁在亮斑中淡出；同样的水面纹理保留连续性，色温从晴天蓝白过渡到挪威峡湾的冷灰蓝，远处暗色山壁和低云从水面倒影里显现。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 文字, 水印, 画面撕裂, 过曝"
+      },
+      {
+        "id": "tr02_norway_fjord_forward_to_toronto_lakefront_approach",
+        "from_shot": "shot02_norway_fjord_forward",
+        "to_shot": "shot03_toronto_lakefront_approach",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "挪威峡湾山腰的灰蓝冷雾向画面中央压下，雪山和岩壁被雾气柔化成深浅层次；雾中的水面倒影逐渐变暗，冷灰蓝色过渡为深蓝黑夜色；在雾层下方慢慢浮现一条细密的城市湖岸灯线，远处竖直的 CN Tower 灯光从薄雾中显出，山体暗影自然替换为多伦多夜空和安大略湖面薄雾。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 错误地标混叠, 文字, 水印, 强烈闪烁"
+      },
+      {
+        "id": "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral",
+        "from_shot": "shot03_toronto_lakefront_approach",
+        "to_shot": "shot04_new_york_manhattan_lateral",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "多伦多湖面上的灯光倒影和夜空黑色区域逐渐占据画面，CN Tower 与湖岸线被黑蓝色水雾吞没；水面反光拉长成更密集的金色线条，黑色湖面在视觉上分裂为两侧河道；随着夜色遮挡消散，曼哈顿长形岛屿的高楼灯墙和笔直街网从金色倒影中显现，两侧黑色水道保持与前一段湖面色彩连续。",
+        "negative_prompt": "瞬间换景, 快速闪切, 黑屏, 人物, 白天, 文字, 水印, 城市地标混乱"
+      },
+      {
+        "id": "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise",
+        "from_shot": "shot04_new_york_manhattan_lateral",
+        "to_shot": "shot05_dubai_burj_khalifa_orbit_rise",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "曼哈顿密集金色街道灯网在高空视角中逐渐拉远，笔直网格的线条变得抽象；金色纹理缓慢升温，冷蓝黑河道暗部收缩为更规整的城市阴影，灯线重新排列成放射状道路脉络；轻雾中出现更暖的沙尘金色，中央一根极高竖直光柱从灯网核心显现并稳定为哈利法塔，周围人工湖反光接住纽约夜景残留的金色亮度。",
+        "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 地标重叠错误, 文字, 水印, 过度科幻"
+      }
+    ],
+    "segments": {
+      "seg_shot03_toronto_lakefront_approach_00": {
+        "id": "seg_shot03_toronto_lakefront_approach_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot03_toronto_lakefront_approach_00",
+          "kind": "segment_r2v",
+          "prompt": "从安大略湖外侧的深蓝黑水面开始，无人机平稳向多伦多市中心前飞，湖面薄雾贴低漂浮。湖岸暖白灯线保持水平展开，CN Tower 作为远处最清楚的细长竖直轮廓稳稳钉住天际线，玻璃高楼灯窗在塔身两侧逐渐变得更分明。镜头不穿入楼群，只让城市像从湖面后方慢慢升起，落点停在湖岸灯带更宽、CN Tower 与楼群轮廓更清楚的夜景构图。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 12,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot03_toronto_lakefront_approach_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, anime, cartoon, 3d render, CGI, fantasy city, wrong landmark, daytime, overexposed lights, flying through buildings",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_toronto_lake_approach",
+          "prop": "prop_cn_tower,prop_toronto_skyline"
+        },
+        "shot_id": "shot03_toronto_lakefront_approach",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_toronto_lakefront_start",
+        "first_frame_path": "shot_start_anchor",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot03_toronto_lakefront_approach_01": {
+        "id": "seg_shot03_toronto_lakefront_approach_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot03_toronto_lakefront_approach_01",
+          "kind": "segment_r2v",
+          "prompt": "接着上一帧湖岸灯带更宽的构图，无人机继续从湖面靠近并轻微升高，城市层次被缓慢打开。前景深蓝黑湖水、港口内侧水面、滨水区灯线、玻璃高楼和 CN Tower 依次分开，塔身细亮倒影在港口水面中被薄雾轻轻拉散。低云压在楼群上方，远处车流光带像细小暖线沿湖岸延伸，夜空黑区与湖面倒影保留遮挡感，落点停在 CN Tower、港口倒影、湖岸线和市中心楼群清楚分层的多伦多夜景远近关系。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 14,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot03_toronto_lakefront_approach_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, anime, cartoon, 3d render, CGI, fantasy city, wrong landmark, daytime, overexposed lights, flying through buildings",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_toronto_lake_approach"
+        },
+        "shot_id": "shot03_toronto_lakefront_approach",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 2,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_00": {
+        "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_dubai_burj_khalifa_orbit_rise_00",
+          "kind": "segment_r2v",
+          "prompt": "从高空俯视的迪拜市中心夜景开始，哈利法塔稳稳立在画面中央，周围人工湖与高楼围绕展开。无人机以极慢速度开始环绕并轻微升高，暖金色道路光带像规整的发光脉络向外延伸，湖面把塔身和建筑灯光拉成柔和倒影。轻微沙尘夜雾压住远处锐度，镜头落在哈利法塔仍居中、人工湖弧线更完整的高空构图。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 12,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot05_dubai_burj_khalifa_orbit_rise_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, anime, cartoon, 3d render, illustration, 错误塔形, 纽约街网, 白天, 过曝, 科幻城市",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_dubai_downtown_high_aerial",
+          "prop": "prop_burj_khalifa,prop_dubai_fountain_lake,prop_dubai_roads"
+        },
+        "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a05_dubai_night_start",
+        "first_frame_path": "shot_start_anchor",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 5,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_01": {
+        "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_dubai_burj_khalifa_orbit_rise_01",
+          "kind": "segment_r2v",
+          "prompt": "承接哈利法塔居中的高空构图，无人机继续同一方向缓慢环绕上升，城市核心逐渐缩小但不失去垂直锚点。暖金道路光带在塔下展开得更宽，人工湖的暗水面像一块嵌在灯网中的黑金镜面，反射被沙尘夜雾轻轻柔化。远处黑色海岸夜面和暗色沙漠边缘扩大，镜头落在迪拜市中心被更大城市灯图案包围的远景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot05_dubai_burj_khalifa_orbit_rise_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, anime, cartoon, 3d render, illustration, 错误塔形, 曼哈顿误置, 白天, 过曝, 强烈闪烁",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_dubai_downtown_high_aerial"
+        },
+        "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 2,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_02": {
+        "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_dubai_burj_khalifa_orbit_rise_02",
+          "kind": "segment_r2v",
+          "prompt": "从更远的高空夜景继续缓慢环绕上升，迪拜市中心由楼群细节转为一整片暖金色城市图案。哈利法塔虽然变小，仍以最高、最亮的垂直核心固定画面中心，人工湖保留一块深色反光，周围道路光带像发光脉络向沙漠边缘扩散。轻微沙尘夜雾让远处海岸与暗色沙漠柔和分层，镜头停在哈利法塔居中的高空远景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 8,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot05_dubai_burj_khalifa_orbit_rise_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, anime, cartoon, 3d render, illustration, 错误地标, 错误塔形, 白天, 过曝, 画面撕裂",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_dubai_downtown_high_aerial",
+          "prop": "prop_burj_khalifa"
+        },
+        "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 3,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot01_sydney_opera_harbour_rise_00": {
+        "id": "seg_shot01_sydney_opera_harbour_rise_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot01_sydney_opera_harbour_rise_00",
+          "kind": "segment_r2v",
+          "prompt": "从锚点的高空俯角视角开始，无人机在悉尼港上方继续稳定上升并极轻微弧线绕飞，运动舒展无急转。Bennelong Point 岬角上的悉尼歌剧院白色帆形屋顶仍位于画面中下偏左，五片帆形外壳的曲面高光保持清楚，米色基座广场逐渐变小；环绕岬角的深蓝色港湾水面变大，远处悉尼海港大桥钢铁弧线开始更明显地横入背景。镜头升到歌剧院占画面比例略缩、海港大桥更完整可见的位置稳定停下。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1920x1080",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot01_sydney_opera_harbour_rise_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 游客, 人脸, anime, cartoon, 3d render, CGI, 错误地标位置, 歌剧院藏在街区内, 阴雨, 过曝",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_sydney_harbour_water",
+          "prop": "prop_sydney_opera_house,prop_sydney_harbour_bridge,prop_sydney_boats"
+        },
+        "shot_id": "shot01_sydney_opera_harbour_rise",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_sydney_opera_start",
+        "first_frame_path": "shot_start_anchor",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 5,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot01_sydney_opera_harbour_rise_01": {
+        "id": "seg_shot01_sydney_opera_harbour_rise_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot01_sydney_opera_harbour_rise_01",
+          "kind": "segment_r2v",
+          "prompt": "承接上一帧，无人机沿同一方向继续平稳上升并轻微后拉，视野进一步打开，节奏舒展。悉尼歌剧院在画面中略小但仍保持白色帆形屋顶清楚的视觉中心地位；深蓝港水大面积铺展，水面银蓝反光开始呈纹理状；悉尼海港大桥的钢铁拱形完整露出，桥身灰黑色钢架清楚；CBD 玻璃高楼天际线在远处更完整可见。镜头升到歌剧院、桥梁、城市三个地标同时清楚分层、构成经典悉尼港湾全景的位置稳定停下。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1920x1080",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot01_sydney_opera_harbour_rise_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 游客, 人脸, anime, cartoon, 3d render, CGI, 彩色屋顶, 变形建筑, 错误桥型, 室内视角",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_sydney_harbour_water",
+          "prop": "prop_sydney_opera_house,prop_sydney_harbour_bridge"
+        },
+        "shot_id": "shot01_sydney_opera_harbour_rise",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot01_sydney_opera_harbour_rise_02": {
+        "id": "seg_shot01_sydney_opera_harbour_rise_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot01_sydney_opera_harbour_rise_02",
+          "kind": "segment_r2v",
+          "prompt": "从完整悉尼港湾全景继续微微上升，无人机保持写实电影航拍的舒展呼吸感。蓝色水面、白色歌剧院屋顶、海港大桥弧线和 CBD 天际线四元素稳定融合在画面里，色彩明快但不过度锐化；末段水面银蓝反光区域微微扩大，光斑沿水面铺向画面下方和边缘，为下一处冷色峡湾水面转场留下视觉承接。镜头稳定停在高空远景的港湾全貌位置。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 8,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1920x1080",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot01_sydney_opera_harbour_rise_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 游客, 人脸, anime, cartoon, 3d render, CGI, 快速闪切, 黑屏, 错误地标, 过曝, 画面撕裂",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_sydney_harbour_water",
+          "prop": "prop_sydney_opera_house,prop_sydney_harbour_bridge"
+        },
+        "shot_id": "shot01_sydney_opera_harbour_rise",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot02_norway_fjord_forward_00": {
+        "id": "seg_shot02_norway_fjord_forward_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot02_norway_fjord_forward_00",
+          "kind": "segment_r2v",
+          "prompt": "从低空平视的冷灰蓝峡湾水面出发，无人机贴近平静海水缓慢前飞。两侧近乎垂直的山壁向画面边缘压来，深绿色森林贴着山腰延伸，右侧岩壁那条细长瀑布像白线一样在暗色岩面上保持清楚。阴天冷色漫射光压低亮度，水面暗色倒影轻轻拉长，镜头落在峡湾水道更深处、瀑布仍贴在右侧岩壁的开阔前景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 11,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot02_norway_fjord_forward_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 游客, 普通湖泊, 热带海岛, 城市建筑, anime, cartoon, 3d render, 过度饱和",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_norway_fjord_waterway",
+          "prop": "prop_fjord_waterfall,prop_snow_peaks"
+        },
+        "shot_id": "shot02_norway_fjord_forward",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_norway_fjord_start",
+        "first_frame_path": "shot_start_anchor",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot02_norway_fjord_forward_01": {
+        "id": "seg_shot02_norway_fjord_forward_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot02_norway_fjord_forward_01",
+          "kind": "segment_r2v",
+          "prompt": "承接深入山谷的低空视角，无人机继续沿冷灰蓝水道平稳前飞，不改变运动方式。峡湾两侧山壁的压迫感逐渐放松，深绿色森林从近处掠向后方，水面开始显出更宽的云影和山体倒影；远处雪山在灰蓝雾层后变得更大、更明亮。冷雾贴着山腰缓慢移动，镜头落在水道前方开始展开、雪山抬高到画面上部的位置。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot02_norway_fjord_forward_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 船只拥挤, 普通淡水湖, 热带植物, 城市高楼, anime, cartoon, 3d render, 强对比霓虹",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_norway_fjord_waterway",
+          "prop": "prop_snow_peaks"
+        },
+        "shot_id": "shot02_norway_fjord_forward",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 3,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot02_norway_fjord_forward_02": {
+        "id": "seg_shot02_norway_fjord_forward_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot02_norway_fjord_forward_02",
+          "kind": "segment_r2v",
+          "prompt": "从水道开始展开的尾帧继续前飞，无人机仍贴近水面保持沉静速度。狭窄峡湾完全过渡为宽阔的山间海湾，深色水面像镜面一样承接大片云影和山体倒影，远处雪山占据画面上方，白色山顶被冷雾削弱边缘。山腰灰蓝云雾进一步压暗画面，镜头落在宽阔海湾、雪山高悬、水面倒影稳定铺开的远景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 9,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot02_norway_fjord_forward_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 快速闪切, 普通湖泊, 热带海岛, 城市建筑, anime, cartoon, 3d render, 过曝",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_norway_fjord_waterway",
+          "prop": "prop_snow_peaks"
+        },
+        "shot_id": "shot02_norway_fjord_forward",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 3,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot04_new_york_manhattan_lateral_00": {
+        "id": "seg_shot04_new_york_manhattan_lateral_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_new_york_manhattan_lateral_00",
+          "kind": "segment_r2v",
+          "prompt": "从高空俯视的曼哈顿长形岛屿开始，黑色哈德逊河和东河夹住岛身。无人机在河面上方缓慢横移，略微拉远，桥梁的灯线横跨暗水，高楼窗口连成金色墙面，笔直街网在岛上显出秩序。夜色深蓝黑，远处轻雾柔化城市边缘，画面落在岛身斜向展开、两侧河道清楚分隔、数座桥梁横跨水面的高空构图。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot04_new_york_manhattan_lateral_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 游客, 街面近景, 白天, 错误城市, 畸变岛屿, anime, cartoon, 3d render, CGI",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_manhattan_river_aerial",
+          "prop": "prop_manhattan_bridges,prop_manhattan_grid"
+        },
+        "shot_id": "shot04_new_york_manhattan_lateral",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_new_york_manhattan_start",
+        "first_frame_path": "shot_start_anchor",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot04_new_york_manhattan_lateral_01": {
+        "id": "seg_shot04_new_york_manhattan_lateral_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_new_york_manhattan_lateral_01",
+          "kind": "segment_r2v",
+          "prompt": "承接岛身斜向展开的高空画面，无人机继续沿河面横移并轻轻拉远。曼哈顿的街道网格变得更完整，金色窗口、路灯和车流光线在笔直街区里连成密集纹理，黑色河面把岛屿边界切得更清楚。桥梁灯带保持横向连接感，水面反射零散金光，画面落在城市灯网占据更多画幅、河道暗部仍清晰包夹岛屿的远俯视构图。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 9,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot04_new_york_manhattan_lateral_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 近景车辆, 街拍视角, 白天, 错误地标, anime, cartoon, 3d render, CGI",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_manhattan_river_aerial",
+          "prop": "prop_manhattan_grid"
+        },
+        "shot_id": "shot04_new_york_manhattan_lateral",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 3,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      },
+      "seg_shot04_new_york_manhattan_lateral_02": {
+        "id": "seg_shot04_new_york_manhattan_lateral_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_new_york_manhattan_lateral_02",
+          "kind": "segment_r2v",
+          "prompt": "从金色灯网占据画面的远俯视继续推进，无人机保持稳定横移并进一步拉远。曼哈顿不再强调单栋高楼，而像一整块发光城市纹理，车流在笔直街道上连成连续线条，桥梁跨过黑色河面把周边城区缝合起来。远处轻雾压低高楼锐度，金色与深蓝黑对比更强，画面落在曼哈顿化为巨大金色灯网、桥梁横跨暗河、雾中楼群层次分明的高空远景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 9,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/segments/seg_shot04_new_york_manhattan_lateral_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "text, watermark, low quality, blurry, deformed hands, extra fingers, 文字, 水印, 模糊, 人物, 人脸, 低空街拍, 白天, 错误城市, 过度锐化, anime, cartoon, 3d render, CGI",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "no_human_presence",
+          "place": "zone_manhattan_river_aerial",
+          "prop": "prop_manhattan_bridges,prop_manhattan_grid"
+        },
+        "shot_id": "shot04_new_york_manhattan_lateral",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame",
+        "routing": {
+          "planned_kind": "segment_r2v",
+          "expected_kind": "segment_r2v",
+          "expected_refs_count": 4,
+          "note": "expected_kind is the dispatch decision under default routing (refs==0 → segment_i2v, refs>0 → segment_r2v). M12_FORCE_I2V=1 / --force-i2v overrides every segment to segment_i2v at dispatch time."
+        }
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward",
+          "kind": "bridge",
+          "prompt": "悉尼港明亮水面反光在画面下方逐渐放大，蓝白色碎光铺满整个画面；反光高亮慢慢冷却为灰蓝色，水纹方向变得更长、更平静，城市轮廓和桥梁在亮斑中淡出；同样的水面纹理保留连续性，色温从晴天蓝白过渡到挪威峡湾的冷灰蓝，远处暗色山壁和低云从水面倒影里显现。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 4,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1920x1080",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/bridges/tr01_sydney_opera_harbour_rise_to_norway_fjord_forward.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 文字, 水印, 画面撕裂, 过曝",
+          "prompt_extend": false
+        },
+        "from_shot": "shot01_sydney_opera_harbour_rise",
+        "to_shot": "shot02_norway_fjord_forward"
+      },
+      {
+        "id": "tr02_norway_fjord_forward_to_toronto_lakefront_approach",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "tr02_norway_fjord_forward_to_toronto_lakefront_approach",
+          "kind": "bridge",
+          "prompt": "挪威峡湾山腰的灰蓝冷雾向画面中央压下，雪山和岩壁被雾气柔化成深浅层次；雾中的水面倒影逐渐变暗，冷灰蓝色过渡为深蓝黑夜色；在雾层下方慢慢浮现一条细密的城市湖岸灯线，远处竖直的 CN Tower 灯光从薄雾中显出，山体暗影自然替换为多伦多夜空和安大略湖面薄雾。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 5,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/bridges/tr02_norway_fjord_forward_to_toronto_lakefront_approach.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 错误地标混叠, 文字, 水印, 强烈闪烁",
+          "prompt_extend": false
+        },
+        "from_shot": "shot02_norway_fjord_forward",
+        "to_shot": "shot03_toronto_lakefront_approach"
+      },
+      {
+        "id": "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral",
+          "kind": "bridge",
+          "prompt": "多伦多湖面上的灯光倒影和夜空黑色区域逐渐占据画面，CN Tower 与湖岸线被黑蓝色水雾吞没；水面反光拉长成更密集的金色线条，黑色湖面在视觉上分裂为两侧河道；随着夜色遮挡消散，曼哈顿长形岛屿的高楼灯墙和笔直街网从金色倒影中显现，两侧黑色水道保持与前一段湖面色彩连续。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 4,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/bridges/tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "瞬间换景, 快速闪切, 黑屏, 人物, 白天, 文字, 水印, 城市地标混乱",
+          "prompt_extend": false
+        },
+        "from_shot": "shot03_toronto_lakefront_approach",
+        "to_shot": "shot04_new_york_manhattan_lateral"
+      },
+      {
+        "id": "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise",
+          "kind": "bridge",
+          "prompt": "曼哈顿密集金色街道灯网在高空视角中逐渐拉远，笔直网格的线条变得抽象；金色纹理缓慢升温，冷蓝黑河道暗部收缩为更规整的城市阴影，灯线重新排列成放射状道路脉络；轻雾中出现更暖的沙尘金色，中央一根极高竖直光柱从灯网核心显现并稳定为哈利法塔，周围人工湖反光接住纽约夜景残留的金色亮度。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 5,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/bridges/tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex00_wan_rerun/run/logs",
+          "negative_prompt": "瞬间换景, 黑屏, 快速闪切, 人物, 地标重叠错误, 文字, 水印, 过度科幻",
+          "prompt_extend": false
+        },
+        "from_shot": "shot04_new_york_manhattan_lateral",
+        "to_shot": "shot05_dubai_burj_khalifa_orbit_rise"
+      }
+    ],
+    "dispatch_summary": {
+      "n_segments_total": 14,
+      "n_segments_expected_i2v": 0,
+      "n_segments_expected_r2v": 14,
+      "n_bridges": 4,
+      "note": "Dispatch kinds are decided at runtime by pipeline._render_shot_chain based on len(resolved_refs):\n  refs == 0 → segment_i2v → routes to backend in env M12_RENDER_BACKEND_SEGMENT_I2V (e.g. happyhorse-1.0-i2v / seedance-2.0-i2v / wan2.7-r2v)\n  refs  > 0 → segment_r2v → routes to backend in env M12_RENDER_BACKEND_SEGMENT_R2V (e.g. happyhorse-1.0-r2v / seedance-2.0-r2v / wan2.7-r2v)\nBridges (boundary_policies) always go via M12_RENDER_BACKEND_BRIDGE (typically the r2v backend) because they need first_url + last_url anchors."
+    }
+  },
+  "media": {
+    "portraits": {
+      "no_human_presence": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/portraits/no_human_presence.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=kcdcTP4FIRespRZvosM3TLVAn5I%3D"
+    },
+    "locations": {
+      "dubai_downtown": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/dubai_downtown.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LPWz%2FsJC8oedODMTFxCKcRP1Moo%3D",
+      "new_york_manhattan": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/new_york_manhattan.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=bsd8JnFj5F98RArTHucowf1V3BM%3D",
+      "norway_fjord": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/norway_fjord.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=fxQYwjF1HaAZXJfnLZQHwIYbxGs%3D",
+      "sydney_harbour": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/sydney_harbour.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=GpXYIk0Vp1j7TNr%2FTvMJgy0iSVs%3D",
+      "toronto_lakefront": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/toronto_lakefront.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=p3um7bY41nDJBGJO%2BL08fKHrCD8%3D"
+    },
+    "props": {
+      "prop_burj_khalifa": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_burj_khalifa.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=VqjQNG5plDxTQMyuUIPfUYegUZk%3D",
+      "prop_cn_tower": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_cn_tower.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ATpaQT4pybBiopR2I60tyw57Qvw%3D",
+      "prop_dubai_fountain_lake": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_dubai_fountain_lake.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=9PgHG9ok04wWHCALxcHLXl4KJ9k%3D",
+      "prop_dubai_roads": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_dubai_roads.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=83ovKx9h%2BK6bYbUSN%2Fl40WfqNAk%3D",
+      "prop_fjord_waterfall": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_fjord_waterfall.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=0D09ESg%2BxdG8fYS6d0OMloUnZQM%3D",
+      "prop_manhattan_bridges": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_manhattan_bridges.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=o6If2aN1%2BwM1iq3Xli1S%2FIJKYvc%3D",
+      "prop_manhattan_grid": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_manhattan_grid.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=yTBgyjm7GbZmVMCurEX01G8f3jg%3D",
+      "prop_snow_peaks": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_snow_peaks.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=pks6T%2FElZVgqsGUZna5NByss6%2FQ%3D",
+      "prop_sydney_boats": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_boats.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BEhb9jS0jbQo6037LWHuvYloErg%3D",
+      "prop_sydney_harbour_bridge": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_harbour_bridge.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MRvmpC%2FKZ%2BPYbKMcR77YNJJ5WoA%3D",
+      "prop_sydney_opera_house": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_opera_house.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=Iv9TyHqY2m5QHJ5g6pgFdZF4Ehw%3D",
+      "prop_toronto_skyline": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_toronto_skyline.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=RBPtQQaGTz0%2FNkPsuXsta6LhnEk%3D"
+    },
+    "anchors": {
+      "a01_sydney_opera_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a01_sydney_opera_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=vcCG5rDG3Q8WhrPV0DKEEu8o8kE%3D",
+      "a02_norway_fjord_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a02_norway_fjord_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=1EzLTRH5jwUdlqMJMaMCD2OGIgI%3D",
+      "a03_toronto_lakefront_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a03_toronto_lakefront_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=pk5mvw8SrdCdOxPFUibKKAczCTg%3D",
+      "a04_new_york_manhattan_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a04_new_york_manhattan_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=6HrEMTGh0MlQAvJ9AErINTLZqV0%3D",
+      "a05_dubai_night_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a05_dubai_night_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LvL4PixTQhRQxgspuuCAIKdX1vY%3D"
+    },
+    "segments": {
+      "seg_shot01_sydney_opera_harbour_rise_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=y6A%2F5eMpI0eeOM08ocZwp8kmgmg%3D",
+      "seg_shot01_sydney_opera_harbour_rise_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tzQF079FrUtPhGhn%2BaLe76CkaFU%3D",
+      "seg_shot01_sydney_opera_harbour_rise_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=aVkgWHtRNdt4eWWIbv5%2BRW%2FPYdQ%3D",
+      "seg_shot02_norway_fjord_forward_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=53dCnj06gpEWQEPlbuMJYsoIvqc%3D",
+      "seg_shot02_norway_fjord_forward_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ROjzmoBiXfrnrx4lPe0gPjyFCN8%3D",
+      "seg_shot02_norway_fjord_forward_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2Bpz7oWYVo3CyJ9enmdutxXmgrKk%3D",
+      "seg_shot03_toronto_lakefront_approach_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MjIq0qC9qIQ2xG%2BSHL%2B%2FSR9RK6A%3D",
+      "seg_shot03_toronto_lakefront_approach_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=bk0Mi%2FvfkYKTuXnhDCBIMSfN%2F%2Fs%3D",
+      "seg_shot04_new_york_manhattan_lateral_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=D%2BNDPwLkjaJxkaPFrbC2B76%2FHJc%3D",
+      "seg_shot04_new_york_manhattan_lateral_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=uxEW4Mlrr2fvfw9P%2BsUaQqcCSlY%3D",
+      "seg_shot04_new_york_manhattan_lateral_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=hM0a4bQgs3IOhyZWnLhpU0yeHpU%3D",
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=wP4z16CpMPSCSC6E%2FR2tMqfkO%2B0%3D",
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=R9RObeicS9Ou3E3E4MzWlRapl%2Bg%3D",
+      "seg_shot05_dubai_burj_khalifa_orbit_rise_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=QwV9m2%2B5ayHuxDBgBXZBtKEDats%3D"
+    },
+    "bridges": {
+      "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr01_sydney_opera_harbour_rise_to_norway_fjord_forward.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=0m32tIOpPOgqthImA%2BHHoDs%2F8j8%3D",
+      "tr02_norway_fjord_forward_to_toronto_lakefront_approach": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr02_norway_fjord_forward_to_toronto_lakefront_approach.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tLBYDjOvA2NxaDcuyLQSG3aWNSg%3D",
+      "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=gs2mBbnneFIBpuuKrpckHC8UghQ%3D",
+      "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LzXmVpCekg9oU5On4W1oTrNkN%2BA%3D"
+    },
+    "final_mp4": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=reZT5BXUa%2Bnl2S%2FpyVTDPwXGumQ%3D"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 5,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "no_human_presence",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/portraits/no_human_presence.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=kcdcTP4FIRespRZvosM3TLVAn5I%3D",
+      "backend": "wan2.7-image",
+      "t": 10.75
+    },
+    {
+      "type": "location_ready",
+      "id": "dubai_downtown",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/dubai_downtown.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LPWz%2FsJC8oedODMTFxCKcRP1Moo%3D",
+      "backend": "wan2.7-image",
+      "t": 10.85
+    },
+    {
+      "type": "location_ready",
+      "id": "new_york_manhattan",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/new_york_manhattan.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=bsd8JnFj5F98RArTHucowf1V3BM%3D",
+      "backend": "wan2.7-image",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "norway_fjord",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/norway_fjord.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=fxQYwjF1HaAZXJfnLZQHwIYbxGs%3D",
+      "backend": "wan2.7-image",
+      "t": 11.05
+    },
+    {
+      "type": "location_ready",
+      "id": "sydney_harbour",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/sydney_harbour.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=GpXYIk0Vp1j7TNr%2FTvMJgy0iSVs%3D",
+      "backend": "wan2.7-image",
+      "t": 11.15
+    },
+    {
+      "type": "location_ready",
+      "id": "toronto_lakefront",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/locations/toronto_lakefront.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=p3um7bY41nDJBGJO%2BL08fKHrCD8%3D",
+      "backend": "wan2.7-image",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_burj_khalifa",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_burj_khalifa.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=VqjQNG5plDxTQMyuUIPfUYegUZk%3D",
+      "backend": "wan2.7-image",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_cn_tower",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_cn_tower.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ATpaQT4pybBiopR2I60tyw57Qvw%3D",
+      "backend": "wan2.7-image",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_dubai_fountain_lake",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_dubai_fountain_lake.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=9PgHG9ok04wWHCALxcHLXl4KJ9k%3D",
+      "backend": "wan2.7-image",
+      "t": 11.55
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_dubai_roads",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_dubai_roads.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=83ovKx9h%2BK6bYbUSN%2Fl40WfqNAk%3D",
+      "backend": "wan2.7-image",
+      "t": 11.65
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_fjord_waterfall",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_fjord_waterfall.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=0D09ESg%2BxdG8fYS6d0OMloUnZQM%3D",
+      "backend": "wan2.7-image",
+      "t": 11.75
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_manhattan_bridges",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_manhattan_bridges.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=o6If2aN1%2BwM1iq3Xli1S%2FIJKYvc%3D",
+      "backend": "wan2.7-image",
+      "t": 11.85
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_manhattan_grid",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_manhattan_grid.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=yTBgyjm7GbZmVMCurEX01G8f3jg%3D",
+      "backend": "wan2.7-image",
+      "t": 11.95
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_snow_peaks",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_snow_peaks.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=pks6T%2FElZVgqsGUZna5NByss6%2FQ%3D",
+      "backend": "wan2.7-image",
+      "t": 12.05
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_sydney_boats",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_boats.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BEhb9jS0jbQo6037LWHuvYloErg%3D",
+      "backend": "wan2.7-image",
+      "t": 12.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_sydney_harbour_bridge",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_harbour_bridge.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MRvmpC%2FKZ%2BPYbKMcR77YNJJ5WoA%3D",
+      "backend": "wan2.7-image",
+      "t": 12.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_sydney_opera_house",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_sydney_opera_house.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=Iv9TyHqY2m5QHJ5g6pgFdZF4Ehw%3D",
+      "backend": "wan2.7-image",
+      "t": 12.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "prop_toronto_skyline",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/props/prop_toronto_skyline.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=RBPtQQaGTz0%2FNkPsuXsta6LhnEk%3D",
+      "backend": "wan2.7-image",
+      "t": 12.45
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 5 shots — seeds the I2V chain…",
+      "t": 12.5
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_sydney_opera_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a01_sydney_opera_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=vcCG5rDG3Q8WhrPV0DKEEu8o8kE%3D",
+      "backend": "wan2.7-image",
+      "t": 17.65
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_norway_fjord_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a02_norway_fjord_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=1EzLTRH5jwUdlqMJMaMCD2OGIgI%3D",
+      "backend": "wan2.7-image",
+      "t": 17.8
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_toronto_lakefront_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a03_toronto_lakefront_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=pk5mvw8SrdCdOxPFUibKKAczCTg%3D",
+      "backend": "wan2.7-image",
+      "t": 17.95
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_new_york_manhattan_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a04_new_york_manhattan_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=6HrEMTGh0MlQAvJ9AErINTLZqV0%3D",
+      "backend": "wan2.7-image",
+      "t": 18.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a05_dubai_night_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a05_dubai_night_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LvL4PixTQhRQxgspuuCAIKdX1vY%3D",
+      "backend": "wan2.7-image",
+      "t": 18.25
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Anchor validator",
+      "detail": "Checking each anchor for identity / pose drift before letting it seed the video render…",
+      "t": 18.3
+    },
+    {
+      "type": "anchor_validator_start",
+      "id": "a01_sydney_opera_start",
+      "t": 23.6
+    },
+    {
+      "type": "anchor_validator_fail",
+      "id": "a01_sydney_opera_start",
+      "reason": "identity_drift",
+      "t": 23.9
+    },
+    {
+      "type": "anchor_repair_start",
+      "id": "a01_sydney_opera_start",
+      "action": "RepackPrompt",
+      "t": 24.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_sydney_opera_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/anchors/a01_sydney_opera_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=vcCG5rDG3Q8WhrPV0DKEEu8o8kE%3D",
+      "backend": "wan2.7-image",
+      "repaired": true,
+      "t": 24.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 24.65
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 14,
+      "t": 30.05
+    },
+    {
+      "type": "render_start",
+      "t": 30.15
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "14 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 30.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sydney_opera_harbour_rise_00",
+      "shot_id": "shot01_sydney_opera_harbour_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=y6A%2F5eMpI0eeOM08ocZwp8kmgmg%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=y6A%2F5eMpI0eeOM08ocZwp8kmgmg%3D",
+      "duration_s": 8.0,
+      "t": 41.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_norway_fjord_forward_00",
+      "shot_id": "shot02_norway_fjord_forward",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=53dCnj06gpEWQEPlbuMJYsoIvqc%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=53dCnj06gpEWQEPlbuMJYsoIvqc%3D",
+      "duration_s": 8.0,
+      "t": 41.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_toronto_lakefront_approach_00",
+      "shot_id": "shot03_toronto_lakefront_approach",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MjIq0qC9qIQ2xG%2BSHL%2B%2FSR9RK6A%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MjIq0qC9qIQ2xG%2BSHL%2B%2FSR9RK6A%3D",
+      "duration_s": 8.0,
+      "t": 41.8
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_new_york_manhattan_lateral_00",
+      "shot_id": "shot04_new_york_manhattan_lateral",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=D%2BNDPwLkjaJxkaPFrbC2B76%2FHJc%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=D%2BNDPwLkjaJxkaPFrbC2B76%2FHJc%3D",
+      "duration_s": 8.0,
+      "t": 42.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_00",
+      "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=wP4z16CpMPSCSC6E%2FR2tMqfkO%2B0%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=wP4z16CpMPSCSC6E%2FR2tMqfkO%2B0%3D",
+      "duration_s": 8.0,
+      "t": 42.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sydney_opera_harbour_rise_01",
+      "shot_id": "shot01_sydney_opera_harbour_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tzQF079FrUtPhGhn%2BaLe76CkaFU%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tzQF079FrUtPhGhn%2BaLe76CkaFU%3D",
+      "duration_s": 8.0,
+      "t": 47.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_norway_fjord_forward_01",
+      "shot_id": "shot02_norway_fjord_forward",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ROjzmoBiXfrnrx4lPe0gPjyFCN8%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ROjzmoBiXfrnrx4lPe0gPjyFCN8%3D",
+      "duration_s": 8.0,
+      "t": 47.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_toronto_lakefront_approach_01",
+      "shot_id": "shot03_toronto_lakefront_approach",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=bk0Mi%2FvfkYKTuXnhDCBIMSfN%2F%2Fs%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot03_toronto_lakefront_approach_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=bk0Mi%2FvfkYKTuXnhDCBIMSfN%2F%2Fs%3D",
+      "duration_s": 8.0,
+      "t": 47.8
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_new_york_manhattan_lateral_01",
+      "shot_id": "shot04_new_york_manhattan_lateral",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=uxEW4Mlrr2fvfw9P%2BsUaQqcCSlY%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=uxEW4Mlrr2fvfw9P%2BsUaQqcCSlY%3D",
+      "duration_s": 8.0,
+      "t": 48.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_01",
+      "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=R9RObeicS9Ou3E3E4MzWlRapl%2Bg%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=R9RObeicS9Ou3E3E4MzWlRapl%2Bg%3D",
+      "duration_s": 8.0,
+      "t": 48.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sydney_opera_harbour_rise_02",
+      "shot_id": "shot01_sydney_opera_harbour_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=aVkgWHtRNdt4eWWIbv5%2BRW%2FPYdQ%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=aVkgWHtRNdt4eWWIbv5%2BRW%2FPYdQ%3D",
+      "duration_s": 8.0,
+      "t": 53.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_norway_fjord_forward_02",
+      "shot_id": "shot02_norway_fjord_forward",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2Bpz7oWYVo3CyJ9enmdutxXmgrKk%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot02_norway_fjord_forward_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2Bpz7oWYVo3CyJ9enmdutxXmgrKk%3D",
+      "duration_s": 8.0,
+      "t": 53.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_new_york_manhattan_lateral_02",
+      "shot_id": "shot04_new_york_manhattan_lateral",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=hM0a4bQgs3IOhyZWnLhpU0yeHpU%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot04_new_york_manhattan_lateral_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=hM0a4bQgs3IOhyZWnLhpU0yeHpU%3D",
+      "duration_s": 8.0,
+      "t": 54.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_dubai_burj_khalifa_orbit_rise_02",
+      "shot_id": "shot05_dubai_burj_khalifa_orbit_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=QwV9m2%2B5ayHuxDBgBXZBtKEDats%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot05_dubai_burj_khalifa_orbit_rise_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=QwV9m2%2B5ayHuxDBgBXZBtKEDats%3D",
+      "duration_s": 8.0,
+      "t": 54.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Cross-shot bridges",
+      "detail": "Stitching shot pairs with short transition clips (wan2.7-i2v)…",
+      "t": 54.45
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr01_sydney_opera_harbour_rise_to_norway_fjord_forward",
+      "from_shot": "",
+      "to_shot": "",
+      "backend": "wan2.7-i2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr01_sydney_opera_harbour_rise_to_norway_fjord_forward.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=0m32tIOpPOgqthImA%2BHHoDs%2F8j8%3D",
+      "duration_s": 4.0,
+      "t": 59.57
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr02_norway_fjord_forward_to_toronto_lakefront_approach",
+      "from_shot": "",
+      "to_shot": "",
+      "backend": "wan2.7-i2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr02_norway_fjord_forward_to_toronto_lakefront_approach.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tLBYDjOvA2NxaDcuyLQSG3aWNSg%3D",
+      "duration_s": 4.0,
+      "t": 59.69
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral",
+      "from_shot": "",
+      "to_shot": "",
+      "backend": "wan2.7-i2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr03_toronto_lakefront_approach_to_new_york_manhattan_lateral.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=gs2mBbnneFIBpuuKrpckHC8UghQ%3D",
+      "duration_s": 4.0,
+      "t": 59.81
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise",
+      "from_shot": "",
+      "to_shot": "",
+      "backend": "wan2.7-i2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/bridges/tr04_new_york_manhattan_lateral_to_dubai_burj_khalifa_orbit_rise.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LzXmVpCekg9oU5On4W1oTrNkN%2BA%3D",
+      "duration_s": 4.0,
+      "t": 59.93
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Segment validator",
+      "detail": "Extracting end-state from every segment → refreshing memory → feedback flags drift…",
+      "t": 59.98
+    },
+    {
+      "type": "segment_validator_start",
+      "t": 65.48
+    },
+    {
+      "type": "segment_extractor_ok",
+      "t": 65.83
+    },
+    {
+      "type": "segment_refresh_ok",
+      "t": 66.13
+    },
+    {
+      "type": "segment_feedback_flagged",
+      "flagged": [
+        "seg_shot01_sydney_opera_harbour_rise_00",
+        "seg_shot01_sydney_opera_harbour_rise_01"
+      ],
+      "reasons": {
+        "seg_shot01_sydney_opera_harbour_rise_00": "motif_drift",
+        "seg_shot01_sydney_opera_harbour_rise_01": "end_state_mismatch"
+      },
+      "t": 66.43
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot01_sydney_opera_harbour_rise_00",
+      "action": "RepackPrompt",
+      "t": 66.58
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sydney_opera_harbour_rise_00",
+      "shot_id": "shot01_sydney_opera_harbour_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=y6A%2F5eMpI0eeOM08ocZwp8kmgmg%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=y6A%2F5eMpI0eeOM08ocZwp8kmgmg%3D",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 67.13
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot01_sydney_opera_harbour_rise_01",
+      "action": "RegenerateUnit",
+      "t": 67.28
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sydney_opera_harbour_rise_01",
+      "shot_id": "shot01_sydney_opera_harbour_rise",
+      "kind": "segment_r2v",
+      "backend": "wan2.7-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tzQF079FrUtPhGhn%2BaLe76CkaFU%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/segment_tails/seg_shot01_sydney_opera_harbour_rise_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=tzQF079FrUtPhGhn%2BaLe76CkaFU%3D",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 67.83
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "ffmpeg-concat every segment + bridge into the final mp4…",
+      "t": 67.88
+    },
+    {
+      "type": "final_done",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=reZT5BXUa%2Bnl2S%2FpyVTDPwXGumQ%3D",
+      "t": 73.48
+    },
+    {
+      "type": "done",
+      "final_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=reZT5BXUa%2Bnl2S%2FpyVTDPwXGumQ%3D",
+      "total_s": 73.5,
+      "t": 73.68
+    }
+  ],
+  "timeline_duration_s": 73.7
+}

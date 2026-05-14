@@ -1,0 +1,65 @@
+{
+  "demos": [
+    {
+      "demo_id": "ex02_happyhorse",
+      "slug": "boxing",
+      "title": "Boxing",
+      "summary": "天庭神魔之战，12 镜头 22 段。单 pass R2V 渲染，无重验证。",
+      "backend": "happyhorse-1.0-r2v",
+      "is_rerun": false,
+      "n_shots": 7,
+      "n_segments": 16,
+      "timeline_duration_s": 59.5,
+      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=dmG%2FlvLKryznsU4skLUvC5QVdr8%3D"
+    },
+    {
+      "demo_id": "ex19_wan",
+      "slug": "dumplings",
+      "title": "Dumplings",
+      "summary": "同剧情换 Wan 2.7 R2V 后端，单 pass。",
+      "backend": "wan2.7-r2v",
+      "is_rerun": false,
+      "n_shots": 8,
+      "n_segments": 15,
+      "timeline_duration_s": 52.2,
+      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex19_wan/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=iyCbh5bKnG3ynOu1xcy44kbuLfs%3D"
+    },
+    {
+      "demo_id": "ex10_happyhorse_rerun",
+      "slug": "couple",
+      "title": "Couple",
+      "summary": "同剧情走 ④ validator → re-render 链路，summary 显示 validator 跑了 274s。",
+      "backend": "happyhorse-1.0-r2v",
+      "is_rerun": true,
+      "n_shots": 12,
+      "n_segments": 22,
+      "timeline_duration_s": 76.1,
+      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex10_happyhorse_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=sfNVTc8byK%2FuVQV74%2F3PTcobEvc%3D"
+    },
+    {
+      "demo_id": "ex00_wan_rerun",
+      "slug": "world-landmarks",
+      "title": "World Landmarks",
+      "summary": "同剧情 Wan2.7 后端 + validator。final.mp4 走 OSS（本地 40GB 是 scratch）。",
+      "backend": "wan2.7-r2v",
+      "is_rerun": true,
+      "n_shots": 5,
+      "n_segments": 14,
+      "timeline_duration_s": 73.7,
+      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260513-155500-30d-page/assets/good_ex00_wan_rerun/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=reZT5BXUa%2Bnl2S%2FpyVTDPwXGumQ%3D"
+    },
+    {
+      "demo_id": "ex01_seedance_rerun",
+      "slug": "heavenly-titans",
+      "title": "Heavenly Titans",
+      "summary": "第三种后端 Seedance i2v；同样走 validator → re-render。",
+      "backend": "seedance-i2v",
+      "is_rerun": true,
+      "n_shots": 18,
+      "n_segments": 30,
+      "timeline_duration_s": 69.8,
+      "poster_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260503-videorlm-version-2-2-seedance-i2v-preview/20260513-155358-30d-refresh/assets/good_ex_01_seedance_run/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920174&Signature=XDtJ0vLtwuUtlMDJ6EHJePe2WZQ%3D"
+    }
+  ],
+  "generated_at": "2026-05-14T05:22:54.083005+00:00"
+}

@@ -1,0 +1,13 @@
+runs/
+files/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.venv/
+.idea/
+.vscode/
+.omc/
+
+# Server-side code parked for future videorlm integration; not deployed
+future/

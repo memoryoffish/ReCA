@@ -1,0 +1,1841 @@
+{
+  "demo_id": "ex02_happyhorse",
+  "slug": "boxing",
+  "title": "Boxing",
+  "summary": "天庭神魔之战，12 镜头 22 段。单 pass R2V 渲染，无重验证。",
+  "backend": "happyhorse-1.0-r2v",
+  "is_rerun": false,
+  "oss_prefix": "new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original",
+  "oss_asset_id": "good_ex02_happyhorse",
+  "signed_at": "2026-05-14T05:22:53.470638+00:00",
+  "expires_at": "2026-07-13T05:22:53.470653+00:00",
+  "n_shots": 7,
+  "n_segments": 16,
+  "skeleton": {
+    "source": {
+      "input_path": "",
+      "n_shots": 7,
+      "per_shot_duration_s": [
+        18,
+        6,
+        18,
+        38,
+        45,
+        4,
+        24
+      ],
+      "seed": 0
+    },
+    "portrait_plan": [
+      {
+        "id": "young_boxer",
+        "name": "年轻拳手",
+        "reference_role": "portrait",
+        "prompt": "写实电影感人物肖像，二十出头的亚洲男性拳手，短寸黑发，清瘦但肌肉紧实，右眼明显肿起带青紫淤痕，脸颊有汗水和细小擦伤，双手缠白色拳击胶布，穿旧黑色训练背心和深灰运动短裤，神情克制倔强，清晨冷光从侧面照亮，背景虚化为空荡旧拳馆。",
+        "negative_prompt": "卡通,动漫,夸张肌肉,塑料皮肤,干净无汗,现代健身房,文字,水印,畸形手指"
+      },
+      {
+        "id": "brother",
+        "name": "哥哥",
+        "reference_role": "supporting_portrait",
+        "prompt": "写实电影感人物肖像，二十七八岁的亚洲男性前拳手，短发，眉眼温和但有训练后的疲惫，鼻梁有旧伤痕，双手缠着泛黄旧绷带，穿褪色白色背心和深色运动长裤，肩背结实，站姿沉稳，像教练一样从身后纠正动作，夜晚旧拳馆昏黄顶灯照在脸侧，背景有拳台绳索虚化。",
+        "negative_prompt": "卡通,偶像妆,西装,崭新绷带,夸张表情,血腥,文字,水印,畸形手"
+      },
+      {
+        "id": "teen_boxer",
+        "name": "年少的他",
+        "reference_role": "supporting_portrait",
+        "prompt": "写实电影感人物肖像，十六七岁的亚洲少年，短乱黑发，身形单薄，眼神急躁好胜，穿宽大的旧灰色训练T恤和黑色短裤，拳套略显不合手，额头有汗，站在沙袋前，夜晚旧拳馆昏黄顶灯形成柔和顶光，背景可见模糊的崭新职业赛海报。",
+        "negative_prompt": "儿童化,卡通,动漫,现代潮服,过度健美,无汗,文字,水印,畸形手指"
+      }
+    ],
+    "location_plan": {
+      "old_boxing_gym": {
+        "id": "old_boxing_gym",
+        "reference_name": "旧拳馆",
+        "key_zones": [
+          {
+            "id": "bag_area",
+            "name": "沙袋训练区",
+            "prompt": "静态地点参考图，老旧拳馆中央的沙袋训练区，木地板磨损发黑，地面有汗水痕迹和漏雨水迹，几只重沙袋从金属梁上垂下，墙皮斑驳，角落堆着旧拳套和毛巾，清晨窗光与残留顶灯混合，写实电影感，空间空旷安静。",
+            "negative_prompt": "现代豪华健身房,干净地板,霓虹灯,人群,卡通,文字,水印"
+          },
+          {
+            "id": "ring_zone",
+            "name": "旧拳台",
+            "prompt": "静态地点参考图，旧拳馆一侧的拳台，红蓝围绳磨损起毛，帆布台面有旧汗渍和粉尘，台角垫褪色，夜晚几盏昏黄顶灯照出拳台边缘，背景墙上挂着职业赛海报，写实电影感，带年代感。",
+            "negative_prompt": "崭新擂台,大型观众席,舞台灯光,卡通,文字,水印"
+          },
+          {
+            "id": "poster_wall",
+            "name": "海报墙",
+            "prompt": "静态地点参考图，旧拳馆斑驳水泥墙，中央贴着一张年代久远的职业赛海报，边缘卷起发黄，有胶带痕迹和水渍，旁边挂着计时器和旧电线，墙下放着运动包，清晨灰蓝窗光斜照，写实电影感。",
+            "negative_prompt": "崭新海报,清洁白墙,广告灯箱,霓虹,卡通,文字,水印"
+          },
+          {
+            "id": "mirror_wall",
+            "name": "镜墙",
+            "prompt": "静态地点参考图，旧拳馆一面有裂纹和污渍的大镜子，镜面边缘发黑，能反射沙袋训练区和空荡地板，镜前有水迹和汗滴，清晨冷光从侧面进入，顶灯微弱，写实电影感，安静克制。",
+            "negative_prompt": "全新镜墙,明亮商用健身房,多人训练,卡通,文字,水印"
+          },
+          {
+            "id": "window_back",
+            "name": "清晨窗户",
+            "prompt": "静态地点参考图，旧拳馆高处长窗，玻璃有灰尘和雨痕，窗外天色刚亮，冷白晨光逐渐透入，窗框生锈，室内木地板和沙袋轮廓被逆光勾边，写实电影感，空间空旷。",
+            "negative_prompt": "阳光灿烂正午,现代落地窗,干净玻璃,卡通,文字,水印"
+          }
+        ],
+        "props": {
+          "heavy_bag": {
+            "name": "旧沙袋",
+            "owner": "old_boxing_gym",
+            "prompt": "静态道具参考图，磨损严重的棕黑色皮质拳击沙袋，表面有裂纹、胶带修补和汗渍，底部略微变形，悬挂金属链生锈，适合旧拳馆训练区，写实电影感。",
+            "negative_prompt": "崭新沙袋,鲜艳商标,塑料质感,卡通,文字,水印"
+          },
+          "timer": {
+            "name": "墙上计时器",
+            "owner": "old_boxing_gym",
+            "prompt": "静态道具参考图，老式拳馆电子计时器，红色数字显示剩余时间，外壳有灰尘和划痕，安装在斑驳墙面上，旁边有旧电线，清晨冷光下带微弱反光。",
+            "negative_prompt": "智能屏幕,高清液晶,崭新外壳,卡通,乱码文字,水印"
+          },
+          "tape_recorder": {
+            "name": "旧录音机",
+            "owner": "brother",
+            "prompt": "静态道具参考图，老式便携磁带录音机，灰黑塑料外壳磨损，按键泛黄，磁带窗可见转轴，放在旧木凳上，旁边有拳击胶布和汗湿毛巾，写实电影感。",
+            "negative_prompt": "现代音箱,手机,蓝牙设备,崭新塑料,卡通,文字,水印"
+          },
+          "fight_poster": {
+            "name": "职业赛海报",
+            "owner": "old_boxing_gym",
+            "prompt": "静态道具参考图，职业拳击赛海报，过去版本崭新鲜亮，现在版本边缘发黄卷曲，纸面有水渍和褪色油墨，海报上有拳台剪影和赛事排版但文字不可读，贴在斑驳旧墙上。",
+            "negative_prompt": "清晰可读文字,现代广告,霓虹色,卡通,水印"
+          },
+          "old_wrap": {
+            "name": "哥哥的旧绷带",
+            "owner": "brother",
+            "prompt": "静态道具参考图，一卷泛黄旧拳击绷带，布面有汗渍和磨损毛边，末端缠得不整齐，放在木凳或运动包旁，带私人纪念物质感，写实电影感。",
+            "negative_prompt": "全新白绷带,塑料包装,医疗绷带,卡通,文字,水印"
+          },
+          "boxing_gloves": {
+            "name": "旧拳套",
+            "owner": "young_boxer",
+            "prompt": "静态道具参考图，一副磨损黑色拳击手套，皮革有折痕和汗渍，绑带松开，放在旧拳馆木地板上，旁边有水迹和胶布碎片，写实电影感。",
+            "negative_prompt": "全新拳套,鲜艳商标,卡通,文字,水印"
+          },
+          "sports_bag": {
+            "name": "运动包",
+            "owner": "young_boxer",
+            "prompt": "静态道具参考图，深色帆布运动包，拉链半开，边角磨损，里面可见毛巾和训练用品，放在旧海报墙下方，清晨灰蓝光照亮包口，写实电影感。",
+            "negative_prompt": "奢侈旅行箱,崭新背包,卡通,文字,水印"
+          }
+        },
+        "prompt": "写实电影感旧拳馆，空间不大但有历史感，木地板磨损、墙面斑驳、沙袋和旧拳台并存，夜晚有昏黄顶灯，清晨有灰蓝窗光，海报、计时器、录音机、绷带等道具带出私人记忆，氛围空荡克制。",
+        "negative_prompt": "现代豪华健身房,大量观众,舞台灯光,卡通,动漫,干净无痕,文字,水印"
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_night_lesson_start",
+          "reference_inputs": {
+            "portrait": "teen_boxer,brother",
+            "place": "bag_area",
+            "prop": "heavy_bag"
+          },
+          "prompt": "静态单帧，35mm / 中等景深 / 平视略低角度。前景：旧沙袋占画面左侧，底部轻微偏斜姿态被定格。中景：年少的他穿宽大灰T恤站在沙袋前，双拳抬得过高；哥哥站在他身后，缠旧绷带的手按在少年肩上。背景：昏黄顶灯、斑驳墙面和拳台边缘虚化。光照：夜晚暖黄顶光，阴影柔软。",
+          "negative_prompt": "冲拳动作模糊,夸张表情,现代健身房,多人围观,卡通,文字,水印"
+        },
+        {
+          "id": "a02_memory_details_start",
+          "reference_inputs": {
+            "portrait": "brother",
+            "place": "ring_zone",
+            "prop": "fight_poster,heavy_bag"
+          },
+          "prompt": "静态单帧，50mm / 浅景深 / 平视角度。前景：红蓝拳台围绳横过画面，绳面磨损但年代较新。中景：摇晃后的沙袋停在偏画面右侧的位置，哥哥缠旧绷带的手搭在围绳旁。背景：墙上职业赛海报崭新鲜亮，边缘平整，昏黄顶灯形成圆形光斑。光照：夜晚暖黄色，局部高光落在绷带纹理上。",
+          "negative_prompt": "可读清晰文字,破旧发黄海报,强运动模糊,卡通,水印,畸形手指"
+        },
+        {
+          "id": "a03_morning_setup_start",
+          "reference_inputs": {
+            "portrait": "young_boxer",
+            "place": "bag_area",
+            "prop": "heavy_bag,timer,tape_recorder,fight_poster"
+          },
+          "prompt": "静态单帧，35mm / 中等景深 / 低角度仰拍。前景：旧沙袋底部占画面中央，皮革裂纹和胶带修补清晰。中景：年轻拳手站在沙袋后方，右眼肿起，双手缠满胶布，身体静止蓄势。背景：墙上计时器显示三分钟，发黄旧比赛海报和旧录音机在侧后方。光照：清晨灰蓝窗光混合残留暖顶灯。",
+          "negative_prompt": "夜晚场景,人群,教练在场,崭新沙袋,清晰可读文字,卡通,水印"
+        },
+        {
+          "id": "a04_losing_rhythm_start",
+          "reference_inputs": {
+            "portrait": "young_boxer",
+            "place": "bag_area",
+            "prop": "heavy_bag,tape_recorder"
+          },
+          "prompt": "静态单帧，35mm / 浅景深 / 平视略低角度。前景：地板上有汗滴和漏雨水迹，反出冷光。中景：年轻拳手右眼肿胀，双手缠胶布，右拳停在胸前偏低位置，脚步站得过窄，面对旧沙袋。背景：木凳上的旧录音机磁带窗微亮，空荡拳馆虚化。光照：清晨冷灰光为主，顶部残灯带一点暗黄。",
+          "negative_prompt": "跪倒状态,沙袋撞胸,胜利姿势,教练出现,卡通,文字,水印"
+        },
+        {
+          "id": "a05_find_rhythm_start",
+          "reference_inputs": {
+            "portrait": "young_boxer",
+            "place": "bag_area",
+            "prop": "heavy_bag,tape_recorder"
+          },
+          "prompt": "静态单帧，50mm / 浅景深 / 平视角度。前景：汗水滴落在木地板，与漏雨水迹连成不规则亮斑。中景：年轻拳手右眼青肿，胸口贴近沙袋，一手扶着旧沙袋，肩背微弯但双脚重新稳住。背景：旧录音机放在木凳上，磁带仓斜斜反光，墙面和空拳台模糊。光照：清晨冷光贴地，暗黄顶灯很弱。",
+          "negative_prompt": "完全倒地,多人搀扶,干燥地板,欢呼,卡通,文字,水印"
+        },
+        {
+          "id": "a06_bell_zero_start",
+          "reference_inputs": {
+            "portrait": "young_boxer",
+            "place": "poster_wall",
+            "prop": "timer,heavy_bag"
+          },
+          "prompt": "静态单帧，85mm / 浅景深 / 轻微仰角。前景：墙上老式计时器红色数字归零，外壳灰尘和划痕清楚。中景：年轻拳手在虚焦中侧身面对沙袋，右眼肿起，双手胶布湿透，身体停在稳定站姿。背景：发黄旧比赛海报贴在斑驳墙面上。光照：清晨冷白窗光照到计时器边缘，顶灯只剩微暖。",
+          "negative_prompt": "大幅庆祝,观众席,教练入镜,清晰可读文字,卡通,水印"
+        },
+        {
+          "id": "a07_aftermath_start",
+          "reference_inputs": {
+            "portrait": "young_boxer",
+            "place": "bag_area",
+            "prop": "heavy_bag,boxing_gloves,old_wrap,sports_bag,fight_poster"
+          },
+          "prompt": "静态单帧，35mm / 中等景深 / 平视角度。前景：年轻拳手右眼青肿，额头靠在旧沙袋上，拳套仍戴着，双肩放松。中景：地板汗水与漏雨水迹交错，旧录音机和木凳在一侧。背景：空荡拳馆、发黄比赛海报、半开的运动包和逐渐亮起的高窗。光照：清晨冷白光扩大，残余顶灯呈淡暖色。",
+          "negative_prompt": "欢呼胜利姿势,哥哥实体出现,人群,拳赛现场,卡通,文字,水印"
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_night_lesson",
+        "duration_s": 18,
+        "story_goal": "建立哥哥曾经教给少年的核心观念：不要急着证明自己，要等待节奏回来再出拳。",
+        "start_state": "夜晚旧拳馆里，年少的他站在旧沙袋前双拳抬高，哥哥站在身后用缠旧绷带的手按住他的肩膀，昏黄顶灯照着两人。",
+        "end_state": "少年拳势放低一些，沙袋回到他面前，哥哥的手仍稳稳按在他的肩上，两人面对同一个沙袋，拳馆夜色安静。",
+        "visual_intent": "以低位平视的缓慢手持跟拍维持亲密距离，节奏从少年急促到被哥哥压住后放慢，写实回忆质感，暖黄顶光与深棕阴影形成旧照片般的色彩。"
+      },
+      {
+        "id": "shot02_memory_details",
+        "duration_s": 6,
+        "story_goal": "用细节把回忆固定成一组能影响现在的符号：拳台、沙袋、哥哥的手和未完成的职业赛梦想。",
+        "start_state": "旧拳台围绳横在前景，摇晃后的沙袋偏在一侧，哥哥缠着旧绷带的手靠在围绳旁，墙上职业赛海报仍然崭新。",
+        "end_state": "崭新的职业赛海报占据墙面中心，哥哥缠旧绷带的手在画面边缘虚化，夜晚顶灯的暖光停在海报纸面上。",
+        "visual_intent": "镜头做短促的横向扫视与轻微拉焦，像记忆碎片依次掠过，节奏短而柔，风格克制怀旧，色彩保持暖黄与暗红拳台元素。"
+      },
+      {
+        "id": "shot03_morning_setup",
+        "duration_s": 18,
+        "story_goal": "回到现在，说明他在哥哥缺席的清晨独自完成赛前最后训练，并把三分钟倒计时和旧口令引入当下。",
+        "start_state": "清晨空荡旧拳馆里，旧沙袋底部在前景，年轻拳手站在沙袋后方，右眼肿起，双手缠满胶布，墙上计时器显示三分钟。",
+        "end_state": "年轻拳手的肿起右眼、缠胶布的手和发黄旧比赛海报同在画面层次里，旧录音机放在一侧，拳馆里没有教练。",
+        "visual_intent": "镜头从沙袋底部缓慢抬升到人物面部与手，再带到海报和计时器，动作极慢，写实纪实风格，清晨灰蓝光压住回忆的暖色，只保留少量旧顶灯余温。"
+      },
+      {
+        "id": "shot04_losing_rhythm",
+        "duration_s": 38,
+        "story_goal": "表现他把恐惧误认为必须打碎的敌人，因不听哥哥的口令而失去节奏，并被沙袋反弹击溃。",
+        "start_state": "年轻拳手右眼青肿，右拳停在胸前偏低位置，双脚站得过窄，面对旧沙袋，地板上已有汗水和漏雨水迹，旧录音机在后方。",
+        "end_state": "旧沙袋压在年轻拳手胸前，他膝盖弯低，右眼青肿，双手胶布湿透，地板汗水滴痕与漏雨水迹混在一起。",
+        "visual_intent": "坚持不切走的手持近距离跟拍，先让出拳频率逐段加快，再让脚步和右手高度出现失控，沙袋反弹时节奏突变但镜头仍贴着人物呼吸，风格粗粝写实，冷灰色调中保留汗水高光。"
+      },
+      {
+        "id": "shot05_find_rhythm",
+        "duration_s": 45,
+        "story_goal": "让他从挫败中理解哥哥留下的话，不再用重拳对抗恐惧，而是通过等待、侧身和左刺拳重新找回自己的节奏。",
+        "start_state": "年轻拳手右眼青肿，胸口贴近旧沙袋，一手扶着沙袋，肩背微弯但双脚重新稳住，汗水和漏雨水迹在脚边发亮。",
+        "end_state": "年轻拳手右眼仍肿，双手胶布湿透，身体侧向旧沙袋，左拳停在准确距离上，脚步稳定，镜墙里只映出他一个人的身影。",
+        "visual_intent": "镜头由近身颤动逐渐稳定，围绕他和沙袋做小幅弧形移动，节奏从喘息空拍过渡到均匀的刺拳、等待、侧身，录音机卡带感与呼吸节拍重合，风格写实克制，清晨冷光逐渐变亮。"
+      },
+      {
+        "id": "shot06_bell_zero",
+        "duration_s": 4,
+        "story_goal": "用倒计时归零标记这轮训练结束，也标记他从替哥哥证明转向听见自己的呼吸。",
+        "start_state": "墙上计时器红色数字归零，年轻拳手在虚焦中侧身面对沙袋，右眼青肿，双手胶布湿透，身体停在稳定站姿。",
+        "end_state": "计时器仍停在归零状态，年轻拳手的身体在背景里放松下来，旧沙袋轻轻偏在他面前，空荡拳馆保持安静。",
+        "visual_intent": "短促静止镜头，几乎不移动，只让铃声和人物微小放松成为冲击点，节奏骤停，写实极简，冷白晨光强调红色数字的终止感。"
+      },
+      {
+        "id": "shot07_aftermath",
+        "duration_s": 24,
+        "story_goal": "完成情感落点：他接受今晚可能会输，却把哥哥的遗留物带上路，以自己的节奏走向职业擂台。",
+        "start_state": "年轻拳手右眼青肿，额头靠在旧沙袋上，拳套仍戴着，双肩放松，空荡拳馆和逐渐亮起的窗户在后方。",
+        "end_state": "年轻拳手摘下旧拳套站在发黄比赛海报前，哥哥的旧绷带已塞进半开的运动包，清晨光照亮空荡拳馆。",
+        "visual_intent": "镜头先缓慢后退露出拳馆空间，再平稳跟随他走向海报墙，节奏安静留白，写实纪实风格，色彩由冷灰逐渐过渡到柔和晨白，氛围克制而释然。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_night_lesson_to_memory_details",
+        "from_shot": "shot01_night_lesson",
+        "to_shot": "shot02_memory_details",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_memory_details_to_morning_setup",
+        "from_shot": "shot02_memory_details",
+        "to_shot": "shot03_morning_setup",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "夜晚画面里崭新的职业赛海报被暖黄顶灯照亮，镜头保持贴近海报纸面不动；海报颜色逐渐褪去，边缘慢慢卷起，墙面水渍和裂纹浮现，顶灯暖光一点点熄弱；画面上方渗入清晨灰蓝窗光，海报旁的计时器和旧电线显出尘埃，随后视线从老化海报滑向清晨沙袋训练区，录音机的磁带声替代回忆中的人声。",
+        "negative_prompt": "瞬间换景,黑屏,跳切,强闪白,清晰可读文字,卡通,水印"
+      },
+      {
+        "id": "tr03_morning_setup_to_losing_rhythm",
+        "from_shot": "shot03_morning_setup",
+        "to_shot": "shot04_losing_rhythm",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_losing_rhythm_to_find_rhythm",
+        "from_shot": "shot04_losing_rhythm",
+        "to_shot": "shot05_find_rhythm",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_find_rhythm_to_bell_zero",
+        "from_shot": "shot05_find_rhythm",
+        "to_shot": "shot06_bell_zero",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_bell_zero_to_aftermath",
+        "from_shot": "shot06_bell_zero",
+        "to_shot": "shot07_aftermath",
+        "mode": "cut"
+      }
+    ]
+  },
+  "render_plan": {
+    "source": {
+      "input_path": "",
+      "n_shots": 7,
+      "per_shot_duration_s": [
+        18,
+        6,
+        18,
+        38,
+        45,
+        4,
+        24
+      ],
+      "seed": 0
+    },
+    "portrait_plan": {
+      "young_boxer": {
+        "id": "young_boxer",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "young_boxer",
+          "kind": "portrait",
+          "prompt": "写实电影感人物肖像，二十出头的亚洲男性拳手，短寸黑发，清瘦但肌肉紧实，右眼明显肿起带青紫淤痕，脸颊有汗水和细小擦伤，双手缠白色拳击胶布，穿旧黑色训练背心和深灰运动短裤，神情克制倔强，清晨冷光从侧面照亮，背景虚化为空荡旧拳馆。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/portraits/young_boxer.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "卡通,动漫,夸张肌肉,塑料皮肤,干净无汗,现代健身房,文字,水印,畸形手指",
+          "prompt_extend": false
+        }
+      },
+      "brother": {
+        "id": "brother",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "brother",
+          "kind": "portrait",
+          "prompt": "写实电影感人物肖像，二十七八岁的亚洲男性前拳手，短发，眉眼温和但有训练后的疲惫，鼻梁有旧伤痕，双手缠着泛黄旧绷带，穿褪色白色背心和深色运动长裤，肩背结实，站姿沉稳，像教练一样从身后纠正动作，夜晚旧拳馆昏黄顶灯照在脸侧，背景有拳台绳索虚化。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/portraits/brother.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "卡通,偶像妆,西装,崭新绷带,夸张表情,血腥,文字,水印,畸形手",
+          "prompt_extend": false
+        }
+      },
+      "teen_boxer": {
+        "id": "teen_boxer",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "teen_boxer",
+          "kind": "portrait",
+          "prompt": "写实电影感人物肖像，十六七岁的亚洲少年，短乱黑发，身形单薄，眼神急躁好胜，穿宽大的旧灰色训练T恤和黑色短裤，拳套略显不合手，额头有汗，站在沙袋前，夜晚旧拳馆昏黄顶灯形成柔和顶光，背景可见模糊的崭新职业赛海报。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/portraits/teen_boxer.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "儿童化,卡通,动漫,现代潮服,过度健美,无汗,文字,水印,畸形手指",
+          "prompt_extend": false
+        }
+      }
+    },
+    "location_plan": {
+      "old_boxing_gym": {
+        "id": "old_boxing_gym",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "old_boxing_gym",
+          "kind": "anchor_image",
+          "prompt": "写实电影感旧拳馆，空间不大但有历史感，木地板磨损、墙面斑驳、沙袋和旧拳台并存，夜晚有昏黄顶灯，清晨有灰蓝窗光，海报、计时器、录音机、绷带等道具带出私人记忆，氛围空荡克制。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/locations/old_boxing_gym.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "现代豪华健身房,大量观众,舞台灯光,卡通,动漫,干净无痕,文字,水印",
+          "prompt_extend": false
+        }
+      }
+    },
+    "prop_plan": {
+      "heavy_bag": {
+        "id": "heavy_bag",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "heavy_bag",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，磨损严重的棕黑色皮质拳击沙袋，表面有裂纹、胶带修补和汗渍，底部略微变形，悬挂金属链生锈，适合旧拳馆训练区，写实电影感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/heavy_bag.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "崭新沙袋,鲜艳商标,塑料质感,卡通,文字,水印",
+          "prompt_extend": false
+        }
+      },
+      "timer": {
+        "id": "timer",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "timer",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，老式拳馆电子计时器，红色数字显示剩余时间，外壳有灰尘和划痕，安装在斑驳墙面上，旁边有旧电线，清晨冷光下带微弱反光。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/timer.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "智能屏幕,高清液晶,崭新外壳,卡通,乱码文字,水印",
+          "prompt_extend": false
+        }
+      },
+      "tape_recorder": {
+        "id": "tape_recorder",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "tape_recorder",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，老式便携磁带录音机，灰黑塑料外壳磨损，按键泛黄，磁带窗可见转轴，放在旧木凳上，旁边有拳击胶布和汗湿毛巾，写实电影感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/tape_recorder.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "现代音箱,手机,蓝牙设备,崭新塑料,卡通,文字,水印",
+          "prompt_extend": false
+        }
+      },
+      "fight_poster": {
+        "id": "fight_poster",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "fight_poster",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，职业拳击赛海报，过去版本崭新鲜亮，现在版本边缘发黄卷曲，纸面有水渍和褪色油墨，海报上有拳台剪影和赛事排版但文字不可读，贴在斑驳旧墙上。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/fight_poster.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "清晰可读文字,现代广告,霓虹色,卡通,水印",
+          "prompt_extend": false
+        }
+      },
+      "old_wrap": {
+        "id": "old_wrap",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "old_wrap",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，一卷泛黄旧拳击绷带，布面有汗渍和磨损毛边，末端缠得不整齐，放在木凳或运动包旁，带私人纪念物质感，写实电影感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/old_wrap.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "全新白绷带,塑料包装,医疗绷带,卡通,文字,水印",
+          "prompt_extend": false
+        }
+      },
+      "boxing_gloves": {
+        "id": "boxing_gloves",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "boxing_gloves",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，一副磨损黑色拳击手套，皮革有折痕和汗渍，绑带松开，放在旧拳馆木地板上，旁边有水迹和胶布碎片，写实电影感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/boxing_gloves.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "全新拳套,鲜艳商标,卡通,文字,水印",
+          "prompt_extend": false
+        }
+      },
+      "sports_bag": {
+        "id": "sports_bag",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "sports_bag",
+          "kind": "anchor_image",
+          "prompt": "静态道具参考图，深色帆布运动包，拉链半开，边角磨损，里面可见毛巾和训练用品，放在旧海报墙下方，清晨灰蓝光照亮包口，写实电影感。",
+          "duration_s": 0,
+          "references": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/props/sports_bag.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "奢侈旅行箱,崭新背包,卡通,文字,水印",
+          "prompt_extend": false
+        }
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_night_lesson_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a01_night_lesson_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 中等景深 / 平视略低角度。前景：旧沙袋占画面左侧，底部轻微偏斜姿态被定格。中景：年少的他穿宽大灰T恤站在沙袋前，双拳抬得过高；哥哥站在他身后，缠旧绷带的手按在少年肩上。背景：昏黄顶灯、斑驳墙面和拳台边缘虚化。光照：夜晚暖黄顶光，阴影柔软。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "teen_boxer"
+            },
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "brother"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "bag_area"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a01_night_lesson_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "冲拳动作模糊,夸张表情,现代健身房,多人围观,卡通,文字,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "teen_boxer,brother",
+          "place": "bag_area",
+          "prop": "heavy_bag"
+        }
+      },
+      {
+        "id": "a02_memory_details_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a02_memory_details_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，50mm / 浅景深 / 平视角度。前景：红蓝拳台围绳横过画面，绳面磨损但年代较新。中景：摇晃后的沙袋停在偏画面右侧的位置，哥哥缠旧绷带的手搭在围绳旁。背景：墙上职业赛海报崭新鲜亮，边缘平整，昏黄顶灯形成圆形光斑。光照：夜晚暖黄色，局部高光落在绷带纹理上。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "brother"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "ring_zone"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "fight_poster"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a02_memory_details_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "可读清晰文字,破旧发黄海报,强运动模糊,卡通,水印,畸形手指",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "brother",
+          "place": "ring_zone",
+          "prop": "fight_poster,heavy_bag"
+        }
+      },
+      {
+        "id": "a03_morning_setup_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a03_morning_setup_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 中等景深 / 低角度仰拍。前景：旧沙袋底部占画面中央，皮革裂纹和胶带修补清晰。中景：年轻拳手站在沙袋后方，右眼肿起，双手缠满胶布，身体静止蓄势。背景：墙上计时器显示三分钟，发黄旧比赛海报和旧录音机在侧后方。光照：清晨灰蓝窗光混合残留暖顶灯。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "young_boxer"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "bag_area"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "timer"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "tape_recorder"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "fight_poster"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a03_morning_setup_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "夜晚场景,人群,教练在场,崭新沙袋,清晰可读文字,卡通,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,timer,tape_recorder,fight_poster"
+        }
+      },
+      {
+        "id": "a04_losing_rhythm_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a04_losing_rhythm_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 浅景深 / 平视略低角度。前景：地板上有汗滴和漏雨水迹，反出冷光。中景：年轻拳手右眼肿胀，双手缠胶布，右拳停在胸前偏低位置，脚步站得过窄，面对旧沙袋。背景：木凳上的旧录音机磁带窗微亮，空荡拳馆虚化。光照：清晨冷灰光为主，顶部残灯带一点暗黄。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "young_boxer"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "bag_area"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "tape_recorder"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a04_losing_rhythm_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "跪倒状态,沙袋撞胸,胜利姿势,教练出现,卡通,文字,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,tape_recorder"
+        }
+      },
+      {
+        "id": "a05_find_rhythm_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a05_find_rhythm_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，50mm / 浅景深 / 平视角度。前景：汗水滴落在木地板，与漏雨水迹连成不规则亮斑。中景：年轻拳手右眼青肿，胸口贴近沙袋，一手扶着旧沙袋，肩背微弯但双脚重新稳住。背景：旧录音机放在木凳上，磁带仓斜斜反光，墙面和空拳台模糊。光照：清晨冷光贴地，暗黄顶灯很弱。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "young_boxer"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "bag_area"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "tape_recorder"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a05_find_rhythm_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "完全倒地,多人搀扶,干燥地板,欢呼,卡通,文字,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,tape_recorder"
+        }
+      },
+      {
+        "id": "a06_bell_zero_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a06_bell_zero_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，85mm / 浅景深 / 轻微仰角。前景：墙上老式计时器红色数字归零，外壳灰尘和划痕清楚。中景：年轻拳手在虚焦中侧身面对沙袋，右眼肿起，双手胶布湿透，身体停在稳定站姿。背景：发黄旧比赛海报贴在斑驳墙面上。光照：清晨冷白窗光照到计时器边缘，顶灯只剩微暖。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "young_boxer"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "poster_wall"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "timer"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a06_bell_zero_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "大幅庆祝,观众席,教练入镜,清晰可读文字,卡通,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "poster_wall",
+          "prop": "timer,heavy_bag"
+        }
+      },
+      {
+        "id": "a07_aftermath_start",
+        "request_type": "RenderRequest",
+        "render_request": {
+          "request_id": "a07_aftermath_start",
+          "kind": "anchor_image",
+          "prompt": "静态单帧，35mm / 中等景深 / 平视角度。前景：年轻拳手右眼青肿，额头靠在旧沙袋上，拳套仍戴着，双肩放松。中景：地板汗水与漏雨水迹交错，旧录音机和木凳在一侧。背景：空荡拳馆、发黄比赛海报、半开的运动包和逐渐亮起的高窗。光照：清晨冷白光扩大，残余顶灯呈淡暖色。",
+          "duration_s": 0,
+          "references": [
+            {
+              "role": "portrait",
+              "url": "",
+              "asset_id": "young_boxer"
+            },
+            {
+              "role": "scene",
+              "url": "",
+              "asset_id": "bag_area"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "heavy_bag"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "boxing_gloves"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "old_wrap"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "sports_bag"
+            },
+            {
+              "role": "reference",
+              "url": "",
+              "asset_id": "fight_poster"
+            }
+          ],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/anchors/a07_aftermath_start.png",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "欢呼胜利姿势,哥哥实体出现,人群,拳赛现场,卡通,文字,水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,boxing_gloves,old_wrap,sports_bag,fight_poster"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_night_lesson",
+        "duration_s": 18,
+        "story_goal": "建立哥哥曾经教给少年的核心观念：不要急着证明自己，要等待节奏回来再出拳。",
+        "start_state": "夜晚旧拳馆里，年少的他站在旧沙袋前双拳抬高，哥哥站在身后用缠旧绷带的手按住他的肩膀，昏黄顶灯照着两人。",
+        "end_state": "少年拳势放低一些，沙袋回到他面前，哥哥的手仍稳稳按在他的肩上，两人面对同一个沙袋，拳馆夜色安静。",
+        "visual_intent": "以低位平视的缓慢手持跟拍维持亲密距离，节奏从少年急促到被哥哥压住后放慢，写实回忆质感，暖黄顶光与深棕阴影形成旧照片般的色彩。"
+      },
+      {
+        "id": "shot02_memory_details",
+        "duration_s": 6,
+        "story_goal": "用细节把回忆固定成一组能影响现在的符号：拳台、沙袋、哥哥的手和未完成的职业赛梦想。",
+        "start_state": "旧拳台围绳横在前景，摇晃后的沙袋偏在一侧，哥哥缠着旧绷带的手靠在围绳旁，墙上职业赛海报仍然崭新。",
+        "end_state": "崭新的职业赛海报占据墙面中心，哥哥缠旧绷带的手在画面边缘虚化，夜晚顶灯的暖光停在海报纸面上。",
+        "visual_intent": "镜头做短促的横向扫视与轻微拉焦，像记忆碎片依次掠过，节奏短而柔，风格克制怀旧，色彩保持暖黄与暗红拳台元素。"
+      },
+      {
+        "id": "shot03_morning_setup",
+        "duration_s": 18,
+        "story_goal": "回到现在，说明他在哥哥缺席的清晨独自完成赛前最后训练，并把三分钟倒计时和旧口令引入当下。",
+        "start_state": "清晨空荡旧拳馆里，旧沙袋底部在前景，年轻拳手站在沙袋后方，右眼肿起，双手缠满胶布，墙上计时器显示三分钟。",
+        "end_state": "年轻拳手的肿起右眼、缠胶布的手和发黄旧比赛海报同在画面层次里，旧录音机放在一侧，拳馆里没有教练。",
+        "visual_intent": "镜头从沙袋底部缓慢抬升到人物面部与手，再带到海报和计时器，动作极慢，写实纪实风格，清晨灰蓝光压住回忆的暖色，只保留少量旧顶灯余温。"
+      },
+      {
+        "id": "shot04_losing_rhythm",
+        "duration_s": 38,
+        "story_goal": "表现他把恐惧误认为必须打碎的敌人，因不听哥哥的口令而失去节奏，并被沙袋反弹击溃。",
+        "start_state": "年轻拳手右眼青肿，右拳停在胸前偏低位置，双脚站得过窄，面对旧沙袋，地板上已有汗水和漏雨水迹，旧录音机在后方。",
+        "end_state": "旧沙袋压在年轻拳手胸前，他膝盖弯低，右眼青肿，双手胶布湿透，地板汗水滴痕与漏雨水迹混在一起。",
+        "visual_intent": "坚持不切走的手持近距离跟拍，先让出拳频率逐段加快，再让脚步和右手高度出现失控，沙袋反弹时节奏突变但镜头仍贴着人物呼吸，风格粗粝写实，冷灰色调中保留汗水高光。"
+      },
+      {
+        "id": "shot05_find_rhythm",
+        "duration_s": 45,
+        "story_goal": "让他从挫败中理解哥哥留下的话，不再用重拳对抗恐惧，而是通过等待、侧身和左刺拳重新找回自己的节奏。",
+        "start_state": "年轻拳手右眼青肿，胸口贴近旧沙袋，一手扶着沙袋，肩背微弯但双脚重新稳住，汗水和漏雨水迹在脚边发亮。",
+        "end_state": "年轻拳手右眼仍肿，双手胶布湿透，身体侧向旧沙袋，左拳停在准确距离上，脚步稳定，镜墙里只映出他一个人的身影。",
+        "visual_intent": "镜头由近身颤动逐渐稳定，围绕他和沙袋做小幅弧形移动，节奏从喘息空拍过渡到均匀的刺拳、等待、侧身，录音机卡带感与呼吸节拍重合，风格写实克制，清晨冷光逐渐变亮。"
+      },
+      {
+        "id": "shot06_bell_zero",
+        "duration_s": 4,
+        "story_goal": "用倒计时归零标记这轮训练结束，也标记他从替哥哥证明转向听见自己的呼吸。",
+        "start_state": "墙上计时器红色数字归零，年轻拳手在虚焦中侧身面对沙袋，右眼青肿，双手胶布湿透，身体停在稳定站姿。",
+        "end_state": "计时器仍停在归零状态，年轻拳手的身体在背景里放松下来，旧沙袋轻轻偏在他面前，空荡拳馆保持安静。",
+        "visual_intent": "短促静止镜头，几乎不移动，只让铃声和人物微小放松成为冲击点，节奏骤停，写实极简，冷白晨光强调红色数字的终止感。"
+      },
+      {
+        "id": "shot07_aftermath",
+        "duration_s": 24,
+        "story_goal": "完成情感落点：他接受今晚可能会输，却把哥哥的遗留物带上路，以自己的节奏走向职业擂台。",
+        "start_state": "年轻拳手右眼青肿，额头靠在旧沙袋上，拳套仍戴着，双肩放松，空荡拳馆和逐渐亮起的窗户在后方。",
+        "end_state": "年轻拳手摘下旧拳套站在发黄比赛海报前，哥哥的旧绷带已塞进半开的运动包，清晨光照亮空荡拳馆。",
+        "visual_intent": "镜头先缓慢后退露出拳馆空间，再平稳跟随他走向海报墙，节奏安静留白，写实纪实风格，色彩由冷灰逐渐过渡到柔和晨白，氛围克制而释然。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_night_lesson_to_memory_details",
+        "from_shot": "shot01_night_lesson",
+        "to_shot": "shot02_memory_details",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_memory_details_to_morning_setup",
+        "from_shot": "shot02_memory_details",
+        "to_shot": "shot03_morning_setup",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor",
+        "prompt": "夜晚画面里崭新的职业赛海报被暖黄顶灯照亮，镜头保持贴近海报纸面不动；海报颜色逐渐褪去，边缘慢慢卷起，墙面水渍和裂纹浮现，顶灯暖光一点点熄弱；画面上方渗入清晨灰蓝窗光，海报旁的计时器和旧电线显出尘埃，随后视线从老化海报滑向清晨沙袋训练区，录音机的磁带声替代回忆中的人声。",
+        "negative_prompt": "瞬间换景,黑屏,跳切,强闪白,清晰可读文字,卡通,水印"
+      },
+      {
+        "id": "tr03_morning_setup_to_losing_rhythm",
+        "from_shot": "shot03_morning_setup",
+        "to_shot": "shot04_losing_rhythm",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_losing_rhythm_to_find_rhythm",
+        "from_shot": "shot04_losing_rhythm",
+        "to_shot": "shot05_find_rhythm",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_find_rhythm_to_bell_zero",
+        "from_shot": "shot05_find_rhythm",
+        "to_shot": "shot06_bell_zero",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_bell_zero_to_aftermath",
+        "from_shot": "shot06_bell_zero",
+        "to_shot": "shot07_aftermath",
+        "mode": "cut"
+      }
+    ],
+    "segments": {
+      "seg_shot02_memory_details_00": {
+        "id": "seg_shot02_memory_details_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot02_memory_details_00",
+          "kind": "segment_r2v",
+          "prompt": "从红蓝拳台围绳和偏在一侧的旧沙袋开始，镜头短促横向扫过，浅景深里哥哥缠着旧绷带的手在围绳旁掠过高光。焦点慢慢离开手背粗糙布纹，落到墙上那张仍崭新鲜亮的职业赛海报，暖黄顶灯的圆形光斑像记忆印痕停在纸面。最后画面停在海报居中，哥哥的旧绷带手只留在边缘虚化处。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 6,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot02_memory_details_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 清晰可读文字, 现代健身房, 强运动模糊, 畸形手指, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "brother",
+          "place": "ring_zone",
+          "prop": "fight_poster,heavy_bag"
+        },
+        "shot_id": "shot02_memory_details",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_memory_details_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot06_bell_zero_00": {
+        "id": "seg_shot06_bell_zero_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot06_bell_zero_00",
+          "kind": "segment_r2v",
+          "prompt": "画面从归零的老式计时器开始，红色数字停在前景，灰尘和划痕被清晨冷白窗光勾亮。镜头几乎静止，铃声响起后，虚焦中的年轻拳手右眼青肿、双手胶布湿透，侧身面对旧沙袋，只发生极轻微的肩背下沉和呼吸放松。发黄旧比赛海报贴在斑驳墙上，顶灯剩一点微暖，最后落在计时器仍归零、他身体放松、旧沙袋轻轻偏在面前的安静一帧。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 4,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot06_bell_zero_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 欢呼胜利姿势, 观众席, 教练入镜, 清晰可读文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "poster_wall",
+          "prop": "timer,heavy_bag"
+        },
+        "shot_id": "shot06_bell_zero",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a06_bell_zero_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot03_morning_setup_00": {
+        "id": "seg_shot03_morning_setup_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot03_morning_setup_00",
+          "kind": "segment_r2v",
+          "prompt": "清晨空荡旧拳馆里，镜头从旧沙袋底部的裂纹和胶带修补处极慢抬升，沙袋占据前景，轻微摆动像刚被打过。年轻拳手站在沙袋后方，右眼肿起发青，双手缠满白色胶布，身体静止蓄势，没有教练陪在身边。灰蓝窗光压住残留暖顶灯，镜头抬到他疲惫的眼睛和绷紧的手背，最后停在他肿起右眼与缠胶布双手同框的近景。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot03_morning_setup_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 教练入镜, 人群, 现代健身房, 胜利姿势, 清晰可读文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,timer,tape_recorder,fight_poster"
+        },
+        "shot_id": "shot03_morning_setup",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_morning_setup_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot03_morning_setup_01": {
+        "id": "seg_shot03_morning_setup_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot03_morning_setup_01",
+          "kind": "segment_r2v",
+          "prompt": "从他肿起的右眼和缠胶布的双手开始，镜头继续缓慢侧移并拉出层次，让他的手、脸和后方墙面逐渐排在同一条视线上。发黄旧比赛海报在斑驳墙上显出卷边和水渍，老式计时器红色数字停在三分钟，旧录音机放在一侧木凳上，像在等待播放哥哥留下的口令。拳馆空荡无教练，灰蓝晨光覆盖墙面，最后停在年轻拳手肿眼、胶布手、发黄海报与旧录音机同框的静止画面。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 8,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot03_morning_setup_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 教练入镜, 人群, 夜晚场景, 崭新海报, 清晰可读文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "poster_wall",
+          "prop": "timer,tape_recorder,fight_poster"
+        },
+        "shot_id": "shot03_morning_setup",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot01_night_lesson_00": {
+        "id": "seg_shot01_night_lesson_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot01_night_lesson_00",
+          "kind": "segment_r2v",
+          "prompt": "从年少的他双拳抬得过高、哥哥的旧绷带手按住肩膀开始，低位手持镜头贴近沙袋和两人。少年急着向前挤出几下短促乱拳，宽大灰T恤在暖黄顶光下晃动，旧沙袋被打得偏离身体线；哥哥没有松手，只把掌心压得更稳，像用重量让他停住。落点是沙袋偏在画面左前方，少年双拳仍举高发紧，哥哥缠旧绷带的手稳稳压在少年肩上。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot01_night_lesson_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 现代健身房, 多人围观, 血腥, 夸张运动模糊, 畸形手指, 文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "teen_boxer,brother",
+          "place": "bag_area",
+          "prop": "heavy_bag"
+        },
+        "shot_id": "shot01_night_lesson",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_night_lesson_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot01_night_lesson_01": {
+        "id": "seg_shot01_night_lesson_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot01_night_lesson_01",
+          "kind": "segment_r2v",
+          "prompt": "从沙袋偏离、少年肩膀发紧的姿态继续，哥哥贴在他身后没有离开，缠旧绷带的手轻轻按低他的肩线。镜头缓慢跟着沙袋回摆，少年的急躁被压下来，双拳从过高的位置放低到更贴近胸前；他不再追着沙袋打，而是看着它回到距离里。落点是沙袋回到少年面前，少年拳势放低一些，哥哥的手仍稳稳按在他的肩上。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 8,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot01_night_lesson_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 现代健身房, 多人围观, 胜利姿势, 哥哥消失, 沙袋变形, 畸形手指, 文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "teen_boxer,brother",
+          "place": "bag_area",
+          "prop": "heavy_bag"
+        },
+        "shot_id": "shot01_night_lesson",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot07_aftermath_00": {
+        "id": "seg_shot07_aftermath_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot07_aftermath_00",
+          "kind": "segment_r2v",
+          "prompt": "年轻拳手右眼青肿，额头仍贴着旧沙袋，拳套还戴在手上，双肩松下来。镜头从近处缓慢后退，露出汗水与漏雨水迹交错的木地板、旧录音机、木凳和空荡拳馆；他抬起头，呼吸平稳，低头慢慢解开拳套绑带。清晨冷白光从高窗扩大，残余顶灯只剩淡暖色，最后他握着松开的旧拳套站在沙袋旁，目光落向远处海报墙。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 11,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot07_aftermath_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 欢呼胜利姿势, 哥哥实体出现, 人群, 拳赛现场, 夸张表情, 文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,boxing_gloves,tape_recorder"
+        },
+        "shot_id": "shot07_aftermath",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a07_aftermath_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot07_aftermath_01": {
+        "id": "seg_shot07_aftermath_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot07_aftermath_01",
+          "kind": "segment_r2v",
+          "prompt": "年轻拳手右眼青肿，手里握着松开的旧拳套，从沙袋旁安静走向海报墙，镜头平稳跟随在他身后侧方。发黄比赛海报、半开的深色运动包和那卷泛黄旧绷带逐渐成为画面中心；他没有回头，也没有庆祝，只在海报前停下，摘下旧拳套垂在一侧，把哥哥的旧绷带郑重塞进运动包。柔和晨白照亮斑驳墙面和空荡拳馆，最后他摘下旧拳套站在发黄比赛海报前，旧绷带安放在半开的运动包里。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 13,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot07_aftermath_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 欢呼胜利姿势, 哥哥实体出现, 人群, 拳赛现场, 清晰可读文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "poster_wall",
+          "prop": "fight_poster,old_wrap,sports_bag,boxing_gloves"
+        },
+        "shot_id": "shot07_aftermath",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot05_find_rhythm_00": {
+        "id": "seg_shot05_find_rhythm_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_find_rhythm_00",
+          "kind": "segment_r2v",
+          "prompt": "从胸口贴近旧沙袋的姿态开始，年轻拳手右眼青肿，一手扶着沙袋，双手胶布被汗浸湿。镜头近身微颤，沿他肩侧小幅弧移，他把额前喘息压下去，慢慢把身体从沙袋上撑离，脚掌在汗水与漏雨水迹旁重新找准落点。旧录音机卡带般重复，冷光贴着地板变亮，落点是他松开沙袋，双拳低垂，双脚站稳面对沙袋停定。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot05_find_rhythm_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 胜利姿势, 教练出现, 哥哥实体出现, 干燥地板",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,tape_recorder"
+        },
+        "shot_id": "shot05_find_rhythm",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a05_find_rhythm_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot05_find_rhythm_01": {
+        "id": "seg_shot05_find_rhythm_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_find_rhythm_01",
+          "kind": "segment_r2v",
+          "prompt": "他从稳住的站姿里抬起左手，右眼青肿仍半眯着，湿透胶布贴紧指节，不再追打重拳。镜头绕沙袋缓慢偏移，重点跟着左刺拳短短探出又收回：拳头只碰到沙袋表皮一点，皮革裂纹轻轻凹陷，沙袋回摆时他没有抢攻，而是让肩膀放松、呼吸跟录音机卡顿声对齐。落点是左拳收在下巴前，身体微侧，沙袋回到正中停定。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 12,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot05_find_rhythm_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 连续乱拳, 沙袋猛烈撞击, 跪倒, 人群, 教练出现",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "place": "bag_area"
+        },
+        "shot_id": "shot05_find_rhythm",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot05_find_rhythm_02": {
+        "id": "seg_shot05_find_rhythm_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_find_rhythm_02",
+          "kind": "segment_r2v",
+          "prompt": "从左拳收在下巴前的停顿继续，年轻拳手右眼仍肿，汗沿脸颊落到湿胶布上。他等旧沙袋回近，脚尖轻轻挪开半步，身体侧让出沙袋的回摆轨迹；镜头弧形移动到镜墙角度，裂纹镜面只映出他一个人，没有任何人站在身后。录音机重复的口令像被呼吸接住，落点是他侧身站稳，左肩对着沙袋，镜中孤独身影清晰停住。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 11,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot05_find_rhythm_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 镜中出现哥哥, 幻影, 多人训练, 强烈运动模糊, 现代健身房",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "place": "mirror_wall"
+        },
+        "shot_id": "shot05_find_rhythm",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot05_find_rhythm_03": {
+        "id": "seg_shot05_find_rhythm_03",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot05_find_rhythm_03",
+          "kind": "segment_r2v",
+          "prompt": "他保持侧身，右眼青肿却不再急躁，湿透胶布在冷光里泛白。镜头终于稳定下来，围着他和旧沙袋做很小的弧形移动；他用左刺拳一次次轻点同一距离，重点是等待沙袋回到拳线上才出手，拳面触到皮革后立刻收回，肩、呼吸、脚步都归入同一个缓慢节拍。落点是左拳停在准确距离上，身体侧向沙袋，镜墙里只有他一人。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 12,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot05_find_rhythm_03.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 重拳猛击, 胜利庆祝, 哥哥实体出现, 教练出现, 人群, 拳赛现场",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "mirror_wall",
+          "prop": "heavy_bag"
+        },
+        "shot_id": "shot05_find_rhythm",
+        "segment_index_in_shot": 3,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot04_losing_rhythm_00": {
+        "id": "seg_shot04_losing_rhythm_00",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_losing_rhythm_00",
+          "kind": "segment_r2v",
+          "prompt": "从汗水和漏雨水迹反冷光的地板起，手持镜头贴近年轻拳手偏窄的脚步。他右眼青肿，双手胶布湿透，右拳从胸前偏低处一次次挥向旧沙袋，出拳频率明显加快，像要把恐惧砸穿；旧录音机在后方传出含混铃声与口令。镜头随沙袋小幅摆动，冷灰光里汗珠高亮，落点停在沙袋被打得向前偏远、他的右拳仍压得过低的瞬间。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 11,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot04_losing_rhythm_00.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 教练入镜, 哥哥实体出现, 胜利姿势, 血腥, 断肢, 畸形手指, 清晰可读文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag,tape_recorder"
+        },
+        "shot_id": "shot04_losing_rhythm",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_losing_rhythm_start",
+        "first_frame_path": "shot_start_anchor"
+      },
+      "seg_shot04_losing_rhythm_01": {
+        "id": "seg_shot04_losing_rhythm_01",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_losing_rhythm_01",
+          "kind": "segment_r2v",
+          "prompt": "接着沙袋远摆后的回程，年轻拳手没有等待，右眼青肿的脸绷得更紧，湿透胶布的拳头抢在节奏前连续压上去。镜头贴着他肩侧摇晃，能看见他的右手每一次挥出都比上一拳更低，脚尖被沙袋回摆逼得细碎后退。沙袋皮革裂纹和胶带修补在近处掠过，重量感越来越沉，落点停在沙袋回到他胸前一臂距离、他的右拳低垂且重心歪斜的瞬间。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 10,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot04_losing_rhythm_01.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 突然倒地, 完全跪下, 教练入镜, 哥哥实体出现, 夸张慢动作, 血腥, 畸形手指, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag"
+        },
+        "shot_id": "shot04_losing_rhythm",
+        "segment_index_in_shot": 1,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot04_losing_rhythm_02": {
+        "id": "seg_shot04_losing_rhythm_02",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_losing_rhythm_02",
+          "kind": "segment_r2v",
+          "prompt": "从他重心歪斜的姿态继续，旧录音机里传来哥哥的声音，像从空荡拳馆深处提醒他别跟沙袋较劲、听它回来。年轻拳手右眼青肿，汗顺着脸侧流下，却仍顶着沙袋回程提前出拳，湿透胶布擦过粗裂皮面，拳头没有打实。手持镜头不切走，呼吸声变乱，重点落在沙袋厚重回摆的弧线和他被迫收缩的胸口，最后定在沙袋贴近他胸前、他双肩紧缩的瞬间。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 9,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot04_losing_rhythm_02.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 哥哥实体出现, 回忆闪回, 教练出现, 沙袋破裂, 大量血液, 畸形手指, 清晰文字, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "tape_recorder,heavy_bag"
+        },
+        "shot_id": "shot04_losing_rhythm",
+        "segment_index_in_shot": 2,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      },
+      "seg_shot04_losing_rhythm_03": {
+        "id": "seg_shot04_losing_rhythm_03",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "seg_shot04_losing_rhythm_03",
+          "kind": "segment_r2v",
+          "prompt": "从沙袋贴近胸前的压迫感开始，沙袋带着完整重量猛地顶上来，镜头也被撞击般贴近他的呼吸。年轻拳手右眼青肿，湿透胶布的双手本能抓住沙袋两侧，胸口被旧皮革压住，膝盖向下弯低，脚底在汗水和漏雨水迹里滑出短痕。冷灰光中汗滴从下巴坠到地板，与水迹混在一起，落点停在沙袋压住他胸前、他低膝撑住的定格。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 8,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/segments/seg_shot04_losing_rhythm_03.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "anime, cartoon, illustration, manga, plastic skin, doll face, 二次元, 卡通, 动漫, 美颜, 磨皮, 完全倒地, 昏迷, 教练入镜, 哥哥实体出现, 欢呼观众, 血腥暴力, 畸形手指, 水印",
+          "prompt_extend": false
+        },
+        "reference_inputs": {
+          "portrait": "young_boxer",
+          "place": "bag_area",
+          "prop": "heavy_bag"
+        },
+        "shot_id": "shot04_losing_rhythm",
+        "segment_index_in_shot": 3,
+        "start_anchor": null,
+        "first_frame_path": "previous_segment_last_frame"
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr02_memory_details_to_morning_setup",
+        "request_type": "FLF2VRequest",
+        "flf2v_request": {
+          "request_id": "tr02_memory_details_to_morning_setup",
+          "kind": "bridge",
+          "prompt": "夜晚画面里崭新的职业赛海报被暖黄顶灯照亮，镜头保持贴近海报纸面不动；海报颜色逐渐褪去，边缘慢慢卷起，墙面水渍和裂纹浮现，顶灯暖光一点点熄弱；画面上方渗入清晨灰蓝窗光，海报旁的计时器和旧电线显出尘埃，随后视线从老化海报滑向清晨沙袋训练区，录音机的磁带声替代回忆中的人声。",
+          "first_url": "",
+          "last_url": "",
+          "duration_s": 5,
+          "reference_images": [],
+          "seed": 0,
+          "resolution": "1280x720",
+          "output_path": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/bridges/tr02_memory_details_to_morning_setup.mp4",
+          "log_dir": "videorlm/outputs/version_2.2/good_ex02_happyhorse/run/logs",
+          "negative_prompt": "瞬间换景,黑屏,跳切,强闪白,清晰可读文字,卡通,水印",
+          "prompt_extend": false
+        },
+        "from_shot": "shot02_memory_details",
+        "to_shot": "shot03_morning_setup"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "brother": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_00_brother.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=xk854sq4r88lIVZmsHZcK34kyXE%3D",
+      "teen_boxer": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_01_teen_boxer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=AQWynw6W1nh0XpDms1%2B%2Ff%2FjH9E8%3D",
+      "young_boxer": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_02_young_boxer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=73zvEeKMR1SgN48F%2FKX8VU2LwMU%3D"
+    },
+    "locations": {
+      "old_boxing_gym": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/locations/location_00_old_boxing_gym.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=vltgEynSNxiM7JBbfp63VvDi4w4%3D"
+    },
+    "props": {
+      "boxing_gloves": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_00_boxing_gloves.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=JHBxS30YgAH%2B6o8gV%2BIXkXfJhVM%3D",
+      "fight_poster": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_01_fight_poster.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=w3LBHHiF0RZsbCjsGKHbVpZTYwQ%3D",
+      "heavy_bag": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_02_heavy_bag.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2Fu5%2FEdPMBN7TVH2ZqBV0r%2FBzWD8%3D",
+      "old_wrap": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_03_old_wrap.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=q%2FbUUa%2BdyhQrY0jRaGuutW2RqLw%3D",
+      "sports_bag": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_04_sports_bag.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=08V9Ogz5NV8aJxXAEcHHX4M4u%2F8%3D",
+      "tape_recorder": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_05_tape_recorder.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=HNaxoH5ZBo8cPI8vxSEKEsU39Nc%3D",
+      "timer": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_06_timer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=EmGtMgOZLPBhEHFIhRw4MpqSWaQ%3D"
+    },
+    "anchors": {
+      "a01_night_lesson_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_00_a01_night_lesson_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=b%2FjM4aODmGm3MiBvv0khD6ACalE%3D",
+      "a02_memory_details_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_01_a02_memory_details_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MRyd7yuu7rOfrk7QsdfNMvUu6wg%3D",
+      "a03_morning_setup_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_02_a03_morning_setup_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=3Rv4KZo%2BcldR2175p2gaNogwVvQ%3D",
+      "a04_losing_rhythm_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_03_a04_losing_rhythm_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=IMlIx0Z2YIhaHMZu%2BeJOvFl4%2FD8%3D",
+      "a05_find_rhythm_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_04_a05_find_rhythm_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=7VsXILRHqHbbLrwzkr5qkGaHARA%3D",
+      "a06_bell_zero_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_05_a06_bell_zero_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=sWcrEkv978sByjFfWETqgMjv53M%3D",
+      "a07_aftermath_start": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_06_a07_aftermath_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BZF%2BIquEADwQeydZg7isRpnPlIM%3D"
+    },
+    "segments": {
+      "seg_shot01_night_lesson_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ZRX4J6K%2BkjX7sUxDZAS71G6R5K8%3D",
+      "seg_shot01_night_lesson_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LScqmF7FUGgv%2BZZGvLLqvravbRo%3D",
+      "seg_shot02_memory_details_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot02_memory_details_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=Q3svmPeKfNfrfP%2BXzvjVYGhxHQo%3D",
+      "seg_shot03_morning_setup_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=E40oQQmFFWTEUYw0YBIovs8Vh6A%3D",
+      "seg_shot03_morning_setup_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BozQJL43aOE444%2F%2FNS9aWZL%2Fu%2Fc%3D",
+      "seg_shot04_losing_rhythm_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=woQQuV%2Fh%2B5FVc2le720%2F592OoVc%3D",
+      "seg_shot04_losing_rhythm_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=jwtZwe59gej0Syn8ImkQixCQ8m4%3D",
+      "seg_shot04_losing_rhythm_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=oMxLRcDSSfvQQWFzc%2Bf5cwQV5M0%3D",
+      "seg_shot04_losing_rhythm_03": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MHPlkxXnIjyGnLdArcJPGXV33Tc%3D",
+      "seg_shot05_find_rhythm_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BHKptCaAc5vhAsRFvyWxJBhUV5U%3D",
+      "seg_shot05_find_rhythm_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=EOh6j8q9LPZ%2BWayaDjSQJfbTZm8%3D",
+      "seg_shot05_find_rhythm_02": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=7SEIdle3ax7NGyVoJOvQCjgkNg0%3D",
+      "seg_shot05_find_rhythm_03": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=c2FMdB60mmaI%2FJLIGfoPPGhyryA%3D",
+      "seg_shot06_bell_zero_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot06_bell_zero_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=6hByrYa2ZiSf5LtNnUcmvF5X684%3D",
+      "seg_shot07_aftermath_00": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=enQry9odP5SYatLe2dRWxSj9FkE%3D",
+      "seg_shot07_aftermath_01": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=3fzuWwXs9xCBnoYgzDenCWwfRVs%3D"
+    },
+    "bridges": {},
+    "final_mp4": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=dmG%2FlvLKryznsU4skLUvC5QVdr8%3D"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 7,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "brother",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_00_brother.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=xk854sq4r88lIVZmsHZcK34kyXE%3D",
+      "backend": "wan2.7-image",
+      "t": 10.75
+    },
+    {
+      "type": "portrait_ready",
+      "id": "teen_boxer",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_01_teen_boxer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=AQWynw6W1nh0XpDms1%2B%2Ff%2FjH9E8%3D",
+      "backend": "wan2.7-image",
+      "t": 10.85
+    },
+    {
+      "type": "portrait_ready",
+      "id": "young_boxer",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/portraits/portrait_02_young_boxer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=73zvEeKMR1SgN48F%2FKX8VU2LwMU%3D",
+      "backend": "wan2.7-image",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "old_boxing_gym",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/locations/location_00_old_boxing_gym.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=vltgEynSNxiM7JBbfp63VvDi4w4%3D",
+      "backend": "wan2.7-image",
+      "t": 11.05
+    },
+    {
+      "type": "prop_ready",
+      "id": "boxing_gloves",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_00_boxing_gloves.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=JHBxS30YgAH%2B6o8gV%2BIXkXfJhVM%3D",
+      "backend": "wan2.7-image",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "fight_poster",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_01_fight_poster.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=w3LBHHiF0RZsbCjsGKHbVpZTYwQ%3D",
+      "backend": "wan2.7-image",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "heavy_bag",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_02_heavy_bag.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2Fu5%2FEdPMBN7TVH2ZqBV0r%2FBzWD8%3D",
+      "backend": "wan2.7-image",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "old_wrap",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_03_old_wrap.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=q%2FbUUa%2BdyhQrY0jRaGuutW2RqLw%3D",
+      "backend": "wan2.7-image",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "sports_bag",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_04_sports_bag.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=08V9Ogz5NV8aJxXAEcHHX4M4u%2F8%3D",
+      "backend": "wan2.7-image",
+      "t": 11.55
+    },
+    {
+      "type": "prop_ready",
+      "id": "tape_recorder",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_05_tape_recorder.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=HNaxoH5ZBo8cPI8vxSEKEsU39Nc%3D",
+      "backend": "wan2.7-image",
+      "t": 11.65
+    },
+    {
+      "type": "prop_ready",
+      "id": "timer",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/props/prop_06_timer.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=EmGtMgOZLPBhEHFIhRw4MpqSWaQ%3D",
+      "backend": "wan2.7-image",
+      "t": 11.75
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 7 shots — seeds the I2V chain…",
+      "t": 11.8
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_night_lesson_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_00_a01_night_lesson_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=b%2FjM4aODmGm3MiBvv0khD6ACalE%3D",
+      "backend": "wan2.7-image",
+      "t": 16.95
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_memory_details_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_01_a02_memory_details_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MRyd7yuu7rOfrk7QsdfNMvUu6wg%3D",
+      "backend": "wan2.7-image",
+      "t": 17.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_morning_setup_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_02_a03_morning_setup_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=3Rv4KZo%2BcldR2175p2gaNogwVvQ%3D",
+      "backend": "wan2.7-image",
+      "t": 17.25
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_losing_rhythm_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_03_a04_losing_rhythm_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=IMlIx0Z2YIhaHMZu%2BeJOvFl4%2FD8%3D",
+      "backend": "wan2.7-image",
+      "t": 17.4
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a05_find_rhythm_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_04_a05_find_rhythm_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=7VsXILRHqHbbLrwzkr5qkGaHARA%3D",
+      "backend": "wan2.7-image",
+      "t": 17.55
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a06_bell_zero_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_05_a06_bell_zero_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=sWcrEkv978sByjFfWETqgMjv53M%3D",
+      "backend": "wan2.7-image",
+      "t": 17.7
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a07_aftermath_start",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/anchors/anchor_06_a07_aftermath_start.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BZF%2BIquEADwQeydZg7isRpnPlIM%3D",
+      "backend": "wan2.7-image",
+      "t": 17.85
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 17.9
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 16,
+      "t": 23.3
+    },
+    {
+      "type": "render_start",
+      "t": 23.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "16 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 23.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_night_lesson_00",
+      "shot_id": "shot01_night_lesson",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ZRX4J6K%2BkjX7sUxDZAS71G6R5K8%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=ZRX4J6K%2BkjX7sUxDZAS71G6R5K8%3D",
+      "duration_s": 8.0,
+      "t": 34.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_memory_details_00",
+      "shot_id": "shot02_memory_details",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot02_memory_details_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=Q3svmPeKfNfrfP%2BXzvjVYGhxHQo%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot02_memory_details_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=Q3svmPeKfNfrfP%2BXzvjVYGhxHQo%3D",
+      "duration_s": 8.0,
+      "t": 34.75
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_morning_setup_00",
+      "shot_id": "shot03_morning_setup",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=E40oQQmFFWTEUYw0YBIovs8Vh6A%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=E40oQQmFFWTEUYw0YBIovs8Vh6A%3D",
+      "duration_s": 8.0,
+      "t": 35.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_losing_rhythm_00",
+      "shot_id": "shot04_losing_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=woQQuV%2Fh%2B5FVc2le720%2F592OoVc%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=woQQuV%2Fh%2B5FVc2le720%2F592OoVc%3D",
+      "duration_s": 8.0,
+      "t": 35.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_find_rhythm_00",
+      "shot_id": "shot05_find_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BHKptCaAc5vhAsRFvyWxJBhUV5U%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BHKptCaAc5vhAsRFvyWxJBhUV5U%3D",
+      "duration_s": 8.0,
+      "t": 35.65
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_bell_zero_00",
+      "shot_id": "shot06_bell_zero",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot06_bell_zero_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=6hByrYa2ZiSf5LtNnUcmvF5X684%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot06_bell_zero_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=6hByrYa2ZiSf5LtNnUcmvF5X684%3D",
+      "duration_s": 8.0,
+      "t": 35.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_aftermath_00",
+      "shot_id": "shot07_aftermath",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=enQry9odP5SYatLe2dRWxSj9FkE%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_00.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=enQry9odP5SYatLe2dRWxSj9FkE%3D",
+      "duration_s": 8.0,
+      "t": 36.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_night_lesson_01",
+      "shot_id": "shot01_night_lesson",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LScqmF7FUGgv%2BZZGvLLqvravbRo%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot01_night_lesson_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=LScqmF7FUGgv%2BZZGvLLqvravbRo%3D",
+      "duration_s": 8.0,
+      "t": 40.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_morning_setup_01",
+      "shot_id": "shot03_morning_setup",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BozQJL43aOE444%2F%2FNS9aWZL%2Fu%2Fc%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot03_morning_setup_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=%2BozQJL43aOE444%2F%2FNS9aWZL%2Fu%2Fc%3D",
+      "duration_s": 8.0,
+      "t": 41.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_losing_rhythm_01",
+      "shot_id": "shot04_losing_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=jwtZwe59gej0Syn8ImkQixCQ8m4%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=jwtZwe59gej0Syn8ImkQixCQ8m4%3D",
+      "duration_s": 8.0,
+      "t": 41.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_find_rhythm_01",
+      "shot_id": "shot05_find_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=EOh6j8q9LPZ%2BWayaDjSQJfbTZm8%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=EOh6j8q9LPZ%2BWayaDjSQJfbTZm8%3D",
+      "duration_s": 8.0,
+      "t": 41.65
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_aftermath_01",
+      "shot_id": "shot07_aftermath",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=3fzuWwXs9xCBnoYgzDenCWwfRVs%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot07_aftermath_01.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=3fzuWwXs9xCBnoYgzDenCWwfRVs%3D",
+      "duration_s": 8.0,
+      "t": 42.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_losing_rhythm_02",
+      "shot_id": "shot04_losing_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=oMxLRcDSSfvQQWFzc%2Bf5cwQV5M0%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=oMxLRcDSSfvQQWFzc%2Bf5cwQV5M0%3D",
+      "duration_s": 8.0,
+      "t": 47.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_find_rhythm_02",
+      "shot_id": "shot05_find_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=7SEIdle3ax7NGyVoJOvQCjgkNg0%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_02.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=7SEIdle3ax7NGyVoJOvQCjgkNg0%3D",
+      "duration_s": 8.0,
+      "t": 47.65
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_losing_rhythm_03",
+      "shot_id": "shot04_losing_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MHPlkxXnIjyGnLdArcJPGXV33Tc%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot04_losing_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=MHPlkxXnIjyGnLdArcJPGXV33Tc%3D",
+      "duration_s": 8.0,
+      "t": 53.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_find_rhythm_03",
+      "shot_id": "shot05_find_rhythm",
+      "kind": "segment_r2v",
+      "backend": "happyhorse-1.0-r2v",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=c2FMdB60mmaI%2FJLIGfoPPGhyryA%3D",
+      "tail_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/segment_tails/seg_shot05_find_rhythm_03.tail.png?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=c2FMdB60mmaI%2FJLIGfoPPGhyryA%3D",
+      "duration_s": 8.0,
+      "t": 53.65
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "ffmpeg-concat every segment + bridge into the final mp4…",
+      "t": 53.7
+    },
+    {
+      "type": "final_done",
+      "url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=dmG%2FlvLKryznsU4skLUvC5QVdr8%3D",
+      "t": 59.3
+    },
+    {
+      "type": "done",
+      "final_url": "https://intern-data-wlcb.oss-cn-wulanchabu.aliyuncs.com/new-videos/20260502-videorlm-version-2-2-preview/20260502-171315-original/assets/good_ex02_happyhorse/final.mp4?OSSAccessKeyId=LTAI5tMtb1LrtdepkEGTdCpu&Expires=1783920173&Signature=dmG%2FlvLKryznsU4skLUvC5QVdr8%3D",
+      "total_s": 59.3,
+      "t": 59.5
+    }
+  ],
+  "timeline_duration_s": 59.5
+}
