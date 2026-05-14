@@ -982,3 +982,37 @@ init().catch((error) => {
   console.error(error);
   selectors.dataStatus.textContent = "Demo unavailable";
 });
+
+// BibTeX copy-to-clipboard — small enhancement so the citation block
+// is one-click usable. No-op silently when navigator.clipboard is absent.
+(function wireBibtexCopy() {
+  const btn = document.getElementById("bibtexCopy");
+  const block = document.getElementById("bibtexBlock");
+  if (!btn || !block) return;
+  btn.addEventListener("click", async () => {
+    const text = block.innerText.trim();
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      const prev = btn.textContent;
+      btn.textContent = "Copied";
+      btn.classList.add("copied");
+      setTimeout(() => {
+        btn.textContent = prev;
+        btn.classList.remove("copied");
+      }, 1600);
+    } catch (err) {
+      console.error("Copy failed", err);
+    }
+  });
+})();

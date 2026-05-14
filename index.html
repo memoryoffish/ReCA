@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ReCA Demonstration</title>
+    <title>ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation</title>
+    <meta name="description" content="ReCA: an inference-time framework that solves multi-shot video extrapolation (MSVE) by allocating context hierarchically across Plan, Allocate, and Refresh operators, achieving 8–16% gains over the strongest baseline.">
+    <meta property="og:title" content="ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation">
+    <meta property="og:description" content="ReCA extends an observed visual anchor into a coherent multi-shot long video by recursively allocating context across Plan, Allocate, and Refresh operators.">
+    <meta property="og:image" content="./assets/fig_reca_main.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reca.vmv.re/">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Ccircle cx="16" cy="16" r="15" fill="%23030406"/%3E%3Cpath d="M9 8h14l-6 7 7 9H10l6-8z" fill="%23d8ff4f"/%3E%3C/svg%3E'>
-    <link rel="stylesheet" href="./styles.css?v=20260514-hero">
+    <link rel="stylesheet" href="./styles.css?v=20260514-paper">
   </head>
   <body>
     <header class="topbar" aria-label="Page navigation">
@@ -14,10 +21,13 @@
         <span>ReCA</span>
       </a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#capabilities">Capabilities</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#capabilities">Method</a>
         <a href="#timeline">Timeline</a>
         <a href="#showcase">Showcase</a>
         <a href="#benchmark">Comparison</a>
+        <a href="#results">Results</a>
+        <a href="#bibtex">BibTeX</a>
       </nav>
       <span id="dataStatus" class="data-status" hidden>Preparing demo</span>
       <a class="try-demo-cta" href="./demo/">
@@ -43,16 +53,82 @@
         </div>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Recursive Context Allocation</p>
-          <h1 id="hero-title">ReCA: multi-shot video extrapolation with coherent long-range state.</h1>
+          <p class="eyebrow">Recursive Context Allocation · Preprint 2026</p>
+          <h1 id="hero-title">ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation.</h1>
           <p class="hero-lede">
-            ReCA expands multiple visual anchors into a long, multi-shot continuation while preserving
-            identity, scene state, object relations, and event causality across the generated sequence.
+            ReCA is an inference-time framework that expands an observed visual anchor into a coherent,
+            cinematically structured multi-shot continuation — preserving identity, scene, object, and
+            event-causality state by allocating context hierarchically across <em>Plan</em>,
+            <em>Allocate</em>, and <em>Refresh</em> operators.
+          </p>
+          <div class="hero-authors" aria-label="Authors">
+            <span class="author-name"><a href="https://akideliu.github.io/" target="_blank" rel="noopener noreferrer">Akide Liu</a><sup>1,2,3‡</sup></span>
+            <span class="author-name">Jinbo Xing<sup>2†</sup></span>
+            <span class="author-name">Chaojie Mao<sup>2</sup></span>
+            <span class="author-name">Ye Li<sup>3</sup></span>
+            <span class="author-name">Zeyu Zhang<sup>3</sup></span>
+            <span class="author-name">Yefei He<sup>3</sup></span>
+            <span class="author-name">Weijie Wang<sup>3</sup></span>
+            <span class="author-name">Zihan Wang<sup>4</sup></span>
+            <span class="author-name">Yu Liu<sup>2</sup></span>
+            <span class="author-name">Gholamreza Haffari<sup>1</sup></span>
+            <span class="author-name">Bohan Zhuang<sup>3†</sup></span>
+          </div>
+          <p class="hero-affil">
+            <sup>1</sup>Monash University &nbsp;·&nbsp; <sup>2</sup>Tongyi Lab, Alibaba Group &nbsp;·&nbsp;
+            <sup>3</sup>Zhejiang University &nbsp;·&nbsp; <sup>4</sup>University of Queensland
+            <br><sup>†</sup>Corresponding Authors &nbsp;·&nbsp; <sup>‡</sup>Intern at Tongyi Lab, Alibaba Group
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#timeline">Explore Shot Preview</a>
-            <a class="button" href="#benchmark">Compare Frameworks</a>
+            <a class="button primary" href="#" aria-disabled="true" title="arXiv link coming soon">
+              <span aria-hidden="true">📄</span>&nbsp;Paper (arXiv TBA)
+            </a>
+            <a class="button" href="https://github.com/memoryoffish/ReCA" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">💻</span>&nbsp;Code
+            </a>
+            <a class="button" href="./demo/">
+              <span aria-hidden="true">▶</span>&nbsp;Interactive Demo
+            </a>
+            <a class="button" href="#bibtex">
+              <span aria-hidden="true">📚</span>&nbsp;BibTeX
+            </a>
           </div>
+        </div>
+      </section>
+
+      <section id="abstract" class="section abstract-band" aria-labelledby="abstract-title">
+        <div class="section-kicker">Abstract</div>
+        <div class="wide-heading">
+          <h2 id="abstract-title">Long-video failure is not a context-length problem — it is a context-allocation problem.</h2>
+        </div>
+        <div class="abstract-prose">
+          <p>
+            Minute-scale cinematic video generation is a central challenge for generative video models.
+            Existing paradigms address only fragments of this challenge: single-shot extrapolation
+            preserves an anchor but lacks cinematic structure, while multi-shot storytelling imposes
+            structure yet remains free to invent its visual states rather than continue an observed one.
+            We define <strong>Multi-Shot Video Extrapolation (MSVE)</strong>, a task that extends an
+            observed frame or clip into a sequence of cinematically structured shots while preserving
+            anchor state and advancing narrative intent, under the finite per-call generation budget of
+            short-video models.
+          </p>
+          <p>
+            We identify three coupled bottlenecks: (1) global planners over-specify unsupported details
+            from full screenplays; (2) shot-level prompts dilute task-relevant state when carrying the
+            complete story; (3) temporal chaining turns generated frames into a lossy memory in which
+            identity, scene, object, and action state decay. MSVE reveals that long-video failure is
+            not merely a limitation of context length, but a failure of <em>context allocation</em>.
+          </p>
+          <p>
+            We propose <strong>Recursive Context Allocation (ReCA)</strong>, an inference-time framework
+            that allocates context hierarchically across planning and generation. ReCA recursively
+            decomposes MSVE into context-bounded subproblems, invokes frozen generators at leaf nodes,
+            and propagates structured state updates across time. To evaluate this setting, we further
+            propose <strong>MSVE-Bench</strong> and <strong>NB-Q</strong>, a source-grounded protocol
+            with prompts purpose-built for 3–5&nbsp;minute long-video generation. Compared to previous
+            methods, ReCA improves average normalized score by <strong>8–16%</strong> over the strongest
+            competing controller and improves multi-shot consistency metrics by <strong>28–43%</strong>.
+          </p>
         </div>
       </section>
 
@@ -203,13 +279,111 @@
         <div id="comparisonGrid" class="comparison-grid"></div>
       </section>
 
+      <section id="results" class="section results-band" aria-labelledby="results-title">
+        <div class="section-kicker">Quantitative Results</div>
+        <div class="wide-heading">
+          <h2 id="results-title">ReCA leads every backbone on MSVE-Bench and overall normalised score.</h2>
+          <p>
+            Mean&nbsp;±&nbsp;SE across 20 MSVE prompts. Within each backbone block, ReCA and all baselines
+            share the same frozen generator, per-call duration budget, and long-video prompt package —
+            ReCA differs only in how it allocates planning, shot-local, and temporal context. Numbers
+            reproduced from the paper's Table&nbsp;1 (Wan&nbsp;2.7 block).
+          </p>
+        </div>
+        <div class="results-grid">
+          <div class="results-table-wrap" role="region" aria-label="Quantitative comparison on Wan 2.7" tabindex="0">
+            <table class="results-table">
+              <caption>Quantitative evaluation on <strong>Wan&nbsp;2.7</strong> (proprietary backbone, 20 MSVE prompts).</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Method</th>
+                  <th scope="col">VBench ↑</th>
+                  <th scope="col">StoryMem ↑</th>
+                  <th scope="col">ViStory-Self ↑</th>
+                  <th scope="col">ViStory-Cross ↑</th>
+                  <th scope="col">MovieBench ↑</th>
+                  <th scope="col">MSVE-Bench ↑</th>
+                  <th scope="col">Avg. ↑</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">I2V Extension</th>
+                  <td>0.951</td><td>0.952</td><td>0.587</td><td>0.142</td><td>19.881</td><td>0.123</td><td>0.492</td>
+                </tr>
+                <tr>
+                  <th scope="row">VGoT</th>
+                  <td>0.978</td><td>0.965</td><td>0.798</td><td>0.274</td><td>21.959</td><td>0.182</td><td>0.569</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mora</th>
+                  <td>0.972</td><td>0.988</td><td>0.855</td><td>0.263</td><td>26.062</td><td>0.276</td><td>0.602</td>
+                </tr>
+                <tr>
+                  <th scope="row">MovieAgent</th>
+                  <td>0.974</td><td>0.978</td><td>0.913</td><td>0.286</td><td>25.467</td><td>0.738</td><td>0.691</td>
+                </tr>
+                <tr class="results-row-ours">
+                  <th scope="row">ReCA (Ours)</th>
+                  <td><strong>0.984</strong></td>
+                  <td><strong>0.992</strong></td>
+                  <td><strong>0.936</strong></td>
+                  <td><strong>0.324</strong></td>
+                  <td><strong>31.454</strong></td>
+                  <td><strong>0.942</strong></td>
+                  <td><strong>0.749</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="results-callouts" aria-label="Headline numbers">
+            <article class="result-callout">
+              <span class="callout-num">+8–16%</span>
+              <p>average normalised score over the strongest baseline on every backbone block.</p>
+            </article>
+            <article class="result-callout">
+              <span class="callout-num">+28–43%</span>
+              <p>MSVE-Bench gain over the strongest baseline, on the metric purpose-built for multi-shot extrapolation.</p>
+            </article>
+            <article class="result-callout">
+              <span class="callout-num">4.74×</span>
+              <p>real-time factor — the lowest among all methods, ~18–22% below every baseline.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="bibtex" class="section bibtex-band" aria-labelledby="bibtex-title">
+        <div class="section-kicker">Citation</div>
+        <div class="wide-heading">
+          <h2 id="bibtex-title">If you find ReCA useful, please cite our work.</h2>
+        </div>
+        <div class="bibtex-shell">
+          <button type="button" class="bibtex-copy" id="bibtexCopy" aria-label="Copy BibTeX to clipboard">Copy</button>
+          <pre id="bibtexBlock"><code>@article{liu2026reca,
+  title   = {ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation},
+  author  = {Liu, Akide and Xing, Jinbo and Mao, Chaojie and Li, Ye and
+             Zhang, Zeyu and He, Yefei and Wang, Weijie and Wang, Zihan and
+             Liu, Yu and Haffari, Gholamreza and Zhuang, Bohan},
+  journal = {arXiv preprint},
+  year    = {2026},
+  note    = {arXiv ID TBA},
+  url     = {https://reca.vmv.re/}
+}</code></pre>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
-      <span>ReCA Demonstration</span>
-      <span>Multi-shot video extrapolation</span>
+      <span>ReCA · Multi-Shot Long Video Extrapolation via Recursive Context Allocation</span>
+      <span>
+        <a href="https://github.com/memoryoffish/ReCA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="./demo/">Interactive Demo</a>
+      </span>
     </footer>
 
-    <script src="./app.js?v=20260514-hero" defer></script>
+    <script src="./app.js?v=20260514-paper" defer></script>
   </body>
 </html>

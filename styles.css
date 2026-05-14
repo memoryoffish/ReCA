@@ -1251,6 +1251,236 @@ h1 {
   min-height: 76px;
   padding: 0 clamp(18px, 4vw, 64px);
 }
+.page-footer a {
+  color: var(--muted);
+}
+.page-footer a:hover {
+  color: var(--ink);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Hero authors + affiliations
+   Sits between the H1 lede and the action button row.
+   ───────────────────────────────────────────────────────────── */
+.hero-authors {
+  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: clamp(13px, 1.05vw, 15px);
+  font-weight: 500;
+  margin-top: 22px;
+  max-width: 880px;
+}
+.hero-authors .author-name a {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  color: inherit;
+}
+.hero-authors .author-name a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.95);
+}
+.hero-authors sup {
+  font-weight: 400;
+  margin-left: 2px;
+  opacity: 0.85;
+}
+.hero-affil {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(11px, 0.95vw, 13px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 880px;
+}
+.hero-affil sup {
+  font-size: 0.85em;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Abstract section
+   Plain prose with the same wide-heading rhythm as the rest.
+   ───────────────────────────────────────────────────────────── */
+.abstract-band {
+  background: var(--bg);
+}
+.abstract-prose {
+  color: var(--ink);
+  font-size: clamp(15px, 1.18vw, 17px);
+  line-height: 1.72;
+  margin-top: clamp(32px, 4vw, 56px);
+  max-width: 880px;
+}
+.abstract-prose p + p {
+  margin-top: 16px;
+}
+.abstract-prose strong {
+  font-weight: 600;
+}
+.abstract-prose em {
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Quantitative results section
+   Side-by-side: scrollable table + 3 headline-number callouts.
+   ───────────────────────────────────────────────────────────── */
+.results-band {
+  background: var(--bg-2);
+}
+.results-grid {
+  display: grid;
+  gap: clamp(24px, 3vw, 36px);
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  margin-top: clamp(34px, 5vw, 56px);
+}
+.results-table-wrap {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  padding: clamp(14px, 2vw, 22px);
+}
+.results-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 640px;
+  width: 100%;
+}
+.results-table caption {
+  caption-side: top;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  text-align: left;
+}
+.results-table thead th {
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 10px 8px;
+  text-align: right;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.results-table thead th:first-child {
+  text-align: left;
+}
+.results-table tbody th,
+.results-table tbody td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 8px;
+  text-align: right;
+  vertical-align: middle;
+}
+.results-table tbody th {
+  color: var(--ink);
+  font-weight: 500;
+  text-align: left;
+}
+.results-table tbody tr:last-child th,
+.results-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.results-table .results-row-ours {
+  background: rgba(26, 115, 232, 0.06);
+}
+.results-table .results-row-ours th {
+  color: var(--cyan);
+  font-weight: 700;
+}
+.results-table .results-row-ours td strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.results-callouts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.result-callout {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: clamp(16px, 1.8vw, 22px);
+}
+.result-callout .callout-num {
+  color: var(--cyan);
+  display: block;
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.result-callout p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  margin-top: 8px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BibTeX citation block
+   ───────────────────────────────────────────────────────────── */
+.bibtex-band {
+  background: var(--bg);
+}
+.bibtex-shell {
+  margin-top: clamp(32px, 4vw, 48px);
+  position: relative;
+}
+.bibtex-shell pre {
+  background: #0d1117;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: #e6edf3;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+  overflow-x: auto;
+  padding: clamp(18px, 2vw, 26px);
+}
+.bibtex-shell pre code {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  white-space: pre;
+}
+.bibtex-copy {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 12px;
+  position: absolute;
+  right: 12px;
+  text-transform: uppercase;
+  top: 12px;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+.bibtex-copy:hover {
+  background: #ffffff;
+}
+.bibtex-copy.copied {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .hover-preview-layer[hidden] {
   display: none;
