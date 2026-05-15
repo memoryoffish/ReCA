@@ -1,0 +1,1121 @@
+{
+  "demo_id": "dumplings",
+  "slug": "dumplings",
+  "title": "Dumplings",
+  "is_rerun": false,
+  "n_shots": 8,
+  "n_segments": 15,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "old_father"
+      },
+      {
+        "id": "adult_daughter"
+      },
+      {
+        "id": "late_mother_photo"
+      }
+    ],
+    "location_plan": {
+      "old_kitchen": {
+        "id": "old_kitchen",
+        "key_zones": [
+          {
+            "id": "kitchen_prep_counter"
+          },
+          {
+            "id": "kitchen_memory_wall"
+          },
+          {
+            "id": "kitchen_window_stove"
+          },
+          {
+            "id": "kitchen_doorframe_marks"
+          }
+        ],
+        "props": {
+          "dumpling_setup": {
+            "name": "饺子案板组合",
+            "owner": "old_kitchen",
+            "prompt": "静态道具参考图，旧木案板上铺满薄薄面粉，一盆猪肉白菜馅，一碗清水，几张擀好的饺子皮，几排手工饺子，有的褶子整齐有的略歪，陶瓷盘边缘有旧花纹，写实家庭纪实质感，暖黄厨房灯。",
+            "negative_prompt": "速冻饺子包装, 豪华餐盘, 过度摆拍, 卡通, 动漫, 文字, 水印, 畸形食物"
+          },
+          "enamel_cup": {
+            "name": "女儿旧搪瓷杯",
+            "owner": "old_kitchen",
+            "prompt": "静态道具参考图，九十年代学生用白色搪瓷杯，杯口有磕碰掉漆，杯身印着褪色红花图案，放在旧厨房窗台边，表面有薄灰，旁边窗框胶带和冷蓝夜色虚化，承载旧时光痕迹。",
+            "negative_prompt": "全新杯子, 玻璃杯, 现代保温杯, 商标文字突出, 卡通, 动漫, 水印"
+          },
+          "stopped_clock": {
+            "name": "停摆挂钟",
+            "owner": "old_kitchen",
+            "prompt": "静态道具参考图，老式圆形挂钟，塑料外壳泛黄，表盘微微开裂，指针停在下午时刻，挂在旧厨房瓷砖墙上，旁边有褪色家庭照片，低照度暖黄光，时间停滞的家庭纪实质感。",
+            "negative_prompt": "电子钟, 新钟表, 豪华摆件, 文字水印, 卡通, 动漫"
+          },
+          "height_marks": {
+            "name": "门框铅笔刻痕",
+            "owner": "old_kitchen",
+            "prompt": "静态道具参考图，旧木门框上一排铅笔身高线，旁边有细小手写年份和母亲字迹，漆面磨损发暗，少量面粉指印沾在最高刻痕附近，暖黄厨房灯下纹理清晰，背景客厅电视光虚化。",
+            "negative_prompt": "印刷尺, 新木门, 干净无痕, 卡通, 动漫, 文字水印"
+          },
+          "repaired_dumpling": {
+            "name": "重新捏好的饺子",
+            "owner": "adult_daughter",
+            "prompt": "静态道具参考图，一个手工饺子放在旧陶瓷碗或案板中央，褶子从左边压三下、右边收口、中间轻轻按平，边缘有曾经捏歪后修好的不完美痕迹，表面沾少量面粉，朴素家庭食物质感，暖黄灯光。",
+            "negative_prompt": "完美工业食品, 速冻饺子, 夸张造型, 油腻反光, 卡通, 动漫, 文字, 水印"
+          }
+        }
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_new_year_kitchen_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_prep_counter",
+            "prop": "dumpling_setup"
+          }
+        },
+        {
+          "id": "a02_wrapped_wrong_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_prep_counter",
+            "prop": "dumpling_setup"
+          }
+        },
+        {
+          "id": "a03_time_traces_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter,late_mother_photo",
+            "place": "kitchen_memory_wall",
+            "prop": "enamel_cup,stopped_clock,dumpling_setup"
+          }
+        },
+        {
+          "id": "a04_cold_voice_crack_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_window_stove",
+            "prop": "dumpling_setup"
+          }
+        },
+        {
+          "id": "a05_mothers_folds_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_prep_counter",
+            "prop": "dumpling_setup,repaired_dumpling"
+          }
+        },
+        {
+          "id": "a06_height_mark_touch_start",
+          "reference_inputs": {
+            "portrait": "adult_daughter,old_father",
+            "place": "kitchen_doorframe_marks",
+            "prop": "height_marks"
+          }
+        },
+        {
+          "id": "a07_boiling_together_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_window_stove",
+            "prop": "dumpling_setup"
+          }
+        },
+        {
+          "id": "a08_quiet_aftertaste_start",
+          "reference_inputs": {
+            "portrait": "old_father,adult_daughter",
+            "place": "kitchen_window_stove",
+            "prop": "repaired_dumpling,height_marks,dumpling_setup"
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_new_year_kitchen",
+        "duration_s": 28,
+        "story_goal": "建立除夕夜父女久别重逢却疏离的关系基底，以及旧厨房作为家庭记忆容器的核心位置。",
+        "start_state": "父亲与女儿并肩站在窄厨房案板前，案板上有面粉、清水碗、馅盆和几排饺子；父亲双手捧着饺子皮，女儿低头捏饺子，目光避开父亲。",
+        "end_state": "父亲手边多了几个褶子细密的饺子，女儿面前也排出几只饺子；两人仍并肩站着，身体距离很近，视线始终没有真正相接。",
+        "visual_intent": "长镜头缓慢横移并轻微推近，从案板面粉扫到两人手部再停在并肩关系上，节奏克制缓慢，写实家庭纪实风格，氛围安静疏离，暖黄厨房光中掺入远处电视冷蓝色。"
+      },
+      {
+        "id": "shot02_wrapped_wrong",
+        "duration_s": 12,
+        "story_goal": "通过父亲不直接询问、只提醒馅料多少，以及女儿捏歪饺子的细节，呈现两人无法开口的关心与抗拒。",
+        "start_state": "父亲的手把擀好的饺子皮放在女儿手边，女儿低头接住，清水碗在案板右后方，父亲没有看她的脸。",
+        "end_state": "女儿面前有一个捏歪的饺子，清水碗被父亲推近到她手边；女儿手指停在碗旁，重新蘸水后的饺子边缘被捏紧。",
+        "visual_intent": "镜头固定在手部近景，偶尔微小拉焦从饺子皮转到清水碗，节奏细腻缓慢，写实电影感，氛围含蓄尴尬，色彩维持低饱和暖黄。"
+      },
+      {
+        "id": "shot03_time_traces",
+        "duration_s": 24,
+        "story_goal": "揭示厨房中未被处理的旧物与母亲缺席，使女儿卖房的理由从现实安全问题转向对停滞记忆的抵触。",
+        "start_state": "女儿低头把包好的饺子排到盘子边缘，父亲取馅时身体避开窗台上的旧搪瓷杯；墙上褪色照片和停摆挂钟清晰可见。",
+        "end_state": "女儿面前的饺子被排成整齐一列，她的嘴角紧绷，父亲仍低头包饺子；搪瓷杯、旧照片和停摆挂钟都留在两人背后。",
+        "visual_intent": "镜头从案板慢慢摇向墙面旧物，再回到女儿低头的侧脸，节奏逐步收紧，写实纪实风格，氛围由沉默转为冷硬，暖黄旧灯和冷蓝窗光制造记忆与现实的分裂。"
+      },
+      {
+        "id": "shot04_cold_voice_crack",
+        "duration_s": 6,
+        "story_goal": "让争执达到最冷的一刻：女儿指出小修补无法解决问题，父亲的退让以破裂的饺子皮显形。",
+        "start_state": "父亲手中的饺子皮边缘出现细小裂口，女儿停在案板另一侧，脸转向贴胶带的窗缝，神情冷硬。",
+        "end_state": "父亲把裂开的饺子皮重新摊平在掌心，低着头没有看女儿；女儿双手停在盘子边，贴胶带的窗缝在她身后发冷光。",
+        "visual_intent": "短镜头以手持轻微颤动贴近父亲手部，再用一次冷静拉焦落到女儿侧脸，节奏突然变短变硬，写实手持电影风格，氛围压抑，冷蓝窗光短暂压过暖黄灯。"
+      },
+      {
+        "id": "shot05_mothers_folds",
+        "duration_s": 18,
+        "story_goal": "让母亲的记忆通过饺子褶纹回到现场，促成女儿从抗拒转向主动修补的第一步。",
+        "start_state": "父亲把自己包得最好的饺子放在女儿那边，那个褶子整齐的饺子旁边是她先前捏歪的饺子，女儿低头凝视。",
+        "end_state": "女儿把先前捏歪的饺子重新捏好，褶子的顺序接近父亲放来的那只；两只饺子并排在她面前，父亲的手停得更慢。",
+        "visual_intent": "镜头以85mm近景凝视饺子褶纹，缓慢推近并停留在女儿手指，节奏柔和延长，写实电影感，氛围从僵硬转为隐秘的亲近，暖黄光集中在面粉和褶纹上。"
+      },
+      {
+        "id": "shot06_height_mark_touch",
+        "duration_s": 7,
+        "story_goal": "通过门框身高刻痕让女儿重新触碰自己曾属于这个家的证据，使卖房议题出现松动。",
+        "start_state": "女儿沾着面粉的手指贴近门框最高的铅笔刻痕，母亲字迹在旁边可见；父亲在案板旁虚化，动作放慢。",
+        "end_state": "女儿指尖留下淡淡面粉印，最高刻痕没有被擦掉；她侧脸安静，父亲仍在身后默默站着。",
+        "visual_intent": "镜头静止近景，利用窗外提前鞭炮造成的轻微玻璃震动带出环境反应，节奏短而停顿，写实克制，氛围柔软但不煽情，暖黄门框与冷蓝客厅光交界。"
+      },
+      {
+        "id": "shot07_boiling_together",
+        "duration_s": 22,
+        "story_goal": "让父女从并肩但各自沉默，转为在煮饺子的具体动作中重新形成配合。",
+        "start_state": "灶上锅水开始沸腾，父亲站在锅前拿着装饺子的盘子，女儿站在旁边空着手，身体比先前更靠近灶台。",
+        "end_state": "锅里饺子在热水中浮动，女儿手持漏勺停在锅边，父亲的手离开调小后的火力旋钮；锅盖被斜放在一侧，蒸汽从缝隙上升。",
+        "visual_intent": "镜头围绕灶台小幅弧形移动，从父亲下锅的手到女儿接过漏勺，节奏由谨慎到协调，写实家庭纪实风格，氛围逐渐亲密，蒸汽柔化旧厨房痕迹，暖黄灶灯穿透白雾。"
+      },
+      {
+        "id": "shot08_quiet_aftertaste",
+        "duration_s": 16,
+        "story_goal": "以女儿提出先修厨房窗户而非继续卖房，完成关系暂时和解但不彻底解决的余韵。",
+        "start_state": "女儿碗里盛着那只重新捏好的饺子，饺子浮在热汤白雾中；女儿低头看碗，父亲站在灶旁，手靠近煤气旋钮。",
+        "end_state": "空盘子上还剩一点面粉，门框刻痕没有被擦掉，父亲和女儿并肩站在灶台前，锅里的热气安静上升。",
+        "visual_intent": "镜头从碗中饺子缓慢拉远到父女并肩和旧厨房全貌，节奏舒缓留白，写实电影感，氛围克制温暖但保留遗憾，色彩由冷蓝边光回到低饱和暖黄。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_new_year_kitchen_to_wrapped_wrong",
+        "from_shot": "shot01_new_year_kitchen",
+        "to_shot": "shot02_wrapped_wrong",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_wrapped_wrong_to_time_traces",
+        "from_shot": "shot02_wrapped_wrong",
+        "to_shot": "shot03_time_traces",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_time_traces_to_cold_voice_crack",
+        "from_shot": "shot03_time_traces",
+        "to_shot": "shot04_cold_voice_crack",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_cold_voice_crack_to_mothers_folds",
+        "from_shot": "shot04_cold_voice_crack",
+        "to_shot": "shot05_mothers_folds",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_mothers_folds_to_height_mark_touch",
+        "from_shot": "shot05_mothers_folds",
+        "to_shot": "shot06_height_mark_touch",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_height_mark_touch_to_boiling_together",
+        "from_shot": "shot06_height_mark_touch",
+        "to_shot": "shot07_boiling_together",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr07_boiling_together_to_quiet_aftertaste",
+        "from_shot": "shot07_boiling_together",
+        "to_shot": "shot08_quiet_aftertaste",
+        "mode": "cut"
+      }
+    ]
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "old_father": {
+        "id": "old_father"
+      },
+      "adult_daughter": {
+        "id": "adult_daughter"
+      },
+      "late_mother_photo": {
+        "id": "late_mother_photo"
+      }
+    },
+    "location_plan": {
+      "old_kitchen": {
+        "id": "old_kitchen"
+      }
+    },
+    "prop_plan": {
+      "dumpling_setup": {
+        "id": "dumpling_setup"
+      },
+      "enamel_cup": {
+        "id": "enamel_cup"
+      },
+      "stopped_clock": {
+        "id": "stopped_clock"
+      },
+      "height_marks": {
+        "id": "height_marks"
+      },
+      "repaired_dumpling": {
+        "id": "repaired_dumpling"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_new_year_kitchen_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        }
+      },
+      {
+        "id": "a02_wrapped_wrong_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        }
+      },
+      {
+        "id": "a03_time_traces_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter,late_mother_photo",
+          "place": "kitchen_memory_wall",
+          "prop": "enamel_cup,stopped_clock,dumpling_setup"
+        }
+      },
+      {
+        "id": "a04_cold_voice_crack_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "dumpling_setup"
+        }
+      },
+      {
+        "id": "a05_mothers_folds_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup,repaired_dumpling"
+        }
+      },
+      {
+        "id": "a06_height_mark_touch_start",
+        "reference_inputs": {
+          "portrait": "adult_daughter,old_father",
+          "place": "kitchen_doorframe_marks",
+          "prop": "height_marks"
+        }
+      },
+      {
+        "id": "a07_boiling_together_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "dumpling_setup"
+        }
+      },
+      {
+        "id": "a08_quiet_aftertaste_start",
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "repaired_dumpling,height_marks,dumpling_setup"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_new_year_kitchen",
+        "duration_s": 28,
+        "story_goal": "建立除夕夜父女久别重逢却疏离的关系基底，以及旧厨房作为家庭记忆容器的核心位置。",
+        "start_state": "父亲与女儿并肩站在窄厨房案板前，案板上有面粉、清水碗、馅盆和几排饺子；父亲双手捧着饺子皮，女儿低头捏饺子，目光避开父亲。",
+        "end_state": "父亲手边多了几个褶子细密的饺子，女儿面前也排出几只饺子；两人仍并肩站着，身体距离很近，视线始终没有真正相接。",
+        "visual_intent": "长镜头缓慢横移并轻微推近，从案板面粉扫到两人手部再停在并肩关系上，节奏克制缓慢，写实家庭纪实风格，氛围安静疏离，暖黄厨房光中掺入远处电视冷蓝色。"
+      },
+      {
+        "id": "shot02_wrapped_wrong",
+        "duration_s": 12,
+        "story_goal": "通过父亲不直接询问、只提醒馅料多少，以及女儿捏歪饺子的细节，呈现两人无法开口的关心与抗拒。",
+        "start_state": "父亲的手把擀好的饺子皮放在女儿手边，女儿低头接住，清水碗在案板右后方，父亲没有看她的脸。",
+        "end_state": "女儿面前有一个捏歪的饺子，清水碗被父亲推近到她手边；女儿手指停在碗旁，重新蘸水后的饺子边缘被捏紧。",
+        "visual_intent": "镜头固定在手部近景，偶尔微小拉焦从饺子皮转到清水碗，节奏细腻缓慢，写实电影感，氛围含蓄尴尬，色彩维持低饱和暖黄。"
+      },
+      {
+        "id": "shot03_time_traces",
+        "duration_s": 24,
+        "story_goal": "揭示厨房中未被处理的旧物与母亲缺席，使女儿卖房的理由从现实安全问题转向对停滞记忆的抵触。",
+        "start_state": "女儿低头把包好的饺子排到盘子边缘，父亲取馅时身体避开窗台上的旧搪瓷杯；墙上褪色照片和停摆挂钟清晰可见。",
+        "end_state": "女儿面前的饺子被排成整齐一列，她的嘴角紧绷，父亲仍低头包饺子；搪瓷杯、旧照片和停摆挂钟都留在两人背后。",
+        "visual_intent": "镜头从案板慢慢摇向墙面旧物，再回到女儿低头的侧脸，节奏逐步收紧，写实纪实风格，氛围由沉默转为冷硬，暖黄旧灯和冷蓝窗光制造记忆与现实的分裂。"
+      },
+      {
+        "id": "shot04_cold_voice_crack",
+        "duration_s": 6,
+        "story_goal": "让争执达到最冷的一刻：女儿指出小修补无法解决问题，父亲的退让以破裂的饺子皮显形。",
+        "start_state": "父亲手中的饺子皮边缘出现细小裂口，女儿停在案板另一侧，脸转向贴胶带的窗缝，神情冷硬。",
+        "end_state": "父亲把裂开的饺子皮重新摊平在掌心，低着头没有看女儿；女儿双手停在盘子边，贴胶带的窗缝在她身后发冷光。",
+        "visual_intent": "短镜头以手持轻微颤动贴近父亲手部，再用一次冷静拉焦落到女儿侧脸，节奏突然变短变硬，写实手持电影风格，氛围压抑，冷蓝窗光短暂压过暖黄灯。"
+      },
+      {
+        "id": "shot05_mothers_folds",
+        "duration_s": 18,
+        "story_goal": "让母亲的记忆通过饺子褶纹回到现场，促成女儿从抗拒转向主动修补的第一步。",
+        "start_state": "父亲把自己包得最好的饺子放在女儿那边，那个褶子整齐的饺子旁边是她先前捏歪的饺子，女儿低头凝视。",
+        "end_state": "女儿把先前捏歪的饺子重新捏好，褶子的顺序接近父亲放来的那只；两只饺子并排在她面前，父亲的手停得更慢。",
+        "visual_intent": "镜头以85mm近景凝视饺子褶纹，缓慢推近并停留在女儿手指，节奏柔和延长，写实电影感，氛围从僵硬转为隐秘的亲近，暖黄光集中在面粉和褶纹上。"
+      },
+      {
+        "id": "shot06_height_mark_touch",
+        "duration_s": 7,
+        "story_goal": "通过门框身高刻痕让女儿重新触碰自己曾属于这个家的证据，使卖房议题出现松动。",
+        "start_state": "女儿沾着面粉的手指贴近门框最高的铅笔刻痕，母亲字迹在旁边可见；父亲在案板旁虚化，动作放慢。",
+        "end_state": "女儿指尖留下淡淡面粉印，最高刻痕没有被擦掉；她侧脸安静，父亲仍在身后默默站着。",
+        "visual_intent": "镜头静止近景，利用窗外提前鞭炮造成的轻微玻璃震动带出环境反应，节奏短而停顿，写实克制，氛围柔软但不煽情，暖黄门框与冷蓝客厅光交界。"
+      },
+      {
+        "id": "shot07_boiling_together",
+        "duration_s": 22,
+        "story_goal": "让父女从并肩但各自沉默，转为在煮饺子的具体动作中重新形成配合。",
+        "start_state": "灶上锅水开始沸腾，父亲站在锅前拿着装饺子的盘子，女儿站在旁边空着手，身体比先前更靠近灶台。",
+        "end_state": "锅里饺子在热水中浮动，女儿手持漏勺停在锅边，父亲的手离开调小后的火力旋钮；锅盖被斜放在一侧，蒸汽从缝隙上升。",
+        "visual_intent": "镜头围绕灶台小幅弧形移动，从父亲下锅的手到女儿接过漏勺，节奏由谨慎到协调，写实家庭纪实风格，氛围逐渐亲密，蒸汽柔化旧厨房痕迹，暖黄灶灯穿透白雾。"
+      },
+      {
+        "id": "shot08_quiet_aftertaste",
+        "duration_s": 16,
+        "story_goal": "以女儿提出先修厨房窗户而非继续卖房，完成关系暂时和解但不彻底解决的余韵。",
+        "start_state": "女儿碗里盛着那只重新捏好的饺子，饺子浮在热汤白雾中；女儿低头看碗，父亲站在灶旁，手靠近煤气旋钮。",
+        "end_state": "空盘子上还剩一点面粉，门框刻痕没有被擦掉，父亲和女儿并肩站在灶台前，锅里的热气安静上升。",
+        "visual_intent": "镜头从碗中饺子缓慢拉远到父女并肩和旧厨房全貌，节奏舒缓留白，写实电影感，氛围克制温暖但保留遗憾，色彩由冷蓝边光回到低饱和暖黄。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_new_year_kitchen_to_wrapped_wrong",
+        "from_shot": "shot01_new_year_kitchen",
+        "to_shot": "shot02_wrapped_wrong",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_wrapped_wrong_to_time_traces",
+        "from_shot": "shot02_wrapped_wrong",
+        "to_shot": "shot03_time_traces",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_time_traces_to_cold_voice_crack",
+        "from_shot": "shot03_time_traces",
+        "to_shot": "shot04_cold_voice_crack",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_cold_voice_crack_to_mothers_folds",
+        "from_shot": "shot04_cold_voice_crack",
+        "to_shot": "shot05_mothers_folds",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_mothers_folds_to_height_mark_touch",
+        "from_shot": "shot05_mothers_folds",
+        "to_shot": "shot06_height_mark_touch",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_height_mark_touch_to_boiling_together",
+        "from_shot": "shot06_height_mark_touch",
+        "to_shot": "shot07_boiling_together",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr07_boiling_together_to_quiet_aftertaste",
+        "from_shot": "shot07_boiling_together",
+        "to_shot": "shot08_quiet_aftertaste",
+        "mode": "cut"
+      }
+    ],
+    "segments": {
+      "seg_shot06_height_mark_touch_00": {
+        "id": "seg_shot06_height_mark_touch_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "女儿沾着面粉的手指停在旧门框最高刻痕旁，母亲字迹贴着指尖，米灰大衣袖口仍挽着。镜头静止不动，她只是极轻地把指腹按上那道线，暖黄光把面粉颗粒和木漆磨损照得清楚；窗外提前的鞭炮让玻璃细微一震，冷蓝电视光在背景闪了一下，父亲在案板旁虚化地停住。落点是她指尖在最高刻痕旁留下淡淡面粉印，侧脸安静，父亲仍在身后默默站着。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "adult_daughter,old_father",
+          "place": "kitchen_doorframe_marks",
+          "prop": "height_marks"
+        },
+        "shot_id": "shot06_height_mark_touch",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a06_height_mark_touch_start"
+      },
+      "seg_shot04_cold_voice_crack_00": {
+        "id": "seg_shot04_cold_voice_crack_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从父亲掌心那张裂边饺子皮开始，手持镜头贴得很近，面粉粘在他粗糙指节上，裂口被压出的白色细纹格外刺眼。冷蓝窗光从女儿身后贴胶带的缝隙漏进来，短暂压过暖黄灯，空气像凝住。父亲没有辩解，只慢慢松开过紧的手指，把裂开的饺子皮摊回掌心；镜头冷静拉焦到女儿半明半暗的侧脸，最后停在父亲低头摊平饺子皮、女儿双手停在盘子边的僵硬画面。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot04_cold_voice_crack",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_cold_voice_crack_start"
+      },
+      "seg_shot08_quiet_aftertaste_00": {
+        "id": "seg_shot08_quiet_aftertaste_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从碗里那只重新捏好的饺子开始，热汤白雾柔柔遮住碗沿，女儿低头看着它，神情松动却仍克制。镜头极慢向后退，父亲在灶旁听见她轻声说起明年可以先修厨房窗户，没有追问，只把靠近煤气旋钮的手压低一点；暖黄灶灯穿过蒸汽，冷蓝窗光几乎退去。末尾画面停在父亲的手贴近旋钮、女儿仍捧碗低头的位置，白雾横在两人之间。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "repaired_dumpling,dumpling_setup,height_marks"
+        },
+        "shot_id": "shot08_quiet_aftertaste",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a08_quiet_aftertaste_start"
+      },
+      "seg_shot08_quiet_aftertaste_01": {
+        "id": "seg_shot08_quiet_aftertaste_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接父亲手停在旋钮旁、女儿捧碗低头的静默，镜头继续缓慢拉远，碗里的那只饺子和升起的白雾逐渐退到前景边缘。父女没有拥抱也没有再解释，只在灶台前自然并肩，旧案板、残留面粉的空盘子、贴胶带的窗和门框刻痕一一进入画面；蒸汽把旧厨房的裂纹柔化，低饱和暖黄重新包住两个人。末尾画面定在旧厨房全貌，父女并肩立在灶台前，锅中热气安静上升。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "place": "old_kitchen",
+          "prop": "height_marks"
+        },
+        "shot_id": "shot08_quiet_aftertaste",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot02_wrapped_wrong_00": {
+        "id": "seg_shot02_wrapped_wrong_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从手部近景接住那只捏歪的饺子，女儿低着脸，袖口面粉清楚，父亲半身仍在背景虚化里。父亲没有抬头问她，只轻声提醒馅料别放太多，布满皱纹的手从左侧缓慢伸向案板右后方。镜头微微拉焦到清水碗，暖黄灯压着尴尬的沉默，清水碗被推到女儿手边停下，女儿手指悬在歪饺子旁。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot02_wrapped_wrong",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_wrapped_wrong_start"
+      },
+      "seg_shot02_wrapped_wrong_01": {
+        "id": "seg_shot02_wrapped_wrong_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从清水碗停在手边的近景继续，女儿沉默片刻，仍旧低着脸，没有接父亲的话。她的指尖蘸过碗沿一点水，动作很轻地回到歪饺子的开口处，镜头固定在手和面粉之间，浅景深里父亲克制的轮廓不动。水光在饺子皮边缘一闪，女儿把裂开的边缘捏紧，手指停在碗旁。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot02_wrapped_wrong",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot03_time_traces_00": {
+        "id": "seg_shot03_time_traces_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从案板边缘的饺子和散落面粉接起，女儿仍低头站在右侧，嘴角紧绷，父亲在左侧取馅时手臂刻意绕开窗台旧搪瓷杯。镜头缓慢从两人的手摇向墙面，褪色母亲照片、停在下午的挂钟、杯口掉漆的搪瓷杯被暖黄灯和冷蓝窗光分割得格外清楚，像厨房里没有被收走的时间。镜头落在旧物与女儿低垂视线的同一构图里停定。",
+          "duration_s": 13,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter,late_mother_photo",
+          "place": "kitchen_memory_wall",
+          "prop": "enamel_cup,stopped_clock,dumpling_setup"
+        },
+        "shot_id": "shot03_time_traces",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_time_traces_start"
+      },
+      "seg_shot03_time_traces_01": {
+        "id": "seg_shot03_time_traces_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从旧照片、停摆挂钟和搪瓷杯压在两人背后的画面继续，镜头缓慢摇回案板和女儿低垂的侧脸。她没有抬头，只把包好的饺子一个个推到盘子边缘，排得越来越直，手上的面粉在旧陶瓷盘边留下细白痕迹，像把漏水、陡楼梯和独居危险一项项摆出来。父亲仍低头包饺子，不反驳也不看她，暖黄灯下两人的距离很近，气氛却明显冷硬，镜头落在女儿紧绷嘴角和整齐饺子列上停定。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "adult_daughter,old_father",
+          "place": "kitchen_memory_wall",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot03_time_traces",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot05_mothers_folds_00": {
+        "id": "seg_shot05_mothers_folds_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从整齐饺子和歪饺子的近景开始，女儿低头凝视，袖口与指尖都沾着面粉，父亲松开的手停在画面边缘。镜头极慢推近褶纹，重点停留在那只整齐饺子左三下、右收口、中间按平的细密纹路，暖黄光把面粉颗粒和不完美的手工边缘照得清楚。女儿的手从半空缓缓落下，没有说话，只把先前捏歪的饺子轻轻拿回到自己指间，父亲的手在旁边安静停住；落点是歪饺子被女儿捧在指尖，整齐饺子仍在旁边作为参照。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup,repaired_dumpling"
+        },
+        "shot_id": "shot05_mothers_folds",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a05_mothers_folds_start"
+      },
+      "seg_shot05_mothers_folds_01": {
+        "id": "seg_shot05_mothers_folds_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接女儿捧着歪饺子的近景，她仍低着头，面粉沾在指腹，父亲的手在边缘放得更慢。镜头继续停在手指和褶纹上，女儿照着旁边那只整齐饺子的捏法，把歪掉的边缘蘸少许水后收紧，褶子不追求完美，却清楚呈现左侧三道压痕、右侧收口和中间轻按的顺序；暖黄灯让两只饺子的褶纹像同一种旧习惯并排显现。最后她把修好的饺子放到整齐饺子旁边，父亲的手停得更慢。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup,repaired_dumpling"
+        },
+        "shot_id": "shot05_mothers_folds",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot07_boiling_together_00": {
+        "id": "seg_shot07_boiling_together_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从灶台侧面的沸水和生饺子开始，父亲仍穿深蓝旧毛衣和灰背心，端着盘子小心把饺子贴着锅沿滑入水里。镜头围绕灶台极小幅弧移，重点看白胖饺子一只只落进翻泡的热水，水面被轻轻推开，蒸汽在暖黄灶灯里变厚，贴胶带窗户透着冷蓝夜色。女儿站得更近，米灰大衣袖口挽着，空着的手慢慢靠向漏勺柄；这一段落在锅中已有几只饺子散开、父亲端着近空盘、女儿手停在漏勺旁的同一帧。",
+          "duration_s": 12,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot07_boiling_together",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a07_boiling_together_start"
+      },
+      "seg_shot07_boiling_together_01": {
+        "id": "seg_shot07_boiling_together_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从女儿手停在漏勺旁开始，她没有说话，只把漏勺拿起，贴着锅底轻轻推动水中的饺子，动作小而稳。镜头继续绕灶台缓慢弧移，蒸汽升高，把父亲的皱纹和女儿紧绷的侧脸都柔化；父亲放下近空盘，伸手把火调小，女儿顺势把锅盖斜放在锅沿，让白汽从一侧细长地涌出。最后停在女儿手持漏勺靠在锅边、父亲手离开火力旋钮、锅盖斜置且蒸汽上升的同一帧。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_window_stove"
+        },
+        "shot_id": "shot07_boiling_together",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_new_year_kitchen_00": {
+        "id": "seg_shot01_new_year_kitchen_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从案板前景的面粉、清水碗和几排生饺子起，镜头贴着窄厨房案板缓慢横移并轻轻推近。年迈父亲穿深蓝旧毛衣和灰背心，捧着饺子皮低头放馅，褶子捏得很慢；成年女儿米灰大衣袖口挽起，低头继续包，目光始终避开父亲。暖黄顶灯压着发黄瓷砖，远处客厅电视的冷蓝光轻扫门口。段末停在两人手边：父亲第一只褶子细密的饺子落在案板左侧，女儿手里的饺子皮合到一半。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot01_new_year_kitchen",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_new_year_kitchen_start"
+      },
+      "seg_shot01_new_year_kitchen_01": {
+        "id": "seg_shot01_new_year_kitchen_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "接着上一帧的手部位置，镜头继续沿案板极慢横移，重心落在两双沾面粉的手。父亲深蓝袖口下的粗糙手指一褶一褶压得过分认真，每个饺子边缘都收得紧；女儿米灰袖口挽起，动作更快更熟，却始终低着脸，不让视线越过案板。清水碗在两人之间像一道安静边界，馅盆和面粉被暖光照得发旧。段末停在案板中段：父亲手边添了几只整齐饺子，女儿面前也排出两三只形状略急的饺子。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot01_new_year_kitchen",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_new_year_kitchen_02": {
+        "id": "seg_shot01_new_year_kitchen_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从案板中段的几排饺子继续推进，镜头轻轻抬高一点，把手部和并肩的身体一起收入画面。父亲仍穿深蓝旧毛衣和灰背心，肩背克制地靠近案板，慢慢完成手中饺子；女儿米灰大衣袖口沾着面粉，熟练地把新包好的饺子排到自己面前，却没有转头看他。窄厨房的暖黄灯、发黄瓷砖和远处电视冷蓝光保持安静疏离。段末停在父女并肩的中景：父亲手边多了几个褶子细密的饺子，女儿面前也排出几只饺子，两人距离很近但目光仍未相接。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "old_father,adult_daughter",
+          "place": "kitchen_prep_counter",
+          "prop": "dumpling_setup"
+        },
+        "shot_id": "shot01_new_year_kitchen",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr06_height_mark_touch_to_boiling_together",
+        "flf2v_request": {
+          "kind": "bridge",
+          "prompt": "门框刻痕上的面粉指印保持在画面前景，厨房暖黄灯不变，远处灶台方向的水声逐渐清晰；焦点从铅笔刻痕缓慢漂移到背景灶台，画面中的父女身影由虚化轮廓变得可辨，锅盖边缘开始凝出水汽，白色蒸汽从灶台一侧升起并占据画面中部；镜头位置温和平移回灶边，让几分钟的等待通过水汽和声音自然流过。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "from_shot": "shot06_height_mark_touch",
+        "to_shot": "shot07_boiling_together"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "adult_daughter": "https://net-oss.akclau.de/reca/dumplings/portraits/adult_daughter.png",
+      "late_mother_photo": "https://net-oss.akclau.de/reca/dumplings/portraits/late_mother_photo.png",
+      "old_father": "https://net-oss.akclau.de/reca/dumplings/portraits/old_father.png"
+    },
+    "locations": {
+      "old_kitchen": "https://net-oss.akclau.de/reca/dumplings/locations/old_kitchen.png"
+    },
+    "props": {
+      "dumpling_setup": "https://net-oss.akclau.de/reca/dumplings/props/dumpling_setup.png",
+      "enamel_cup": "https://net-oss.akclau.de/reca/dumplings/props/enamel_cup.png",
+      "height_marks": "https://net-oss.akclau.de/reca/dumplings/props/height_marks.png",
+      "repaired_dumpling": "https://net-oss.akclau.de/reca/dumplings/props/repaired_dumpling.png",
+      "stopped_clock": "https://net-oss.akclau.de/reca/dumplings/props/stopped_clock.png"
+    },
+    "anchors": {
+      "a01_new_year_kitchen_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a01_new_year_kitchen_start.png",
+      "a02_wrapped_wrong_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a02_wrapped_wrong_start.png",
+      "a03_time_traces_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a03_time_traces_start.png",
+      "a04_cold_voice_crack_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a04_cold_voice_crack_start.png",
+      "a05_mothers_folds_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a05_mothers_folds_start.png",
+      "a06_height_mark_touch_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a06_height_mark_touch_start.png",
+      "a07_boiling_together_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a07_boiling_together_start.png",
+      "a08_quiet_aftertaste_start": "https://net-oss.akclau.de/reca/dumplings/anchors/a08_quiet_aftertaste_start.png"
+    },
+    "segments": {
+      "seg_shot01_new_year_kitchen_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_00.tail.png",
+      "seg_shot01_new_year_kitchen_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_01.tail.png",
+      "seg_shot01_new_year_kitchen_02": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_02.tail.png",
+      "seg_shot02_wrapped_wrong_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_00.tail.png",
+      "seg_shot02_wrapped_wrong_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_01.tail.png",
+      "seg_shot03_time_traces_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_00.tail.png",
+      "seg_shot03_time_traces_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_01.tail.png",
+      "seg_shot04_cold_voice_crack_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot04_cold_voice_crack_00.tail.png",
+      "seg_shot05_mothers_folds_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_00.tail.png",
+      "seg_shot05_mothers_folds_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_01.tail.png",
+      "seg_shot06_height_mark_touch_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot06_height_mark_touch_00.tail.png",
+      "seg_shot07_boiling_together_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_00.tail.png",
+      "seg_shot07_boiling_together_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_01.tail.png",
+      "seg_shot08_quiet_aftertaste_00": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_00.tail.png",
+      "seg_shot08_quiet_aftertaste_01": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_01.tail.png"
+    },
+    "bridges": {},
+    "final_mp4": "https://net-oss.akclau.de/reca/dumplings/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 8,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "adult_daughter",
+      "url": "https://net-oss.akclau.de/reca/dumplings/portraits/adult_daughter.png",
+      "t": 10.75
+    },
+    {
+      "type": "portrait_ready",
+      "id": "late_mother_photo",
+      "url": "https://net-oss.akclau.de/reca/dumplings/portraits/late_mother_photo.png",
+      "t": 10.85
+    },
+    {
+      "type": "portrait_ready",
+      "id": "old_father",
+      "url": "https://net-oss.akclau.de/reca/dumplings/portraits/old_father.png",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "old_kitchen",
+      "url": "https://net-oss.akclau.de/reca/dumplings/locations/old_kitchen.png",
+      "t": 11.05
+    },
+    {
+      "type": "prop_ready",
+      "id": "dumpling_setup",
+      "url": "https://net-oss.akclau.de/reca/dumplings/props/dumpling_setup.png",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "enamel_cup",
+      "url": "https://net-oss.akclau.de/reca/dumplings/props/enamel_cup.png",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "height_marks",
+      "url": "https://net-oss.akclau.de/reca/dumplings/props/height_marks.png",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "repaired_dumpling",
+      "url": "https://net-oss.akclau.de/reca/dumplings/props/repaired_dumpling.png",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "stopped_clock",
+      "url": "https://net-oss.akclau.de/reca/dumplings/props/stopped_clock.png",
+      "t": 11.55
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 8 shots — seeds the I2V chain…",
+      "t": 11.6
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_new_year_kitchen_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a01_new_year_kitchen_start.png",
+      "t": 16.75
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_wrapped_wrong_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a02_wrapped_wrong_start.png",
+      "t": 16.9
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_time_traces_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a03_time_traces_start.png",
+      "t": 17.05
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_cold_voice_crack_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a04_cold_voice_crack_start.png",
+      "t": 17.2
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a05_mothers_folds_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a05_mothers_folds_start.png",
+      "t": 17.35
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a06_height_mark_touch_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a06_height_mark_touch_start.png",
+      "t": 17.5
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a07_boiling_together_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a07_boiling_together_start.png",
+      "t": 17.65
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a08_quiet_aftertaste_start",
+      "url": "https://net-oss.akclau.de/reca/dumplings/anchors/a08_quiet_aftertaste_start.png",
+      "t": 17.8
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 17.85
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 15,
+      "t": 23.25
+    },
+    {
+      "type": "render_start",
+      "t": 23.35
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "15 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 23.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_new_year_kitchen_00",
+      "shot_id": "shot01_new_year_kitchen",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_wrapped_wrong_00",
+      "shot_id": "shot02_wrapped_wrong",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.7
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_time_traces_00",
+      "shot_id": "shot03_time_traces",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_00.tail.png",
+      "duration_s": 8.0,
+      "t": 35.0
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_cold_voice_crack_00",
+      "shot_id": "shot04_cold_voice_crack",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot04_cold_voice_crack_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot04_cold_voice_crack_00.tail.png",
+      "duration_s": 8.0,
+      "t": 35.3
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_mothers_folds_00",
+      "shot_id": "shot05_mothers_folds",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_00.tail.png",
+      "duration_s": 8.0,
+      "t": 35.6
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_height_mark_touch_00",
+      "shot_id": "shot06_height_mark_touch",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot06_height_mark_touch_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot06_height_mark_touch_00.tail.png",
+      "duration_s": 8.0,
+      "t": 35.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_boiling_together_00",
+      "shot_id": "shot07_boiling_together",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_00.tail.png",
+      "duration_s": 8.0,
+      "t": 36.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot08_quiet_aftertaste_00",
+      "shot_id": "shot08_quiet_aftertaste",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_00.tail.png",
+      "duration_s": 8.0,
+      "t": 36.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_new_year_kitchen_01",
+      "shot_id": "shot01_new_year_kitchen",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_wrapped_wrong_01",
+      "shot_id": "shot02_wrapped_wrong",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot02_wrapped_wrong_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.7
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_time_traces_01",
+      "shot_id": "shot03_time_traces",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot03_time_traces_01.tail.png",
+      "duration_s": 8.0,
+      "t": 41.0
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_mothers_folds_01",
+      "shot_id": "shot05_mothers_folds",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot05_mothers_folds_01.tail.png",
+      "duration_s": 8.0,
+      "t": 41.6
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_boiling_together_01",
+      "shot_id": "shot07_boiling_together",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot07_boiling_together_01.tail.png",
+      "duration_s": 8.0,
+      "t": 42.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot08_quiet_aftertaste_01",
+      "shot_id": "shot08_quiet_aftertaste",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot08_quiet_aftertaste_01.tail.png",
+      "duration_s": 8.0,
+      "t": 42.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_new_year_kitchen_02",
+      "shot_id": "shot01_new_year_kitchen",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/dumplings/segment_tails/seg_shot01_new_year_kitchen_02.tail.png",
+      "duration_s": 8.0,
+      "t": 46.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 46.45
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/dumplings/final.mp4",
+      "t": 52.05
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/dumplings/final.mp4",
+      "total_s": 52.0,
+      "t": 52.25
+    }
+  ],
+  "timeline_duration_s": 52.2
+}

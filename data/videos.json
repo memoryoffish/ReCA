@@ -1,0 +1,1114 @@
+{
+  "frameworkComparisons": [
+    {
+      "case": "EX01 Battle of the Heavenly Titans",
+      "prompt": "Battle sequence with cross-shot identity and action continuity.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot.mp4",
+          "duration_s": 300.483,
+          "evidence": [
+            {
+              "time_s": 217,
+              "title": "Identity splits into three Wukong-like figures",
+              "text": "The duel no longer preserves the two original roles: the frame contains multiple monkey-like bodies and a tiny foreground figure.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_vgot_0217.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 24,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0024.jpg"
+            },
+            {
+              "time_s": 54,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0054.jpg"
+            },
+            {
+              "time_s": 90,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0090.jpg"
+            },
+            {
+              "time_s": 126,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0126.jpg"
+            },
+            {
+              "time_s": 165,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0165.jpg"
+            },
+            {
+              "time_s": 204,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0204.jpg"
+            },
+            {
+              "time_s": 240,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0240.jpg"
+            },
+            {
+              "time_s": 276,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_vgot_0276.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_mora.mp4",
+          "duration_s": 120.207,
+          "evidence": [
+            {
+              "time_s": 74,
+              "title": "Golden staff turns into the wrong weapon",
+              "text": "The weapon state changes from the expected staff relation into a glowing vertical blade-like form.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_mora_0074.jpg"
+            },
+            {
+              "time_s": 84,
+              "title": "Weapon direction no longer explains the hit",
+              "text": "The oversized weapon points through the frame, but the attacker-target relation is hard to infer.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_mora_0084.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 10,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0010.jpg"
+            },
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0022.jpg"
+            },
+            {
+              "time_s": 36,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0036.jpg"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0050.jpg"
+            },
+            {
+              "time_s": 66,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0066.jpg"
+            },
+            {
+              "time_s": 82,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0082.jpg"
+            },
+            {
+              "time_s": 96,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0096.jpg"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_mora_0111.jpg"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent.mp4",
+          "duration_s": 1081.679,
+          "evidence": [
+            {
+              "time_s": 8,
+              "title": "Three-person setup replaces the duel",
+              "text": "The opening frame introduces an extra body and a different spacing pattern before the battle continuity is established.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_movieagent_0008.jpg"
+            },
+            {
+              "time_s": 109,
+              "title": "Character identity changes completely",
+              "text": "By 1:49 the figure, costume silhouette, and combat layout no longer match the starting battle state.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex01_movieagent_0109.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 87,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0087.jpg"
+            },
+            {
+              "time_s": 195,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0195.jpg"
+            },
+            {
+              "time_s": 325,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0325.jpg"
+            },
+            {
+              "time_s": 454,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0454.jpg"
+            },
+            {
+              "time_s": 595,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0595.jpg"
+            },
+            {
+              "time_s": 736,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0736.jpg"
+            },
+            {
+              "time_s": 865,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0865.jpg"
+            },
+            {
+              "time_s": 995,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_movieagent_0995.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex01_battle_of_the_heavenly_titans_ours.mp4",
+          "duration_s": 260.417,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/ex01_battle_of_the_heavenly_titans_ours.png",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 5,
+              "title": "Anchored opening clash",
+              "text": "Faces, locked weapons, and opposing body lines keep the continuation tied to the observed battle state.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot01_0005.jpg"
+            },
+            {
+              "time_s": 78,
+              "title": "Aerial combat remains readable",
+              "text": "Both fighters and the staff lock stay in one clear action line as the camera moves into the sky battle.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot07_0078.jpg"
+            },
+            {
+              "time_s": 214,
+              "title": "Late story action pays off",
+              "text": "The detection beat reads as a deliberate continuation of the duel rather than a disconnected spectacle shot.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/shot_preview_shot15_0214.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 21,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0021.jpg"
+            },
+            {
+              "time_s": 47,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0047.jpg"
+            },
+            {
+              "time_s": 78,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0078.jpg"
+            },
+            {
+              "time_s": 109,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0109.jpg"
+            },
+            {
+              "time_s": 143,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0143.jpg"
+            },
+            {
+              "time_s": 177,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0177.jpg"
+            },
+            {
+              "time_s": 208,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0208.jpg"
+            },
+            {
+              "time_s": 240,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex01_battle_of_the_heavenly_titans_ours_0240.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EX02 Boxing",
+      "prompt": "Boxing motion sequence with stable character pose, rhythm, and event causality.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_vgot.mp4",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 66,
+              "compare_time_s": 12,
+              "title": "Face identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_vgot_0066.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_vgot_0012.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0007.jpg"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0016.jpg"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0027.jpg"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0038.jpg"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0050.jpg"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0061.jpg"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0072.jpg"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_vgot_0083.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_mora.mp4",
+          "duration_s": 75.138,
+          "evidence": [
+            {
+              "time_s": 62,
+              "compare_time_s": 28,
+              "title": "Face/body and object inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_mora_0062.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_mora_0028.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 6,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0006.jpg"
+            },
+            {
+              "time_s": 14,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0014.jpg"
+            },
+            {
+              "time_s": 23,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0023.jpg"
+            },
+            {
+              "time_s": 32,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0032.jpg"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0041.jpg"
+            },
+            {
+              "time_s": 51,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0051.jpg"
+            },
+            {
+              "time_s": 60,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0060.jpg"
+            },
+            {
+              "time_s": 69,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_mora_0069.jpg"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex02_boxing_movieagent.mp4",
+          "duration_s": 375.598,
+          "evidence": [
+            {
+              "time_s": 87,
+              "title": "Punching bag leaves a ghosted duplicate",
+              "text": "The bag/action cue appears doubled, making the training hit visually unstable.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0087.jpg"
+            },
+            {
+              "time_s": 53,
+              "compare_time_s": 0,
+              "title": "Face identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0053.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex02_movieagent_0000.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 30,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0030.jpg"
+            },
+            {
+              "time_s": 68,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0068.jpg"
+            },
+            {
+              "time_s": 113,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0113.jpg"
+            },
+            {
+              "time_s": 158,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0158.jpg"
+            },
+            {
+              "time_s": 207,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0207.jpg"
+            },
+            {
+              "time_s": 255,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0255.jpg"
+            },
+            {
+              "time_s": 300,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0300.jpg"
+            },
+            {
+              "time_s": 346,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex02_boxing_movieagent_0346.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/boxing.mp4",
+          "duration_s": 160.256,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/boxing.png",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 29,
+              "title": "Boxer and bag stay in one setup",
+              "text": "The athlete, heavy bag, timer, and gym framing remain aligned as a continuous training scene.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg"
+            },
+            {
+              "time_s": 72,
+              "title": "Close-up preserves the same fighter",
+              "text": "The tighter shot changes camera distance without losing the boxer identity or the gym environment.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg"
+            },
+            {
+              "time_s": 115,
+              "title": "Reaction beat follows the workout",
+              "text": "The later shot reads as a consequence of the training rather than a reset to a new scene.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 13,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0013.jpg"
+            },
+            {
+              "time_s": 29,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg"
+            },
+            {
+              "time_s": 48,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0048.jpg"
+            },
+            {
+              "time_s": 67,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg"
+            },
+            {
+              "time_s": 88,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0088.jpg"
+            },
+            {
+              "time_s": 109,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg"
+            },
+            {
+              "time_s": 128,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0128.jpg"
+            },
+            {
+              "time_s": 147,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0147.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EX19 Dumplings",
+      "prompt": "Food-making sequence requiring object state, hand motion, and scene continuity.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_vgot.mp4",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 79,
+              "compare_time_s": 1,
+              "title": "Scene and character inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_vgot_0079.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_vgot_0001.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0007.jpg"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0016.jpg"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0027.jpg"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0038.jpg"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0050.jpg"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0061.jpg"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0072.jpg"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_vgot_0083.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_mora.mp4",
+          "duration_s": 120.207,
+          "evidence": [
+            {
+              "time_s": 86,
+              "compare_time_s": 9,
+              "title": "Character inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_mora_0086.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_mora_0009.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 10,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0010.jpg"
+            },
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0022.jpg"
+            },
+            {
+              "time_s": 36,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0036.jpg"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0050.jpg"
+            },
+            {
+              "time_s": 66,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0066.jpg"
+            },
+            {
+              "time_s": 82,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0082.jpg"
+            },
+            {
+              "time_s": 96,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0096.jpg"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_mora_0111.jpg"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/ex19_dumplings_movieagent.mp4",
+          "duration_s": 661.035,
+          "evidence": [
+            {
+              "time_s": 0,
+              "title": "Sequence is over-extended",
+              "text": "The generated video runs much longer than the compact continuation needed for this cooking example.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0005.jpg",
+              "duration_issue": true,
+              "duration_label": "10:09 long output"
+            },
+            {
+              "time_s": 52,
+              "compare_time_s": 5,
+              "title": "Character identity inconsistency",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0052.jpg",
+              "compare_thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/review-points/ex19_movieagent_0005.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 53,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0053.jpg"
+            },
+            {
+              "time_s": 119,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0119.jpg"
+            },
+            {
+              "time_s": 198,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0198.jpg"
+            },
+            {
+              "time_s": 278,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0278.jpg"
+            },
+            {
+              "time_s": 364,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0364.jpg"
+            },
+            {
+              "time_s": 450,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0450.jpg"
+            },
+            {
+              "time_s": 529,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0529.jpg"
+            },
+            {
+              "time_s": 608,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/ex19_dumplings_movieagent_0608.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/dumplings.mp4",
+          "duration_s": 138.321,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/dumplings.png",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 25,
+              "title": "Hands, dough, and table stay connected",
+              "text": "The close working surface keeps the dumpling process tied to the same kitchen activity.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg"
+            },
+            {
+              "time_s": 62,
+              "title": "Family table relation remains stable",
+              "text": "The adults and child continue the same food-preparation scene with consistent table placement.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg"
+            },
+            {
+              "time_s": 102,
+              "title": "Later shot still shows process progress",
+              "text": "The accumulated dumplings and hand motion make the sequence feel like continued preparation.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 11,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0011.jpg"
+            },
+            {
+              "time_s": 25,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0041.jpg"
+            },
+            {
+              "time_s": 58,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg"
+            },
+            {
+              "time_s": 76,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0076.jpg"
+            },
+            {
+              "time_s": 102,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg"
+            },
+            {
+              "time_s": 111,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0111.jpg"
+            },
+            {
+              "time_s": 122,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0122.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "EXPending World Landmarks",
+      "prompt": "World landmark sequence requiring long-range scene handoff and coherent visual progression.",
+      "metrics": [
+        {
+          "label": "Identity"
+        },
+        {
+          "label": "Scene handoff"
+        },
+        {
+          "label": "Event causality"
+        }
+      ],
+      "methods": [
+        {
+          "name": "VGoT",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_vgot.mp4",
+          "duration_s": 90.161,
+          "evidence": [
+            {
+              "time_s": 16,
+              "title": "Landmark fades into a ghosted overlay",
+              "text": "The cliffs and water blend with a transparent building image, making the destination handoff look unresolved.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0016.jpg"
+            },
+            {
+              "time_s": 41,
+              "title": "City appears as a hard reset",
+              "text": "The skyline at night arrives without a visible spatial bridge from the previous landscape.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0038.jpg"
+            },
+            {
+              "time_s": 65,
+              "title": "Bridge view lacks transition context",
+              "text": "The harbor landmark is visible, but the sequence does not preserve a clear route from the earlier location.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0061.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 7,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0007.jpg"
+            },
+            {
+              "time_s": 16,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0016.jpg"
+            },
+            {
+              "time_s": 27,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0027.jpg"
+            },
+            {
+              "time_s": 38,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0038.jpg"
+            },
+            {
+              "time_s": 50,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0050.jpg"
+            },
+            {
+              "time_s": 61,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0061.jpg"
+            },
+            {
+              "time_s": 72,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0072.jpg"
+            },
+            {
+              "time_s": 83,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_vgot_0083.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Mora",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_mora.mp4",
+          "duration_s": 75.138,
+          "evidence": [
+            {
+              "time_s": 14,
+              "title": "Atmosphere hides the landmark handoff",
+              "text": "The distant skyline is heavily softened by haze, so the transition reads more like a mood shot than a clear location continuation.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0014.jpg"
+            },
+            {
+              "time_s": 34,
+              "title": "Landscape reset without geographic bridge",
+              "text": "The fjord-like view is coherent by itself, but it does not carry visible cues from the previous landmark.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0032.jpg"
+            },
+            {
+              "time_s": 54,
+              "title": "Night skyline changes the visual thread",
+              "text": "The lighting and city identity shift sharply, weakening the sense of one planned landmark tour.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0051.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 6,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0006.jpg"
+            },
+            {
+              "time_s": 14,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0014.jpg"
+            },
+            {
+              "time_s": 23,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0023.jpg"
+            },
+            {
+              "time_s": 32,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0032.jpg"
+            },
+            {
+              "time_s": 41,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0041.jpg"
+            },
+            {
+              "time_s": 51,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0051.jpg"
+            },
+            {
+              "time_s": 60,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0060.jpg"
+            },
+            {
+              "time_s": 69,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_mora_0069.jpg"
+            }
+          ]
+        },
+        {
+          "name": "MovieAgent",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/framework-comparison/expending_world_landmarks_movieagent.mp4",
+          "duration_s": 270.437,
+          "evidence": [
+            {
+              "time_s": 49,
+              "title": "Iconic structure appears as a standalone cut",
+              "text": "The building is recognizable, but the frame does not explain how it follows from the previous geography.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0049.jpg"
+            },
+            {
+              "time_s": 122,
+              "title": "Spatial context resets again",
+              "text": "The harbor bridge shot is clean, but it feels inserted rather than connected to the earlier landmark path.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0114.jpg"
+            },
+            {
+              "time_s": 195,
+              "title": "Late view drifts into generic skyline",
+              "text": "The final city-water frame loses the specific landmark progression established earlier.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0184.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 22,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0022.jpg"
+            },
+            {
+              "time_s": 49,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0049.jpg"
+            },
+            {
+              "time_s": 81,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0081.jpg"
+            },
+            {
+              "time_s": 114,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0114.jpg"
+            },
+            {
+              "time_s": 149,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0149.jpg"
+            },
+            {
+              "time_s": 184,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0184.jpg"
+            },
+            {
+              "time_s": 216,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0216.jpg"
+            },
+            {
+              "time_s": 249,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/framework-comparison/expending_world_landmarks_movieagent_0249.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Ours",
+          "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/world_landmarks.mp4",
+          "duration_s": 161.079,
+          "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/world_landmarks.png",
+          "isOurs": true,
+          "evidence": [
+            {
+              "time_s": 29,
+              "title": "Opera House and harbor stay explicit",
+              "text": "The Sydney Opera House, bridge, and waterline remain clear in the same wide establishing view.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg"
+            },
+            {
+              "time_s": 72,
+              "title": "Location shift keeps water and skyline cues",
+              "text": "The camera changes viewpoint while keeping the harbor structure and city context readable.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg"
+            },
+            {
+              "time_s": 116,
+              "title": "Late shot preserves landmark identity",
+              "text": "The bridge, skyline, and water reflections stay tied to the same destination instead of becoming a generic city shot.",
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg"
+            }
+          ],
+          "frames": [
+            {
+              "time_s": 13,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0013.jpg"
+            },
+            {
+              "time_s": 29,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg"
+            },
+            {
+              "time_s": 48,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0048.jpg"
+            },
+            {
+              "time_s": 68,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg"
+            },
+            {
+              "time_s": 89,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0089.jpg"
+            },
+            {
+              "time_s": 110,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg"
+            },
+            {
+              "time_s": 129,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0129.jpg"
+            },
+            {
+              "time_s": 148,
+              "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0148.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "heroDemos": [
+    {
+      "eyebrow": "Main Demo",
+      "title": "World Landmarks",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/world_landmarks.mp4",
+      "duration_s": 161.079,
+      "frames": [
+        {
+          "time_s": 13,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0013.jpg"
+        },
+        {
+          "time_s": 29,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0029.jpg"
+        },
+        {
+          "time_s": 48,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0048.jpg"
+        },
+        {
+          "time_s": 68,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0068.jpg"
+        },
+        {
+          "time_s": 89,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0089.jpg"
+        },
+        {
+          "time_s": 110,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0110.jpg"
+        },
+        {
+          "time_s": 129,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0129.jpg"
+        },
+        {
+          "time_s": 148,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/world_landmarks_0148.jpg"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/world_landmarks.png"
+    },
+    {
+      "eyebrow": "Other Demo 1",
+      "title": "Boxing",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/boxing.mp4",
+      "duration_s": 160.256,
+      "frames": [
+        {
+          "time_s": 13,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0013.jpg"
+        },
+        {
+          "time_s": 29,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0029.jpg"
+        },
+        {
+          "time_s": 48,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0048.jpg"
+        },
+        {
+          "time_s": 67,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0067.jpg"
+        },
+        {
+          "time_s": 88,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0088.jpg"
+        },
+        {
+          "time_s": 109,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0109.jpg"
+        },
+        {
+          "time_s": 128,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0128.jpg"
+        },
+        {
+          "time_s": 147,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/boxing_0147.jpg"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/boxing.png"
+    },
+    {
+      "eyebrow": "Other Demo 2",
+      "title": "Dumplings",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/dumplings.mp4",
+      "duration_s": 138.321,
+      "frames": [
+        {
+          "time_s": 11,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0011.jpg"
+        },
+        {
+          "time_s": 25,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0025.jpg"
+        },
+        {
+          "time_s": 41,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0041.jpg"
+        },
+        {
+          "time_s": 58,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0058.jpg"
+        },
+        {
+          "time_s": 76,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0076.jpg"
+        },
+        {
+          "time_s": 102,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0102.jpg"
+        },
+        {
+          "time_s": 111,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0111.jpg"
+        },
+        {
+          "time_s": 122,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/dumplings_0122.jpg"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/dumplings.png"
+    },
+    {
+      "eyebrow": "Other Demo 3",
+      "title": "Couple",
+      "src": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/featured/couple.mp4",
+      "duration_s": 176.033,
+      "frames": [
+        {
+          "time_s": 14,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0014.jpg"
+        },
+        {
+          "time_s": 32,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0032.jpg"
+        },
+        {
+          "time_s": 53,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0053.jpg"
+        },
+        {
+          "time_s": 93,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0093.jpg"
+        },
+        {
+          "time_s": 74,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0074.jpg"
+        },
+        {
+          "time_s": 120,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0120.jpg"
+        },
+        {
+          "time_s": 141,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0141.jpg"
+        },
+        {
+          "time_s": 162,
+          "thumbnail": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/evidence-frames/featured/couple_0162.jpg"
+        }
+      ],
+      "poster": "https://net-oss.akclau.de/videorlm-msve-demo/20260505/assets/posters/couple.png"
+    }
+  ]
+}

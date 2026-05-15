@@ -1,0 +1,1799 @@
+{
+  "demo_id": "couple",
+  "slug": "couple",
+  "title": "Couple",
+  "is_rerun": true,
+  "n_shots": 12,
+  "n_segments": 22,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "female_lead"
+      },
+      {
+        "id": "male_lead"
+      }
+    ],
+    "location_plan": {
+      "community_supermarket": {
+        "id": "community_supermarket",
+        "key_zones": [
+          {
+            "id": "supermarket_shelf_aisle"
+          },
+          {
+            "id": "supermarket_checkout_path"
+          }
+        ],
+        "props": {
+          "coffee_bean_can": {
+            "name": "咖啡豆罐",
+            "owner": "community_supermarket",
+            "prompt": "静态道具参考图，一罐中等大小咖啡豆金属罐，深绿色哑光包装，圆形银色盖子，标签简洁无可读品牌字，罐身有轻微货架磨痕，写实产品摄影，柔和暖白光，背景虚化。",
+            "negative_prompt": "可读品牌, 大段文字, 变形罐体, 塑料质感, 水印, 卡通"
+          },
+          "same_bread": {
+            "name": "同款面包",
+            "owner": "community_supermarket",
+            "prompt": "静态道具参考图，透明纸袋装长条软面包，浅褐色外皮，包装无品牌文字，封口贴简洁，生活化超市商品质感，柔和暖光，桌面或购物篮背景虚化。",
+            "negative_prompt": "品牌logo, 可读文字, 霉斑, 夸张食物, 水印, 卡通"
+          },
+          "same_milk": {
+            "name": "同款牛奶",
+            "owner": "community_supermarket",
+            "prompt": "静态道具参考图，白色纸盒牛奶，蓝色简洁图形包装，无可读品牌字，边角真实轻微磨损，冷藏柜柔光反射，写实生活质感。",
+            "negative_prompt": "品牌文字, 夸张广告, 变形盒子, 水印, 卡通, 低清晰度"
+          },
+          "shopping_baskets": {
+            "name": "购物篮",
+            "owner": "community_supermarket",
+            "prompt": "静态道具参考图，两只深绿色塑料购物篮，一只放有面包和牛奶，另一只半空，篮把自然垂落，超市暖白灯下有真实塑料纹理，背景货架虚化。",
+            "negative_prompt": "畸形篮子, 多余把手, 品牌文字, 水印, 卡通"
+          }
+        }
+      },
+      "rain_after_street_hill": {
+        "id": "rain_after_street_hill",
+        "key_zones": [
+          {
+            "id": "neon_wet_sidewalk"
+          },
+          {
+            "id": "hill_bench_overlook"
+          }
+        ],
+        "props": {
+          "shopping_bags": {
+            "name": "购物袋",
+            "owner": "rain_after_street_hill",
+            "prompt": "静态道具参考图，两只纸质购物袋，袋口露出面包、牛奶与咖啡豆罐轮廓，袋底有雨后轻微水痕，放在长椅旁湿润地面，夜色霓虹反光，写实生活质感。",
+            "negative_prompt": "品牌logo, 可读文字, 破损严重, 变形袋子, 水印, 卡通"
+          },
+          "bench_bread": {
+            "name": "长椅上的面包",
+            "owner": "male_lead",
+            "prompt": "静态道具参考图，一袋透明纸包装面包放在木质长椅中央，椅面有未干水痕，包装边缘有细小反光，无品牌文字，远处城市灯光虚化，写实电影感。",
+            "negative_prompt": "可读品牌, 霉变食物, 夸张包装, 水印, 卡通"
+          },
+          "paper_tissue": {
+            "name": "纸巾",
+            "owner": "male_lead",
+            "prompt": "静态道具参考图，几张白色纸巾被整齐递出，边缘柔软微皱，旁边是带水痕的购物袋底部，夜景冷暖反光落在纸面，生活化写实细节。",
+            "negative_prompt": "脏污夸张, 可读文字, 畸形手, 水印, 卡通"
+          }
+        }
+      },
+      "corner_cafe": {
+        "id": "corner_cafe",
+        "key_zones": [
+          {
+            "id": "cafe_window_table"
+          },
+          {
+            "id": "cafe_after_close_table"
+          }
+        ],
+        "props": {
+          "old_receipt": {
+            "name": "旧收银小票",
+            "owner": "female_lead",
+            "prompt": "静态道具参考图，一张折好的旧超市收银小票，纸张略微泛黄有折痕，只有模糊细行不可读，压在咖啡豆罐下方边缘露出，暖灯下真实纸张质感。",
+            "negative_prompt": "可读文字, 清晰金额, 品牌logo, 全新纸张, 水印, 卡通"
+          },
+          "ring_box": {
+            "name": "小戒指盒",
+            "owner": "male_lead",
+            "prompt": "静态道具参考图，一个很小的深蓝丝绒戒指盒，盒盖打开，内衬米白，细戒指放在中央，暖黄咖啡馆灯光形成柔和高光，背景桌面与玻璃反光虚化。",
+            "negative_prompt": "夸张钻石, 巨大戒指, 廉价塑料, 水印, 卡通, 变形盒子"
+          },
+          "opened_coffee_can": {
+            "name": "打开的咖啡豆罐",
+            "owner": "corner_cafe",
+            "prompt": "静态道具参考图，深绿色咖啡豆金属罐打开盖子，罐口可见深褐色咖啡豆，银色盖子放在旁边，桌面暖灯反射细腻，无可读品牌文字，写实产品细节。",
+            "negative_prompt": "可读品牌, 咖啡液溢出, 变形罐口, 水印, 卡通"
+          }
+        }
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_supermarket_reach_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "supermarket_shelf_aisle",
+            "prop": "coffee_bean_can,shopping_baskets"
+          }
+        },
+        {
+          "id": "a02_basket_coincidence_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "supermarket_shelf_aisle",
+            "prop": "coffee_bean_can,same_bread,same_milk,shopping_baskets"
+          }
+        },
+        {
+          "id": "a03_checkout_walk_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "supermarket_checkout_path",
+            "prop": "coffee_bean_can,shopping_baskets"
+          }
+        },
+        {
+          "id": "a04_wet_street_to_hill_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "neon_wet_sidewalk",
+            "prop": "shopping_bags"
+          }
+        },
+        {
+          "id": "a05_bench_distance_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "hill_bench_overlook",
+            "prop": "shopping_bags,bench_bread"
+          }
+        },
+        {
+          "id": "a06_bench_closer_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "hill_bench_overlook",
+            "prop": "bench_bread,paper_tissue,shopping_bags"
+          }
+        },
+        {
+          "id": "a07_downhill_same_pace_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "hill_bench_overlook",
+            "prop": "shopping_bags"
+          }
+        },
+        {
+          "id": "a08_cafe_rain_reunion_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "cafe_window_table",
+            "prop": "coffee_bean_can"
+          }
+        },
+        {
+          "id": "a09_open_coffee_can_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "cafe_window_table",
+            "prop": "opened_coffee_can"
+          }
+        },
+        {
+          "id": "a10_touch_pause_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "cafe_window_table",
+            "prop": "opened_coffee_can"
+          }
+        },
+        {
+          "id": "a11_proposal_receipt_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "cafe_after_close_table",
+            "prop": "coffee_bean_can,old_receipt,ring_box"
+          }
+        },
+        {
+          "id": "a12_ring_table_final_start",
+          "reference_inputs": {
+            "portrait": "female_lead,male_lead",
+            "place": "cafe_after_close_table",
+            "prop": "coffee_bean_can,old_receipt,ring_box"
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_supermarket_reach",
+        "duration_s": 24,
+        "story_goal": "建立两人在普通社区超市中的第一次偶遇，并让男主角的帮助从谨慎确认开始，显得礼貌而自然。",
+        "start_state": "女主角踮脚站在咖啡货架前，指尖停在顶层咖啡豆罐底下方，男主角推着半空购物篮停在通道旁看向她。",
+        "end_state": "女主角双手接住那罐深绿色咖啡豆罐，男主角的手刚从罐身旁离开，两人站在同一排货架前保持礼貌距离。",
+        "visual_intent": "采用一镜到底的写实生活长镜头，镜头从货架侧面缓慢横移到两人之间，节奏先是轻微尴尬的重复尝试，再转为男主角克制介入；氛围温和、日常，色彩以超市暖白灯和傍晚冷蓝入口光对比。"
+      },
+      {
+        "id": "shot02_basket_coincidence",
+        "duration_s": 8,
+        "story_goal": "通过两人购物篮里同款面包和同款牛奶的巧合，让初次互动从不好意思转为轻松。",
+        "start_state": "女主角抱着刚接过的咖啡豆罐低头微笑，两只购物篮并排露出同款面包和同款牛奶。",
+        "end_state": "女主角与男主角都看见彼此篮中的相同商品，表情比刚才放松，咖啡豆罐被她稳稳抱在怀里。",
+        "visual_intent": "镜头从手部和购物篮的小景别轻轻抬到两人表情，节奏短促但柔和，像发现一个生活玩笑；风格写实亲密，暖白灯突出商品细节和手部微表情。"
+      },
+      {
+        "id": "shot03_checkout_walk",
+        "duration_s": 18,
+        "story_goal": "让两人没有立刻熟络，而是在并肩走向收银台的过程中从咖啡豆自然聊到附近夜景。",
+        "start_state": "女主角抱着咖啡豆罐走在左侧，男主角提着半空购物篮走在右侧，两人保持礼貌距离面向收银台。",
+        "end_state": "两人站在靠近收银区的位置，身体方向仍朝前，但头部微微转向彼此，谈话气氛比刚开始自然。",
+        "visual_intent": "镜头在超市通道内后退跟拍，保持中景距离，节奏慢而有呼吸，不急于制造亲密；写实电影感，冷藏柜蓝光与收银区暖光交替掠过两人侧脸。"
+      },
+      {
+        "id": "shot04_wet_street_to_hill",
+        "duration_s": 26,
+        "story_goal": "把一次顺路的同行延伸到雨后街道和能看城市灯光的小坡，确立这不是正式约会但彼此愿意多停留一会儿。",
+        "start_state": "雨后湿路面反着霓虹和车灯，女主角与男主角各拎购物袋，并肩但相隔半步站在人行道边。",
+        "end_state": "两人走到小坡长椅附近，仍各自拎着购物袋，远处城市灯光铺开，半步距离依然保留但不显生硬。",
+        "visual_intent": "手持稳定跟拍从街边慢慢陪两人上坡，镜头高度贴近行走节奏，湿路反光不断变化；节奏舒缓，氛围克制暧昧，色彩为蓝紫雨夜、霓虹红蓝和店铺暖黄交织。"
+      },
+      {
+        "id": "shot05_bench_distance",
+        "duration_s": 7,
+        "story_goal": "强调两人停留在同一张长椅上，但关系仍保持谨慎边界和半步距离。",
+        "start_state": "女主角坐在长椅一侧避开未干水痕，购物袋放在椅脚旁，男主角坐在另一端并把面包放在两人中间。",
+        "end_state": "两人坐在长椅两端，袋装面包留在中间，城市灯光在他们身后亮起，彼此姿态比街上更放松。",
+        "visual_intent": "镜头固定在长椅正面，节奏安静短促，像一次停顿；构图保留两人之间的空隙，写实克制，冷夜景中用暖路灯轻轻勾出面部。"
+      },
+      {
+        "id": "shot06_bench_closer",
+        "duration_s": 22,
+        "story_goal": "通过发丝提醒、分享买咖啡豆的原因、面包与纸巾这些小动作，让两人从客套转为更自然的靠近。",
+        "start_state": "袋装面包摊在长椅中央，女主角把一小块面包递向男主角，发丝被风吹到脸侧，男主角手中拿着纸巾转向她。",
+        "end_state": "女主角手边的购物袋底部已被纸巾擦过，两人坐姿比先前更近，面包仍放在中间但空隙明显缩短。",
+        "visual_intent": "镜头从面包、纸巾和购物袋底部的细节缓慢弧形移动到两人表情，节奏细腻而连贯；氛围亲近但不过界，夜风和城市灯光作为背景，暖路灯让手部动作成为情感重点。"
+      },
+      {
+        "id": "shot07_downhill_same_pace",
+        "duration_s": 6,
+        "story_goal": "用离开长椅时的同步步伐表现关系已经悄悄前进，但仍没有直接牵手或表白。",
+        "start_state": "女主角与男主角各拎购物袋站在下坡起点，肩线更靠近但双手未相牵，脚步方向一致。",
+        "end_state": "两人走在小坡下方的湿路上，步伐节奏一致，购物袋在各自身侧，长椅留在身后远处。",
+        "visual_intent": "短镜头从脚步和湿地反光开始，轻轻拉远到两人背影，节奏简洁明确；写实余韵，冷蓝夜色里保留路灯暖边，避免夸张浪漫化。"
+      },
+      {
+        "id": "shot08_cafe_rain_reunion",
+        "duration_s": 24,
+        "story_goal": "几天后把第一次见面的咖啡豆带回街角咖啡馆，让关系进入更有意识的再次相见。",
+        "start_state": "几天后的雨天咖啡馆里，女主角与男主角坐在靠窗小圆桌两侧，桌面中央放着同一罐深绿色咖啡豆罐。",
+        "end_state": "两人谈话安静下来，视线同时落在桌面中央的咖啡豆罐上，窗外雨水沿玻璃滑下。",
+        "visual_intent": "镜头在靠窗桌边缓慢推进，先带出雨玻璃和暖灯倒影，再收紧到两人的沉默；节奏由轻松回忆逐渐变安静，色彩为暖黄室内与蓝灰雨窗的亲密对照。"
+      },
+      {
+        "id": "shot09_open_coffee_can",
+        "duration_s": 18,
+        "story_goal": "让男主角把开启咖啡豆的主动权交给女主角，关系确认以共同闻到咖啡香的方式自然发生。",
+        "start_state": "男主角的手停在咖啡豆罐侧面，罐子被推到女主角面前，女主角双手靠近未打开的罐盖。",
+        "end_state": "咖啡豆罐已经打开，银色盖子放在桌面旁，两人同时低头靠近罐口，距离比先前更近。",
+        "visual_intent": "镜头以桌面近景为主，缓慢推近罐盖与两人的手，动作节奏轻柔；写实亲密，暖桌灯聚焦咖啡罐，咖啡香以两人同步低头的细微动作呈现。"
+      },
+      {
+        "id": "shot10_touch_pause",
+        "duration_s": 7,
+        "story_goal": "通过手指触碰后没有马上收回的停顿，明确两人已经默认关系从偶遇走向认真。",
+        "start_state": "打开的咖啡豆罐和银色盖子放在桌上，女主角放回盖子的手指轻触男主角手背，两只手都停在桌面中央。",
+        "end_state": "女主角抬头看向男主角，男主角也看着她，两只手仍靠在桌面中央，窗玻璃映出他们并肩的模糊影子。",
+        "visual_intent": "短而克制的静态近景，镜头几乎不动，只在车灯掠过玻璃时让反光变化；节奏像一次屏息，写实电影感，暖黄与冷白车灯短暂交叠。"
+      },
+      {
+        "id": "shot11_proposal_receipt",
+        "duration_s": 26,
+        "story_goal": "在同一家咖啡馆打烊后，用旧收银小票和同一罐咖啡豆把求婚与第一次超市偶遇连接起来。",
+        "start_state": "打烊后的咖啡馆里，同一张小圆桌中央放着咖啡豆罐，罐底压着折好的旧收银小票，女主角刚坐下，男主角站在桌边握着小戒指盒。",
+        "end_state": "女主角的视线从旧收银小票移向男主角，男主角站在桌边打开戒指盒前一刻，表情紧张得像当初在货架旁。",
+        "visual_intent": "镜头从空旷的打烊咖啡馆缓慢移到小圆桌，围绕咖啡罐、小票和男主角手中的盒子建立悬念；节奏安静而明确，低照度暖灯与窗外雨后城市夜景形成承诺感。"
+      },
+      {
+        "id": "shot12_ring_table_final",
+        "duration_s": 10,
+        "story_goal": "完成安静求婚的承诺画面，并让故事落回第一次偶遇时的咖啡豆线索。",
+        "start_state": "木桌上有咖啡豆罐、旧收银小票和打开的戒指盒，女主角的手伸在桌面中央，戒指刚戴好，男主角的手停在旁边。",
+        "end_state": "女主角戴着戒指的手安静放在桌面中央，男主角的手仍停在旁边，咖啡豆罐和旧小票靠在一侧，窗外城市灯光倒映在玻璃里。",
+        "visual_intent": "镜头从两人的手部极近景轻轻压到戒指与咖啡豆罐，最后保持静止；节奏缓慢余韵，写实克制，没有人群或拥抱，暖黄桌灯让戒指、小票和咖啡罐成为清楚承诺。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_supermarket_reach_to_basket_coincidence",
+        "from_shot": "shot01_supermarket_reach",
+        "to_shot": "shot02_basket_coincidence",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_basket_coincidence_to_checkout_walk",
+        "from_shot": "shot02_basket_coincidence",
+        "to_shot": "shot03_checkout_walk",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_checkout_walk_to_wet_street_to_hill",
+        "from_shot": "shot03_checkout_walk",
+        "to_shot": "shot04_wet_street_to_hill",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr04_wet_street_to_hill_to_bench_distance",
+        "from_shot": "shot04_wet_street_to_hill",
+        "to_shot": "shot05_bench_distance",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_bench_distance_to_bench_closer",
+        "from_shot": "shot05_bench_distance",
+        "to_shot": "shot06_bench_closer",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_bench_closer_to_downhill_same_pace",
+        "from_shot": "shot06_bench_closer",
+        "to_shot": "shot07_downhill_same_pace",
+        "mode": "cut"
+      },
+      {
+        "id": "tr07_downhill_same_pace_to_cafe_rain_reunion",
+        "from_shot": "shot07_downhill_same_pace",
+        "to_shot": "shot08_cafe_rain_reunion",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr08_cafe_rain_reunion_to_open_coffee_can",
+        "from_shot": "shot08_cafe_rain_reunion",
+        "to_shot": "shot09_open_coffee_can",
+        "mode": "cut"
+      },
+      {
+        "id": "tr09_open_coffee_can_to_touch_pause",
+        "from_shot": "shot09_open_coffee_can",
+        "to_shot": "shot10_touch_pause",
+        "mode": "cut"
+      },
+      {
+        "id": "tr10_touch_pause_to_proposal_receipt",
+        "from_shot": "shot10_touch_pause",
+        "to_shot": "shot11_proposal_receipt",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr11_proposal_receipt_to_ring_table_final",
+        "from_shot": "shot11_proposal_receipt",
+        "to_shot": "shot12_ring_table_final",
+        "mode": "cut"
+      }
+    ]
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "female_lead": {
+        "id": "female_lead"
+      },
+      "male_lead": {
+        "id": "male_lead"
+      }
+    },
+    "location_plan": {
+      "community_supermarket": {
+        "id": "community_supermarket"
+      },
+      "rain_after_street_hill": {
+        "id": "rain_after_street_hill"
+      },
+      "corner_cafe": {
+        "id": "corner_cafe"
+      }
+    },
+    "prop_plan": {
+      "coffee_bean_can": {
+        "id": "coffee_bean_can"
+      },
+      "same_bread": {
+        "id": "same_bread"
+      },
+      "same_milk": {
+        "id": "same_milk"
+      },
+      "shopping_baskets": {
+        "id": "shopping_baskets"
+      },
+      "shopping_bags": {
+        "id": "shopping_bags"
+      },
+      "bench_bread": {
+        "id": "bench_bread"
+      },
+      "paper_tissue": {
+        "id": "paper_tissue"
+      },
+      "old_receipt": {
+        "id": "old_receipt"
+      },
+      "ring_box": {
+        "id": "ring_box"
+      },
+      "opened_coffee_can": {
+        "id": "opened_coffee_can"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_supermarket_reach_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,shopping_baskets"
+        }
+      },
+      {
+        "id": "a02_basket_coincidence_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,same_bread,same_milk,shopping_baskets"
+        }
+      },
+      {
+        "id": "a03_checkout_walk_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_checkout_path",
+          "prop": "coffee_bean_can,shopping_baskets"
+        }
+      },
+      {
+        "id": "a04_wet_street_to_hill_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "neon_wet_sidewalk",
+          "prop": "shopping_bags"
+        }
+      },
+      {
+        "id": "a05_bench_distance_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "shopping_bags,bench_bread"
+        }
+      },
+      {
+        "id": "a06_bench_closer_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "bench_bread,paper_tissue,shopping_bags"
+        }
+      },
+      {
+        "id": "a07_downhill_same_pace_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "shopping_bags"
+        }
+      },
+      {
+        "id": "a08_cafe_rain_reunion_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "coffee_bean_can"
+        }
+      },
+      {
+        "id": "a09_open_coffee_can_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "opened_coffee_can"
+        }
+      },
+      {
+        "id": "a10_touch_pause_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "opened_coffee_can"
+        }
+      },
+      {
+        "id": "a11_proposal_receipt_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "coffee_bean_can,old_receipt,ring_box"
+        }
+      },
+      {
+        "id": "a12_ring_table_final_start",
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "coffee_bean_can,old_receipt,ring_box"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_supermarket_reach",
+        "duration_s": 24,
+        "story_goal": "建立两人在普通社区超市中的第一次偶遇，并让男主角的帮助从谨慎确认开始，显得礼貌而自然。",
+        "start_state": "女主角踮脚站在咖啡货架前，指尖停在顶层咖啡豆罐底下方，男主角推着半空购物篮停在通道旁看向她。",
+        "end_state": "女主角双手接住那罐深绿色咖啡豆罐，男主角的手刚从罐身旁离开，两人站在同一排货架前保持礼貌距离。",
+        "visual_intent": "采用一镜到底的写实生活长镜头，镜头从货架侧面缓慢横移到两人之间，节奏先是轻微尴尬的重复尝试，再转为男主角克制介入；氛围温和、日常，色彩以超市暖白灯和傍晚冷蓝入口光对比。"
+      },
+      {
+        "id": "shot02_basket_coincidence",
+        "duration_s": 8,
+        "story_goal": "通过两人购物篮里同款面包和同款牛奶的巧合，让初次互动从不好意思转为轻松。",
+        "start_state": "女主角抱着刚接过的咖啡豆罐低头微笑，两只购物篮并排露出同款面包和同款牛奶。",
+        "end_state": "女主角与男主角都看见彼此篮中的相同商品，表情比刚才放松，咖啡豆罐被她稳稳抱在怀里。",
+        "visual_intent": "镜头从手部和购物篮的小景别轻轻抬到两人表情，节奏短促但柔和，像发现一个生活玩笑；风格写实亲密，暖白灯突出商品细节和手部微表情。"
+      },
+      {
+        "id": "shot03_checkout_walk",
+        "duration_s": 18,
+        "story_goal": "让两人没有立刻熟络，而是在并肩走向收银台的过程中从咖啡豆自然聊到附近夜景。",
+        "start_state": "女主角抱着咖啡豆罐走在左侧，男主角提着半空购物篮走在右侧，两人保持礼貌距离面向收银台。",
+        "end_state": "两人站在靠近收银区的位置，身体方向仍朝前，但头部微微转向彼此，谈话气氛比刚开始自然。",
+        "visual_intent": "镜头在超市通道内后退跟拍，保持中景距离，节奏慢而有呼吸，不急于制造亲密；写实电影感，冷藏柜蓝光与收银区暖光交替掠过两人侧脸。"
+      },
+      {
+        "id": "shot04_wet_street_to_hill",
+        "duration_s": 26,
+        "story_goal": "把一次顺路的同行延伸到雨后街道和能看城市灯光的小坡，确立这不是正式约会但彼此愿意多停留一会儿。",
+        "start_state": "雨后湿路面反着霓虹和车灯，女主角与男主角各拎购物袋，并肩但相隔半步站在人行道边。",
+        "end_state": "两人走到小坡长椅附近，仍各自拎着购物袋，远处城市灯光铺开，半步距离依然保留但不显生硬。",
+        "visual_intent": "手持稳定跟拍从街边慢慢陪两人上坡，镜头高度贴近行走节奏，湿路反光不断变化；节奏舒缓，氛围克制暧昧，色彩为蓝紫雨夜、霓虹红蓝和店铺暖黄交织。"
+      },
+      {
+        "id": "shot05_bench_distance",
+        "duration_s": 7,
+        "story_goal": "强调两人停留在同一张长椅上，但关系仍保持谨慎边界和半步距离。",
+        "start_state": "女主角坐在长椅一侧避开未干水痕，购物袋放在椅脚旁，男主角坐在另一端并把面包放在两人中间。",
+        "end_state": "两人坐在长椅两端，袋装面包留在中间，城市灯光在他们身后亮起，彼此姿态比街上更放松。",
+        "visual_intent": "镜头固定在长椅正面，节奏安静短促，像一次停顿；构图保留两人之间的空隙，写实克制，冷夜景中用暖路灯轻轻勾出面部。"
+      },
+      {
+        "id": "shot06_bench_closer",
+        "duration_s": 22,
+        "story_goal": "通过发丝提醒、分享买咖啡豆的原因、面包与纸巾这些小动作，让两人从客套转为更自然的靠近。",
+        "start_state": "袋装面包摊在长椅中央，女主角把一小块面包递向男主角，发丝被风吹到脸侧，男主角手中拿着纸巾转向她。",
+        "end_state": "女主角手边的购物袋底部已被纸巾擦过，两人坐姿比先前更近，面包仍放在中间但空隙明显缩短。",
+        "visual_intent": "镜头从面包、纸巾和购物袋底部的细节缓慢弧形移动到两人表情，节奏细腻而连贯；氛围亲近但不过界，夜风和城市灯光作为背景，暖路灯让手部动作成为情感重点。"
+      },
+      {
+        "id": "shot07_downhill_same_pace",
+        "duration_s": 6,
+        "story_goal": "用离开长椅时的同步步伐表现关系已经悄悄前进，但仍没有直接牵手或表白。",
+        "start_state": "女主角与男主角各拎购物袋站在下坡起点，肩线更靠近但双手未相牵，脚步方向一致。",
+        "end_state": "两人走在小坡下方的湿路上，步伐节奏一致，购物袋在各自身侧，长椅留在身后远处。",
+        "visual_intent": "短镜头从脚步和湿地反光开始，轻轻拉远到两人背影，节奏简洁明确；写实余韵，冷蓝夜色里保留路灯暖边，避免夸张浪漫化。"
+      },
+      {
+        "id": "shot08_cafe_rain_reunion",
+        "duration_s": 24,
+        "story_goal": "几天后把第一次见面的咖啡豆带回街角咖啡馆，让关系进入更有意识的再次相见。",
+        "start_state": "几天后的雨天咖啡馆里，女主角与男主角坐在靠窗小圆桌两侧，桌面中央放着同一罐深绿色咖啡豆罐。",
+        "end_state": "两人谈话安静下来，视线同时落在桌面中央的咖啡豆罐上，窗外雨水沿玻璃滑下。",
+        "visual_intent": "镜头在靠窗桌边缓慢推进，先带出雨玻璃和暖灯倒影，再收紧到两人的沉默；节奏由轻松回忆逐渐变安静，色彩为暖黄室内与蓝灰雨窗的亲密对照。"
+      },
+      {
+        "id": "shot09_open_coffee_can",
+        "duration_s": 18,
+        "story_goal": "让男主角把开启咖啡豆的主动权交给女主角，关系确认以共同闻到咖啡香的方式自然发生。",
+        "start_state": "男主角的手停在咖啡豆罐侧面，罐子被推到女主角面前，女主角双手靠近未打开的罐盖。",
+        "end_state": "咖啡豆罐已经打开，银色盖子放在桌面旁，两人同时低头靠近罐口，距离比先前更近。",
+        "visual_intent": "镜头以桌面近景为主，缓慢推近罐盖与两人的手，动作节奏轻柔；写实亲密，暖桌灯聚焦咖啡罐，咖啡香以两人同步低头的细微动作呈现。"
+      },
+      {
+        "id": "shot10_touch_pause",
+        "duration_s": 7,
+        "story_goal": "通过手指触碰后没有马上收回的停顿，明确两人已经默认关系从偶遇走向认真。",
+        "start_state": "打开的咖啡豆罐和银色盖子放在桌上，女主角放回盖子的手指轻触男主角手背，两只手都停在桌面中央。",
+        "end_state": "女主角抬头看向男主角，男主角也看着她，两只手仍靠在桌面中央，窗玻璃映出他们并肩的模糊影子。",
+        "visual_intent": "短而克制的静态近景，镜头几乎不动，只在车灯掠过玻璃时让反光变化；节奏像一次屏息，写实电影感，暖黄与冷白车灯短暂交叠。"
+      },
+      {
+        "id": "shot11_proposal_receipt",
+        "duration_s": 26,
+        "story_goal": "在同一家咖啡馆打烊后，用旧收银小票和同一罐咖啡豆把求婚与第一次超市偶遇连接起来。",
+        "start_state": "打烊后的咖啡馆里，同一张小圆桌中央放着咖啡豆罐，罐底压着折好的旧收银小票，女主角刚坐下，男主角站在桌边握着小戒指盒。",
+        "end_state": "女主角的视线从旧收银小票移向男主角，男主角站在桌边打开戒指盒前一刻，表情紧张得像当初在货架旁。",
+        "visual_intent": "镜头从空旷的打烊咖啡馆缓慢移到小圆桌，围绕咖啡罐、小票和男主角手中的盒子建立悬念；节奏安静而明确，低照度暖灯与窗外雨后城市夜景形成承诺感。"
+      },
+      {
+        "id": "shot12_ring_table_final",
+        "duration_s": 10,
+        "story_goal": "完成安静求婚的承诺画面，并让故事落回第一次偶遇时的咖啡豆线索。",
+        "start_state": "木桌上有咖啡豆罐、旧收银小票和打开的戒指盒，女主角的手伸在桌面中央，戒指刚戴好，男主角的手停在旁边。",
+        "end_state": "女主角戴着戒指的手安静放在桌面中央，男主角的手仍停在旁边，咖啡豆罐和旧小票靠在一侧，窗外城市灯光倒映在玻璃里。",
+        "visual_intent": "镜头从两人的手部极近景轻轻压到戒指与咖啡豆罐，最后保持静止；节奏缓慢余韵，写实克制，没有人群或拥抱，暖黄桌灯让戒指、小票和咖啡罐成为清楚承诺。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_supermarket_reach_to_basket_coincidence",
+        "from_shot": "shot01_supermarket_reach",
+        "to_shot": "shot02_basket_coincidence",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_basket_coincidence_to_checkout_walk",
+        "from_shot": "shot02_basket_coincidence",
+        "to_shot": "shot03_checkout_walk",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_checkout_walk_to_wet_street_to_hill",
+        "from_shot": "shot03_checkout_walk",
+        "to_shot": "shot04_wet_street_to_hill",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr04_wet_street_to_hill_to_bench_distance",
+        "from_shot": "shot04_wet_street_to_hill",
+        "to_shot": "shot05_bench_distance",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_bench_distance_to_bench_closer",
+        "from_shot": "shot05_bench_distance",
+        "to_shot": "shot06_bench_closer",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_bench_closer_to_downhill_same_pace",
+        "from_shot": "shot06_bench_closer",
+        "to_shot": "shot07_downhill_same_pace",
+        "mode": "cut"
+      },
+      {
+        "id": "tr07_downhill_same_pace_to_cafe_rain_reunion",
+        "from_shot": "shot07_downhill_same_pace",
+        "to_shot": "shot08_cafe_rain_reunion",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr08_cafe_rain_reunion_to_open_coffee_can",
+        "from_shot": "shot08_cafe_rain_reunion",
+        "to_shot": "shot09_open_coffee_can",
+        "mode": "cut"
+      },
+      {
+        "id": "tr09_open_coffee_can_to_touch_pause",
+        "from_shot": "shot09_open_coffee_can",
+        "to_shot": "shot10_touch_pause",
+        "mode": "cut"
+      },
+      {
+        "id": "tr10_touch_pause_to_proposal_receipt",
+        "from_shot": "shot10_touch_pause",
+        "to_shot": "shot11_proposal_receipt",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr11_proposal_receipt_to_ring_table_final",
+        "from_shot": "shot11_proposal_receipt",
+        "to_shot": "shot12_ring_table_final",
+        "mode": "cut"
+      }
+    ],
+    "segments": {
+      "seg_shot05_bench_distance_00": {
+        "id": "seg_shot05_bench_distance_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "固定正面中景，女主角坐在长椅一侧避开未干水痕，购物袋仍放在椅脚旁；男主角坐在另一端，袋装面包稳稳留在两人中间，像一道温和的边界。两人没有靠近，只是姿态慢慢松弛，肩膀放低，视线偶尔越过面包看向远处城市灯光。冷蓝夜景包围长椅，柔和暖路灯轻轻勾出他们的脸，画面落在两人坐在长椅两端、面包留在中间、身后城市灯光亮起的安静一帧。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "shopping_bags,bench_bread"
+        },
+        "shot_id": "shot05_bench_distance",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a05_bench_distance_start"
+      },
+      "seg_shot07_downhill_same_pace_00": {
+        "id": "seg_shot07_downhill_same_pace_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从小坡湿润台阶和冷蓝反光开始，女主角与男主角各拎购物袋迈下坡，肩线靠近但双手始终没有相牵。镜头贴着脚步轻轻后退再缓慢拉远，捕捉两人步伐逐渐落在同一个节奏里，购物袋在各自身侧轻微摆动。夜色保持克制，路灯暖边勾出背影轮廓，最后两人停在小坡下方湿路的同一节奏背影里，长椅远远留在身后。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "shopping_bags"
+        },
+        "shot_id": "shot07_downhill_same_pace",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a07_downhill_same_pace_start"
+      },
+      "seg_shot02_basket_coincidence_00": {
+        "id": "seg_shot02_basket_coincidence_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从女主角抱着深绿色咖啡豆罐低头微笑的手部近景开始，两只购物篮并排悬在腰侧，同款面包和同款牛奶在暖白顶灯下格外清楚。镜头轻轻从篮中商品抬升到两人脸上，她先注意到相同的面包和牛奶，笑意从不好意思变得松弛，男主角也顺着她的视线看见这个巧合。整段节奏短促柔和，像发现一个生活里的小玩笑，最后两人都看着彼此篮中的相同商品，表情放松，咖啡豆罐被她稳稳抱在怀里。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,same_bread,same_milk,shopping_baskets"
+        },
+        "shot_id": "shot02_basket_coincidence",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_basket_coincidence_start"
+      },
+      "seg_shot06_bench_closer_00": {
+        "id": "seg_shot06_bench_closer_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从袋装面包、纸巾和购物袋底部的近处开始，暖路灯把手部照得很清楚。女主角递出那小块面包，发丝仍被夜风吹到脸侧；男主角接过面包时没有急着吃，握着纸巾的手轻轻停在半空，先用目光提醒她头发。镜头沿长椅缓慢弧形移动，城市灯光在身后柔化，她笑着把发丝别到耳后，两人的身体都微微转向彼此。落点是男主角手中同时拿着小块面包和纸巾，女主角发丝别在耳后，袋装面包仍摊在两人中间。",
+          "duration_s": 12,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "bench_bread,paper_tissue,shopping_bags"
+        },
+        "shot_id": "shot06_bench_closer",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a06_bench_closer_start"
+      },
+      "seg_shot06_bench_closer_01": {
+        "id": "seg_shot06_bench_closer_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从男主角手中拿着面包和纸巾、女主角发丝已别到耳后的静止状态继续。男主角把面包暂时放回长椅中央，展开那张白色纸巾，动作很轻地擦过女主角手边购物袋底部的水痕；纸巾吸起暗亮水迹，暖路灯在湿痕和他的指节上形成细小反光。女主角没有避开，只是把身体往他这边靠近一点，镜头慢慢升到两人的表情。落点是购物袋底部已被擦干一片，两人坐姿比先前更近，面包仍放在中间但空隙明显缩短。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "hill_bench_overlook",
+          "prop": "paper_tissue"
+        },
+        "shot_id": "shot06_bench_closer",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot08_cafe_rain_reunion_00": {
+        "id": "seg_shot08_cafe_rain_reunion_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从靠窗小圆桌的静止暖光开始，深绿色咖啡豆罐稳稳放在桌面中央，女主角与男主角隔桌微笑。镜头沿桌边极慢推进，先掠过雨水沿玻璃滑下的细痕和暖黄吊灯倒影，再收回到两人轻声回忆超市那天的巧合；他们的表情带着克制笑意，身体比初见时更自然地向桌面倾近。段末落在两人笑意还在、谈话开始放慢的同一帧，咖啡豆罐仍清楚占据桌面中央。",
+          "duration_s": 13,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "coffee_bean_can"
+        },
+        "shot_id": "shot08_cafe_rain_reunion",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a08_cafe_rain_reunion_start"
+      },
+      "seg_shot08_cafe_rain_reunion_01": {
+        "id": "seg_shot08_cafe_rain_reunion_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接两人带笑的停顿，镜头继续缓慢向桌面中央收紧，暖黄灯光把深绿色咖啡豆罐的哑光罐身和银色盖子照得更突出，窗外蓝灰雨光在罐身边缘压出冷色轮廓。谈话从超市巧合变得安静，女主角的笑意渐收，男主角也放低视线；雨水一条条滑过玻璃，吊灯倒影轻轻晃动。段末落在两人的视线同时停在咖啡豆罐上的同一帧，沉默柔和地压住画面。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "coffee_bean_can"
+        },
+        "shot_id": "shot08_cafe_rain_reunion",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot03_checkout_walk_00": {
+        "id": "seg_shot03_checkout_walk_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "接第一帧，女主角抱着深绿色咖啡豆罐走在左侧，男主角提着半空购物篮走在右侧，两人仍保持礼貌距离。镜头在超市通道内平稳后退跟拍，冷藏柜蓝光和收银区暖光交替掠过他们侧脸；她低头看一眼咖啡罐，他像是顺着刚才的话题轻声接话，气氛还带一点初识的谨慎。段末两人走到通道中段，身体朝收银台方向，女主角抱着咖啡罐微微侧头，男主角提篮看向前方。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_checkout_path",
+          "prop": "coffee_bean_can,shopping_baskets"
+        },
+        "shot_id": "shot03_checkout_walk",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_checkout_walk_start"
+      },
+      "seg_shot03_checkout_walk_01": {
+        "id": "seg_shot03_checkout_walk_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从通道中段继续向收银台前进，女主角仍抱着深绿色咖啡豆罐，男主角的半空购物篮垂在身侧，距离没有突然缩短。镜头保持中景后退跟拍，让收银灯箱和冷藏柜反光在背景里缓慢靠近；他们的话题从咖啡豆的包装自然带到附近能看夜景的地方，语气比刚才轻松，却仍保留初次同行的分寸。段末两人停在靠近收银区的位置，身体方向朝前，头部都微微转向彼此。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_checkout_path"
+        },
+        "shot_id": "shot03_checkout_walk",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot04_wet_street_to_hill_00": {
+        "id": "seg_shot04_wet_street_to_hill_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从雨后街边的低角度画面出发，女主角和男主角各拎纸质购物袋，并肩但相隔半步开始往前走。手持稳定镜头贴着他们的步伐缓慢跟拍，湿路面上的红蓝霓虹和白色车灯被脚步轻轻拉长，袋口里的面包和咖啡罐轮廓偶尔被店铺暖光照亮。两人没有靠得太近，只在穿过街树水珠下方时自然放慢，最后停在小坡入口处，仍各自拎袋并保持半步距离。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "neon_wet_sidewalk",
+          "prop": "shopping_bags"
+        },
+        "shot_id": "shot04_wet_street_to_hill",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_wet_street_to_hill_start"
+      },
+      "seg_shot04_wet_street_to_hill_01": {
+        "id": "seg_shot04_wet_street_to_hill_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从小坡入口继续，女主角和男主角维持半步距离沿湿润坡道慢慢上行，纸质购物袋在各自身侧轻轻晃动。镜头跟着脚步抬升，街道霓虹逐渐退到身后，前方护栏和远处城市灯光一层层显出来，蓝紫雨夜里夹着温暖店灯的边缘光。两人步速开始趋于一致，最后停在坡道中段，前方长椅轮廓和城市灯光已经清楚可见。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "place": "hill_bench_overlook"
+        },
+        "shot_id": "shot04_wet_street_to_hill",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot04_wet_street_to_hill_02": {
+        "id": "seg_shot04_wet_street_to_hill_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从坡道中段向前推进，镜头陪着两人走完最后一小段上坡，湿地反光变少，护栏旁的长椅和开阔夜景成为画面中心。女主角和男主角仍各自拎着购物袋，半步距离没有消失，但步伐已经柔和同步，像只是顺路多停一会儿。最后他们来到小坡长椅附近停下，远处城市灯光铺满背景，距离保留却不再生硬。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "place": "hill_bench_overlook"
+        },
+        "shot_id": "shot04_wet_street_to_hill",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot10_touch_pause_00": {
+        "id": "seg_shot10_touch_pause_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从桌面近景开始，打开的深绿色咖啡豆罐和银色盖子留在前景，女主角的手指轻触男主角手背，两只手都没有收回。镜头几乎静止，只让窗外车灯冷白光从雨玻璃上掠过，短暂照亮他们并肩的模糊倒影；暖黄桌灯始终聚在手部、罐口咖啡豆和木桌纹理上。停顿里，女主角缓慢抬头，男主角也把视线落回她脸上，最后两只手仍靠在桌面中央，玻璃里映出他们并肩的影子。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "opened_coffee_can"
+        },
+        "shot_id": "shot10_touch_pause",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a10_touch_pause_start"
+      },
+      "seg_shot01_supermarket_reach_00": {
+        "id": "seg_shot01_supermarket_reach_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从货架侧面缓慢横移，女主角穿米色针织开衫踮脚伸手，右手指尖一次次轻碰顶层深绿色咖啡豆罐底部，罐身只细微晃动却没有落下。男主角推着半空购物篮停在通道旁，没有立刻插手，只安静确认她的窘迫。超市暖白灯照亮咖啡罐边缘，门口冷蓝光压在货架尽头，落点停在她仍踮脚够罐、男主角侧身观望的画面。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,shopping_baskets"
+        },
+        "shot_id": "shot01_supermarket_reach",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_supermarket_reach_start"
+      },
+      "seg_shot01_supermarket_reach_01": {
+        "id": "seg_shot01_supermarket_reach_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "接着她的手从罐底下方收回一点，脚跟短暂落地又有些不好意思地抬眼。男主角推着半空购物篮向旁边挪近半步，动作很克制，先用目光确认她确实需要帮忙；女主角轻轻让出货架前的位置。镜头继续横移到两人之间，重点落在深绿色咖啡豆罐高悬在顶层、男主角抬手靠近罐身的画面。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,shopping_baskets"
+        },
+        "shot_id": "shot01_supermarket_reach",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_supermarket_reach_02": {
+        "id": "seg_shot01_supermarket_reach_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "男主角的手稳稳握住顶层那罐深绿色咖啡豆罐，金属罐从货架阴影里被取下，暖白灯在银色盖子上形成一圈柔和高光。他没有越过距离，只把咖啡罐平稳递到女主角胸前；她双手接住，指尖小心贴住罐身。镜头在两人之间停住，落点是咖啡罐已经转到她手里、他的手刚从罐身旁离开的画面。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "supermarket_shelf_aisle",
+          "prop": "coffee_bean_can,shopping_baskets"
+        },
+        "shot_id": "shot01_supermarket_reach",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot12_ring_table_final_00": {
+        "id": "seg_shot12_ring_table_final_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接轻俯极近景，木桌中央女主角戴着戒指的手安静伸着，男主角的手停在旁边未收回。镜头极慢向桌面压近，把戒指细小的金属高光、深蓝打开的戒指盒、折好的旧收银小票和深绿色咖啡豆罐逐渐收进同一焦平面；暖黄桌灯集中照亮戒指与小票边缘，窗外冷色城市灯光在玻璃里柔柔倒映，没有拥抱也没有人群。最后画面停在戴好戒指的手、旁边未收回的男主角手、咖啡豆罐与旧小票同处桌面的静止承诺画面。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "coffee_bean_can,old_receipt,ring_box"
+        },
+        "shot_id": "shot12_ring_table_final",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a12_ring_table_final_start"
+      },
+      "seg_shot09_open_coffee_can_00": {
+        "id": "seg_shot09_open_coffee_can_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从男主角的手停在深绿色咖啡豆罐侧面开始，镜头贴着桌面缓慢推近。女主角双手接过开启的主动权，指尖稳住银色盖沿，轻轻旋开；暖黄桌灯把金属盖的细亮边、罐身哑光绿和两人靠近的手照得很清楚，窗外雨痕在背景化成蓝灰光斑。末句落点：银色盖子被女主角取下并停在罐口上方，罐内深褐色咖啡豆刚完整显露。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "coffee_bean_can"
+        },
+        "shot_id": "shot09_open_coffee_can",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a09_open_coffee_can_start"
+      },
+      "seg_shot09_open_coffee_can_01": {
+        "id": "seg_shot09_open_coffee_can_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "接着上一帧打开的罐口，女主角把银色盖子轻放到木桌一侧，男主角也顺着她的动作靠近。镜头继续极慢推近，重点停在打开的深绿色咖啡豆罐：罐口一圈金属高光细窄，深褐色咖啡豆颗粒在暖灯下有柔和油亮，像香气从桌面中央散开。末句落点：两人同时低头靠近罐口，距离比先前更近，银色盖子安静放在桌面旁。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_window_table",
+          "prop": "opened_coffee_can"
+        },
+        "shot_id": "shot09_open_coffee_can",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot11_proposal_receipt_00": {
+        "id": "seg_shot11_proposal_receipt_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从打烊后空旷的咖啡馆开始，镜头缓慢靠近同一张靠窗小圆桌。深绿色咖啡豆罐压住折好的旧收银小票一角，低亮暖灯让小票折痕、罐身哑光和桌面木纹格外清楚；女主角坐下后目光被那张小票吸住，男主角站在桌边握着小戒指盒，肩膀微紧。镜头落在她低头看着小票、他握盒子的手停在桌边这一帧。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "coffee_bean_can,old_receipt,ring_box"
+        },
+        "shot_id": "shot11_proposal_receipt",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a11_proposal_receipt_start"
+      },
+      "seg_shot11_proposal_receipt_01": {
+        "id": "seg_shot11_proposal_receipt_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "接着上一帧的安静停顿，女主角的手慢慢伸向咖啡豆罐底下露出的小票边缘。镜头贴着桌面轻轻侧移，重点停在旧收银小票被抽出后的折痕、泛黄纸面和模糊不可读的细行上，它像把超市第一次偶遇带回这张桌子；男主角的手仍紧握小戒指盒，指节因紧张而微微用力。镜头落在小票摊开在咖啡豆罐旁、女主角低头凝视它这一帧。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "old_receipt,ring_box"
+        },
+        "shot_id": "shot11_proposal_receipt",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot11_proposal_receipt_02": {
+        "id": "seg_shot11_proposal_receipt_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从摊开的旧小票继续，女主角的视线沿着纸面慢慢抬起，越过桌中央的深绿色咖啡豆罐看向男主角。男主角没有制造盛大动作，只把小戒指盒更稳地捧到胸前，拇指停在盒盖边缘，表情紧张克制，像当初在超市货架旁确认要不要帮忙。镜头落在她抬眼看他、他握着未打开戒指盒停在桌边这一帧。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "female_lead,male_lead",
+          "place": "cafe_after_close_table",
+          "prop": "coffee_bean_can,old_receipt,ring_box"
+        },
+        "shot_id": "shot11_proposal_receipt",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr03_checkout_walk_to_wet_street_to_hill",
+        "flf2v_request": {
+          "kind": "bridge",
+          "prompt": "收银区暖白灯下的画面继续向超市玻璃门方向推进，门外蓝紫色傍晚雨后街景逐渐占满画面；玻璃门上的水痕和室内灯反射叠在两人模糊身影上，自动门缝打开时，暖白室内声场被街道车声和湿路胎噪替代；镜头穿过玻璃门，地面反光从超市瓷砖自然过渡到霓虹湿人行道。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "from_shot": "shot03_checkout_walk",
+        "to_shot": "shot04_wet_street_to_hill"
+      },
+      {
+        "id": "tr07_downhill_same_pace_to_cafe_rain_reunion",
+        "flf2v_request": {
+          "kind": "bridge",
+          "prompt": "小坡下湿路上的两人背影逐渐远去，路面霓虹倒影被一阵新的细雨涟漪打散；画面保持低角度看向城市灯光，灯光反射慢慢变成咖啡馆窗玻璃上的雨痕与暖黄吊灯倒影，几天时间以雨水和光影叠化流过；镜头贴近玻璃，窗外蓝灰雨幕后显露靠窗小圆桌与桌中央的深绿色咖啡豆罐。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "from_shot": "shot07_downhill_same_pace",
+        "to_shot": "shot08_cafe_rain_reunion"
+      },
+      {
+        "id": "tr10_touch_pause_to_proposal_receipt",
+        "flf2v_request": {
+          "kind": "bridge",
+          "prompt": "咖啡馆雨夜玻璃上并肩的模糊倒影停留片刻，窗外车灯光带逐渐拉长后暗下；室内暖灯一盏盏降低亮度，雨痕在玻璃上变干，空座与桌椅的影子缓慢改变位置；同一扇窗外的城市夜景重新清晰亮起，画面转入打烊后的安静咖啡馆，同一张小圆桌仍在窗边，桌中央显出咖啡豆罐和压在罐底的旧小票。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "from_shot": "shot10_touch_pause",
+        "to_shot": "shot11_proposal_receipt"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "female_lead": "https://net-oss.akclau.de/reca/couple/portraits/female_lead.png",
+      "male_lead": "https://net-oss.akclau.de/reca/couple/portraits/male_lead.png"
+    },
+    "locations": {
+      "community_supermarket": "https://net-oss.akclau.de/reca/couple/locations/community_supermarket.png",
+      "corner_cafe": "https://net-oss.akclau.de/reca/couple/locations/corner_cafe.png",
+      "rain_after_street_hill": "https://net-oss.akclau.de/reca/couple/locations/rain_after_street_hill.png"
+    },
+    "props": {
+      "bench_bread": "https://net-oss.akclau.de/reca/couple/props/bench_bread.png",
+      "coffee_bean_can": "https://net-oss.akclau.de/reca/couple/props/coffee_bean_can.png",
+      "old_receipt": "https://net-oss.akclau.de/reca/couple/props/old_receipt.png",
+      "opened_coffee_can": "https://net-oss.akclau.de/reca/couple/props/opened_coffee_can.png",
+      "paper_tissue": "https://net-oss.akclau.de/reca/couple/props/paper_tissue.png",
+      "ring_box": "https://net-oss.akclau.de/reca/couple/props/ring_box.png",
+      "same_bread": "https://net-oss.akclau.de/reca/couple/props/same_bread.png",
+      "same_milk": "https://net-oss.akclau.de/reca/couple/props/same_milk.png",
+      "shopping_bags": "https://net-oss.akclau.de/reca/couple/props/shopping_bags.png",
+      "shopping_baskets": "https://net-oss.akclau.de/reca/couple/props/shopping_baskets.png"
+    },
+    "anchors": {
+      "a01_supermarket_reach_start": "https://net-oss.akclau.de/reca/couple/anchors/a01_supermarket_reach_start.png",
+      "a02_basket_coincidence_start": "https://net-oss.akclau.de/reca/couple/anchors/a02_basket_coincidence_start.png",
+      "a03_checkout_walk_start": "https://net-oss.akclau.de/reca/couple/anchors/a03_checkout_walk_start.png",
+      "a04_wet_street_to_hill_start": "https://net-oss.akclau.de/reca/couple/anchors/a04_wet_street_to_hill_start.png",
+      "a05_bench_distance_start": "https://net-oss.akclau.de/reca/couple/anchors/a05_bench_distance_start.png",
+      "a06_bench_closer_start": "https://net-oss.akclau.de/reca/couple/anchors/a06_bench_closer_start.png",
+      "a07_downhill_same_pace_start": "https://net-oss.akclau.de/reca/couple/anchors/a07_downhill_same_pace_start.png",
+      "a08_cafe_rain_reunion_start": "https://net-oss.akclau.de/reca/couple/anchors/a08_cafe_rain_reunion_start.png",
+      "a09_open_coffee_can_start": "https://net-oss.akclau.de/reca/couple/anchors/a09_open_coffee_can_start.png",
+      "a10_touch_pause_start": "https://net-oss.akclau.de/reca/couple/anchors/a10_touch_pause_start.png",
+      "a11_proposal_receipt_start": "https://net-oss.akclau.de/reca/couple/anchors/a11_proposal_receipt_start.png",
+      "a12_ring_table_final_start": "https://net-oss.akclau.de/reca/couple/anchors/a12_ring_table_final_start.png"
+    },
+    "segments": {
+      "seg_shot01_supermarket_reach_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_00.tail.png",
+      "seg_shot01_supermarket_reach_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_01.tail.png",
+      "seg_shot01_supermarket_reach_02": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_02.tail.png",
+      "seg_shot02_basket_coincidence_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot02_basket_coincidence_00.tail.png",
+      "seg_shot03_checkout_walk_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_00.tail.png",
+      "seg_shot03_checkout_walk_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_01.tail.png",
+      "seg_shot04_wet_street_to_hill_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_00.tail.png",
+      "seg_shot04_wet_street_to_hill_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_01.tail.png",
+      "seg_shot04_wet_street_to_hill_02": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_02.tail.png",
+      "seg_shot05_bench_distance_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot05_bench_distance_00.tail.png",
+      "seg_shot06_bench_closer_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_00.tail.png",
+      "seg_shot06_bench_closer_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_01.tail.png",
+      "seg_shot07_downhill_same_pace_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot07_downhill_same_pace_00.tail.png",
+      "seg_shot08_cafe_rain_reunion_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_00.tail.png",
+      "seg_shot08_cafe_rain_reunion_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_01.tail.png",
+      "seg_shot09_open_coffee_can_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_00.tail.png",
+      "seg_shot09_open_coffee_can_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_01.tail.png",
+      "seg_shot10_touch_pause_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot10_touch_pause_00.tail.png",
+      "seg_shot11_proposal_receipt_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_00.tail.png",
+      "seg_shot11_proposal_receipt_01": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_01.tail.png",
+      "seg_shot11_proposal_receipt_02": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_02.tail.png",
+      "seg_shot12_ring_table_final_00": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot12_ring_table_final_00.tail.png"
+    },
+    "bridges": {
+      "tr03_checkout_walk_to_wet_street_to_hill": "https://net-oss.akclau.de/reca/couple/bridges/tr03_checkout_walk_to_wet_street_to_hill.mp4",
+      "tr07_downhill_same_pace_to_cafe_rain_reunion": "https://net-oss.akclau.de/reca/couple/bridges/tr07_downhill_same_pace_to_cafe_rain_reunion.mp4",
+      "tr10_touch_pause_to_proposal_receipt": "https://net-oss.akclau.de/reca/couple/bridges/tr10_touch_pause_to_proposal_receipt.mp4"
+    },
+    "final_mp4": "https://net-oss.akclau.de/reca/couple/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 12,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "female_lead",
+      "url": "https://net-oss.akclau.de/reca/couple/portraits/female_lead.png",
+      "t": 10.75
+    },
+    {
+      "type": "portrait_ready",
+      "id": "male_lead",
+      "url": "https://net-oss.akclau.de/reca/couple/portraits/male_lead.png",
+      "t": 10.85
+    },
+    {
+      "type": "location_ready",
+      "id": "community_supermarket",
+      "url": "https://net-oss.akclau.de/reca/couple/locations/community_supermarket.png",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "corner_cafe",
+      "url": "https://net-oss.akclau.de/reca/couple/locations/corner_cafe.png",
+      "t": 11.05
+    },
+    {
+      "type": "location_ready",
+      "id": "rain_after_street_hill",
+      "url": "https://net-oss.akclau.de/reca/couple/locations/rain_after_street_hill.png",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "bench_bread",
+      "url": "https://net-oss.akclau.de/reca/couple/props/bench_bread.png",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "coffee_bean_can",
+      "url": "https://net-oss.akclau.de/reca/couple/props/coffee_bean_can.png",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "old_receipt",
+      "url": "https://net-oss.akclau.de/reca/couple/props/old_receipt.png",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "opened_coffee_can",
+      "url": "https://net-oss.akclau.de/reca/couple/props/opened_coffee_can.png",
+      "t": 11.55
+    },
+    {
+      "type": "prop_ready",
+      "id": "paper_tissue",
+      "url": "https://net-oss.akclau.de/reca/couple/props/paper_tissue.png",
+      "t": 11.65
+    },
+    {
+      "type": "prop_ready",
+      "id": "ring_box",
+      "url": "https://net-oss.akclau.de/reca/couple/props/ring_box.png",
+      "t": 11.75
+    },
+    {
+      "type": "prop_ready",
+      "id": "same_bread",
+      "url": "https://net-oss.akclau.de/reca/couple/props/same_bread.png",
+      "t": 11.85
+    },
+    {
+      "type": "prop_ready",
+      "id": "same_milk",
+      "url": "https://net-oss.akclau.de/reca/couple/props/same_milk.png",
+      "t": 11.95
+    },
+    {
+      "type": "prop_ready",
+      "id": "shopping_bags",
+      "url": "https://net-oss.akclau.de/reca/couple/props/shopping_bags.png",
+      "t": 12.05
+    },
+    {
+      "type": "prop_ready",
+      "id": "shopping_baskets",
+      "url": "https://net-oss.akclau.de/reca/couple/props/shopping_baskets.png",
+      "t": 12.15
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 12 shots — seeds the I2V chain…",
+      "t": 12.2
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_supermarket_reach_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a01_supermarket_reach_start.png",
+      "t": 17.35
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_basket_coincidence_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a02_basket_coincidence_start.png",
+      "t": 17.5
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_checkout_walk_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a03_checkout_walk_start.png",
+      "t": 17.65
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_wet_street_to_hill_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a04_wet_street_to_hill_start.png",
+      "t": 17.8
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a05_bench_distance_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a05_bench_distance_start.png",
+      "t": 17.95
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a06_bench_closer_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a06_bench_closer_start.png",
+      "t": 18.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a07_downhill_same_pace_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a07_downhill_same_pace_start.png",
+      "t": 18.25
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a08_cafe_rain_reunion_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a08_cafe_rain_reunion_start.png",
+      "t": 18.4
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a09_open_coffee_can_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a09_open_coffee_can_start.png",
+      "t": 18.55
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a10_touch_pause_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a10_touch_pause_start.png",
+      "t": 18.7
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a11_proposal_receipt_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a11_proposal_receipt_start.png",
+      "t": 18.85
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a12_ring_table_final_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a12_ring_table_final_start.png",
+      "t": 19.0
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Anchor validator",
+      "detail": "Checking each anchor for identity / pose drift before letting it seed the video render…",
+      "t": 19.05
+    },
+    {
+      "type": "anchor_validator_start",
+      "id": "a01_supermarket_reach_start",
+      "t": 24.35
+    },
+    {
+      "type": "anchor_validator_fail",
+      "id": "a01_supermarket_reach_start",
+      "reason": "identity_drift",
+      "t": 24.65
+    },
+    {
+      "type": "anchor_repair_start",
+      "id": "a01_supermarket_reach_start",
+      "action": "RepackPrompt",
+      "t": 24.85
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_supermarket_reach_start",
+      "url": "https://net-oss.akclau.de/reca/couple/anchors/a01_supermarket_reach_start.png",
+      "repaired": true,
+      "t": 25.35
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 25.4
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 22,
+      "t": 30.8
+    },
+    {
+      "type": "render_start",
+      "t": 30.9
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "22 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 30.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_supermarket_reach_00",
+      "shot_id": "shot01_supermarket_reach",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_00.tail.png",
+      "duration_s": 8.0,
+      "t": 41.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_basket_coincidence_00",
+      "shot_id": "shot02_basket_coincidence",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot02_basket_coincidence_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot02_basket_coincidence_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_checkout_walk_00",
+      "shot_id": "shot03_checkout_walk",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.55
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_wet_street_to_hill_00",
+      "shot_id": "shot04_wet_street_to_hill",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_bench_distance_00",
+      "shot_id": "shot05_bench_distance",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot05_bench_distance_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot05_bench_distance_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.15
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_bench_closer_00",
+      "shot_id": "shot06_bench_closer",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_downhill_same_pace_00",
+      "shot_id": "shot07_downhill_same_pace",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot07_downhill_same_pace_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot07_downhill_same_pace_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.75
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot08_cafe_rain_reunion_00",
+      "shot_id": "shot08_cafe_rain_reunion",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot09_open_coffee_can_00",
+      "shot_id": "shot09_open_coffee_can",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot10_touch_pause_00",
+      "shot_id": "shot10_touch_pause",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot10_touch_pause_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot10_touch_pause_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.65
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot11_proposal_receipt_00",
+      "shot_id": "shot11_proposal_receipt",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot12_ring_table_final_00",
+      "shot_id": "shot12_ring_table_final",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot12_ring_table_final_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot12_ring_table_final_00.tail.png",
+      "duration_s": 8.0,
+      "t": 45.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_supermarket_reach_01",
+      "shot_id": "shot01_supermarket_reach",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_01.tail.png",
+      "duration_s": 8.0,
+      "t": 47.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_checkout_walk_01",
+      "shot_id": "shot03_checkout_walk",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot03_checkout_walk_01.tail.png",
+      "duration_s": 8.0,
+      "t": 48.55
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_wet_street_to_hill_01",
+      "shot_id": "shot04_wet_street_to_hill",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_01.tail.png",
+      "duration_s": 8.0,
+      "t": 48.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_bench_closer_01",
+      "shot_id": "shot06_bench_closer",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot06_bench_closer_01.tail.png",
+      "duration_s": 8.0,
+      "t": 49.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot08_cafe_rain_reunion_01",
+      "shot_id": "shot08_cafe_rain_reunion",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot08_cafe_rain_reunion_01.tail.png",
+      "duration_s": 8.0,
+      "t": 50.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot09_open_coffee_can_01",
+      "shot_id": "shot09_open_coffee_can",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot09_open_coffee_can_01.tail.png",
+      "duration_s": 8.0,
+      "t": 50.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot11_proposal_receipt_01",
+      "shot_id": "shot11_proposal_receipt",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_01.tail.png",
+      "duration_s": 8.0,
+      "t": 50.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_supermarket_reach_02",
+      "shot_id": "shot01_supermarket_reach",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_02.tail.png",
+      "duration_s": 8.0,
+      "t": 53.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_wet_street_to_hill_02",
+      "shot_id": "shot04_wet_street_to_hill",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot04_wet_street_to_hill_02.tail.png",
+      "duration_s": 8.0,
+      "t": 54.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot11_proposal_receipt_02",
+      "shot_id": "shot11_proposal_receipt",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot11_proposal_receipt_02.tail.png",
+      "duration_s": 8.0,
+      "t": 56.95
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Cross-shot bridges",
+      "detail": "Stitching shot pairs with short transition clips…",
+      "t": 57.0
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr03_checkout_walk_to_wet_street_to_hill",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/couple/bridges/tr03_checkout_walk_to_wet_street_to_hill.mp4",
+      "duration_s": 4.0,
+      "t": 62.12
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr07_downhill_same_pace_to_cafe_rain_reunion",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/couple/bridges/tr07_downhill_same_pace_to_cafe_rain_reunion.mp4",
+      "duration_s": 4.0,
+      "t": 62.24
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr10_touch_pause_to_proposal_receipt",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/couple/bridges/tr10_touch_pause_to_proposal_receipt.mp4",
+      "duration_s": 4.0,
+      "t": 62.36
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Segment validator",
+      "detail": "Extracting end-state from every segment → refreshing memory → feedback flags drift…",
+      "t": 62.41
+    },
+    {
+      "type": "segment_validator_start",
+      "t": 67.91
+    },
+    {
+      "type": "segment_extractor_ok",
+      "t": 68.26
+    },
+    {
+      "type": "segment_refresh_ok",
+      "t": 68.56
+    },
+    {
+      "type": "segment_feedback_flagged",
+      "flagged": [
+        "seg_shot01_supermarket_reach_00",
+        "seg_shot01_supermarket_reach_01"
+      ],
+      "reasons": {
+        "seg_shot01_supermarket_reach_00": "motif_drift",
+        "seg_shot01_supermarket_reach_01": "end_state_mismatch"
+      },
+      "t": 68.86
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot01_supermarket_reach_00",
+      "action": "RepackPrompt",
+      "t": 69.01
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_supermarket_reach_00",
+      "shot_id": "shot01_supermarket_reach",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_00.tail.png",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 69.56
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot01_supermarket_reach_01",
+      "action": "RegenerateUnit",
+      "t": 69.71
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_supermarket_reach_01",
+      "shot_id": "shot01_supermarket_reach",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/couple/segment_tails/seg_shot01_supermarket_reach_01.tail.png",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 70.26
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 70.31
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/couple/final.mp4",
+      "t": 75.91
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/couple/final.mp4",
+      "total_s": 75.9,
+      "t": 76.11
+    }
+  ],
+  "timeline_duration_s": 76.1
+}

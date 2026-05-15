@@ -1,0 +1,55 @@
+{
+  "demos": [
+    {
+      "demo_id": "boxing",
+      "slug": "boxing",
+      "title": "Boxing",
+      "is_rerun": false,
+      "n_shots": 7,
+      "n_segments": 16,
+      "timeline_duration_s": 59.5,
+      "poster_url": "https://net-oss.akclau.de/reca/boxing/final.mp4"
+    },
+    {
+      "demo_id": "dumplings",
+      "slug": "dumplings",
+      "title": "Dumplings",
+      "is_rerun": false,
+      "n_shots": 8,
+      "n_segments": 15,
+      "timeline_duration_s": 52.2,
+      "poster_url": "https://net-oss.akclau.de/reca/dumplings/final.mp4"
+    },
+    {
+      "demo_id": "couple",
+      "slug": "couple",
+      "title": "Couple",
+      "is_rerun": true,
+      "n_shots": 12,
+      "n_segments": 22,
+      "timeline_duration_s": 76.1,
+      "poster_url": "https://net-oss.akclau.de/reca/couple/final.mp4"
+    },
+    {
+      "demo_id": "world-landmarks",
+      "slug": "world-landmarks",
+      "title": "World Landmarks",
+      "is_rerun": true,
+      "n_shots": 5,
+      "n_segments": 14,
+      "timeline_duration_s": 73.7,
+      "poster_url": "https://net-oss.akclau.de/reca/world-landmarks/final.mp4"
+    },
+    {
+      "demo_id": "heavenly-titans",
+      "slug": "heavenly-titans",
+      "title": "Heavenly Titans",
+      "is_rerun": true,
+      "n_shots": 18,
+      "n_segments": 30,
+      "timeline_duration_s": 69.8,
+      "poster_url": "https://net-oss.akclau.de/reca/heavenly-titans/final.mp4"
+    }
+  ],
+  "generated_at": "2026-05-15T02:49:28.738158+00:00"
+}

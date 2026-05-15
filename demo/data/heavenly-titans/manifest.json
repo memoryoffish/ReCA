@@ -1,0 +1,2570 @@
+{
+  "demo_id": "heavenly-titans",
+  "slug": "heavenly-titans",
+  "title": "Heavenly Titans",
+  "is_rerun": true,
+  "n_shots": 18,
+  "n_segments": 30,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "yang_jian"
+      },
+      {
+        "id": "sun_wukong"
+      },
+      {
+        "id": "giant_ape_wukong"
+      },
+      {
+        "id": "faxiang_yang_jian"
+      }
+    ],
+    "location_plan": {
+      "ancient_battlefield": {
+        "id": "ancient_battlefield",
+        "key_zones": [
+          {
+            "id": "battlefield_center"
+          },
+          {
+            "id": "impact_crater"
+          },
+          {
+            "id": "nine_heavens_clouds"
+          },
+          {
+            "id": "broken_plain_wide"
+          }
+        ],
+        "props": {
+          "sanjian_liangren_blade": {
+            "name": "三尖两刃刀",
+            "owner": "yang_jian",
+            "prompt": "静态道具参考图，杨戬的三尖两刃刀，长柄银黑金属，主刃宽阔锋利，两侧小刃对称外展，刃口有冷白神光与细微战损缺口，柄身缠黑色皮革与金属箍，沾有尘土与火星，写实电影道具质感。",
+            "negative_prompt": "塑料玩具, 卡通, 低清, 西式长剑, 枪械, 文字, 水印, 变形刃口"
+          },
+          "ruyi_jingubang": {
+            "name": "如意金箍棒",
+            "owner": "sun_wukong",
+            "prompt": "静态道具参考图，孙悟空的如意金箍棒，厚重金红金属长棍，两端金箍纹饰清晰，棍身有古老符纹和战斗划痕，表面带火星、尘土与金色气息，比例沉重，写实电影道具光泽。",
+            "negative_prompt": "塑料感, 卡通, 低清, 木棍, 现代武器, 文字, 水印, 过度发光"
+          },
+          "broken_battle_flags": {
+            "name": "残破战旗",
+            "owner": "ancient_battlefield",
+            "prompt": "静态道具参考图，古战场残破战旗，暗红与灰黑布面撕裂，旗杆折断或倾斜，布料边缘烧焦，沾满尘土，适合在冲击气浪中被连根拔起，写实战争道具。",
+            "negative_prompt": "现代国旗, 鲜艳干净, 卡通, 低清, 文字, 水印, 塑料布"
+          },
+          "golden_hair_clones": {
+            "name": "金色毫毛幻身",
+            "owner": "sun_wukong",
+            "prompt": "静态道具参考图，孙悟空神通毫毛，金色粗硬毛发在空中漂浮，每根毛发带微弱金光，部分化作半透明猴王幻影边缘，烟尘与碎石背景，写实奇幻法术质感。",
+            "negative_prompt": "卡通魔法粒子, 花瓣, 现代特效网格, 低清, 文字, 水印, 过曝"
+          }
+        }
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_back_clash_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a02_weapon_lock_close_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a03_faces_roar_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a04_separated_standoff_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a05_ascent_through_clouds_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a06_cloud_counter_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "nine_heavens_clouds",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a07_high_sky_battle_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "nine_heavens_clouds",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a08_mountain_staff_press_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "nine_heavens_clouds",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a09_counter_knockdown_start",
+          "reference_inputs": {
+            "portrait": "yang_jian,sun_wukong",
+            "place": "nine_heavens_clouds",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a10_wukong_fall_impact_start",
+          "reference_inputs": {
+            "portrait": "sun_wukong",
+            "place": "nine_heavens_clouds",
+            "prop": "ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a11_giant_ape_transformation_start",
+          "reference_inputs": {
+            "portrait": "sun_wukong",
+            "place": "impact_crater",
+            "prop": "ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a12_yangjian_fatian_start",
+          "reference_inputs": {
+            "portrait": "yang_jian",
+            "place": "battlefield_center",
+            "prop": "sanjian_liangren_blade"
+          }
+        },
+        {
+          "id": "a13_titan_clash_start",
+          "reference_inputs": {
+            "portrait": "giant_ape_wukong,faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a14_clone_siege_start",
+          "reference_inputs": {
+            "portrait": "giant_ape_wukong,faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+          }
+        },
+        {
+          "id": "a15_third_eye_scan_start",
+          "reference_inputs": {
+            "portrait": "faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,golden_hair_clones"
+          }
+        },
+        {
+          "id": "a16_true_body_counter_start",
+          "reference_inputs": {
+            "portrait": "giant_ape_wukong,faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a17_aftermath_standoff_start",
+          "reference_inputs": {
+            "portrait": "giant_ape_wukong,faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang"
+          }
+        },
+        {
+          "id": "a18_final_ready_start",
+          "reference_inputs": {
+            "portrait": "giant_ape_wukong,faxiang_yang_jian",
+            "place": "broken_plain_wide",
+            "prop": "sanjian_liangren_blade,ruyi_jingubang,broken_battle_flags"
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_back_clash",
+        "duration_s": 10,
+        "story_goal": "建立杨戬与孙悟空第一次正面对撞的力量等级，明确双方都不愿退让的战斗基调。",
+        "start_state": "杨戬背对镜头横握三尖两刃刀蓄势，孙悟空正面腾空前压，金箍棒尖距刀身一掌未触。",
+        "end_state": "三尖两刃刀与金箍棒猛烈接触，橙金火花炸开，两人身体前倾僵持在战场中央。",
+        "visual_intent": "镜头从杨戬背后低角度向前推近，节奏由蓄势转为爆发，写实史诗动作风格，尘雾和强逆光强化武器相撞的重量，色彩为暖金火花对冷灰战场。"
+      },
+      {
+        "id": "shot02_weapon_lock_close",
+        "duration_s": 5,
+        "story_goal": "放大兵器交接处的压力，让观众感受到神兵硬碰硬的震动与冲击。",
+        "start_state": "三尖两刃刀锋与金箍棒紧压在画面中央，接触点有少量火星停在空中，双方手臂局部虚化。",
+        "end_state": "刀锋与金箍棒压得更深，接触点密集火花与气流环向外扩，金属表面出现明显震颤裂光。",
+        "visual_intent": "微距近景继续推进，画面节奏短促紧绷，强调金属震动、火星喷溅和气流冲击，声音想象为刺耳摩擦与低频轰鸣，冷白刃光与橙金火星高反差。"
+      },
+      {
+        "id": "shot03_faces_roar",
+        "duration_s": 6,
+        "story_goal": "揭示两位角色的战意、愤怒和不服输的意志，让冲突从力量对抗升级到精神对抗。",
+        "start_state": "杨戬与孙悟空面部相对，咬牙怒目，武器柄与交叉阴影框住脸部，火星散在两人之间。",
+        "end_state": "两人表情更加狰狞，嘴部张开怒吼姿态，杨戬眉心细线微亮，孙悟空金瞳火光更盛。",
+        "visual_intent": "镜头从武器交接处推到双方面部特写，节奏压迫而短，手持电影感轻微震动，突出呼吸、怒吼与近距离对抗，面部暖火光和盔甲冷阴影交错。"
+      },
+      {
+        "id": "shot04_separated_standoff",
+        "duration_s": 6,
+        "story_goal": "结束第一轮近身僵持，重新拉开双方距离，为孙悟空率先升空发动下一轮攻势做准备。",
+        "start_state": "杨戬在画面左侧退到战场一端持刀落定，孙悟空在右侧半蹲持棒对峙，尘土翻涌。",
+        "end_state": "两人分别稳在画面两端，身体重心压低，兵器指向对方，战场中央空出一道尘雾裂隙。",
+        "visual_intent": "镜头切成大全景后轻微拉远，节奏从爆发回到短暂凝固，写实史诗风格，空间关系清晰，冷灰尘雾中保留兵器余火。"
+      },
+      {
+        "id": "shot05_ascent_through_clouds",
+        "duration_s": 28,
+        "story_goal": "把战斗从凡间战场推向九天云霄，扩大对决尺度并建立纵向空间的史诗感。",
+        "start_state": "孙悟空一脚压在即将碎裂的地面上，金箍棒向上挑起姿态被定格，杨戬持刀前倾追击。",
+        "end_state": "杨戬与孙悟空一前一后冲破云层，身处云海之上，下方凡间战场缩成模糊灰色斑块。",
+        "visual_intent": "长镜头从地面低角度仰拍连续追随到高空，镜头随尘土旋涡抬升并穿破云层，节奏持续加速，写实史诗飞升感，地面尘褐逐渐过渡为高空金白与冷蓝。"
+      },
+      {
+        "id": "shot06_cloud_counter",
+        "duration_s": 14,
+        "story_goal": "呈现云端第一次攻防转换，说明孙悟空身法灵活而杨戬反应精准。",
+        "start_state": "孙悟空在云层上方倒转半身回击，金箍棒横在身前，杨戬侧身持刀避让，巨大光柱切开云海。",
+        "end_state": "孙悟空横扫出的金色气浪在云端扩散，杨戬避开后刺出三尖两刃刀，刀锋在云层上留下长裂痕。",
+        "visual_intent": "镜头在云海间弧形跟随，先围绕孙悟空翻身再贴向杨戬刺击，节奏灵动但锋利，云雾被动作切开，金色气浪与冷白刀光形成对照。"
+      },
+      {
+        "id": "shot07_high_sky_battle",
+        "duration_s": 24,
+        "story_goal": "展示高空大战进入持续缠斗阶段，突出孙悟空变化莫测与杨戬天眼预判的对抗逻辑。",
+        "start_state": "杨戬稳住中线持刀格挡，眉心第三只眼初亮冷光；孙悟空倒悬在云层下方反手举棒，半被雷云遮住。",
+        "end_state": "杨戬每次格挡后逼近到更近距离，天眼冷光持续亮起，孙悟空的数次突袭被挡在半步之外。",
+        "visual_intent": "远景与近景在同一连续战斗中交替推进，镜头快速摇移、穿云、贴近兵器再拉开，节奏密集但保持空间方向，写实史诗动作，金光、银光与蓝紫雷电交错。"
+      },
+      {
+        "id": "shot08_mountain_staff_press",
+        "duration_s": 12,
+        "story_goal": "让孙悟空以巨化金箍棒制造压倒性威胁，把战斗推入更高强度的爆发点。",
+        "start_state": "杨戬双手横刀立在云海裂口边缘，孙悟空在天顶高处大笑，金箍棒已如山柱般悬在上方未触。",
+        "end_state": "如山金箍棒压在三尖两刃刀上，云海被分开，杨戬脚下云层震散，身体向下滑出很远但没有退让。",
+        "visual_intent": "镜头低角度仰拍巨棒下压，随后跟随杨戬被压下的垂直运动，节奏沉重如山崩，强调尺度差与不退让，天顶暖金与云底冷蓝形成强烈压迫。"
+      },
+      {
+        "id": "shot09_counter_knockdown",
+        "duration_s": 9,
+        "story_goal": "完成杨戬从硬接到反击的转折，第一次明确击伤并压制孙悟空。",
+        "start_state": "杨戬脚下云层被压散成环形空洞，双手横刀硬接巨大金箍棒，额间冷白神光初燃。",
+        "end_state": "孙悟空胸前被最后一道刀光击中，身体后仰坠向云层破口，杨戬持刀悬在高处追击姿态收住。",
+        "visual_intent": "镜头从受压的杨戬侧面快速斜向上跟随刀锋反斩，节奏由承压骤然反爆，刀光连续压下形成银白轨迹，冷白神光短暂盖过金色棒影。"
+      },
+      {
+        "id": "shot10_wukong_fall_impact",
+        "duration_s": 14,
+        "story_goal": "把高空失败转化为地面巨大灾难，为孙悟空的巨猿化积蓄愤怒与破坏力。",
+        "start_state": "孙悟空胸前带新鲜刀光痕迹，身体后仰坠落，身后拖出初始火光与碎云隧道。",
+        "end_state": "孙悟空重重砸回战场平地，形成巨大圆形深坑，碎石和烟尘向四周爆开后遮住坑底。",
+        "visual_intent": "镜头跟随孙悟空高速下坠，穿云后俯冲到地面，落地瞬间短暂震屏并拉出冲击波，节奏从高速坠落到轰然停顿，暖橙火光撞入冷灰尘海。"
+      },
+      {
+        "id": "shot11_giant_ape_transformation",
+        "duration_s": 18,
+        "story_goal": "表现孙悟空受创后的愤怒爆发，完成从人身猴王到山岳巨猿的关键状态变化。",
+        "start_state": "孙悟空人身大小半跪在坑底，肩侧伤痕发金光，双目已有凶光但身形未涨大，金箍棒横在身旁。",
+        "end_state": "山岳般巨猿孙悟空站在深坑中，粗硬毛发竖起，双目金光燃烧，巨大金箍棒握在手中，双拳压向地面。",
+        "visual_intent": "镜头固定低角度逐渐后退，身体比例由人身扩张成巨猿，毛发变粗、骨骼拉伸、金箍棒同步变大，节奏由寂静低吼到地面震动爆发，尘烟被金色凶光照亮。"
+      },
+      {
+        "id": "shot12_yangjian_fatian",
+        "duration_s": 18,
+        "story_goal": "回应孙悟空巨猿化，展示杨戬以法天象地进入同等神魔尺度，维持战斗平衡。",
+        "start_state": "杨戬站在插入破裂地面的三尖两刃刀后双手结印，额间天眼光芒大盛，身躯仍为常人比例。",
+        "end_state": "法相杨戬顶天立地站在破碎平原上，银黑巨甲如山脉展开，三尖两刃刀化为擎天巨刃，脚下地面崩裂。",
+        "visual_intent": "镜头围绕杨戬缓慢上升并后拉，天地灵气向他汇聚，身后神影由虚到实，身躯持续拔高，节奏庄严厚重，冷白神光压过尘褐战场。"
+      },
+      {
+        "id": "shot13_titan_clash",
+        "duration_s": 22,
+        "story_goal": "展开巨猿与法相神将的神魔级肉搏，确认战斗规模已从个人武艺升级到天地撼动。",
+        "start_state": "巨猿孙悟空从深坑边缘前压，双手握巨大金箍棒横扫前置；法相杨戬抬起擎天巨刃格挡。",
+        "end_state": "巨猿孙悟空贴身猛攻受阻，法相杨戬稳住脚步，巨刃再次与金箍棒压在一起，天空雷云翻滚，地面裂纹蔓延。",
+        "visual_intent": "先极远景展示两尊巨影连续交锋，再切入同一战线近景压迫，镜头拉远与推进结合，节奏沉重连打，尘暴如海潮翻起，冷白神目、金色棒光和黑灰雷云构成宏大对比。"
+      },
+      {
+        "id": "shot14_clone_siege",
+        "duration_s": 20,
+        "story_goal": "引入孙悟空的分身神通，让杨戬陷入真假难辨的围攻，改变战斗策略层面的压力。",
+        "start_state": "法相杨戬巨肩与横置巨刃占画面左侧，巨猿孙悟空咧嘴冷笑，身上金色毫毛被狂风托起。",
+        "end_state": "破碎平原四周出现无数孙悟空幻影，真假金箍棒从四面八方压向杨戬，杨戬横刃稳守，铠甲表面溅起火花。",
+        "visual_intent": "镜头从杨戬肩后横扫破碎平原，金色毫毛落地化身，空间逐渐被幻象填满，节奏由诡异静默转为铺天盖地围攻，金色残影在冷灰尘云中层层叠加。"
+      },
+      {
+        "id": "shot15_third_eye_scan",
+        "duration_s": 16,
+        "story_goal": "展示杨戬用天眼破解真假分身，将孙悟空的神通优势反制回来。",
+        "start_state": "杨戬巨大神面眉心占满画面，天眼仍是一道细微金线，周围残留金色幻影光点。",
+        "end_state": "宽阔战场上成百上千个孙悟空幻影被神光扫灭，金色毫毛和烟尘消散，只剩真正巨猿的方向显露。",
+        "visual_intent": "镜头从天眼特写缓慢拉出到横移战场，冷白神光像扫描层一样逐层扫过，节奏克制而精准，幻象边缘破碎成金尘，色彩由混乱金影转为清晰冷白。"
+      },
+      {
+        "id": "shot16_true_body_counter",
+        "duration_s": 7,
+        "story_goal": "让杨戬完成锁定真身后的快速反击，打断孙悟空再度偷袭。",
+        "start_state": "杨戬法相半转身，三尖两刃巨刃被反手提起，天眼冷白光束锁向侧后方真正的巨猿孙悟空。",
+        "end_state": "金箍棒与巨刃在侧后方再次相撞，冲击波震碎残余幻象，巨猿孙悟空被逼退数步，脚掌犁出深沟。",
+        "visual_intent": "镜头急速弧形跟随杨戬旋身反斩，节奏短促爆裂，碰撞瞬间震屏并让金色毫毛如雨散落，冷白锁定光在尘雾中切出清晰轨迹。"
+      },
+      {
+        "id": "shot17_aftermath_standoff",
+        "duration_s": 18,
+        "story_goal": "呈现双方在神通斗法后的消耗、伤痕与仍未动摇的战意，让战斗进入第一次真正停顿。",
+        "start_state": "金色毫毛如雨落在龟裂地面，巨猿孙悟空站稳在深沟尽头，法相杨戬立在另一侧，天眼仍亮但较暗。",
+        "end_state": "巨猿孙悟空胸口起伏、肩侧金色血光滴落，杨戬法相铠甲裂纹明显、巨刃刃口有缺口，二人隔着破碎战场对峙。",
+        "visual_intent": "镜头拉到极宽远景后缓慢推进，节奏放缓形成余响，尘浪缓慢落下，雷云分层，写实史诗静默感，冷灰底色中只保留伤口金光与天眼微光。"
+      },
+      {
+        "id": "shot18_final_ready",
+        "duration_s": 12,
+        "story_goal": "以没有胜负宣告的再度备战收束本段，强调双方疲惫却不肯后退，预示更沉重的下一次交锋。",
+        "start_state": "残破战旗落在裂地上，巨猿孙悟空抬手贴近嘴角血迹，肩侧金色血痕未干，杨戬法相闭合天眼片刻。",
+        "end_state": "孙悟空和杨戬都重新压低重心，孙悟空握紧巨大金箍棒，杨戬重新睁开天眼并立起巨刃，二人准备再次冲向彼此。",
+        "visual_intent": "镜头在两人之间克制来回切换并最终停成对峙构图，节奏沉静而沉重，无旁白无胜负提示，低沉雷声与落尘强化疲惫感，色彩压低为冷灰与微弱金白。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_back_clash_to_weapon_lock_close",
+        "from_shot": "shot01_back_clash",
+        "to_shot": "shot02_weapon_lock_close",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_weapon_lock_close_to_faces_roar",
+        "from_shot": "shot02_weapon_lock_close",
+        "to_shot": "shot03_faces_roar",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_faces_roar_to_separated_standoff",
+        "from_shot": "shot03_faces_roar",
+        "to_shot": "shot04_separated_standoff",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_separated_standoff_to_ascent_through_clouds",
+        "from_shot": "shot04_separated_standoff",
+        "to_shot": "shot05_ascent_through_clouds",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_ascent_through_clouds_to_cloud_counter",
+        "from_shot": "shot05_ascent_through_clouds",
+        "to_shot": "shot06_cloud_counter",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_cloud_counter_to_high_sky_battle",
+        "from_shot": "shot06_cloud_counter",
+        "to_shot": "shot07_high_sky_battle",
+        "mode": "cut"
+      },
+      {
+        "id": "tr07_high_sky_battle_to_mountain_staff_press",
+        "from_shot": "shot07_high_sky_battle",
+        "to_shot": "shot08_mountain_staff_press",
+        "mode": "cut"
+      },
+      {
+        "id": "tr08_mountain_staff_press_to_counter_knockdown",
+        "from_shot": "shot08_mountain_staff_press",
+        "to_shot": "shot09_counter_knockdown",
+        "mode": "cut"
+      },
+      {
+        "id": "tr09_counter_knockdown_to_wukong_fall_impact",
+        "from_shot": "shot09_counter_knockdown",
+        "to_shot": "shot10_wukong_fall_impact",
+        "mode": "cut"
+      },
+      {
+        "id": "tr10_wukong_fall_impact_to_giant_ape_transformation",
+        "from_shot": "shot10_wukong_fall_impact",
+        "to_shot": "shot11_giant_ape_transformation",
+        "mode": "cut"
+      },
+      {
+        "id": "tr11_giant_ape_transformation_to_yangjian_fatian",
+        "from_shot": "shot11_giant_ape_transformation",
+        "to_shot": "shot12_yangjian_fatian",
+        "mode": "cut"
+      },
+      {
+        "id": "tr12_yangjian_fatian_to_titan_clash",
+        "from_shot": "shot12_yangjian_fatian",
+        "to_shot": "shot13_titan_clash",
+        "mode": "cut"
+      },
+      {
+        "id": "tr13_titan_clash_to_clone_siege",
+        "from_shot": "shot13_titan_clash",
+        "to_shot": "shot14_clone_siege",
+        "mode": "cut"
+      },
+      {
+        "id": "tr14_clone_siege_to_third_eye_scan",
+        "from_shot": "shot14_clone_siege",
+        "to_shot": "shot15_third_eye_scan",
+        "mode": "cut"
+      },
+      {
+        "id": "tr15_third_eye_scan_to_true_body_counter",
+        "from_shot": "shot15_third_eye_scan",
+        "to_shot": "shot16_true_body_counter",
+        "mode": "cut"
+      },
+      {
+        "id": "tr16_true_body_counter_to_aftermath_standoff",
+        "from_shot": "shot16_true_body_counter",
+        "to_shot": "shot17_aftermath_standoff",
+        "mode": "cut"
+      },
+      {
+        "id": "tr17_aftermath_standoff_to_final_ready",
+        "from_shot": "shot17_aftermath_standoff",
+        "to_shot": "shot18_final_ready",
+        "mode": "cut"
+      }
+    ],
+    "segments": {
+      "seg_shot03_faces_roar_00": {
+        "id": "seg_shot03_faces_roar_00",
+        "shot_id": "shot03_faces_roar",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 6,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a03_faces_roar_start",
+        "end_state": "杨戬与孙悟空面部占据画面两侧，嘴部张开怒吼姿态定格，杨戬眉心天眼闭合细线微亮，孙悟空金瞳火光更盛，三尖两刃刀柄与金箍棒交叉阴影仍框住前景，橙金火星和冷灰尘雾散在背景中。"
+      },
+      "seg_shot01_back_clash_00": {
+        "id": "seg_shot01_back_clash_00",
+        "shot_id": "shot01_back_clash",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 10,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a01_back_clash_start",
+        "end_state": "三尖两刃刀与金箍棒在战场中央猛烈压在一起，橙金火花凝在接触点四周，杨戬银黑玄甲背影前倾稳住，孙悟空正面咬牙压棒，尘土与残旗在冷灰背景中翻涌。"
+      },
+      "seg_shot02_weapon_lock_close_00": {
+        "id": "seg_shot02_weapon_lock_close_00",
+        "shot_id": "shot02_weapon_lock_close",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 5,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a02_weapon_lock_close_start",
+        "end_state": "85mm微距浅景深平视，三尖两刃刀锋与金箍棒在画面中央深压咬合，接触点密集橙金火花凝在四周，冷白裂光沿金属表面震颤般分布，环形气流推开灰褐尘雾，双方握紧武器的手臂在中景虚化。"
+      },
+      "seg_shot08_mountain_staff_press_00": {
+        "id": "seg_shot08_mountain_staff_press_00",
+        "shot_id": "shot08_mountain_staff_press",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 12,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a08_mountain_staff_press_start",
+        "end_state": "如山金箍棒沉重压在三尖两刃刀上，杨戬双手横刀硬接，银黑玄甲受压但脊背未弯，脚下云层被震散成巨大空洞，身体向下滑出很远；孙悟空高悬天顶压棒俯视，云海向两侧分开，下方遥远大地清晰露出，天顶暖金光与云底冷蓝阴影强烈对撞。"
+      },
+      "seg_shot04_separated_standoff_00": {
+        "id": "seg_shot04_separated_standoff_00",
+        "shot_id": "shot04_separated_standoff",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 6,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a04_separated_standoff_start",
+        "end_state": "杨戬稳在画面左端压低重心，三尖两刃刀指向孙悟空；孙悟空稳在画面右端半蹲持棒，金箍棒指向杨戬；战场中央空出一道尘雾裂隙，裂地、残旗、低沉雷云和少量暖橙余火清晰可见。"
+      },
+      "seg_shot09_counter_knockdown_00": {
+        "id": "seg_shot09_counter_knockdown_00",
+        "shot_id": "shot09_counter_knockdown",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 9,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a09_counter_knockdown_start",
+        "end_state": "孙悟空胸前被最后一道银白刀光击中，身体后仰坠向云层破口，金箍棒偏在身侧；杨戬持三尖两刃刀悬在高处，额间冷白神光仍亮，追击姿态停定，周围碎云和火星散开，下方灰色大地隐约可见。"
+      },
+      "seg_shot06_cloud_counter_00": {
+        "id": "seg_shot06_cloud_counter_00",
+        "shot_id": "shot06_cloud_counter",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 7,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a06_cloud_counter_start",
+        "end_state": "孙悟空在云层上方完成翻身横扫，金箍棒横向展开，金色气浪形成完整弧圈掠过云端；杨戬侧身低伏在气浪外缘，三尖两刃刀贴近云面向后蓄住，巨大光柱和远处雷光清晰可见。"
+      },
+      "seg_shot06_cloud_counter_01": {
+        "id": "seg_shot06_cloud_counter_01",
+        "shot_id": "shot06_cloud_counter",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 7,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "yang_jian",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade"
+        },
+        "end_state": "杨戬侧身刺出三尖两刃刀，刀尖插入云层前方，冷白刃光沿云面拉出一条长长裂痕；孙悟空停在后方云端，金色气浪仍在扩散，巨大光柱切开云海，远处雷光微亮。"
+      },
+      "seg_shot05_ascent_through_clouds_00": {
+        "id": "seg_shot05_ascent_through_clouds_00",
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 3,
+        "duration_s": 10,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a05_ascent_through_clouds_start",
+        "end_state": "孙悟空持金箍棒冲在尘柱上方，金瞳发亮，红披风向下翻卷；杨戬持三尖两刃刀紧追在下方半身距离，银黑玄甲带冷白刃光；破碎战场和残旗位于画面底部，粗重尘土旋涡竖直贯穿中央。"
+      },
+      "seg_shot05_ascent_through_clouds_01": {
+        "id": "seg_shot05_ascent_through_clouds_01",
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 3,
+        "duration_s": 9,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "place": "battlefield_center"
+        },
+        "end_state": "孙悟空在画面上方贴近低云下缘，双手握金箍棒向上，金色棍光映亮云底凹陷；杨戬在其下方持三尖两刃刀追击，银黑玄甲清晰，刀锋白色尾迹悬在身后；下方凡间战场已缩成尘褐模糊平面。"
+      },
+      "seg_shot05_ascent_through_clouds_02": {
+        "id": "seg_shot05_ascent_through_clouds_02",
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 2,
+        "segment_count_in_shot": 3,
+        "duration_s": 9,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "ruyi_jingubang,sanjian_liangren_blade"
+        },
+        "end_state": "孙悟空持金箍棒位于云海上方前侧，金瞳与棍身泛暖金光，破损红披风悬在风中；杨戬持三尖两刃刀紧随其后，银黑玄甲被冷白天光勾边，额间天眼闭合成细线；二人脚下云层破口翻卷，下方凡间战场缩成模糊灰色斑块。"
+      },
+      "seg_shot10_wukong_fall_impact_00": {
+        "id": "seg_shot10_wukong_fall_impact_00",
+        "shot_id": "shot10_wukong_fall_impact",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 8,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "ruyi_jingubang"
+        },
+        "start_anchor": "a10_wukong_fall_impact_start",
+        "end_state": "孙悟空裹着暖橙火光悬在战场上方，胸前刀光痕迹清晰，金箍棒贴在身侧，正下方灰褐战场尘土被压成平整圆环，残旗和碎石轮廓围在落点四周"
+      },
+      "seg_shot10_wukong_fall_impact_01": {
+        "id": "seg_shot10_wukong_fall_impact_01",
+        "shot_id": "shot10_wukong_fall_impact",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 6,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "place": "impact_crater",
+          "prop": "broken_battle_flags"
+        },
+        "end_state": "战场中央形成巨大圆形深坑，坑缘放射状裂纹清晰，碎石、断戟和残破战旗被掀到四周，厚重烟尘向外翻卷并遮住坑底，暖橙余火在冷灰尘海中隐约发亮"
+      },
+      "seg_shot07_high_sky_battle_00": {
+        "id": "seg_shot07_high_sky_battle_00",
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 3,
+        "duration_s": 8,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a07_high_sky_battle_start",
+        "end_state": "杨戬在云海裂隙前横刀架住金箍棒，眉心第三只眼冷光亮起；孙悟空倒悬在上方半步外，双手握棒下压，周围火花、金光、银白刃光和蓝紫雷电定格在云雾之间。"
+      },
+      "seg_shot07_high_sky_battle_01": {
+        "id": "seg_shot07_high_sky_battle_01",
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 3,
+        "duration_s": 8,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds"
+        },
+        "end_state": "杨戬侧身立在翻涌云海中，三尖两刃刀斜举在肩后挡住来袭金箍棒，额间第三只眼冷光清晰；孙悟空从雷云边缘现身，棍端压在刀锋外侧，身后蓝紫雷光照亮半片云雾。"
+      },
+      "seg_shot07_high_sky_battle_02": {
+        "id": "seg_shot07_high_sky_battle_02",
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 2,
+        "segment_count_in_shot": 3,
+        "duration_s": 8,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds"
+        },
+        "end_state": "杨戬立在云海中央更近的位置，三尖两刃刀横在身前，额间第三只眼冷光持续亮起；孙悟空的数道金色突袭残影围在半步之外，真身持金箍棒停在云雾边缘，金光、银光与蓝紫雷电交错定格。"
+      },
+      "seg_shot12_yangjian_fatian_00": {
+        "id": "seg_shot12_yangjian_fatian_00",
+        "shot_id": "shot12_yangjian_fatian",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 9,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "yang_jian",
+          "supporting_portrait": "giant_ape_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade"
+        },
+        "start_anchor": "a12_yangjian_fatian_start",
+        "end_state": "杨戬身躯已拔高数倍，仍保持双手结印姿态，额间天眼冷白光芒大盛；身后巨大神影高悬且轮廓清晰，三尖两刃刀仍插在裂地中但刀身明显拉长，脚下裂纹呈放射状展开，远处巨猿轮廓隐在烟尘后方。"
+      },
+      "seg_shot12_yangjian_fatian_01": {
+        "id": "seg_shot12_yangjian_fatian_01",
+        "shot_id": "shot12_yangjian_fatian",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 9,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade"
+        },
+        "end_state": "法相杨戬顶天立地站在破碎平原上，银黑巨甲如山脉般展开，额间天眼悬亮冷白神光；三尖两刃刀化为擎天巨刃立在身侧，脚下地面因神力压迫崩裂成巨大裂谷，尘浪被神光压低，远处巨猿孙悟空的烟尘轮廓与他形成对峙。"
+      },
+      "seg_shot11_giant_ape_transformation_00": {
+        "id": "seg_shot11_giant_ape_transformation_00",
+        "shot_id": "shot11_giant_ape_transformation",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 10,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "impact_crater",
+          "prop": "ruyi_jingubang"
+        },
+        "start_anchor": "a11_giant_ape_transformation_start",
+        "end_state": "孙悟空在深坑中暴涨成半巨猿姿态，一膝撑地，一只巨手按住变大的金箍棒，肩侧金色伤痕仍亮，粗硬毛发覆盖肩背，双目金光穿透烟尘，坑壁裂纹和倒伏战旗清晰可见。"
+      },
+      "seg_shot11_giant_ape_transformation_01": {
+        "id": "seg_shot11_giant_ape_transformation_01",
+        "shot_id": "shot11_giant_ape_transformation",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 8,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong",
+          "place": "impact_crater",
+          "prop": "ruyi_jingubang"
+        },
+        "end_state": "山岳般巨猿孙悟空站在深坑中，粗硬金棕毛发竖起，肩侧金色伤痕清晰，双目金光燃烧，巨大金箍棒被双拳握住并压在地面上，坑底裂缝向外扩散，碎石和金色烟尘围绕他的脚掌。"
+      },
+      "seg_shot16_true_body_counter_00": {
+        "id": "seg_shot16_true_body_counter_00",
+        "shot_id": "shot16_true_body_counter",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 7,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "start_anchor": "a16_true_body_counter_start",
+        "end_state": "金箍棒与三尖两刃巨刃在杨戬侧后方紧紧相撞，环形冲击波向外扩散，残余幻象碎成金色毫毛雨悬落空中；巨猿孙悟空被逼退数步后稳住身体，巨大脚掌在破碎平原上犁出两道深沟，杨戬法相眉心天眼仍以较暗冷白光锁住他。"
+      },
+      "seg_shot18_final_ready_00": {
+        "id": "seg_shot18_final_ready_00",
+        "shot_id": "shot18_final_ready",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 1,
+        "duration_s": 12,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,broken_battle_flags"
+        },
+        "start_anchor": "a18_final_ready_start",
+        "end_state": "巨猿孙悟空与法相杨戬隔着破碎平原对峙，孙悟空肩侧金色血痕未干，双手握紧巨大金箍棒并压低重心；杨戬额前天眼重新睁开，三尖两刃巨刃立在身侧，法相铠甲裂纹清晰；前景残破战旗贴在裂地上，背景雷云分层、尘雾缓落，二人准备再次冲向彼此。"
+      },
+      "seg_shot13_titan_clash_00": {
+        "id": "seg_shot13_titan_clash_00",
+        "shot_id": "shot13_titan_clash",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 11,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "start_anchor": "a13_titan_clash_start",
+        "end_state": "极远景中，巨猿孙悟空与法相杨戬分别立在破碎平原两侧，金箍棒与三尖两刃巨刃短暂分开，二人重心压低相互对准；地面已有环形裂缝，尘暴如海潮翻起，杨戬眉心天眼冷白微亮，孙悟空双目金光凶烈。"
+      },
+      "seg_shot13_titan_clash_01": {
+        "id": "seg_shot13_titan_clash_01",
+        "shot_id": "shot13_titan_clash",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 11,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "end_state": "近景压迫构图中，巨猿孙悟空贴在法相杨戬身前猛攻受阻，巨大金箍棒与三尖两刃巨刃再次压在一起；杨戬双脚稳稳踩住破裂大地，眉心天眼冷白发亮，孙悟空金色双目怒睁，天空雷云翻滚，地面裂纹从二人脚下向四周蔓延。"
+      },
+      "seg_shot14_clone_siege_00": {
+        "id": "seg_shot14_clone_siege_00",
+        "shot_id": "shot14_clone_siege",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 11,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "start_anchor": "a14_clone_siege_start",
+        "end_state": "杨戬法相巨肩和横置三尖两刃巨刃停在画面左侧，铠甲裂纹清晰；破碎平原四周已浮现大量半透明孙悟空幻影，金色毫毛光点散在尘云和残旗之间，真正的巨猿孙悟空站在中远处冷笑持棒。"
+      },
+      "seg_shot14_clone_siege_01": {
+        "id": "seg_shot14_clone_siege_01",
+        "shot_id": "shot14_clone_siege",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 9,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "prop": "golden_hair_clones,broken_battle_flags",
+          "place": "broken_plain_wide"
+        },
+        "end_state": "破碎平原四周出现无数孙悟空幻影，真假金箍棒从四面八方压向杨戬；法相杨戬横置三尖两刃巨刃稳守在身前，脚踩龟裂大地，铠甲裂纹表面溅起一串橙金火花，冷灰雷云和残旗布满背景。"
+      },
+      "seg_shot15_third_eye_scan_00": {
+        "id": "seg_shot15_third_eye_scan_00",
+        "shot_id": "shot15_third_eye_scan",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 7,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "golden_hair_clones"
+        },
+        "start_anchor": "a15_third_eye_scan_start",
+        "end_state": "杨戬法相正面占据画面中央，眉心天眼完全睁开如冷白神日，一层水平神光从额前铺向两侧，近处金色幻影光点碎成金尘，破碎战场在远处冷灰虚化。"
+      },
+      "seg_shot15_third_eye_scan_01": {
+        "id": "seg_shot15_third_eye_scan_01",
+        "shot_id": "shot15_third_eye_scan",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 9,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong",
+          "place": "broken_plain_wide",
+          "prop": "golden_hair_clones"
+        },
+        "end_state": "宽阔破碎平原上，成百上千个孙悟空幻影已化成飘散的金色毫毛和烟尘，冷白天眼神光横贯战场，只剩远处一侧真正巨猿孙悟空的方向在尘墙后显露。"
+      },
+      "seg_shot17_aftermath_standoff_00": {
+        "id": "seg_shot17_aftermath_standoff_00",
+        "shot_id": "shot17_aftermath_standoff",
+        "segment_index_in_shot": 0,
+        "segment_count_in_shot": 2,
+        "duration_s": 10,
+        "input_frame_policy": "use_shot_start_anchor",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "start_anchor": "a17_aftermath_standoff_start",
+        "end_state": "极宽远景中，金色毫毛铺落在龟裂地面，巨猿孙悟空站在深沟尽头握着巨大金箍棒，肩侧金色伤痕隐亮；法相杨戬立在另一侧，天眼微亮，三尖两刃巨刃垂在身侧，尘浪低悬，雷云分层。"
+      },
+      "seg_shot17_aftermath_standoff_01": {
+        "id": "seg_shot17_aftermath_standoff_01",
+        "shot_id": "shot17_aftermath_standoff",
+        "segment_index_in_shot": 1,
+        "segment_count_in_shot": 2,
+        "duration_s": 8,
+        "input_frame_policy": "use_previous_segment_last_frame",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "end_state": "巨猿孙悟空胸膛鼓起的喘息姿态定住，肩侧金色血光沿毛发滴落到裂地；杨戬法相铠甲裂纹明显，三尖两刃巨刃刃口带缺口，额前天眼只剩暗淡微光，二人隔着破碎战场对峙，尘浪缓落，雷云分层。"
+      }
+    }
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "yang_jian": {
+        "id": "yang_jian"
+      },
+      "sun_wukong": {
+        "id": "sun_wukong"
+      },
+      "giant_ape_wukong": {
+        "id": "giant_ape_wukong"
+      },
+      "faxiang_yang_jian": {
+        "id": "faxiang_yang_jian"
+      }
+    },
+    "location_plan": {
+      "ancient_battlefield": {
+        "id": "ancient_battlefield"
+      }
+    },
+    "prop_plan": {
+      "sanjian_liangren_blade": {
+        "id": "sanjian_liangren_blade"
+      },
+      "ruyi_jingubang": {
+        "id": "ruyi_jingubang"
+      },
+      "broken_battle_flags": {
+        "id": "broken_battle_flags"
+      },
+      "golden_hair_clones": {
+        "id": "golden_hair_clones"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_back_clash_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a02_weapon_lock_close_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a03_faces_roar_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a04_separated_standoff_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a05_ascent_through_clouds_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a06_cloud_counter_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a07_high_sky_battle_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a08_mountain_staff_press_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a09_counter_knockdown_start",
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a10_wukong_fall_impact_start",
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a11_giant_ape_transformation_start",
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "impact_crater",
+          "prop": "ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a12_yangjian_fatian_start",
+        "reference_inputs": {
+          "portrait": "yang_jian",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade"
+        }
+      },
+      {
+        "id": "a13_titan_clash_start",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a14_clone_siege_start",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        }
+      },
+      {
+        "id": "a15_third_eye_scan_start",
+        "reference_inputs": {
+          "portrait": "faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,golden_hair_clones"
+        }
+      },
+      {
+        "id": "a16_true_body_counter_start",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a17_aftermath_standoff_start",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        }
+      },
+      {
+        "id": "a18_final_ready_start",
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,broken_battle_flags"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_back_clash",
+        "duration_s": 10,
+        "story_goal": "建立杨戬与孙悟空第一次正面对撞的力量等级，明确双方都不愿退让的战斗基调。",
+        "start_state": "杨戬背对镜头横握三尖两刃刀蓄势，孙悟空正面腾空前压，金箍棒尖距刀身一掌未触。",
+        "end_state": "三尖两刃刀与金箍棒猛烈接触，橙金火花炸开，两人身体前倾僵持在战场中央。",
+        "visual_intent": "镜头从杨戬背后低角度向前推近，节奏由蓄势转为爆发，写实史诗动作风格，尘雾和强逆光强化武器相撞的重量，色彩为暖金火花对冷灰战场。"
+      },
+      {
+        "id": "shot02_weapon_lock_close",
+        "duration_s": 5,
+        "story_goal": "放大兵器交接处的压力，让观众感受到神兵硬碰硬的震动与冲击。",
+        "start_state": "三尖两刃刀锋与金箍棒紧压在画面中央，接触点有少量火星停在空中，双方手臂局部虚化。",
+        "end_state": "刀锋与金箍棒压得更深，接触点密集火花与气流环向外扩，金属表面出现明显震颤裂光。",
+        "visual_intent": "微距近景继续推进，画面节奏短促紧绷，强调金属震动、火星喷溅和气流冲击，声音想象为刺耳摩擦与低频轰鸣，冷白刃光与橙金火星高反差。"
+      },
+      {
+        "id": "shot03_faces_roar",
+        "duration_s": 6,
+        "story_goal": "揭示两位角色的战意、愤怒和不服输的意志，让冲突从力量对抗升级到精神对抗。",
+        "start_state": "杨戬与孙悟空面部相对，咬牙怒目，武器柄与交叉阴影框住脸部，火星散在两人之间。",
+        "end_state": "两人表情更加狰狞，嘴部张开怒吼姿态，杨戬眉心细线微亮，孙悟空金瞳火光更盛。",
+        "visual_intent": "镜头从武器交接处推到双方面部特写，节奏压迫而短，手持电影感轻微震动，突出呼吸、怒吼与近距离对抗，面部暖火光和盔甲冷阴影交错。"
+      },
+      {
+        "id": "shot04_separated_standoff",
+        "duration_s": 6,
+        "story_goal": "结束第一轮近身僵持，重新拉开双方距离，为孙悟空率先升空发动下一轮攻势做准备。",
+        "start_state": "杨戬在画面左侧退到战场一端持刀落定，孙悟空在右侧半蹲持棒对峙，尘土翻涌。",
+        "end_state": "两人分别稳在画面两端，身体重心压低，兵器指向对方，战场中央空出一道尘雾裂隙。",
+        "visual_intent": "镜头切成大全景后轻微拉远，节奏从爆发回到短暂凝固，写实史诗风格，空间关系清晰，冷灰尘雾中保留兵器余火。"
+      },
+      {
+        "id": "shot05_ascent_through_clouds",
+        "duration_s": 28,
+        "story_goal": "把战斗从凡间战场推向九天云霄，扩大对决尺度并建立纵向空间的史诗感。",
+        "start_state": "孙悟空一脚压在即将碎裂的地面上，金箍棒向上挑起姿态被定格，杨戬持刀前倾追击。",
+        "end_state": "杨戬与孙悟空一前一后冲破云层，身处云海之上，下方凡间战场缩成模糊灰色斑块。",
+        "visual_intent": "长镜头从地面低角度仰拍连续追随到高空，镜头随尘土旋涡抬升并穿破云层，节奏持续加速，写实史诗飞升感，地面尘褐逐渐过渡为高空金白与冷蓝。"
+      },
+      {
+        "id": "shot06_cloud_counter",
+        "duration_s": 14,
+        "story_goal": "呈现云端第一次攻防转换，说明孙悟空身法灵活而杨戬反应精准。",
+        "start_state": "孙悟空在云层上方倒转半身回击，金箍棒横在身前，杨戬侧身持刀避让，巨大光柱切开云海。",
+        "end_state": "孙悟空横扫出的金色气浪在云端扩散，杨戬避开后刺出三尖两刃刀，刀锋在云层上留下长裂痕。",
+        "visual_intent": "镜头在云海间弧形跟随，先围绕孙悟空翻身再贴向杨戬刺击，节奏灵动但锋利，云雾被动作切开，金色气浪与冷白刀光形成对照。"
+      },
+      {
+        "id": "shot07_high_sky_battle",
+        "duration_s": 24,
+        "story_goal": "展示高空大战进入持续缠斗阶段，突出孙悟空变化莫测与杨戬天眼预判的对抗逻辑。",
+        "start_state": "杨戬稳住中线持刀格挡，眉心第三只眼初亮冷光；孙悟空倒悬在云层下方反手举棒，半被雷云遮住。",
+        "end_state": "杨戬每次格挡后逼近到更近距离，天眼冷光持续亮起，孙悟空的数次突袭被挡在半步之外。",
+        "visual_intent": "远景与近景在同一连续战斗中交替推进，镜头快速摇移、穿云、贴近兵器再拉开，节奏密集但保持空间方向，写实史诗动作，金光、银光与蓝紫雷电交错。"
+      },
+      {
+        "id": "shot08_mountain_staff_press",
+        "duration_s": 12,
+        "story_goal": "让孙悟空以巨化金箍棒制造压倒性威胁，把战斗推入更高强度的爆发点。",
+        "start_state": "杨戬双手横刀立在云海裂口边缘，孙悟空在天顶高处大笑，金箍棒已如山柱般悬在上方未触。",
+        "end_state": "如山金箍棒压在三尖两刃刀上，云海被分开，杨戬脚下云层震散，身体向下滑出很远但没有退让。",
+        "visual_intent": "镜头低角度仰拍巨棒下压，随后跟随杨戬被压下的垂直运动，节奏沉重如山崩，强调尺度差与不退让，天顶暖金与云底冷蓝形成强烈压迫。"
+      },
+      {
+        "id": "shot09_counter_knockdown",
+        "duration_s": 9,
+        "story_goal": "完成杨戬从硬接到反击的转折，第一次明确击伤并压制孙悟空。",
+        "start_state": "杨戬脚下云层被压散成环形空洞，双手横刀硬接巨大金箍棒，额间冷白神光初燃。",
+        "end_state": "孙悟空胸前被最后一道刀光击中，身体后仰坠向云层破口，杨戬持刀悬在高处追击姿态收住。",
+        "visual_intent": "镜头从受压的杨戬侧面快速斜向上跟随刀锋反斩，节奏由承压骤然反爆，刀光连续压下形成银白轨迹，冷白神光短暂盖过金色棒影。"
+      },
+      {
+        "id": "shot10_wukong_fall_impact",
+        "duration_s": 14,
+        "story_goal": "把高空失败转化为地面巨大灾难，为孙悟空的巨猿化积蓄愤怒与破坏力。",
+        "start_state": "孙悟空胸前带新鲜刀光痕迹，身体后仰坠落，身后拖出初始火光与碎云隧道。",
+        "end_state": "孙悟空重重砸回战场平地，形成巨大圆形深坑，碎石和烟尘向四周爆开后遮住坑底。",
+        "visual_intent": "镜头跟随孙悟空高速下坠，穿云后俯冲到地面，落地瞬间短暂震屏并拉出冲击波，节奏从高速坠落到轰然停顿，暖橙火光撞入冷灰尘海。"
+      },
+      {
+        "id": "shot11_giant_ape_transformation",
+        "duration_s": 18,
+        "story_goal": "表现孙悟空受创后的愤怒爆发，完成从人身猴王到山岳巨猿的关键状态变化。",
+        "start_state": "孙悟空人身大小半跪在坑底，肩侧伤痕发金光，双目已有凶光但身形未涨大，金箍棒横在身旁。",
+        "end_state": "山岳般巨猿孙悟空站在深坑中，粗硬毛发竖起，双目金光燃烧，巨大金箍棒握在手中，双拳压向地面。",
+        "visual_intent": "镜头固定低角度逐渐后退，身体比例由人身扩张成巨猿，毛发变粗、骨骼拉伸、金箍棒同步变大，节奏由寂静低吼到地面震动爆发，尘烟被金色凶光照亮。"
+      },
+      {
+        "id": "shot12_yangjian_fatian",
+        "duration_s": 18,
+        "story_goal": "回应孙悟空巨猿化，展示杨戬以法天象地进入同等神魔尺度，维持战斗平衡。",
+        "start_state": "杨戬站在插入破裂地面的三尖两刃刀后双手结印，额间天眼光芒大盛，身躯仍为常人比例。",
+        "end_state": "法相杨戬顶天立地站在破碎平原上，银黑巨甲如山脉展开，三尖两刃刀化为擎天巨刃，脚下地面崩裂。",
+        "visual_intent": "镜头围绕杨戬缓慢上升并后拉，天地灵气向他汇聚，身后神影由虚到实，身躯持续拔高，节奏庄严厚重，冷白神光压过尘褐战场。"
+      },
+      {
+        "id": "shot13_titan_clash",
+        "duration_s": 22,
+        "story_goal": "展开巨猿与法相神将的神魔级肉搏，确认战斗规模已从个人武艺升级到天地撼动。",
+        "start_state": "巨猿孙悟空从深坑边缘前压，双手握巨大金箍棒横扫前置；法相杨戬抬起擎天巨刃格挡。",
+        "end_state": "巨猿孙悟空贴身猛攻受阻，法相杨戬稳住脚步，巨刃再次与金箍棒压在一起，天空雷云翻滚，地面裂纹蔓延。",
+        "visual_intent": "先极远景展示两尊巨影连续交锋，再切入同一战线近景压迫，镜头拉远与推进结合，节奏沉重连打，尘暴如海潮翻起，冷白神目、金色棒光和黑灰雷云构成宏大对比。"
+      },
+      {
+        "id": "shot14_clone_siege",
+        "duration_s": 20,
+        "story_goal": "引入孙悟空的分身神通，让杨戬陷入真假难辨的围攻，改变战斗策略层面的压力。",
+        "start_state": "法相杨戬巨肩与横置巨刃占画面左侧，巨猿孙悟空咧嘴冷笑，身上金色毫毛被狂风托起。",
+        "end_state": "破碎平原四周出现无数孙悟空幻影，真假金箍棒从四面八方压向杨戬，杨戬横刃稳守，铠甲表面溅起火花。",
+        "visual_intent": "镜头从杨戬肩后横扫破碎平原，金色毫毛落地化身，空间逐渐被幻象填满，节奏由诡异静默转为铺天盖地围攻，金色残影在冷灰尘云中层层叠加。"
+      },
+      {
+        "id": "shot15_third_eye_scan",
+        "duration_s": 16,
+        "story_goal": "展示杨戬用天眼破解真假分身，将孙悟空的神通优势反制回来。",
+        "start_state": "杨戬巨大神面眉心占满画面，天眼仍是一道细微金线，周围残留金色幻影光点。",
+        "end_state": "宽阔战场上成百上千个孙悟空幻影被神光扫灭，金色毫毛和烟尘消散，只剩真正巨猿的方向显露。",
+        "visual_intent": "镜头从天眼特写缓慢拉出到横移战场，冷白神光像扫描层一样逐层扫过，节奏克制而精准，幻象边缘破碎成金尘，色彩由混乱金影转为清晰冷白。"
+      },
+      {
+        "id": "shot16_true_body_counter",
+        "duration_s": 7,
+        "story_goal": "让杨戬完成锁定真身后的快速反击，打断孙悟空再度偷袭。",
+        "start_state": "杨戬法相半转身，三尖两刃巨刃被反手提起，天眼冷白光束锁向侧后方真正的巨猿孙悟空。",
+        "end_state": "金箍棒与巨刃在侧后方再次相撞，冲击波震碎残余幻象，巨猿孙悟空被逼退数步，脚掌犁出深沟。",
+        "visual_intent": "镜头急速弧形跟随杨戬旋身反斩，节奏短促爆裂，碰撞瞬间震屏并让金色毫毛如雨散落，冷白锁定光在尘雾中切出清晰轨迹。"
+      },
+      {
+        "id": "shot17_aftermath_standoff",
+        "duration_s": 18,
+        "story_goal": "呈现双方在神通斗法后的消耗、伤痕与仍未动摇的战意，让战斗进入第一次真正停顿。",
+        "start_state": "金色毫毛如雨落在龟裂地面，巨猿孙悟空站稳在深沟尽头，法相杨戬立在另一侧，天眼仍亮但较暗。",
+        "end_state": "巨猿孙悟空胸口起伏、肩侧金色血光滴落，杨戬法相铠甲裂纹明显、巨刃刃口有缺口，二人隔着破碎战场对峙。",
+        "visual_intent": "镜头拉到极宽远景后缓慢推进，节奏放缓形成余响，尘浪缓慢落下，雷云分层，写实史诗静默感，冷灰底色中只保留伤口金光与天眼微光。"
+      },
+      {
+        "id": "shot18_final_ready",
+        "duration_s": 12,
+        "story_goal": "以没有胜负宣告的再度备战收束本段，强调双方疲惫却不肯后退，预示更沉重的下一次交锋。",
+        "start_state": "残破战旗落在裂地上，巨猿孙悟空抬手贴近嘴角血迹，肩侧金色血痕未干，杨戬法相闭合天眼片刻。",
+        "end_state": "孙悟空和杨戬都重新压低重心，孙悟空握紧巨大金箍棒，杨戬重新睁开天眼并立起巨刃，二人准备再次冲向彼此。",
+        "visual_intent": "镜头在两人之间克制来回切换并最终停成对峙构图，节奏沉静而沉重，无旁白无胜负提示，低沉雷声与落尘强化疲惫感，色彩压低为冷灰与微弱金白。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_back_clash_to_weapon_lock_close",
+        "from_shot": "shot01_back_clash",
+        "to_shot": "shot02_weapon_lock_close",
+        "mode": "cut"
+      },
+      {
+        "id": "tr02_weapon_lock_close_to_faces_roar",
+        "from_shot": "shot02_weapon_lock_close",
+        "to_shot": "shot03_faces_roar",
+        "mode": "cut"
+      },
+      {
+        "id": "tr03_faces_roar_to_separated_standoff",
+        "from_shot": "shot03_faces_roar",
+        "to_shot": "shot04_separated_standoff",
+        "mode": "cut"
+      },
+      {
+        "id": "tr04_separated_standoff_to_ascent_through_clouds",
+        "from_shot": "shot04_separated_standoff",
+        "to_shot": "shot05_ascent_through_clouds",
+        "mode": "cut"
+      },
+      {
+        "id": "tr05_ascent_through_clouds_to_cloud_counter",
+        "from_shot": "shot05_ascent_through_clouds",
+        "to_shot": "shot06_cloud_counter",
+        "mode": "cut"
+      },
+      {
+        "id": "tr06_cloud_counter_to_high_sky_battle",
+        "from_shot": "shot06_cloud_counter",
+        "to_shot": "shot07_high_sky_battle",
+        "mode": "cut"
+      },
+      {
+        "id": "tr07_high_sky_battle_to_mountain_staff_press",
+        "from_shot": "shot07_high_sky_battle",
+        "to_shot": "shot08_mountain_staff_press",
+        "mode": "cut"
+      },
+      {
+        "id": "tr08_mountain_staff_press_to_counter_knockdown",
+        "from_shot": "shot08_mountain_staff_press",
+        "to_shot": "shot09_counter_knockdown",
+        "mode": "cut"
+      },
+      {
+        "id": "tr09_counter_knockdown_to_wukong_fall_impact",
+        "from_shot": "shot09_counter_knockdown",
+        "to_shot": "shot10_wukong_fall_impact",
+        "mode": "cut"
+      },
+      {
+        "id": "tr10_wukong_fall_impact_to_giant_ape_transformation",
+        "from_shot": "shot10_wukong_fall_impact",
+        "to_shot": "shot11_giant_ape_transformation",
+        "mode": "cut"
+      },
+      {
+        "id": "tr11_giant_ape_transformation_to_yangjian_fatian",
+        "from_shot": "shot11_giant_ape_transformation",
+        "to_shot": "shot12_yangjian_fatian",
+        "mode": "cut"
+      },
+      {
+        "id": "tr12_yangjian_fatian_to_titan_clash",
+        "from_shot": "shot12_yangjian_fatian",
+        "to_shot": "shot13_titan_clash",
+        "mode": "cut"
+      },
+      {
+        "id": "tr13_titan_clash_to_clone_siege",
+        "from_shot": "shot13_titan_clash",
+        "to_shot": "shot14_clone_siege",
+        "mode": "cut"
+      },
+      {
+        "id": "tr14_clone_siege_to_third_eye_scan",
+        "from_shot": "shot14_clone_siege",
+        "to_shot": "shot15_third_eye_scan",
+        "mode": "cut"
+      },
+      {
+        "id": "tr15_third_eye_scan_to_true_body_counter",
+        "from_shot": "shot15_third_eye_scan",
+        "to_shot": "shot16_true_body_counter",
+        "mode": "cut"
+      },
+      {
+        "id": "tr16_true_body_counter_to_aftermath_standoff",
+        "from_shot": "shot16_true_body_counter",
+        "to_shot": "shot17_aftermath_standoff",
+        "mode": "cut"
+      },
+      {
+        "id": "tr17_aftermath_standoff_to_final_ready",
+        "from_shot": "shot17_aftermath_standoff",
+        "to_shot": "shot18_final_ready",
+        "mode": "cut"
+      }
+    ],
+    "segments": {
+      "seg_shot03_faces_roar_00": {
+        "id": "seg_shot03_faces_roar_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从武器柄与交叉阴影框住的近景继续推进，杨戬与孙悟空面部相对，额头青筋紧绷，咬牙怒目。手持镜头轻微震动，呼吸和力量僵持压在两张脸之间，橙金火星不断掠过脸颊，冷灰天光压暗盔甲边缘。镜头逼近到双方面部特写，怒意彻底爆开，两人嘴部张开怒吼，杨戬眉心细线微亮，孙悟空金瞳火光更盛。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot03_faces_roar",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_faces_roar_start"
+      },
+      "seg_shot01_back_clash_00": {
+        "id": "seg_shot01_back_clash_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬银黑玄甲背后低角度向前推近，他双手横握三尖两刃刀稳住下盘，冷灰尘雾贴着甲片翻涌。孙悟空正面腾空压来，暗金锁子甲和破红披风被强风掀起，金箍棒带着沉重金光直逼刀身。两件神兵猛烈撞上，接触点迸出密集橙金火花，火星沿刀锋和棒身炸开，气流把周围尘土震成环形波纹。镜头压到两人之间，杨戬背影前倾不退，孙悟空咬牙压棒，两人僵持在战场中央。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot01_back_clash",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_back_clash_start"
+      },
+      "seg_shot02_weapon_lock_close_00": {
+        "id": "seg_shot02_weapon_lock_close_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从85mm微距平视的武器交接处继续向前推进，三尖两刃刀锋与金箍棒在画面中央越压越紧，双方手臂仍在浅景深里模糊发力。接触点的橙金火星由零散几粒变成密集喷溅，冷白刃光沿金属划痕跳动，棒身与刀锋出现细密震颤裂光，气流被挤成环形冲击波向外推开灰褐尘雾。末帧落在刀锋与金箍棒深压咬合、火花和气流环同时外扩的高反差瞬间。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot02_weapon_lock_close",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_weapon_lock_close_start"
+      },
+      "seg_shot08_mountain_staff_press_00": {
+        "id": "seg_shot08_mountain_staff_press_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从云海裂口边缘的低角度仰拍开始，杨戬双手横刀不退，银黑甲片在巨压下泛冷光；天顶孙悟空狂笑着将如山金箍棒缓缓压落，棒底遮蔽半片天空，金红金属纹路、符纹划痕和厚重阴影逼近刀锋。接触瞬间不是轻碰，而是山柱般重量压在三尖两刃刀上，橙金火星沿刃口密集喷出，云海被巨力向两侧撕开，下方遥远大地显露。镜头随后贴着杨戬下坠跟随，云层在他脚下环形震散，落点停在他身体向下滑出很远却仍横刀硬撑。",
+          "duration_s": 12,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot08_mountain_staff_press",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a08_mountain_staff_press_start"
+      },
+      "seg_shot04_separated_standoff_00": {
+        "id": "seg_shot04_separated_standoff_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从大全景接住两人分开的瞬间，杨戬在左侧稳住脚步，银黑玄甲沾着尘灰，三尖两刃刀从斜指地面缓缓抬起；孙悟空在右侧半蹲压低重心，金箍棒横在身前，破损红披风被余波掀动。镜头轻微拉远，战场中央的尘土被双方气势推开，形成一道清晰的灰褐裂隙，散落火星在冷灰雾气里微微发亮。末帧落在两人分据画面两端、兵器同时指向对方的凝固对峙。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot04_separated_standoff",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_separated_standoff_start"
+      },
+      "seg_shot09_counter_knockdown_00": {
+        "id": "seg_shot09_counter_knockdown_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬被巨大金箍棒压住的侧面低角度开始，脚下云层散成环形空洞，额间冷白神光迅速增强。镜头快速斜向上跟随三尖两刃刀反斩，银白刀光顺着金箍棒的压力撕开云雾，连续压向孙悟空；冷白神光短暂盖过暖金棒影，火星和碎云被冲击甩开。最后一道刀光正中孙悟空胸前，他后仰坠向云层破口，杨戬持刀悬在高处追击姿态收住。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot09_counter_knockdown",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a09_counter_knockdown_start"
+      },
+      "seg_shot06_cloud_counter_00": {
+        "id": "seg_shot06_cloud_counter_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从云端白灰雾气上方接入，孙悟空倒转半身，金瞳带笑，横在身前的金箍棒顺势扫开。镜头弧形绕着他翻身，金色气浪由半圈扩成明亮圆弧，厚云被棒风掀出层层卷边；杨戬银黑玄甲侧身压低，三尖两刃刀贴着云面滑过，避开气浪锋线。金白光柱与暗蓝雷云交错，落点停在金色圆弧掠过杨戬身侧、杨戬已蓄势反刺的一帧。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot06_cloud_counter",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a06_cloud_counter_start"
+      },
+      "seg_shot06_cloud_counter_01": {
+        "id": "seg_shot06_cloud_counter_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬低伏蓄势的一帧继续，镜头脱离孙悟空的金色气浪，贴着云面快速推向杨戬刀锋。杨戬冷峻抬眼，银黑玄甲在风中震动，三尖两刃刀沿着避让后的空隙猛然刺出，冷白刃光像细长闪电切入云层；孙悟空的金色横扫余波在后方扩散成圆环。云面被刀锋划开，裂痕深而长，落点停在刀尖穿过云海、裂缝延向远处的一帧。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade"
+        },
+        "shot_id": "shot06_cloud_counter",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot05_ascent_through_clouds_00": {
+        "id": "seg_shot05_ascent_through_clouds_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从低角度仰拍接住孙悟空踏地挑棒的瞬间，裂纹从他脚下向外炸开，金箍棒卷起的尘土迅速扩大成粗重旋涡。孙悟空金瞳亮起、破损红披风被上升气流拉直，身体顺着棍势冲天拔起；杨戬银黑玄甲紧随其后，三尖两刃刀贴着尘浪切出冷白弧线。镜头随旋涡离地抬升，战场残旗和碎石被卷入下方，落点停在二人离开地面、尘柱贯穿画面中央的高空起势。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a05_ascent_through_clouds_start"
+      },
+      "seg_shot05_ascent_through_clouds_01": {
+        "id": "seg_shot05_ascent_through_clouds_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接尘柱中的上升姿态，镜头继续贴着二人向天空疾冲，地面裂纹、残旗和碎石在下方迅速缩小。孙悟空仍领先半个身位，金箍棒向上牵引尘浪，棍侧金光把旋涡边缘照成燃烧般的环；杨戬稳住追击线，三尖两刃刀劈开迎面气流，刀锋后的白色尾迹清晰拉长。厚重低云压近画面顶部，尘褐战场色调逐渐被冷灰云影吞没，落点停在二人抵达云层下缘、云底被气流顶出凹陷的瞬间。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "place": "battlefield_center"
+        },
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot05_ascent_through_clouds_02": {
+        "id": "seg_shot05_ascent_through_clouds_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从低云下缘继续上冲，孙悟空的金箍棒率先刺入厚云，云层像被巨刃钻开般翻卷，白灰雾团贴着镜头两侧急速后退。杨戬紧追不放，额间天眼仍闭成细线，三尖两刃刀冷白刃光在云雾中划出清晰通道；二人的身影短暂被云海吞没，又带着碎云和金白光柱冲出。色彩从地面尘褐完全转为高空金白与冷蓝，落点停在二人一前一后立于云海之上、下方凡间战场缩成模糊灰色斑块。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "ruyi_jingubang,sanjian_liangren_blade"
+        },
+        "shot_id": "shot05_ascent_through_clouds",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot10_wukong_fall_impact_00": {
+        "id": "seg_shot10_wukong_fall_impact_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接俯角跟随视角，孙悟空胸前带新鲜刀光痕迹，身体后仰高速坠落，金箍棒贴在身侧不离手。镜头紧咬他的下坠轨迹穿破厚重云层，碎云被拖成长长白灰隧道，暖橙火光在他背后越烧越亮，冷蓝高空阴影迅速被拉开。下方凡间战场从模糊灰褐圆面急速放大，尘土与残旗轮廓浮现，末句落点是孙悟空裹着火光悬在战场上方，地面冲击尘环已被提前压平。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "ruyi_jingubang"
+        },
+        "shot_id": "shot10_wukong_fall_impact",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a10_wukong_fall_impact_start"
+      },
+      "seg_shot10_wukong_fall_impact_01": {
+        "id": "seg_shot10_wukong_fall_impact_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从孙悟空裹火悬在战场上方的尾帧继续，镜头随他最后一段距离垂直砸向灰褐平地。落地瞬间画面短暂震屏，暖橙火光狠狠撞入冷灰尘海，地面像被巨锤击穿一样向下塌陷，圆形裂纹向四周急速扩散，碎石、断戟和残破战旗被冲击波掀起。尘土爆开成厚重环墙，末句落点是巨大圆形深坑占据战场中央，碎石和烟尘向外翻卷后完全遮住坑底。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "place": "impact_crater",
+          "prop": "broken_battle_flags"
+        },
+        "shot_id": "shot10_wukong_fall_impact",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot07_high_sky_battle_00": {
+        "id": "seg_shot07_high_sky_battle_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬稳住中线格挡的斜俯角继续推进，孙悟空倒悬在云层下方反手出棍，半个身影被雷云吞没又猛然撕云冲出。镜头快速贴近金箍棒与三尖两刃刀的交击点，金光与银白刃光连续炸出细密火花，蓝紫雷电在云雾背后闪烁。杨戬眉心第三只眼初亮冷光，提前压住棍路，落点是杨戬横刀架住金箍棒，孙悟空倒悬在他上方半步外。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a07_high_sky_battle_start"
+      },
+      "seg_shot07_high_sky_battle_01": {
+        "id": "seg_shot07_high_sky_battle_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接两兵相压的半空定格，孙悟空借反震力没入旁侧雷云，身影在云雾中忽明忽暗，金箍棒残影从杨戬侧后方斜劈而出。镜头穿云急摇再贴到杨戬脸侧，他额间第三只眼冷光更清晰，像细线切开烟云，抢在突袭落下前转身封住中线。落点是杨戬侧身举刀挡住背后偷袭，孙悟空从雷云边缘现身，棍端停在刀锋外侧。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds"
+        },
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot07_high_sky_battle_02": {
+        "id": "seg_shot07_high_sky_battle_02",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬肩后格挡的姿态继续，孙悟空连续变换方位，时而掠过云脊，时而被雾吞没，只留下金箍棒的金色弧线和雷光里的猿王轮廓。镜头在远景与兵器近景间急速切换，三尖两刃刀每一次抬起都撕出银白气弧，杨戬天眼冷光始终追住虚实，格挡后一步步逼近。落点是杨戬持刀压到更近距离，孙悟空数道突袭残影停在半步之外。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian,sun_wukong",
+          "place": "nine_heavens_clouds"
+        },
+        "shot_id": "shot07_high_sky_battle",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot12_yangjian_fatian_00": {
+        "id": "seg_shot12_yangjian_fatian_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "杨戬站在插入裂地的三尖两刃刀后，双手结印不动，额间天眼冷白神光压过尘褐烟雾。镜头围绕他缓慢上升并后拉，天地灵气化成一圈圈银白流线向玄甲、刀柄和眉心汇聚，身后巨大神影从稀薄轮廓逐渐凝实。远处巨猿轮廓仍在烟尘中压迫，杨戬身躯开始拔高数倍，脚下裂纹向外扩散，落点停在神影高悬、巨刃初步拉长的庄严画面。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "yang_jian",
+          "supporting_portrait": "giant_ape_wukong",
+          "place": "battlefield_center",
+          "prop": "sanjian_liangren_blade"
+        },
+        "shot_id": "shot12_yangjian_fatian",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a12_yangjian_fatian_start"
+      },
+      "seg_shot12_yangjian_fatian_01": {
+        "id": "seg_shot12_yangjian_fatian_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从神影高悬的尾帧继续，镜头继续后拉升高，杨戬额间天眼如冷白神日般稳定燃亮，神影与本体重叠合一。银黑玄甲一层层扩展成山脉般的巨型甲胄，肩甲、胸甲和裙甲在神光中沉重展开；三尖两刃刀从地面拔起般同步暴涨，锋刃化为擎天巨刃。冷白神光压倒尘褐战场，落点停在法相杨戬顶天立地、巨刃立于身侧、脚下大地崩裂的画面。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade"
+        },
+        "shot_id": "shot12_yangjian_fatian",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot11_giant_ape_transformation_00": {
+        "id": "seg_shot11_giant_ape_transformation_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "孙悟空人身大小半跪在深坑底，肩侧伤痕发出金光，双目凶光压在烟尘里。镜头固定低角度缓慢后退，他低吼着抬头，骨骼在铠甲下撑开，金棕毛发一层层变粗变硬，肩背隆起，坑壁碎石被膨胀的气息震落；横在身旁的金箍棒也随之变长变沉，金红纹路在尘烟中亮起。落点是他已暴涨成半巨猿姿态，一膝撑地，一手按住变大的金箍棒。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "sun_wukong",
+          "place": "impact_crater",
+          "prop": "ruyi_jingubang"
+        },
+        "shot_id": "shot11_giant_ape_transformation",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a11_giant_ape_transformation_start"
+      },
+      "seg_shot11_giant_ape_transformation_01": {
+        "id": "seg_shot11_giant_ape_transformation_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "半巨猿姿态的孙悟空从坑底继续拔高，镜头仍以低角度后退，被他的身躯逼得显出更大的深坑尺度。粗硬金棕毛发像钢针竖起，肩侧金色伤痕沿毛发滴亮，双目金光把烟尘照成凶烈的金雾；金箍棒同步膨胀成巨柱，被他双拳攥紧压下，坑底裂缝向四周炸开。落点是山岳般巨猿站在深坑中，巨大金箍棒握在手中，双拳连同棒身压在地面。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong",
+          "place": "impact_crater",
+          "prop": "ruyi_jingubang"
+        },
+        "shot_id": "shot11_giant_ape_transformation",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot16_true_body_counter_00": {
+        "id": "seg_shot16_true_body_counter_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬法相半转身、天眼冷白光束锁住侧后方真身开始，镜头急速弧形贴着他的巨肩旋过去。三尖两刃巨刃被反手抡出，冷白刃光切开尘褐烟雾；巨猿孙悟空贴地横压金箍棒迎上，棒身掀起山脊般土浪。碰撞瞬间金箍棒与巨刃在侧后方硬撞，震屏冲击波把残余幻象震成金色毫毛雨，巨猿被逼退数步停住，脚掌在地面犁出深沟。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "shot_id": "shot16_true_body_counter",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a16_true_body_counter_start"
+      },
+      "seg_shot18_final_ready_00": {
+        "id": "seg_shot18_final_ready_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从残破战旗落在裂地上的静默画面开始，镜头克制地在巨猿孙悟空与法相杨戬之间来回切换。孙悟空肩侧金色血痕未干，抬手抹过嘴角后缓缓握紧巨大金箍棒；杨戬闭合的天眼短暂停住，又在冷灰雷光中重新睁开，巨刃被他立起。低沉雷声与缓落尘雾压住全场，最后镜头停成二人对峙构图，双方都重新压低重心，准备再次冲向彼此。",
+          "duration_s": 12,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,broken_battle_flags"
+        },
+        "shot_id": "shot18_final_ready",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a18_final_ready_start"
+      },
+      "seg_shot13_titan_clash_00": {
+        "id": "seg_shot13_titan_clash_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从极低角度的起势接上，巨猿孙悟空双目金光暴燃，巨大的金箍棒横扫撞向法相杨戬抬起的擎天巨刃。两件巨兵接触的瞬间，金色棒光与冷白刃光炸成厚重冲击环，地面裂缝向镜头脚下扩张，碎石被震到半空。镜头迅速拉成极远景，两个山岳般身影在尘暴海潮中沉重交错，雷云压顶，最后落在二人巨兵短暂分开、隔着翻涌尘浪重新压低重心的画面。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot13_titan_clash",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a13_titan_clash_start"
+      },
+      "seg_shot13_titan_clash_01": {
+        "id": "seg_shot13_titan_clash_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从两尊巨影隔尘对峙的尾帧继续，巨猿孙悟空低吼前冲，肩侧旧伤带着金色血光，双手抡起巨大的金箍棒贴身猛压。镜头从极远景猛然推进到同一战线近景，拳势、獠牙般的怒意和棒身金光一层层逼近杨戬；法相杨戬脚步钉住裂地，额间天眼冷白光照破烟尘，擎天巨刃连续承住重压。最后镜头停在金箍棒与三尖两刃巨刃再次死死压在一起的瞬间，雷云翻滚，裂纹从二人脚下向四面蔓延。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot13_titan_clash",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot14_clone_siege_00": {
+        "id": "seg_shot14_clone_siege_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬法相裂纹巨肩后方横扫出去，横置巨刃压在画面左侧，巨猿孙悟空咧嘴冷笑，肩侧旧伤仍泛金色血光。狂风卷起他身上的金色毫毛，毫毛像灼亮铁屑落向破碎平原、残旗、碎石和云影之间，每一簇落地都拉长成半透明孙悟空轮廓。镜头缓慢横移，冷灰尘云里金色残影一层层增多，远近真假身影逐渐填满战场边缘，杨戬仍横刃不动，天眼微暗却凝在前方。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "shot_id": "shot14_clone_siege",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a14_clone_siege_start"
+      },
+      "seg_shot14_clone_siege_01": {
+        "id": "seg_shot14_clone_siege_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接满场幻影的尾帧，镜头继续从杨戬肩后扫向更宽的破碎平原，冷灰尘云被无数金色残影切开。幻象同时怒吼，巨猿、人身持棒、藏在山石后的假身和半空倒悬的身影从四面八方压近，真假金箍棒形成密集金色弧线，重点落在棒影擦过杨戬巨刃与铠甲的瞬间：火花沿裂纹连串炸开，虚实难辨的冲击在刀锋边缘震出金白气浪。杨戬法相脚下稳住裂地，横刃守在身前，铠甲表面溅起火花停定。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "prop": "golden_hair_clones,broken_battle_flags",
+          "place": "broken_plain_wide"
+        },
+        "shot_id": "shot14_clone_siege",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot15_third_eye_scan_00": {
+        "id": "seg_shot15_third_eye_scan_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从杨戬巨大神面的眉心极近特写开始，天眼细金线缓缓张开，冷白神光由内向外扩大成一轮克制的神日。镜头慢慢后拉，光芒不是炸裂，而是一层薄如水面的扫描光带掠过脸侧与甲冠，周围金色幻影光点被照住后边缘抖动、碎裂成细小金尘。落点停在天眼完全睁开、第一层神光横铺向战场的瞬间。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "golden_hair_clones"
+        },
+        "shot_id": "shot15_third_eye_scan",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a15_third_eye_scan_start"
+      },
+      "seg_shot15_third_eye_scan_01": {
+        "id": "seg_shot15_third_eye_scan_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "承接天眼神光横铺的尾帧，镜头继续从杨戬额前拉出并横移到宽阔破碎平原。冷白扫描光一层层扫过烟尘、碎石、残旗和云影，成百上千个孙悟空幻影在光带中动作变慢，身体边缘像纸灰般剥落，化成金色毫毛与尘雾；混在金箍棒残影里的假身也逐个露出破绽消散。落点停在幻象几乎清空、远处真正巨猿方向被冷白光束显露的宽阔战场。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong",
+          "place": "broken_plain_wide",
+          "prop": "golden_hair_clones"
+        },
+        "shot_id": "shot15_third_eye_scan",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot17_aftermath_standoff_00": {
+        "id": "seg_shot17_aftermath_standoff_00",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "从极宽远景缓慢推进，金色毫毛如雨落在龟裂地面，深沟把巨猿孙悟空和法相杨戬隔开。尘浪一层层下沉，雷云被撕成灰黑断层，孙悟空肩侧旧伤泛出微弱金血，杨戬额前天眼仍亮却明显暗淡。镜头在冷灰天光中压低节奏，最后落在两尊巨影隔着破碎战场静默对峙的画面。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang,golden_hair_clones"
+        },
+        "shot_id": "shot17_aftermath_standoff",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a17_aftermath_standoff_start"
+      },
+      "seg_shot17_aftermath_standoff_01": {
+        "id": "seg_shot17_aftermath_standoff_01",
+        "flf2v_request": {
+          "kind": "segment_r2v",
+          "prompt": "镜头继续缓慢推进，空间仍保持极宽，疲惫感比动作更重。巨猿孙悟空胸膛高低起伏的姿态被冷灰光勾出，肩侧金色血光沿粗硬毛发坠向地面；杨戬法相没有追击，银黑巨甲裂纹逐渐清晰，三尖两刃巨刃刃口缺口在微光中显露。最后画面停在双方带伤隔场对峙的静止构图。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1280x720"
+        },
+        "reference_inputs": {
+          "portrait": "giant_ape_wukong,faxiang_yang_jian",
+          "place": "broken_plain_wide",
+          "prop": "sanjian_liangren_blade,ruyi_jingubang"
+        },
+        "shot_id": "shot17_aftermath_standoff",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      }
+    },
+    "boundary_policies": []
+  },
+  "media": {
+    "portraits": {
+      "faxiang_yang_jian": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/faxiang_yang_jian.png",
+      "giant_ape_wukong": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/giant_ape_wukong.png",
+      "sun_wukong": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/sun_wukong.png",
+      "yang_jian": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/yang_jian.png"
+    },
+    "locations": {
+      "ancient_battlefield": "https://net-oss.akclau.de/reca/heavenly-titans/locations/ancient_battlefield.png"
+    },
+    "props": {
+      "broken_battle_flags": "https://net-oss.akclau.de/reca/heavenly-titans/props/broken_battle_flags.png",
+      "golden_hair_clones": "https://net-oss.akclau.de/reca/heavenly-titans/props/golden_hair_clones.png",
+      "ruyi_jingubang": "https://net-oss.akclau.de/reca/heavenly-titans/props/ruyi_jingubang.png",
+      "sanjian_liangren_blade": "https://net-oss.akclau.de/reca/heavenly-titans/props/sanjian_liangren_blade.png"
+    },
+    "anchors": {
+      "a01_back_clash_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a01_back_clash_start.png",
+      "a02_weapon_lock_close_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a02_weapon_lock_close_start.png",
+      "a03_faces_roar_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a03_faces_roar_start.png",
+      "a04_separated_standoff_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a04_separated_standoff_start.png",
+      "a05_ascent_through_clouds_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a05_ascent_through_clouds_start.png",
+      "a06_cloud_counter_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a06_cloud_counter_start.png",
+      "a07_high_sky_battle_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a07_high_sky_battle_start.png",
+      "a08_mountain_staff_press_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a08_mountain_staff_press_start.png",
+      "a09_counter_knockdown_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a09_counter_knockdown_start.png",
+      "a10_wukong_fall_impact_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a10_wukong_fall_impact_start.png",
+      "a11_giant_ape_transformation_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a11_giant_ape_transformation_start.png",
+      "a12_yangjian_fatian_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a12_yangjian_fatian_start.png",
+      "a13_titan_clash_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a13_titan_clash_start.png",
+      "a14_clone_siege_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a14_clone_siege_start.png",
+      "a15_third_eye_scan_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a15_third_eye_scan_start.png",
+      "a16_true_body_counter_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a16_true_body_counter_start.png",
+      "a17_aftermath_standoff_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a17_aftermath_standoff_start.png",
+      "a18_final_ready_start": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a18_final_ready_start.png"
+    },
+    "segments": {
+      "seg_shot01_back_clash_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot01_back_clash_00.tail.png",
+      "seg_shot02_weapon_lock_close_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot02_weapon_lock_close_00.tail.png",
+      "seg_shot03_faces_roar_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot03_faces_roar_00.tail.png",
+      "seg_shot04_separated_standoff_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot04_separated_standoff_00.tail.png",
+      "seg_shot05_ascent_through_clouds_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_00.tail.png",
+      "seg_shot05_ascent_through_clouds_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_01.tail.png",
+      "seg_shot05_ascent_through_clouds_02": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_02.tail.png",
+      "seg_shot06_cloud_counter_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_00.tail.png",
+      "seg_shot06_cloud_counter_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_01.tail.png",
+      "seg_shot07_high_sky_battle_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_00.tail.png",
+      "seg_shot07_high_sky_battle_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_01.tail.png",
+      "seg_shot07_high_sky_battle_02": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_02.tail.png",
+      "seg_shot08_mountain_staff_press_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot08_mountain_staff_press_00.tail.png",
+      "seg_shot09_counter_knockdown_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot09_counter_knockdown_00.tail.png",
+      "seg_shot10_wukong_fall_impact_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_00.tail.png",
+      "seg_shot10_wukong_fall_impact_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_01.tail.png",
+      "seg_shot11_giant_ape_transformation_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_00.tail.png",
+      "seg_shot11_giant_ape_transformation_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_01.tail.png",
+      "seg_shot12_yangjian_fatian_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_00.tail.png",
+      "seg_shot12_yangjian_fatian_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_01.tail.png",
+      "seg_shot13_titan_clash_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_00.tail.png",
+      "seg_shot13_titan_clash_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_01.tail.png",
+      "seg_shot14_clone_siege_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_00.tail.png",
+      "seg_shot14_clone_siege_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_01.tail.png",
+      "seg_shot15_third_eye_scan_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_00.tail.png",
+      "seg_shot15_third_eye_scan_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_01.tail.png",
+      "seg_shot16_true_body_counter_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot16_true_body_counter_00.tail.png",
+      "seg_shot17_aftermath_standoff_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_00.tail.png",
+      "seg_shot17_aftermath_standoff_01": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_01.tail.png",
+      "seg_shot18_final_ready_00": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot18_final_ready_00.tail.png"
+    },
+    "bridges": {},
+    "final_mp4": "https://net-oss.akclau.de/reca/heavenly-titans/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 18,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "faxiang_yang_jian",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/faxiang_yang_jian.png",
+      "t": 10.75
+    },
+    {
+      "type": "portrait_ready",
+      "id": "giant_ape_wukong",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/giant_ape_wukong.png",
+      "t": 10.85
+    },
+    {
+      "type": "portrait_ready",
+      "id": "sun_wukong",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/sun_wukong.png",
+      "t": 10.95
+    },
+    {
+      "type": "portrait_ready",
+      "id": "yang_jian",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/portraits/yang_jian.png",
+      "t": 11.05
+    },
+    {
+      "type": "location_ready",
+      "id": "ancient_battlefield",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/locations/ancient_battlefield.png",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "broken_battle_flags",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/props/broken_battle_flags.png",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "golden_hair_clones",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/props/golden_hair_clones.png",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "ruyi_jingubang",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/props/ruyi_jingubang.png",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "sanjian_liangren_blade",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/props/sanjian_liangren_blade.png",
+      "t": 11.55
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 18 shots — seeds the I2V chain…",
+      "t": 11.6
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_back_clash_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a01_back_clash_start.png",
+      "t": 16.75
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_weapon_lock_close_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a02_weapon_lock_close_start.png",
+      "t": 16.9
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_faces_roar_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a03_faces_roar_start.png",
+      "t": 17.05
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_separated_standoff_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a04_separated_standoff_start.png",
+      "t": 17.2
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a05_ascent_through_clouds_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a05_ascent_through_clouds_start.png",
+      "t": 17.35
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a06_cloud_counter_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a06_cloud_counter_start.png",
+      "t": 17.5
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a07_high_sky_battle_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a07_high_sky_battle_start.png",
+      "t": 17.65
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a08_mountain_staff_press_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a08_mountain_staff_press_start.png",
+      "t": 17.8
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a09_counter_knockdown_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a09_counter_knockdown_start.png",
+      "t": 17.95
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a10_wukong_fall_impact_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a10_wukong_fall_impact_start.png",
+      "t": 18.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a11_giant_ape_transformation_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a11_giant_ape_transformation_start.png",
+      "t": 18.25
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a12_yangjian_fatian_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a12_yangjian_fatian_start.png",
+      "t": 18.4
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a13_titan_clash_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a13_titan_clash_start.png",
+      "t": 18.55
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a14_clone_siege_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a14_clone_siege_start.png",
+      "t": 18.7
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a15_third_eye_scan_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a15_third_eye_scan_start.png",
+      "t": 18.85
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a16_true_body_counter_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a16_true_body_counter_start.png",
+      "t": 19.0
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a17_aftermath_standoff_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a17_aftermath_standoff_start.png",
+      "t": 19.15
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a18_final_ready_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a18_final_ready_start.png",
+      "t": 19.3
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Anchor validator",
+      "detail": "Checking each anchor for identity / pose drift before letting it seed the video render…",
+      "t": 19.35
+    },
+    {
+      "type": "anchor_validator_start",
+      "id": "a01_back_clash_start",
+      "t": 24.65
+    },
+    {
+      "type": "anchor_validator_fail",
+      "id": "a01_back_clash_start",
+      "reason": "identity_drift",
+      "t": 24.95
+    },
+    {
+      "type": "anchor_repair_start",
+      "id": "a01_back_clash_start",
+      "action": "RepackPrompt",
+      "t": 25.15
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_back_clash_start",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/anchors/a01_back_clash_start.png",
+      "repaired": true,
+      "t": 25.65
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 25.7
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 30,
+      "t": 31.1
+    },
+    {
+      "type": "render_start",
+      "t": 31.2
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "30 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 31.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_back_clash_00",
+      "shot_id": "shot01_back_clash",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot01_back_clash_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot01_back_clash_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_weapon_lock_close_00",
+      "shot_id": "shot02_weapon_lock_close",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot02_weapon_lock_close_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot02_weapon_lock_close_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.55
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_faces_roar_00",
+      "shot_id": "shot03_faces_roar",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot03_faces_roar_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot03_faces_roar_00.tail.png",
+      "duration_s": 8.0,
+      "t": 42.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_separated_standoff_00",
+      "shot_id": "shot04_separated_standoff",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot04_separated_standoff_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot04_separated_standoff_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.15
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_ascent_through_clouds_00",
+      "shot_id": "shot05_ascent_through_clouds",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_cloud_counter_00",
+      "shot_id": "shot06_cloud_counter",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_00.tail.png",
+      "duration_s": 8.0,
+      "t": 43.75
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_high_sky_battle_00",
+      "shot_id": "shot07_high_sky_battle",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot08_mountain_staff_press_00",
+      "shot_id": "shot08_mountain_staff_press",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot08_mountain_staff_press_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot08_mountain_staff_press_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot09_counter_knockdown_00",
+      "shot_id": "shot09_counter_knockdown",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot09_counter_knockdown_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot09_counter_knockdown_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.65
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot10_wukong_fall_impact_00",
+      "shot_id": "shot10_wukong_fall_impact",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_00.tail.png",
+      "duration_s": 8.0,
+      "t": 44.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot11_giant_ape_transformation_00",
+      "shot_id": "shot11_giant_ape_transformation",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_00.tail.png",
+      "duration_s": 8.0,
+      "t": 45.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot12_yangjian_fatian_00",
+      "shot_id": "shot12_yangjian_fatian",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_00.tail.png",
+      "duration_s": 8.0,
+      "t": 45.55
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot13_titan_clash_00",
+      "shot_id": "shot13_titan_clash",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_00.tail.png",
+      "duration_s": 8.0,
+      "t": 45.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot14_clone_siege_00",
+      "shot_id": "shot14_clone_siege",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_00.tail.png",
+      "duration_s": 8.0,
+      "t": 46.15
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot15_third_eye_scan_00",
+      "shot_id": "shot15_third_eye_scan",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_00.tail.png",
+      "duration_s": 8.0,
+      "t": 46.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot16_true_body_counter_00",
+      "shot_id": "shot16_true_body_counter",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot16_true_body_counter_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot16_true_body_counter_00.tail.png",
+      "duration_s": 8.0,
+      "t": 46.75
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot17_aftermath_standoff_00",
+      "shot_id": "shot17_aftermath_standoff",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_00.tail.png",
+      "duration_s": 8.0,
+      "t": 47.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot18_final_ready_00",
+      "shot_id": "shot18_final_ready",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot18_final_ready_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot18_final_ready_00.tail.png",
+      "duration_s": 8.0,
+      "t": 47.35
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_ascent_through_clouds_01",
+      "shot_id": "shot05_ascent_through_clouds",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_01.tail.png",
+      "duration_s": 8.0,
+      "t": 49.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot06_cloud_counter_01",
+      "shot_id": "shot06_cloud_counter",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot06_cloud_counter_01.tail.png",
+      "duration_s": 8.0,
+      "t": 49.75
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_high_sky_battle_01",
+      "shot_id": "shot07_high_sky_battle",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_01.tail.png",
+      "duration_s": 8.0,
+      "t": 50.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot10_wukong_fall_impact_01",
+      "shot_id": "shot10_wukong_fall_impact",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot10_wukong_fall_impact_01.tail.png",
+      "duration_s": 8.0,
+      "t": 50.95
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot11_giant_ape_transformation_01",
+      "shot_id": "shot11_giant_ape_transformation",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot11_giant_ape_transformation_01.tail.png",
+      "duration_s": 8.0,
+      "t": 51.25
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot12_yangjian_fatian_01",
+      "shot_id": "shot12_yangjian_fatian",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot12_yangjian_fatian_01.tail.png",
+      "duration_s": 8.0,
+      "t": 51.55
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot13_titan_clash_01",
+      "shot_id": "shot13_titan_clash",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot13_titan_clash_01.tail.png",
+      "duration_s": 8.0,
+      "t": 51.85
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot14_clone_siege_01",
+      "shot_id": "shot14_clone_siege",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot14_clone_siege_01.tail.png",
+      "duration_s": 8.0,
+      "t": 52.15
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot15_third_eye_scan_01",
+      "shot_id": "shot15_third_eye_scan",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot15_third_eye_scan_01.tail.png",
+      "duration_s": 8.0,
+      "t": 52.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot17_aftermath_standoff_01",
+      "shot_id": "shot17_aftermath_standoff",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot17_aftermath_standoff_01.tail.png",
+      "duration_s": 8.0,
+      "t": 53.05
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot05_ascent_through_clouds_02",
+      "shot_id": "shot05_ascent_through_clouds",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot05_ascent_through_clouds_02.tail.png",
+      "duration_s": 8.0,
+      "t": 55.45
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot07_high_sky_battle_02",
+      "shot_id": "shot07_high_sky_battle",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot07_high_sky_battle_02.tail.png",
+      "duration_s": 8.0,
+      "t": 56.05
+    },
+    {
+      "type": "phase_marker",
+      "stage": "④ Segment validator",
+      "detail": "Extracting end-state from every segment → refreshing memory → feedback flags drift…",
+      "t": 56.1
+    },
+    {
+      "type": "segment_validator_start",
+      "t": 61.6
+    },
+    {
+      "type": "segment_extractor_ok",
+      "t": 61.95
+    },
+    {
+      "type": "segment_refresh_ok",
+      "t": 62.25
+    },
+    {
+      "type": "segment_feedback_flagged",
+      "flagged": [
+        "seg_shot01_back_clash_00",
+        "seg_shot02_weapon_lock_close_00"
+      ],
+      "reasons": {
+        "seg_shot01_back_clash_00": "motif_drift",
+        "seg_shot02_weapon_lock_close_00": "end_state_mismatch"
+      },
+      "t": 62.55
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot01_back_clash_00",
+      "action": "RepackPrompt",
+      "t": 62.7
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_back_clash_00",
+      "shot_id": "shot01_back_clash",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot01_back_clash_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot01_back_clash_00.tail.png",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 63.25
+    },
+    {
+      "type": "segment_repair_start",
+      "id": "seg_shot02_weapon_lock_close_00",
+      "action": "RegenerateUnit",
+      "t": 63.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_weapon_lock_close_00",
+      "shot_id": "shot02_weapon_lock_close",
+      "kind": "segment_i2v",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot02_weapon_lock_close_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/heavenly-titans/segment_tails/seg_shot02_weapon_lock_close_00.tail.png",
+      "duration_s": 8.0,
+      "rerendered": true,
+      "t": 63.95
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 64.0
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/heavenly-titans/final.mp4",
+      "t": 69.6
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/heavenly-titans/final.mp4",
+      "total_s": 69.6,
+      "t": 69.8
+    }
+  ],
+  "timeline_duration_s": 69.8
+}

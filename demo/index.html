@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReCA · turn a story into a multi-shot film</title>
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Ccircle cx="16" cy="16" r="15" fill="%23030406"/%3E%3Cpath d="M8 9h11l-6 6 6 8H10l5-7z" fill="%23d7ff47"/%3E%3C/svg%3E'>
+    <link rel="stylesheet" href="./app.css?v=20260515-purge-archive">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Page header">
+      <a class="brand" href="../" aria-label="Back to ReCA overview">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>ReCA · demo</span>
+      </a>
+      <a class="back-to-showcase" href="../">
+        <span aria-hidden="true">←</span>
+        <span>Back to overview</span>
+      </a>
+      <span id="dataStatus" class="data-status">Ready</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">ReCA · text-to-multi-shot-video</p>
+            <h1 id="hero-title">Turn one story into a multi-shot film: shot plan, character anchors, frame-to-frame continuity.</h1>
+            <p class="hero-lede">
+              5 ReCA runs replayed: shot planning → portrait / anchor frames → per-segment render → ④ validator re-render → final concat.
+            </p>
+          </div>
+          <figure class="hero-art" aria-hidden="true">
+            <svg class="hero-tree" viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg" role="img">
+              <!-- Edges first so nodes overlap them cleanly. -->
+              <g class="tree-edges" stroke="rgba(0,0,0,0.16)" stroke-width="1.4" fill="none">
+                <!-- root → 5 shot nodes -->
+                <path d="M260,38  L 60,150"/>
+                <path d="M260,38  L160,150"/>
+                <path d="M260,38  L260,150"/>
+                <path d="M260,38  L360,150"/>
+                <path d="M260,38  L460,150"/>
+                <!-- each shot → 3 leaves; staggered horizontally -->
+                <path d="M 60,150 L 30,250"/><path d="M 60,150 L 60,250"/><path d="M 60,150 L 90,250"/>
+                <path d="M160,150 L130,250"/><path d="M160,150 L160,250"/><path d="M160,150 L190,250"/>
+                <path d="M260,150 L230,250"/><path d="M260,150 L260,250"/><path d="M260,150 L290,250"/>
+                <path d="M360,150 L330,250"/><path d="M360,150 L360,250"/><path d="M360,150 L390,250"/>
+                <path d="M460,150 L430,250"/><path d="M460,150 L460,250"/><path d="M460,150 L490,250"/>
+              </g>
+
+              <!-- Root (long-video goal) -->
+              <g class="tree-node tree-node-root">
+                <circle cx="260" cy="38" r="20"/>
+              </g>
+
+              <!-- Shot (Plan / Allocate) nodes -->
+              <g class="tree-node tree-node-shot">
+                <circle cx="60"  cy="150" r="12"/>
+                <circle cx="160" cy="150" r="12"/>
+                <circle cx="260" cy="150" r="12"/>
+                <circle cx="360" cy="150" r="12"/>
+                <circle cx="460" cy="150" r="12"/>
+              </g>
+
+              <!-- Leaf (Execute) nodes -->
+              <g class="tree-node tree-node-leaf">
+                <circle cx="30"  cy="250" r="8"/><circle cx="60"  cy="250" r="8"/><circle cx="90"  cy="250" r="8"/>
+                <circle cx="130" cy="250" r="8"/><circle cx="160" cy="250" r="8"/><circle cx="190" cy="250" r="8"/>
+                <circle cx="230" cy="250" r="8"/><circle cx="260" cy="250" r="8"/><circle cx="290" cy="250" r="8"/>
+                <circle cx="330" cy="250" r="8"/><circle cx="360" cy="250" r="8"/><circle cx="390" cy="250" r="8"/>
+                <circle cx="430" cy="250" r="8"/><circle cx="460" cy="250" r="8"/><circle cx="490" cy="250" r="8"/>
+              </g>
+
+              <!-- A few leaves marked "running" — soft pulse outlines -->
+              <g class="tree-pulse">
+                <circle cx="90"  cy="250" r="10" class="tree-pulse-1"/>
+                <circle cx="260" cy="250" r="10" class="tree-pulse-2"/>
+                <circle cx="430" cy="250" r="10" class="tree-pulse-3"/>
+              </g>
+
+              <!-- Generated Video Timeline strip -->
+              <g class="tree-timeline">
+                <text x="0" y="305" class="tree-label">Generated video timeline</text>
+                <g fill="rgba(26,115,232,0.55)">
+                  <rect x="0"   y="320" width="52" height="22" rx="3"/>
+                  <rect x="58"  y="320" width="60" height="22" rx="3"/>
+                  <rect x="124" y="320" width="42" height="22" rx="3"/>
+                  <rect x="172" y="320" width="70" height="22" rx="3"/>
+                  <rect x="248" y="320" width="50" height="22" rx="3"/>
+                  <rect x="304" y="320" width="62" height="22" rx="3"/>
+                  <rect x="372" y="320" width="46" height="22" rx="3"/>
+                  <rect x="424" y="320" width="56" height="22" rx="3"/>
+                  <rect x="486" y="320" width="34" height="22" rx="3"/>
+                </g>
+              </g>
+            </svg>
+            <figcaption class="hero-art-caption">Recursive plan tree · 5 shots · 15 leaves</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- VIEW: FORM -->
+      <section id="viewForm" class="section view-section view-form" aria-label="Story input">
+        <div class="section-kicker">Step 1 / Pick a demo</div>
+        <div class="wide-heading">
+          <h2>Pick a pre-recorded demo to watch the full ReCA flow.</h2>
+          <p>Five real ReCA runs below — 3 go through the ④ validator → re-render loop, 2 are single-pass. Click any card to start the replay.</p>
+        </div>
+
+        <!-- Demo picker grid (populated by app.js loadDemos()) -->
+        <div id="demoPicker" class="demo-picker">
+          <p class="demo-picker-loading">Loading demo list…</p>
+        </div>
+
+        <!-- History panel hidden for now (per UX iteration); markup
+             stays so loadHistory() still finds it and we can re-enable
+             later by swapping `hidden` → `open`. -->
+        <details id="historyPanel" class="history-panel" hidden>
+          <summary>
+            <span class="history-summary-title">Replay history</span>
+            <span class="history-summary-sub">Click any entry — jumps straight to that run's terminal state (final.mp4 + completed tree).</span>
+          </summary>
+          <div id="historyList" class="history-list">
+            <p class="history-empty">Loading history…</p>
+          </div>
+        </details>
+
+      </section>
+
+      <!-- VIEW: RUNNING -->
+      <section id="viewRunning" class="section view-section view-running" hidden aria-label="Job in progress">
+        <div class="section-kicker">ReCA pipeline replay</div>
+
+        <!-- Top: status + 5-chip section progress bar -->
+        <div class="run-topbar">
+          <div class="run-status-line">
+            <span id="statusStage">Connecting…</span>
+            <span id="statusElapsed" class="run-elapsed">00:00</span>
+            <span id="statusDetail" class="run-detail">Waiting for first event…</span>
+            <button type="button" id="cancelBtn" class="button ghost button-sm">Cancel</button>
+          </div>
+          <div id="statusFillWrap" class="status-progress thin"><span id="statusFill"></span></div>
+          <nav class="section-chips" aria-label="Pipeline stages">
+            <span class="chip" data-chip="1"><em>①</em><b>Recursive Planning</b><span>break the story into shots + segments</span></span>
+            <span class="chip" data-chip="2"><em>②</em><b>Leaf Execution</b><span>render one short clip per leaf</span></span>
+            <span class="chip" data-chip="3"><em>③</em><b>Logic</b><span>parallel shots · serial segments</span></span>
+            <span class="chip" data-chip="4"><em>④</em><b>State Update</b><span>validate · flag · re-render</span></span>
+            <span class="chip" data-chip="5"><em>⑤</em><b>One Leaf</b><span>click any leaf to inspect</span></span>
+          </nav>
+        </div>
+
+        <!-- Three-column main: state pipeline + tree + leaf detail -->
+        <div class="run-cols">
+
+          <!-- LEFT: ④ State Pipeline + ⑤ State Memory -->
+          <aside class="run-left" aria-label="State Pipeline and Memory">
+            <div class="panel state-pipeline-panel">
+              <p class="panel-kicker">④ Adaptive State Update</p>
+
+              <div class="validator-log-wrap">
+                <p class="validator-log-section-title">Anchor re-renders</p>
+                <p class="validator-log-empty" id="validatorLogAnchorsEmpty">No anchors were re-rendered.</p>
+                <ul id="validatorLogAnchors" class="validator-log" hidden></ul>
+
+                <p class="validator-log-section-title">Segment re-renders</p>
+                <p class="validator-log-empty" id="validatorLogSegmentsEmpty">No segments were re-rendered.</p>
+                <ul id="validatorLogSegments" class="validator-log" hidden></ul>
+              </div>
+            </div>
+
+            <div class="panel state-mem-panel">
+              <p class="panel-kicker">⑤ State Memory</p>
+              <p class="panel-sub">Portrait / location / prop references the planner keeps across shots, fed back into each segment's context.</p>
+              <div class="mem-group">
+                <p class="mem-title">Portraits <span id="memPortraitCount" class="mem-count">0</span></p>
+                <div id="memPortraitItems" class="mem-items"></div>
+              </div>
+              <div class="mem-group">
+                <p class="mem-title">Locations <span id="memLocationCount" class="mem-count">0</span></p>
+                <div id="memLocationItems" class="mem-items"></div>
+              </div>
+              <div class="mem-group">
+                <p class="mem-title">Props <span id="memPropCount" class="mem-count">0</span></p>
+                <div id="memPropItems" class="mem-items"></div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- MIDDLE: ① Recursive Tree -->
+          <div class="run-tree-wrap">
+            <div class="panel tree-panel">
+              <p class="panel-kicker">① Recursive Tree · ② Leaf Execution · ③ Logic</p>
+              <p class="panel-sub">Root → Plan nodes (anchors) → Leaf nodes (segments).
+                <span style="color:var(--cyan)">●</span> done ·
+                <span style="color:#9b87e0">●</span> running ·
+                <span style="color:var(--dim)">●</span> pending ·
+                <span style="color:var(--rose)">●</span> failed.
+                Edges: <span style="color:#a8e1a1">─</span> parallel · <span style="color:#f4b56b">─</span> sequential.
+              </p>
+              <div id="runTree" class="tree-root-wrap">
+                <div class="root-node" id="rootNode" data-status="pending">
+                  <span class="node-tag">ROOT · long video goal</span>
+                  <p id="rootStory" class="root-story">Waiting for story input…</p>
+                  <div id="rootBadge" class="root-badge" hidden>
+                    <strong id="rootBadgeTitle">★ Final concatenated</strong>
+                    <video id="rootFinalVideo" controls playsinline muted></video>
+                  </div>
+                </div>
+                <div id="shotColumns" class="shot-columns" data-empty="true">
+                  <p class="tree-empty-hint">Waiting for plan_skeleton (~5s)…</p>
+                </div>
+                <div id="bridgesRow" class="bridges-row" hidden>
+                  <p class="bridges-row-label">cross-shot bridges</p>
+                  <div id="bridgesItems" class="bridges-items"></div>
+                </div>
+                <svg id="treeLines" class="tree-lines" aria-hidden="true"></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: ⑤ One Leaf in Detail -->
+          <aside class="run-right" aria-label="One Leaf in Detail">
+            <div class="panel leaf-detail-panel">
+              <p class="panel-kicker">⑤ One Leaf, In Detail</p>
+              <div id="leafEmpty" class="leaf-empty">
+                <p>Click any <strong>leaf</strong> in the middle to expand it here.</p>
+                <p class="leaf-empty-sub">Sections below: context window · generator call · output · validation.</p>
+              </div>
+
+              <div id="leafContent" class="leaf-content" hidden>
+                <div class="leaf-header">
+                  <p id="leafTitle" class="leaf-title">seg id</p>
+                  <p id="leafSubtitle" class="leaf-subtitle">status · shot · kind</p>
+                </div>
+
+                <p class="sub-kicker">Context window <em>bounded by token budget</em></p>
+                <div class="ctx-block">
+                  <p class="ctx-label">prev seg</p>
+                  <div id="ctxPrev" class="ctx-prev">—</div>
+                </div>
+                <div class="ctx-block">
+                  <p class="ctx-label">plan / goal</p>
+                  <div id="ctxPrompt" class="ctx-prompt">—</div>
+                </div>
+                <div class="ctx-block">
+                  <p class="ctx-label">state mem</p>
+                  <div id="ctxRefs" class="ctx-refs">—</div>
+                </div>
+
+                <p class="sub-kicker">Generator call <em>frozen video model · one shot</em></p>
+                <div id="genCard" class="gen-card">—</div>
+
+                <p class="sub-kicker">Output <em>one video segment</em></p>
+                <div id="outputBlock" class="output-block">—</div>
+
+                <p class="sub-kicker">Writes back to state</p>
+                <p class="writes-line">tail.png → feeds the next leaf's prev-seg slot within the same shot</p>
+
+                <p class="sub-kicker">Validation / re-render</p>
+                <div id="leafValidation" class="leaf-validation">—</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- VIEW: FINAL -->
+      <section id="viewFinal" class="section view-section view-final" hidden aria-label="Final movie">
+        <div class="section-kicker">Step 3 / Output</div>
+        <div class="wide-heading">
+          <h2>Final video is ready.</h2>
+          <p id="finalSubtitle">total time — · shots —</p>
+        </div>
+        <div class="final-player">
+          <video id="finalVideo" controls playsinline></video>
+          <div class="final-actions">
+            <a id="downloadLink" class="button primary" download>Download mp4</a>
+            <button type="button" id="backToTreeBtn" class="button ghost">← Back to plan tree</button>
+            <button type="button" id="copyLinkBtn" class="button ghost">Copy watch link</button>
+            <button type="button" id="restartBtn" class="button ghost">Generate another</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW: ERROR -->
+      <section id="viewError" class="section view-section view-error" hidden aria-label="Generation error">
+        <div class="section-kicker">Error</div>
+        <div class="wide-heading">
+          <h2>Replay failed</h2>
+          <p>Something went wrong while playing back this demo. Hit restart to pick another.</p>
+        </div>
+        <pre id="errorBox" class="error-box"></pre>
+        <div class="final-actions">
+          <button type="button" id="errorRestartBtn" class="button primary">Restart</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>ReCA interactive demo</span>
+    </footer>
+
+    <script src="./app.js?v=20260515-purge-archive" defer></script>
+  </body>
+</html>

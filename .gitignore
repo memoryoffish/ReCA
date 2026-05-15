@@ -1,0 +1,20 @@
+runs/
+files/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.venv/
+.idea/
+.vscode/
+.omc/
+
+# Server-side code parked for future videorlm integration; not deployed
+future/
+
+# Locally-rendered paper figures used only to generate OSS uploads; not committed
+assets/paper-figs/
+
+# Dev tooling + schema docs — kept on disk locally but not exposed in the
+# public deploy. Build scripts that re-sign OSS URLs live here.
+dev/
