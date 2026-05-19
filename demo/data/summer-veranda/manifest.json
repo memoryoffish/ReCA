@@ -1,0 +1,823 @@
+{
+  "demo_id": "summer-veranda",
+  "slug": "summer-veranda",
+  "title": "Summer Veranda",
+  "is_rerun": false,
+  "n_shots": 4,
+  "n_segments": 9,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "little_girl"
+      },
+      {
+        "id": "grandmother"
+      }
+    ],
+    "location_plan": {
+      "country_cottage": {
+        "id": "country_cottage",
+        "key_zones": [
+          {
+            "id": "wooden_veranda"
+          },
+          {
+            "id": "small_kitchen"
+          }
+        ],
+        "props": {
+          "ladybug": {
+            "name": "瓢虫",
+            "owner": "little_girl",
+            "prompt": "静态道具参考图，一只小红色七星瓢虫，黑色斑点清晰，停在孩子微微合拢的手心或草帽帽檐边缘，微距真实昆虫质感，自然光，浅景深，背景柔和虚化。",
+            "negative_prompt": "巨大昆虫, 机械昆虫, 卡通昆虫, 多只昆虫, 模糊斑点, 恐怖质感, 文字, 水印"
+          },
+          "straw_hat": {
+            "name": "祖母的草帽",
+            "owner": "grandmother",
+            "prompt": "静态道具参考图，朴素旧草帽，天然稻草编织纹理，帽檐略有磨损，边缘有细小阴影，适合乡村劳作，置于木栏杆或戴在老人头上，夏日自然光，写实电影感。",
+            "negative_prompt": "崭新时装帽, 塑料材质, 西式礼帽, 夸张装饰, 文字, 水印"
+          },
+          "miso_pot": {
+            "name": "味噌汤锅",
+            "owner": "country_cottage",
+            "prompt": "静态道具参考图，老式炉灶上的深色汤锅，锅内味噌汤冒出柔白蒸汽，旁边放着木锅铲和小碗，灶台有岁月痕迹，清晨厨房暖光，真实水汽，写实电影感。",
+            "negative_prompt": "现代电磁炉, 西式浓汤锅, 夸张火焰, 脏污恶心, 卡通蒸汽, 文字, 水印"
+          },
+          "bamboo_basket": {
+            "name": "竹篮和茄子",
+            "owner": "grandmother",
+            "prompt": "静态道具参考图，手编竹篮，篮内放着几个刚摘的紫色茄子，茄子表面带少量晨露，竹编纹理清楚，乡村田埂背景，自然晨光，写实电影感，浅景深。",
+            "negative_prompt": "塑料篮, 超市包装, 腐烂蔬菜, 过度鲜艳, 卡通, 文字, 水印"
+          },
+          "watermelon_slice": {
+            "name": "西瓜片",
+            "owner": "little_girl",
+            "prompt": "静态道具参考图，一片红瓤西瓜，黑籽清晰，绿色瓜皮厚实，汁水在阳光下有细小反光，放在孩子手中或木质阳台边，正午夏日光照，写实电影感。",
+            "negative_prompt": "塑料食物, 夸张颜色, 腐烂水果, 西式餐盘摆拍, 卡通, 文字, 水印"
+          },
+          "wind_chime": {
+            "name": "风铃",
+            "owner": "country_cottage",
+            "prompt": "静态道具参考图，屋檐下悬挂的透明玻璃风铃，下方系着一小片淡蓝色短纸条，玻璃边缘反射夏日阳光，背景是木屋檐与虚化山色，写实电影感，浅景深。",
+            "negative_prompt": "金属大钟, 圣诞装饰, 霓虹灯, 塑料廉价感, 文字, 水印"
+          }
+        }
+      },
+      "rice_field_path": {
+        "id": "rice_field_path",
+        "key_zones": [
+          {
+            "id": "paddy_path"
+          }
+        ],
+        "props": {}
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_veranda_feet_start",
+          "reference_inputs": {
+            "portrait": "little_girl",
+            "place": "wooden_veranda",
+            "prop": "ladybug"
+          }
+        },
+        {
+          "id": "a02_kitchen_grandmother_start",
+          "reference_inputs": {
+            "portrait": "grandmother",
+            "place": "small_kitchen",
+            "prop": "miso_pot"
+          }
+        },
+        {
+          "id": "a03_paddy_walk_start",
+          "reference_inputs": {
+            "portrait": "little_girl,grandmother",
+            "place": "paddy_path",
+            "prop": "bamboo_basket,straw_hat,ladybug"
+          }
+        },
+        {
+          "id": "a04_noon_hat_start",
+          "reference_inputs": {
+            "portrait": "little_girl",
+            "place": "wooden_veranda",
+            "prop": "straw_hat,ladybug,watermelon_slice,wind_chime"
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_veranda_morning_reveal",
+        "duration_s": 30,
+        "story_goal": "建立夏日乡村清晨的生活质感，并把女孩与瓢虫的第一次相遇作为整段记忆的温柔起点。",
+        "start_state": "旧木阳台板纹理在近处清晰，小女孩光脚站在木板上，浅色连衣裙裙摆垂下，双手在胸前合拢捧着瓢虫，远山和栏杆仍在背景虚化中。",
+        "end_state": "小女孩、木质阳台、屋檐、栏杆和远处青绿色山脉共同出现在画面里，女孩低头看着手心里的瓢虫，屋内厨房方向保持柔暗。",
+        "visual_intent": "镜头从脚边木板纹理缓慢摇起并轻微后拉，节奏很慢，像清晨刚醒来的呼吸；写实电影风格，声音以虫鸣、远处稻田环境声和屋内锅铲轻响铺底，色彩为暖白晨光与淡绿色山色。"
+      },
+      {
+        "id": "shot02_kitchen_miso_and_bowl",
+        "duration_s": 18,
+        "story_goal": "展现祖母不必言说的照料：她继续做饭，却自然接住女孩的分享，并把日常早餐递给她。",
+        "start_state": "祖母穿白围裙背对镜头站在炉前，右手握木锅铲，左手垂在身侧，味噌汤锅冒出白汽，小窗开着，白窗帘向室内弯起。",
+        "end_state": "小女孩站在祖母身旁，头发被祖母左手轻轻按过后微乱，手心仍半开护着瓢虫，祖母把一只小碗递到女孩面前，汤锅白汽停在二人之间。",
+        "visual_intent": "镜头在厨房内保持克制的中景，先稳定观察祖母背影，再轻微横移容纳女孩进入；节奏温和，动作连贯不强调戏剧冲突，写实家庭纪实风格，暖黄炉光和窗外冷白晨风形成柔和对比。"
+      },
+      {
+        "id": "shot03_paddy_path_ladybug_hat",
+        "duration_s": 24,
+        "story_goal": "把祖孙关系从屋内延伸到乡间路上，让瓢虫成为她们共享的安静秘密，并强化人与自然互不打扰的亲密感。",
+        "start_state": "祖母戴草帽走在稻田边小路前方，手里拎着装有紫色茄子的竹篮，小女孩光脚跟在半步后，双手合拢在身前，远处山脉带着淡淡晨雾。",
+        "end_state": "祖母和小女孩都放慢脚步，瓢虫停在祖母草帽帽檐上，女孩抬眼看着帽檐，祖母的背影微微侧着，竹篮里的茄子在晨光下露出紫色反光。",
+        "visual_intent": "镜头从侧后方弧形绕到她们前方但仍拍背影，运动缓慢平顺，跟随步伐轻轻漂移；瓢虫离开女孩手心到草帽的过程以细小焦点变化呈现，氛围安静亲密，色彩为稻田青绿、晨雾蓝灰和柔金边光。"
+      },
+      {
+        "id": "shot04_noon_veranda_stillness",
+        "duration_s": 7,
+        "story_goal": "以正午静止的阳台收束一天中最小的奇迹，让瓢虫、草帽、风铃和午睡的祖母成为记忆的留白。",
+        "start_state": "正午阳光照在木质阳台上，祖母的草帽放在栏杆上，瓢虫停在帽檐边缘，小女孩坐在阳台边沿吃西瓜，屋内半暗处有午睡铺盖轮廓。",
+        "end_state": "草帽仍停在栏杆上，瓢虫贴着帽檐边缘，女孩拿着西瓜坐在后方虚化处，屋檐下风铃的短纸条偏向一侧，整个阳台画面呈现近乎静止的状态。",
+        "visual_intent": "镜头固定在草帽与瓢虫上，前景清晰、人物退到柔焦背景；节奏极短而安静，只保留一声风铃和正午热气的停顿感，写实电影感，色彩由清晨柔绿转为高亮暖黄。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl",
+        "from_shot": "shot01_veranda_morning_reveal",
+        "to_shot": "shot02_kitchen_miso_and_bowl",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat",
+        "from_shot": "shot02_kitchen_miso_and_bowl",
+        "to_shot": "shot03_paddy_path_ladybug_hat",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness",
+        "from_shot": "shot03_paddy_path_ladybug_hat",
+        "to_shot": "shot04_noon_veranda_stillness",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ]
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "little_girl": {
+        "id": "little_girl"
+      },
+      "grandmother": {
+        "id": "grandmother"
+      }
+    },
+    "location_plan": {
+      "country_cottage": {
+        "id": "country_cottage"
+      },
+      "rice_field_path": {
+        "id": "rice_field_path"
+      }
+    },
+    "prop_plan": {
+      "ladybug": {
+        "id": "ladybug"
+      },
+      "straw_hat": {
+        "id": "straw_hat"
+      },
+      "miso_pot": {
+        "id": "miso_pot"
+      },
+      "bamboo_basket": {
+        "id": "bamboo_basket"
+      },
+      "watermelon_slice": {
+        "id": "watermelon_slice"
+      },
+      "wind_chime": {
+        "id": "wind_chime"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_veranda_feet_start",
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "ladybug"
+        }
+      },
+      {
+        "id": "a02_kitchen_grandmother_start",
+        "reference_inputs": {
+          "portrait": "grandmother",
+          "place": "small_kitchen",
+          "prop": "miso_pot"
+        }
+      },
+      {
+        "id": "a03_paddy_walk_start",
+        "reference_inputs": {
+          "portrait": "little_girl,grandmother",
+          "place": "paddy_path",
+          "prop": "bamboo_basket,straw_hat,ladybug"
+        }
+      },
+      {
+        "id": "a04_noon_hat_start",
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "straw_hat,ladybug,watermelon_slice,wind_chime"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_veranda_morning_reveal",
+        "duration_s": 30,
+        "story_goal": "建立夏日乡村清晨的生活质感，并把女孩与瓢虫的第一次相遇作为整段记忆的温柔起点。",
+        "start_state": "旧木阳台板纹理在近处清晰，小女孩光脚站在木板上，浅色连衣裙裙摆垂下，双手在胸前合拢捧着瓢虫，远山和栏杆仍在背景虚化中。",
+        "end_state": "小女孩、木质阳台、屋檐、栏杆和远处青绿色山脉共同出现在画面里，女孩低头看着手心里的瓢虫，屋内厨房方向保持柔暗。",
+        "visual_intent": "镜头从脚边木板纹理缓慢摇起并轻微后拉，节奏很慢，像清晨刚醒来的呼吸；写实电影风格，声音以虫鸣、远处稻田环境声和屋内锅铲轻响铺底，色彩为暖白晨光与淡绿色山色。"
+      },
+      {
+        "id": "shot02_kitchen_miso_and_bowl",
+        "duration_s": 18,
+        "story_goal": "展现祖母不必言说的照料：她继续做饭，却自然接住女孩的分享，并把日常早餐递给她。",
+        "start_state": "祖母穿白围裙背对镜头站在炉前，右手握木锅铲，左手垂在身侧，味噌汤锅冒出白汽，小窗开着，白窗帘向室内弯起。",
+        "end_state": "小女孩站在祖母身旁，头发被祖母左手轻轻按过后微乱，手心仍半开护着瓢虫，祖母把一只小碗递到女孩面前，汤锅白汽停在二人之间。",
+        "visual_intent": "镜头在厨房内保持克制的中景，先稳定观察祖母背影，再轻微横移容纳女孩进入；节奏温和，动作连贯不强调戏剧冲突，写实家庭纪实风格，暖黄炉光和窗外冷白晨风形成柔和对比。"
+      },
+      {
+        "id": "shot03_paddy_path_ladybug_hat",
+        "duration_s": 24,
+        "story_goal": "把祖孙关系从屋内延伸到乡间路上，让瓢虫成为她们共享的安静秘密，并强化人与自然互不打扰的亲密感。",
+        "start_state": "祖母戴草帽走在稻田边小路前方，手里拎着装有紫色茄子的竹篮，小女孩光脚跟在半步后，双手合拢在身前，远处山脉带着淡淡晨雾。",
+        "end_state": "祖母和小女孩都放慢脚步，瓢虫停在祖母草帽帽檐上，女孩抬眼看着帽檐，祖母的背影微微侧着，竹篮里的茄子在晨光下露出紫色反光。",
+        "visual_intent": "镜头从侧后方弧形绕到她们前方但仍拍背影，运动缓慢平顺，跟随步伐轻轻漂移；瓢虫离开女孩手心到草帽的过程以细小焦点变化呈现，氛围安静亲密，色彩为稻田青绿、晨雾蓝灰和柔金边光。"
+      },
+      {
+        "id": "shot04_noon_veranda_stillness",
+        "duration_s": 7,
+        "story_goal": "以正午静止的阳台收束一天中最小的奇迹，让瓢虫、草帽、风铃和午睡的祖母成为记忆的留白。",
+        "start_state": "正午阳光照在木质阳台上，祖母的草帽放在栏杆上，瓢虫停在帽檐边缘，小女孩坐在阳台边沿吃西瓜，屋内半暗处有午睡铺盖轮廓。",
+        "end_state": "草帽仍停在栏杆上，瓢虫贴着帽檐边缘，女孩拿着西瓜坐在后方虚化处，屋檐下风铃的短纸条偏向一侧，整个阳台画面呈现近乎静止的状态。",
+        "visual_intent": "镜头固定在草帽与瓢虫上，前景清晰、人物退到柔焦背景；节奏极短而安静，只保留一声风铃和正午热气的停顿感，写实电影感，色彩由清晨柔绿转为高亮暖黄。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl",
+        "from_shot": "shot01_veranda_morning_reveal",
+        "to_shot": "shot02_kitchen_miso_and_bowl",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat",
+        "from_shot": "shot02_kitchen_miso_and_bowl",
+        "to_shot": "shot03_paddy_path_ladybug_hat",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness",
+        "from_shot": "shot03_paddy_path_ladybug_hat",
+        "to_shot": "shot04_noon_veranda_stillness",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ],
+    "segments": {
+      "seg_shot04_noon_veranda_stillness_00": {
+        "id": "seg_shot04_noon_veranda_stillness_00",
+        "segment_request": {
+          "prompt": "正午硬阳光晒亮木质阳台，镜头固定在栏杆上的旧草帽和帽檐边缘的红色瓢虫，前景纤维纹理与小黑斑清晰锐利。小女孩穿浅色连衣裙坐在后方柔焦里，手中西瓜只留下红绿一抹，屋内半暗处安静如午睡。热风轻轻掠过屋檐，玻璃风铃只响一声，淡蓝短纸条被吹向一侧后停住；落点停在草帽、瓢虫、偏斜风铃纸条和虚化女孩共同构成的近乎静止画面。",
+          "duration_s": 7,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "straw_hat,ladybug,watermelon_slice,wind_chime"
+        },
+        "shot_id": "shot04_noon_veranda_stillness",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_noon_hat_start"
+      },
+      "seg_shot02_kitchen_miso_and_bowl_00": {
+        "id": "seg_shot02_kitchen_miso_and_bowl_00",
+        "segment_request": {
+          "prompt": "从祖母背对炉灶的安静中开始，白围裙和右手木锅铲保持清晰，味噌汤锅的白汽在暖黄炉光里层层升起。镜头轻微横移，门口传来女孩脚步，小女孩从外面跑进厨房，在祖母身旁停下，浅色连衣裙带着晨光，双手小心摊开给祖母看，红色瓢虫在她掌心成为最细小的焦点。祖母仍不回头，只把锅铲搁在锅沿，左手抬到女孩头顶上方停定，女孩摊开的手心托着瓢虫。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "grandmother",
+          "supporting_portrait": "little_girl",
+          "place": "small_kitchen",
+          "prop": "miso_pot,ladybug"
+        },
+        "shot_id": "shot02_kitchen_miso_and_bowl",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_kitchen_grandmother_start"
+      },
+      "seg_shot02_kitchen_miso_and_bowl_01": {
+        "id": "seg_shot02_kitchen_miso_and_bowl_01",
+        "segment_request": {
+          "prompt": "承接祖母左手停在女孩头顶上方的画面，她没有转身，只以极轻的力度揉过女孩的头发，动作像日常里自然发生的回应。女孩安静仰着脸，掌心仍半开护着那只红色瓢虫，瓢虫的黑点和细腿在柔焦边缘保持可辨；汤锅白汽在二人之间缓慢升起，窗帘被夏风轻轻鼓起。祖母右手托起一只小碗递到女孩面前，左手落在女孩肩侧，女孩微乱的头发、半开的手心和碗口停在同一画面里。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "grandmother,little_girl",
+          "place": "small_kitchen",
+          "prop": "miso_pot,ladybug"
+        },
+        "shot_id": "shot02_kitchen_miso_and_bowl",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_veranda_morning_reveal_00": {
+        "id": "seg_shot01_veranda_morning_reveal_00",
+        "segment_request": {
+          "prompt": "从低角度贴近旧木阳台板开始，木纹、木缝和清晨露痕占据前景，小女孩光脚站在木板上，浅米色连衣裙垂在膝边，双手合拢护着瓢虫。镜头极慢摇起，仍保留木板纹理的重量，虫鸣和远处稻田声很轻，屋内锅铲声若有若无。落点停在女孩赤脚、小腿、裙摆和胸前合拢双手同框的静定画面。",
+          "duration_s": 12,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "ladybug"
+        },
+        "shot_id": "shot01_veranda_morning_reveal",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_veranda_feet_start"
+      },
+      "seg_shot01_veranda_morning_reveal_01": {
+        "id": "seg_shot01_veranda_morning_reveal_01",
+        "segment_request": {
+          "prompt": "接着女孩赤脚和裙摆的低角度构图，镜头继续缓慢摇起并轻微后拉，让她胸前合拢的手成为画面中心。瓢虫被她小心护在掌心，红色小点在浅色手指间格外醒目，女孩的下巴和低垂视线逐渐进入画面，神情安静好奇。落点停在女孩上半身、合拢手心与身后木栏杆共同清晰的静定画面。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "ladybug"
+        },
+        "shot_id": "shot01_veranda_morning_reveal",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_veranda_morning_reveal_02": {
+        "id": "seg_shot01_veranda_morning_reveal_02",
+        "segment_request": {
+          "prompt": "从女孩低头看手心的半身画面继续后拉，镜头把阳台空间慢慢打开：旧木地板延伸到栏杆，屋檐阴影压在上方，远处青绿色山脉在晨光里显出轮廓。女孩始终安静站立，浅色连衣裙、光脚和掌心瓢虫保持清楚，屋内厨房方向留在柔暗处，只传来轻轻锅铲声。落点停在女孩、木质阳台、屋檐、栏杆、远山和柔暗屋内方向共同入画的静定宽景。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl",
+          "place": "wooden_veranda",
+          "prop": "ladybug"
+        },
+        "shot_id": "shot01_veranda_morning_reveal",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot03_paddy_path_ladybug_hat_00": {
+        "id": "seg_shot03_paddy_path_ladybug_hat_00",
+        "segment_request": {
+          "prompt": "从低位侧后方接住祖母和小女孩的背影，祖母戴草帽、穿围裙，手拎装着紫色茄子的竹篮走在前方，小女孩光脚跟在半步后，浅色连衣裙被晨风轻轻贴住。镜头沿稻田边小路缓慢弧形绕行，青绿稻浪和远山薄雾在她们身后铺开。女孩合拢的双手逐渐放松，掌心里那只红色瓢虫被一束金色侧逆光照亮，黑色斑点在浅景深中短暂清晰，镜头停在女孩半开的手心和前方祖母草帽同框的位置。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl,grandmother",
+          "place": "paddy_path",
+          "prop": "bamboo_basket,straw_hat,ladybug"
+        },
+        "shot_id": "shot03_paddy_path_ladybug_hat",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_paddy_walk_start"
+      },
+      "seg_shot03_paddy_path_ladybug_hat_01": {
+        "id": "seg_shot03_paddy_path_ladybug_hat_01",
+        "segment_request": {
+          "prompt": "从女孩半开的手心继续，红色瓢虫在掌纹边缘抬起鞘翅，细小透明翅膀被晨光照成一粒闪动的亮点。镜头不追得太急，只让焦点从女孩掌心柔柔漂向祖母草帽，背景里的稻浪、远山薄雾和祖母手中的竹篮保持安静。瓢虫的飞行弧线很短，像一颗红点越过两人之间的空气，最后落在祖母草帽右侧帽檐边缘停定。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl,grandmother",
+          "place": "paddy_path",
+          "prop": "ladybug,straw_hat"
+        },
+        "shot_id": "shot03_paddy_path_ladybug_hat",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot03_paddy_path_ladybug_hat_02": {
+        "id": "seg_shot03_paddy_path_ladybug_hat_02",
+        "segment_request": {
+          "prompt": "瓢虫已经停在祖母草帽帽檐上，祖母和小女孩像同时听见了很轻的秘密，步伐自然放慢却不惊动它。镜头继续从侧后绕到更靠前的位置，仍以背影为主，女孩浅色连衣裙和光脚贴着湿土小路，抬眼看向那枚红点；祖母背影微微侧着，手中竹篮轻垂，几只紫色茄子在金色晨光里泛出柔亮反光。最后画面停在瓢虫、草帽、女孩视线和竹篮茄子共同清晰的安静构图。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "little_girl,grandmother",
+          "place": "paddy_path",
+          "prop": "bamboo_basket,ladybug"
+        },
+        "shot_id": "shot03_paddy_path_ladybug_hat",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl",
+        "bridge_request": {
+          "prompt": "从阳台宽景中镜头沿着屋檐阴影向纸拉门方向平稳推进，清晨山色和女孩身影在门框边缘逐渐滑出画面；木门框暗部放大占满两侧，外面的虫鸣被室内锅铲轻响和汤锅轻沸声替代；镜头穿过半开的门口进入小厨房，暖黄炉光和白色蒸汽显露出来，最终稳定在祖母背对炉灶的起始构图。",
+          "duration_s": 4,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot01_veranda_morning_reveal",
+        "to_shot": "shot02_kitchen_miso_and_bowl"
+      },
+      {
+        "id": "tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat",
+        "bridge_request": {
+          "prompt": "厨房里汤锅白汽在画面中缓慢扩散，蒸汽边缘与敞开小窗外的晨光融在一起；镜头向小窗靠近，白窗帘掠过画面前景，室内暖黄逐渐变成稻田反射的青绿色光；穿过窗帘的瞬间，锅铲声淡出，虫鸣和脚踩湿土的小声响浮现，窗外田埂线条自然延展成稻田边小路，落到祖母和女孩并行出发的起始画面。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot02_kitchen_miso_and_bowl",
+        "to_shot": "shot03_paddy_path_ladybug_hat"
+      },
+      {
+        "id": "tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness",
+        "bridge_request": {
+          "prompt": "稻田边草帽上的瓢虫保持在画面焦点，远山晨雾和稻浪逐渐被明亮热气模糊；画面色温从清晨金绿缓慢升高为正午暖黄，草帽的编织纹理持续占据中心，背景由田埂和背影柔化转变为木质阳台栏杆；虫鸣变稀，屋檐下风铃的玻璃反光出现，最终草帽落在阳台栏杆上，瓢虫停在帽檐边缘，进入正午阳台起始构图。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot03_paddy_path_ladybug_hat",
+        "to_shot": "shot04_noon_veranda_stillness"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "grandmother": "https://net-oss.akclau.de/reca/summer-veranda/portraits/grandmother.png",
+      "little_girl": "https://net-oss.akclau.de/reca/summer-veranda/portraits/little_girl.png"
+    },
+    "locations": {
+      "country_cottage": "https://net-oss.akclau.de/reca/summer-veranda/locations/country_cottage.png",
+      "rice_field_path": "https://net-oss.akclau.de/reca/summer-veranda/locations/rice_field_path.png"
+    },
+    "props": {
+      "bamboo_basket": "https://net-oss.akclau.de/reca/summer-veranda/props/bamboo_basket.png",
+      "ladybug": "https://net-oss.akclau.de/reca/summer-veranda/props/ladybug.png",
+      "miso_pot": "https://net-oss.akclau.de/reca/summer-veranda/props/miso_pot.png",
+      "straw_hat": "https://net-oss.akclau.de/reca/summer-veranda/props/straw_hat.png",
+      "watermelon_slice": "https://net-oss.akclau.de/reca/summer-veranda/props/watermelon_slice.png",
+      "wind_chime": "https://net-oss.akclau.de/reca/summer-veranda/props/wind_chime.png"
+    },
+    "anchors": {
+      "a01_veranda_feet_start": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a01_veranda_feet_start.png",
+      "a02_kitchen_grandmother_start": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a02_kitchen_grandmother_start.png",
+      "a03_paddy_walk_start": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a03_paddy_walk_start.png",
+      "a04_noon_hat_start": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a04_noon_hat_start.png"
+    },
+    "segments": {
+      "seg_shot01_veranda_morning_reveal_00": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_00.tail.png",
+      "seg_shot01_veranda_morning_reveal_01": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_01.tail.png",
+      "seg_shot01_veranda_morning_reveal_02": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_02.tail.png",
+      "seg_shot02_kitchen_miso_and_bowl_00": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_00.tail.png",
+      "seg_shot02_kitchen_miso_and_bowl_01": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_01.tail.png",
+      "seg_shot03_paddy_path_ladybug_hat_00": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_00.tail.png",
+      "seg_shot03_paddy_path_ladybug_hat_01": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_01.tail.png",
+      "seg_shot03_paddy_path_ladybug_hat_02": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_02.tail.png",
+      "seg_shot04_noon_veranda_stillness_00": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot04_noon_veranda_stillness_00.tail.png"
+    },
+    "bridges": {
+      "tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl.mp4",
+      "tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat.mp4",
+      "tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness.mp4"
+    },
+    "final_mp4": "https://net-oss.akclau.de/reca/summer-veranda/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 4,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "grandmother",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/portraits/grandmother.png",
+      "t": 10.75
+    },
+    {
+      "type": "portrait_ready",
+      "id": "little_girl",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/portraits/little_girl.png",
+      "t": 10.85
+    },
+    {
+      "type": "location_ready",
+      "id": "country_cottage",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/locations/country_cottage.png",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "rice_field_path",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/locations/rice_field_path.png",
+      "t": 11.05
+    },
+    {
+      "type": "prop_ready",
+      "id": "bamboo_basket",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/bamboo_basket.png",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "ladybug",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/ladybug.png",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "miso_pot",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/miso_pot.png",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "straw_hat",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/straw_hat.png",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "watermelon_slice",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/watermelon_slice.png",
+      "t": 11.55
+    },
+    {
+      "type": "prop_ready",
+      "id": "wind_chime",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/props/wind_chime.png",
+      "t": 11.65
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 4 shots — seeds the I2V chain…",
+      "t": 11.7
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_veranda_feet_start",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a01_veranda_feet_start.png",
+      "t": 16.85
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_kitchen_grandmother_start",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a02_kitchen_grandmother_start.png",
+      "t": 17.0
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_paddy_walk_start",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a03_paddy_walk_start.png",
+      "t": 17.15
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_noon_hat_start",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/anchors/a04_noon_hat_start.png",
+      "t": 17.3
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 17.35
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 9,
+      "t": 22.75
+    },
+    {
+      "type": "render_start",
+      "t": 22.85
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "9 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 22.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_veranda_morning_reveal_00",
+      "shot_id": "shot01_veranda_morning_reveal",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_00.tail.png",
+      "duration_s": 8.0,
+      "t": 33.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_kitchen_miso_and_bowl_00",
+      "shot_id": "shot02_kitchen_miso_and_bowl",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_paddy_path_ladybug_hat_00",
+      "shot_id": "shot03_paddy_path_ladybug_hat",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_noon_veranda_stillness_00",
+      "shot_id": "shot04_noon_veranda_stillness",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot04_noon_veranda_stillness_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot04_noon_veranda_stillness_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.8
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_veranda_morning_reveal_01",
+      "shot_id": "shot01_veranda_morning_reveal",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_01.tail.png",
+      "duration_s": 8.0,
+      "t": 39.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_kitchen_miso_and_bowl_01",
+      "shot_id": "shot02_kitchen_miso_and_bowl",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot02_kitchen_miso_and_bowl_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_paddy_path_ladybug_hat_01",
+      "shot_id": "shot03_paddy_path_ladybug_hat",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.5
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_veranda_morning_reveal_02",
+      "shot_id": "shot01_veranda_morning_reveal",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot01_veranda_morning_reveal_02.tail.png",
+      "duration_s": 8.0,
+      "t": 45.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_paddy_path_ladybug_hat_02",
+      "shot_id": "shot03_paddy_path_ladybug_hat",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/summer-veranda/segment_tails/seg_shot03_paddy_path_ladybug_hat_02.tail.png",
+      "duration_s": 8.0,
+      "t": 46.5
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Cross-shot bridges",
+      "detail": "Stitching shot pairs with short transition clips…",
+      "t": 46.55
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr01_veranda_morning_reveal_to_kitchen_miso_and_bowl.mp4",
+      "duration_s": 4.0,
+      "t": 51.67
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr02_kitchen_miso_and_bowl_to_paddy_path_ladybug_hat.mp4",
+      "duration_s": 4.0,
+      "t": 51.79
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/bridges/tr03_paddy_path_ladybug_hat_to_noon_veranda_stillness.mp4",
+      "duration_s": 4.0,
+      "t": 51.91
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 51.96
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/summer-veranda/final.mp4",
+      "t": 57.56
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/summer-veranda/final.mp4",
+      "total_s": 57.6,
+      "t": 57.76
+    }
+  ],
+  "timeline_duration_s": 57.8
+}

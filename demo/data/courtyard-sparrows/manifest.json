@@ -1,0 +1,590 @@
+{
+  "demo_id": "courtyard-sparrows",
+  "slug": "courtyard-sparrows",
+  "title": "Courtyard Sparrows",
+  "is_rerun": false,
+  "n_shots": 4,
+  "n_segments": 6,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "middle_aged_host"
+      }
+    ],
+    "location_plan": {
+      "courtyard": {
+        "id": "courtyard",
+        "props": {
+          "broom": {
+            "name": "竹扫帚",
+            "owner": "courtyard",
+            "prompt": "老式竹枝扎制扫帚, 把手缠褪色蓝布条, 竹枝末端微散开带泥土与雪水痕迹, 斜靠木质立柱静态摆放, 侧光突出竹纹粗糙质感",
+            "negative_prompt": "塑料材质, 崭新反光, 悬浮, 变形, 背景杂乱"
+          },
+          "enamel_bowl": {
+            "name": "搪瓷小碗装小米",
+            "owner": "middle_aged_host",
+            "prompt": "白底红边复古搪瓷碗, 碗口微磕碰露黑铁胎, 内盛金黄小米堆至八分满, 米粒颗粒分明干燥, 静置状态, 顶光照射呈现温润漫反射",
+            "negative_prompt": "陶瓷质感, 塑料碗, 液体溢出, 模糊粘连, 过度锐化, 文字水印"
+          }
+        }
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_sweep_done_start",
+          "reference_inputs": {
+            "portrait": "middle_aged_host",
+            "place": "courtyard",
+            "prop": "broom,enamel_bowl"
+          }
+        },
+        {
+          "id": "a02_sparrows_land_start",
+          "reference_inputs": {
+            "portrait": "middle_aged_host",
+            "place": "courtyard",
+            "prop": "enamel_bowl"
+          }
+        },
+        {
+          "id": "a03_birds_takeoff_start",
+          "reference_inputs": {
+            "portrait": "middle_aged_host",
+            "place": "courtyard",
+            "prop": "enamel_bowl"
+          }
+        },
+        {
+          "id": "a04_gate_greeting_start",
+          "reference_inputs": {
+            "portrait": "middle_aged_host",
+            "place": "courtyard",
+            "prop": ""
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_sweep_done_bring_bowl",
+        "duration_s": 6,
+        "story_goal": "交代冬日小院环境与生活气息, 建立女主人劳作后准备喂鸟的日常节奏基线",
+        "start_state": "女主人端搪瓷碗立于屋檐下, 扫帚靠柱, 地面边角留薄雪堆",
+        "end_state": "女主人弯腰将小米均匀撒在靠墙青砖上, 碗底朝下微倾, 米粒刚触地散开",
+        "visual_intent": "镜头固定微俯, 缓慢下摇跟随端碗到撒米动作, 节奏平稳舒缓, 写实生活流, 冷调环境光中突出小米暖色, 氛围宁静"
+      },
+      {
+        "id": "shot02_sparrows_approach_peck",
+        "duration_s": 24,
+        "story_goal": "展现人与麻雀之间试探与信任的微妙互动, 强化冬日清晨的生命力与耐心",
+        "start_state": "小米散落青砖, 女主人蹲于窗台边膝放碗, 麻雀落在半米外地面",
+        "end_state": "麻雀群聚在米粒处低头快速啄食, 女主人仍蹲原处凝视, 呼吸平稳",
+        "visual_intent": "手持微距感缓推, 焦点从女主人面部平滑过渡至地面麻雀, 随麻雀跳跃小幅度呼吸式跟移, 节奏极慢留白, 纪实电影风格, 自然光色温随云层微变, 氛围克制亲密"
+      },
+      {
+        "id": "shot03_birds_leave_tidy_up",
+        "duration_s": 8,
+        "story_goal": "完成喂食动作闭环, 通过整理扫帚的细节延续人物勤快温和的性格刻画",
+        "start_state": "地面小米已空, 女主人蹲姿抬头微笑, 麻雀展翅刚离地",
+        "end_state": "女主人直立站在屋檐下, 手中空碗已收起, 正伸手将靠柱扫帚扶正摆齐",
+        "visual_intent": "镜头从低角度缓慢上摇并后拉, 跟随起身动作展开空间, 节奏由静转动再归于平稳, 写实叙事, 暖光增强, 氛围松弛满足"
+      },
+      {
+        "id": "shot04_gate_greeting",
+        "duration_s": 5,
+        "story_goal": "以院外邻里声响打破院内静谧, 将私人日常延伸至社区人情, 自然收尾",
+        "start_state": "女主人立于半开院门内, 手扶门框侧头望向门外左侧",
+        "end_state": "女主人身体微前倾, 嘴唇微张呈打招呼口型, 门外自行车光影掠过",
+        "visual_intent": "镜头固定于门洞构图, 利用门框做天然画框, 焦点锁定人物侧脸, 节奏轻快干脆, 生活纪实感, 内外光比突出, 氛围日常亲切"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_sweep_to_feed",
+        "from_shot": "shot01_sweep_done_bring_bowl",
+        "to_shot": "shot02_sparrows_approach_peck",
+        "mode": "cut",
+        "duration_s": null,
+        "first_frame": null,
+        "last_frame": null
+      },
+      {
+        "id": "tr02_feed_to_tidy",
+        "from_shot": "shot02_sparrows_approach_peck",
+        "to_shot": "shot03_birds_leave_tidy_up",
+        "mode": "cut",
+        "duration_s": null,
+        "first_frame": null,
+        "last_frame": null
+      },
+      {
+        "id": "tr03_tidy_to_gate",
+        "from_shot": "shot03_birds_leave_tidy_up",
+        "to_shot": "shot04_gate_greeting",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ]
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "middle_aged_host": {
+        "id": "middle_aged_host"
+      }
+    },
+    "location_plan": {
+      "courtyard": {
+        "id": "courtyard"
+      }
+    },
+    "prop_plan": {
+      "broom": {
+        "id": "broom"
+      },
+      "enamel_bowl": {
+        "id": "enamel_bowl"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_sweep_done_start",
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": "broom,enamel_bowl"
+        }
+      },
+      {
+        "id": "a02_sparrows_land_start",
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": "enamel_bowl"
+        }
+      },
+      {
+        "id": "a03_birds_takeoff_start",
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": "enamel_bowl"
+        }
+      },
+      {
+        "id": "a04_gate_greeting_start",
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": ""
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_sweep_done_bring_bowl",
+        "duration_s": 6,
+        "story_goal": "交代冬日小院环境与生活气息, 建立女主人劳作后准备喂鸟的日常节奏基线",
+        "start_state": "女主人端搪瓷碗立于屋檐下, 扫帚靠柱, 地面边角留薄雪堆",
+        "end_state": "女主人弯腰将小米均匀撒在靠墙青砖上, 碗底朝下微倾, 米粒刚触地散开",
+        "visual_intent": "镜头固定微俯, 缓慢下摇跟随端碗到撒米动作, 节奏平稳舒缓, 写实生活流, 冷调环境光中突出小米暖色, 氛围宁静"
+      },
+      {
+        "id": "shot02_sparrows_approach_peck",
+        "duration_s": 24,
+        "story_goal": "展现人与麻雀之间试探与信任的微妙互动, 强化冬日清晨的生命力与耐心",
+        "start_state": "小米散落青砖, 女主人蹲于窗台边膝放碗, 麻雀落在半米外地面",
+        "end_state": "麻雀群聚在米粒处低头快速啄食, 女主人仍蹲原处凝视, 呼吸平稳",
+        "visual_intent": "手持微距感缓推, 焦点从女主人面部平滑过渡至地面麻雀, 随麻雀跳跃小幅度呼吸式跟移, 节奏极慢留白, 纪实电影风格, 自然光色温随云层微变, 氛围克制亲密"
+      },
+      {
+        "id": "shot03_birds_leave_tidy_up",
+        "duration_s": 8,
+        "story_goal": "完成喂食动作闭环, 通过整理扫帚的细节延续人物勤快温和的性格刻画",
+        "start_state": "地面小米已空, 女主人蹲姿抬头微笑, 麻雀展翅刚离地",
+        "end_state": "女主人直立站在屋檐下, 手中空碗已收起, 正伸手将靠柱扫帚扶正摆齐",
+        "visual_intent": "镜头从低角度缓慢上摇并后拉, 跟随起身动作展开空间, 节奏由静转动再归于平稳, 写实叙事, 暖光增强, 氛围松弛满足"
+      },
+      {
+        "id": "shot04_gate_greeting",
+        "duration_s": 5,
+        "story_goal": "以院外邻里声响打破院内静谧, 将私人日常延伸至社区人情, 自然收尾",
+        "start_state": "女主人立于半开院门内, 手扶门框侧头望向门外左侧",
+        "end_state": "女主人身体微前倾, 嘴唇微张呈打招呼口型, 门外自行车光影掠过",
+        "visual_intent": "镜头固定于门洞构图, 利用门框做天然画框, 焦点锁定人物侧脸, 节奏轻快干脆, 生活纪实感, 内外光比突出, 氛围日常亲切"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_sweep_to_feed",
+        "from_shot": "shot01_sweep_done_bring_bowl",
+        "to_shot": "shot02_sparrows_approach_peck",
+        "mode": "cut",
+        "duration_s": null,
+        "first_frame": null,
+        "last_frame": null
+      },
+      {
+        "id": "tr02_feed_to_tidy",
+        "from_shot": "shot02_sparrows_approach_peck",
+        "to_shot": "shot03_birds_leave_tidy_up",
+        "mode": "cut",
+        "duration_s": null,
+        "first_frame": null,
+        "last_frame": null
+      },
+      {
+        "id": "tr03_tidy_to_gate",
+        "from_shot": "shot03_birds_leave_tidy_up",
+        "to_shot": "shot04_gate_greeting",
+        "mode": "bridge",
+        "duration_s": 4,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ],
+    "segments": {
+      "seg_shot02_sparrows_approach_peck_00": {
+        "id": "seg_shot02_sparrows_approach_peck_00",
+        "segment_request": {
+          "prompt": "镜头从女主人低垂的面部缓缓下移, 焦点平滑落向青砖地面。三只麻雀在距米粒半米处停顿, 胸脯微微起伏, 爪尖在冷硬的砖面上试探性前挪。侧逆光勾勒出它们蓬松的灰褐羽毛与地面拉长的浅影, 空气仿佛凝滞。女主人膝头的搪瓷碗纹丝不动, 藏蓝棉服袖口自然垂落, 呼吸轻缓不惊扰半分。镜头随麻雀的微小跳跃做极轻微的呼吸式跟移, 节奏克制而充满张力。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": "enamel_bowl"
+        },
+        "shot_id": "shot02_sparrows_approach_peck",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_sparrows_land_start"
+      },
+      "seg_shot02_sparrows_approach_peck_01": {
+        "id": "seg_shot02_sparrows_approach_peck_01",
+        "segment_request": {
+          "prompt": "领头麻雀终于跃入米堆, 喙尖快速啄起第一粒金黄小米, 喉部微动吞咽。其余两只见状卸下戒备, 接连跳入光斑覆盖的砖面。镜头极缓前推, 焦点牢牢锁住地面啄食的细微动态, 麻雀翅膀偶尔轻颤抖落浮尘。背景里女主人仍保持蹲姿, 藏蓝棉服与灰围巾在冷调晨光中静默, 视线始终温和垂落。自然光随薄云掠过微微转暖, 砖面反光泛起柔和漫射。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard"
+        },
+        "shot_id": "shot02_sparrows_approach_peck",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot02_sparrows_approach_peck_02": {
+        "id": "seg_shot02_sparrows_approach_peck_02",
+        "segment_request": {
+          "prompt": "麻雀群彻底放松, 低头快速而规律地啄食, 细碎喙击节奏稳定。镜头停止推进, 仅随鸟群微小的重心偏移做极轻微波动, 维持纪实呼吸感。女主人蹲在窗台边的姿态始终未变, 微红的面颊在柔光中透出平静笑意, 呼吸平稳绵长。青砖地上的金黄米粒逐渐减少, 冷白环境光与暖黄直射光在砖缝间交织, 画面归于冬日清晨特有的安宁与亲密。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard"
+        },
+        "shot_id": "shot02_sparrows_approach_peck",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      },
+      "seg_shot04_gate_greeting_00": {
+        "id": "seg_shot04_gate_greeting_00",
+        "segment_request": {
+          "prompt": "镜头固定于门洞构图, 利用木质门框作天然画框, 焦点始终锁定女主人侧脸。她藏蓝棉服与灰围巾轮廓稳定, 右手轻扶门边, 听见铃声后身体自然微向前倾, 嘴唇缓缓张开呈日常打招呼的口型。门外高亮冷白光漫射入门洞, 自行车掠过的动态光影在灰墙与门框边缘快速扫过, 明暗交界线在她面颊上轻微游移, 节奏轻快干脆, 生活纪实氛围浓厚。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard"
+        },
+        "shot_id": "shot04_gate_greeting",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_gate_greeting_start"
+      },
+      "seg_shot03_birds_leave_tidy_up_00": {
+        "id": "seg_shot03_birds_leave_tidy_up_00",
+        "segment_request": {
+          "prompt": "镜头从低角度缓慢上摇并后拉, 紧密跟随女主人从蹲姿缓缓站起的连贯动作展开院落纵深。她膝上的空搪瓷碗随重心抬升自然收至臂弯, 视线仍追随麻雀飞远的方向, 嘴角笑意柔和。暖黄晨光顺侧铺满青砖地, 她向屋檐下迈出两步停住, 右手平稳伸出握住斜靠木柱的竹扫帚把手, 将其轻轻扶正贴紧墙面, 动作至此停定, 左臂弯抱碗贴于腰侧, 身体微侧面向扫帚, 暖黄侧光清晰勾勒棉服褶皱与扫帚粗糙竹纹。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "place": "courtyard",
+          "prop": "broom,enamel_bowl"
+        },
+        "shot_id": "shot03_birds_leave_tidy_up",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_birds_takeoff_start"
+      },
+      "seg_shot01_sweep_done_bring_bowl_00": {
+        "id": "seg_shot01_sweep_done_bring_bowl_00",
+        "segment_request": {
+          "prompt": "女主人双手端着白底红边搪瓷碗立于屋檐下, 藏蓝棉服在冷白晨光中泛着柔和质感。她身体缓缓前倾弯腰, 镜头微俯随之平稳下摇, 视线跟随碗口向靠墙的青砖地面靠近。碗底微倾的瞬间, 金黄小米如细沙般均匀洒落, 在冷调青砖上跃出温暖亮色, 米粒触地散开的轨迹清晰可见, 整体节奏舒缓宁静。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "middle_aged_host",
+          "supporting_portrait": "",
+          "place": "courtyard",
+          "prop": "broom,enamel_bowl"
+        },
+        "shot_id": "shot01_sweep_done_bring_bowl",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_sweep_done_start"
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr03_tidy_to_gate",
+        "bridge_request": {
+          "prompt": "镜头从屋檐下扶正的扫帚处平滑右移, 掠过青砖地面与残雪堆, 穿过半掩的木质院门门洞; 门外胡同的冷白光逐渐渗入画面, 自行车铃铛的金属反光在门框边缘一闪而过, 视角自然落至门内女主人侧影, 环境音由院内风声过渡为胡同空旷回响",
+          "duration_s": 4,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot03_birds_leave_tidy_up",
+        "to_shot": "shot04_gate_greeting"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "middle_aged_host": "https://net-oss.akclau.de/reca/courtyard-sparrows/portraits/middle_aged_host.png"
+    },
+    "locations": {
+      "courtyard": "https://net-oss.akclau.de/reca/courtyard-sparrows/locations/courtyard.png"
+    },
+    "props": {
+      "broom": "https://net-oss.akclau.de/reca/courtyard-sparrows/props/broom.png",
+      "enamel_bowl": "https://net-oss.akclau.de/reca/courtyard-sparrows/props/enamel_bowl.png"
+    },
+    "anchors": {
+      "a01_sweep_done_start": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a01_sweep_done_start.png",
+      "a02_sparrows_land_start": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a02_sparrows_land_start.png",
+      "a03_birds_takeoff_start": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a03_birds_takeoff_start.png",
+      "a04_gate_greeting_start": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a04_gate_greeting_start.png"
+    },
+    "segments": {
+      "seg_shot01_sweep_done_bring_bowl_00": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot01_sweep_done_bring_bowl_00.tail.png",
+      "seg_shot02_sparrows_approach_peck_00": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_00.tail.png",
+      "seg_shot02_sparrows_approach_peck_01": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_01.tail.png",
+      "seg_shot02_sparrows_approach_peck_02": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_02.tail.png",
+      "seg_shot03_birds_leave_tidy_up_00": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot03_birds_leave_tidy_up_00.tail.png",
+      "seg_shot04_gate_greeting_00": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot04_gate_greeting_00.tail.png"
+    },
+    "bridges": {
+      "tr03_tidy_to_gate": "https://net-oss.akclau.de/reca/courtyard-sparrows/bridges/tr03_tidy_to_gate.mp4"
+    },
+    "final_mp4": "https://net-oss.akclau.de/reca/courtyard-sparrows/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 4,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "middle_aged_host",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/portraits/middle_aged_host.png",
+      "t": 10.75
+    },
+    {
+      "type": "location_ready",
+      "id": "courtyard",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/locations/courtyard.png",
+      "t": 10.85
+    },
+    {
+      "type": "prop_ready",
+      "id": "broom",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/props/broom.png",
+      "t": 10.95
+    },
+    {
+      "type": "prop_ready",
+      "id": "enamel_bowl",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/props/enamel_bowl.png",
+      "t": 11.05
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 4 shots — seeds the I2V chain…",
+      "t": 11.1
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_sweep_done_start",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a01_sweep_done_start.png",
+      "t": 16.25
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_sparrows_land_start",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a02_sparrows_land_start.png",
+      "t": 16.4
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_birds_takeoff_start",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a03_birds_takeoff_start.png",
+      "t": 16.55
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_gate_greeting_start",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/anchors/a04_gate_greeting_start.png",
+      "t": 16.7
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 16.75
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 6,
+      "t": 22.15
+    },
+    {
+      "type": "render_start",
+      "t": 22.25
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "6 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 22.3
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_sweep_done_bring_bowl_00",
+      "shot_id": "shot01_sweep_done_bring_bowl",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot01_sweep_done_bring_bowl_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot01_sweep_done_bring_bowl_00.tail.png",
+      "duration_s": 8.0,
+      "t": 33.3
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_sparrows_approach_peck_00",
+      "shot_id": "shot02_sparrows_approach_peck",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_00.tail.png",
+      "duration_s": 8.0,
+      "t": 33.6
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_birds_leave_tidy_up_00",
+      "shot_id": "shot03_birds_leave_tidy_up",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot03_birds_leave_tidy_up_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot03_birds_leave_tidy_up_00.tail.png",
+      "duration_s": 8.0,
+      "t": 33.9
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_gate_greeting_00",
+      "shot_id": "shot04_gate_greeting",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot04_gate_greeting_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot04_gate_greeting_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.2
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_sparrows_approach_peck_01",
+      "shot_id": "shot02_sparrows_approach_peck",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_01.tail.png",
+      "duration_s": 8.0,
+      "t": 39.6
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_sparrows_approach_peck_02",
+      "shot_id": "shot02_sparrows_approach_peck",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/segment_tails/seg_shot02_sparrows_approach_peck_02.tail.png",
+      "duration_s": 8.0,
+      "t": 45.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Cross-shot bridges",
+      "detail": "Stitching shot pairs with short transition clips…",
+      "t": 45.65
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr03_tidy_to_gate",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/bridges/tr03_tidy_to_gate.mp4",
+      "duration_s": 4.0,
+      "t": 50.77
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 50.82
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/courtyard-sparrows/final.mp4",
+      "t": 56.42
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/final.mp4",
+      "total_s": 56.4,
+      "t": 56.62
+    }
+  ],
+  "timeline_duration_s": 56.6
+}

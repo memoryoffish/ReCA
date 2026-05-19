@@ -49,7 +49,37 @@
       "n_segments": 30,
       "timeline_duration_s": 69.8,
       "poster_url": "https://net-oss.akclau.de/reca/heavenly-titans/final.mp4"
+    },
+    {
+      "demo_id": "courtyard-sparrows",
+      "slug": "courtyard-sparrows",
+      "title": "Courtyard Sparrows",
+      "is_rerun": false,
+      "n_shots": 4,
+      "n_segments": 6,
+      "timeline_duration_s": 56.6,
+      "poster_url": "https://net-oss.akclau.de/reca/courtyard-sparrows/final.mp4"
+    },
+    {
+      "demo_id": "morning-commute",
+      "slug": "morning-commute",
+      "title": "Morning Commute",
+      "is_rerun": false,
+      "n_shots": 4,
+      "n_segments": 9,
+      "timeline_duration_s": 57.7,
+      "poster_url": "https://net-oss.akclau.de/reca/morning-commute/final.mp4"
+    },
+    {
+      "demo_id": "summer-veranda",
+      "slug": "summer-veranda",
+      "title": "Summer Veranda",
+      "is_rerun": false,
+      "n_shots": 4,
+      "n_segments": 9,
+      "timeline_duration_s": 57.8,
+      "poster_url": "https://net-oss.akclau.de/reca/summer-veranda/final.mp4"
     }
   ],
-  "generated_at": "2026-05-15T02:49:28.738158+00:00"
+  "generated_at": "2026-05-19T13:18:54.296942+00:00"
 }

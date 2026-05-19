@@ -1,0 +1,862 @@
+{
+  "demo_id": "morning-commute",
+  "slug": "morning-commute",
+  "title": "Morning Commute",
+  "is_rerun": false,
+  "n_shots": 4,
+  "n_segments": 9,
+  "skeleton": {
+    "portrait_plan": [
+      {
+        "id": "young_woman"
+      }
+    ],
+    "location_plan": {
+      "small_apartment": {
+        "id": "small_apartment",
+        "key_zones": [
+          {
+            "id": "bathroom_mirror_zone"
+          }
+        ],
+        "props": {
+          "dripping_faucet": {
+            "name": "滴水水龙头",
+            "owner": "small_apartment",
+            "prompt": "普通银色洗手池水龙头，表面有使用痕迹和细小水渍，龙头口悬着一滴未落下的水珠，白色陶瓷洗手池边缘略旧，清晨冷光反射在金属表面，静态道具参考图。",
+            "negative_prompt": "金色奢华水龙头, 破损严重, 喷水, 血迹, 卡通, 低清晰度, 文字, 水印"
+          },
+          "alarm_clock": {
+            "name": "响第二轮的闹钟",
+            "owner": "young_woman",
+            "prompt": "普通小型电子闹钟，黑灰色塑料外壳，数字显示 06:40，放在窄小置物架或门边矮柜上，屏幕发出微弱绿色光，外观廉价实用，清晨室内冷暖混合光照，静态道具参考图。",
+            "negative_prompt": "复古机械闹钟, 豪华智能音箱, 夸张发光, 品牌标识, 文字水印, 卡通, 畸形数字"
+          },
+          "hair_tie": {
+            "name": "普通发圈",
+            "owner": "young_woman",
+            "prompt": "一根普通黑色弹力发圈，略有使用痕迹，细小织物纹理清晰，放在洗手池边缘或套在女子手腕上，低调生活化，没有装饰，没有亮片，柔和清晨光照，静态道具参考图。",
+            "negative_prompt": "华丽发饰, 蝴蝶结, 珠宝, 彩色荧光, 夸张装饰, 卡通, 文字, 水印"
+          }
+        }
+      },
+      "apartment_stairwell": {
+        "id": "apartment_stairwell",
+        "key_zones": [
+          {
+            "id": "stairwell_landing_zone"
+          }
+        ],
+        "props": {
+          "emergency_light": {
+            "name": "未更换的应急灯",
+            "owner": "apartment_stairwell",
+            "prompt": "楼梯间墙面上的老式应急灯，塑料外壳略泛黄，发出微弱偏绿色光，周围墙面有灰尘和旧痕，清晨环境暗部明显，静态道具参考图。",
+            "negative_prompt": "强烈舞台灯, 彩色霓虹, 崭新豪华灯具, 破碎爆炸, 卡通, 文字, 水印"
+          }
+        }
+      },
+      "subway_car": {
+        "id": "subway_car",
+        "key_zones": [
+          {
+            "id": "crowded_subway_zone"
+          }
+        ],
+        "props": {
+          "metal_earbud": {
+            "name": "金属外圈耳机",
+            "owner": "young_woman",
+            "prompt": "一只入耳式耳机，外圈为低调银灰金属材质，贴近耳侧，细节清晰但没有品牌标志，耳机线或小型无线结构均可，清晨地铁冷白灯下有微弱反光，静态道具参考图。",
+            "negative_prompt": "夸张电竞耳机, 巨大头戴式耳机, 品牌标识, 彩色灯光, 卡通, 低清晰度, 文字, 水印"
+          }
+        }
+      },
+      "office_workstation": {
+        "id": "office_workstation",
+        "key_zones": [
+          {
+            "id": "desk_monitor_zone"
+          }
+        ],
+        "props": {
+          "convenience_store_coffee": {
+            "name": "便利店咖啡",
+            "owner": "young_woman",
+            "prompt": "一杯路上买的便利店热咖啡，普通纸杯和塑料杯盖，没有可识别品牌，杯身有浅色印刷块但文字不可读，放在电脑键盘旁，杯盖边缘有轻微热气凝结，清晨办公室冷白光，静态道具参考图。",
+            "negative_prompt": "奢华咖啡杯, 品牌商标, 清晰文字, 夸张蒸汽, 洒出液体, 卡通, 水印"
+          },
+          "office_keyboard": {
+            "name": "办公键盘",
+            "owner": "office_workstation",
+            "prompt": "普通黑色办公键盘，按键略有使用痕迹，方向键区域清晰，旁边有咖啡纸杯和鼠标，桌面简洁，冷白办公室灯光，静态道具参考图。",
+            "negative_prompt": "机械键盘彩灯, 游戏外设, 破损键盘, 清晰品牌, 文字水印, 卡通"
+          }
+        }
+      }
+    },
+    "boundarys": {
+      "boundary_anchors": [
+        {
+          "id": "a01_bathroom_morning_start",
+          "reference_inputs": {
+            "portrait": "young_woman",
+            "place": "bathroom_mirror_zone",
+            "prop": "dripping_faucet,alarm_clock,hair_tie"
+          }
+        },
+        {
+          "id": "a02_stairwell_descent_start",
+          "reference_inputs": {
+            "portrait": "young_woman",
+            "place": "stairwell_landing_zone",
+            "prop": "emergency_light"
+          }
+        },
+        {
+          "id": "a03_subway_reflection_start",
+          "reference_inputs": {
+            "portrait": "young_woman",
+            "place": "crowded_subway_zone",
+            "prop": "metal_earbud"
+          }
+        },
+        {
+          "id": "a04_office_first_email_start",
+          "reference_inputs": {
+            "portrait": "young_woman",
+            "place": "desk_monitor_zone",
+            "prop": "convenience_store_coffee,office_keyboard,hair_tie"
+          }
+        }
+      ]
+    },
+    "shots": [
+      {
+        "id": "shot01_bathroom_morning",
+        "duration_s": 18,
+        "story_goal": "建立她一天开始时的克制状态：疲惫、沉默、对外表和时间的自我整理，以及没有说出口的压力。",
+        "start_state": "年轻女子站在小公寓浴室镜前，穿浅蓝白细条纹衬衫，低头扣最上面一颗扣子，眉心轻皱；洗手池水龙头挂着水滴，黑色发圈在台面，门边电子闹钟显示 06:40。",
+        "end_state": "年轻女子已关掉闹钟，重新站回镜前，浅蓝白衬衫扣子扣紧，黑色中长发被普通发圈扎成低马尾，脸上仍是克制沉默的神情。",
+        "visual_intent": "镜头从镜中表情开始，缓慢横移并轻推，保持生活观察感；水滴、闹钟声和她的停顿组成节奏，动作不夸张，风格写实克制，色彩以冷蓝晨光和浴室暖白灯形成轻微反差。"
+      },
+      {
+        "id": "shot02_stairwell_descent",
+        "duration_s": 30,
+        "story_goal": "让她从私人空间进入公共日常，借楼层生活声展示城市清晨的密度，同时强调她不参与、不停留的通勤惯性。",
+        "start_state": "年轻女子扎着低马尾，穿深灰通勤外套，肩背包带，出现在老公寓昏暗楼梯间上层平台；绿色应急灯亮着，水泥台阶和金属扶手向下延伸。",
+        "end_state": "年轻女子经过三层楼梯口后重新加快脚步，低马尾和深灰外套背影靠近楼梯间出口方向；身后的三层半掩住户门透出电视蓝光，应急灯仍偏绿。",
+        "visual_intent": "手持肩后跟拍，一镜到底沿楼梯下行，轻微晃动贴近她肩膀；声音层次随楼层变化，一层炒菜、二层小孩哭、三层电视新闻依次掠过，节奏在三层短暂停顿后恢复，色彩偏绿冷、纪实而压抑。"
+      },
+      {
+        "id": "shot03_subway_reflection",
+        "duration_s": 24,
+        "story_goal": "表现她进入更大的通勤人群后仍保持内向封闭，耳机成为隔绝外界的符号，但她的内心内容仍不被揭示。",
+        "start_state": "年轻女子扎着低马尾，穿深灰通勤外套，被夹在早高峰地铁人群之间，身体靠近金属扶手；她耳侧的银灰金属外圈耳机可见，眼神低垂，没有看手机也没有看人。",
+        "end_state": "年轻女子仍被人群包围，脸出现在车窗倒影里，表情安静疲惫；窗外站台灯光形成冷白横向反射，周围通勤者有人靠着同伴打瞌睡。",
+        "visual_intent": "镜头从她耳侧缓慢推近到耳机金属外圈，再以极小幅度转向车窗倒影，避免揭示声音内容；节奏被地铁停站灯光切成一段段，风格写实纪实，氛围拥挤但安静，冷白与金属灰为主。"
+      },
+      {
+        "id": "shot04_office_first_email",
+        "duration_s": 18,
+        "story_goal": "完成通勤后的落点：她进入工作身份，延续沉默和自我控制，把一天真正开始前的犹豫停在打字之前。",
+        "start_state": "年轻女子扎着低马尾，穿浅蓝白衬衫和深灰通勤外套，坐在公司工位前；电脑屏幕刚亮起但内容不可读，便利店咖啡纸杯放在黑色键盘旁边。",
+        "end_state": "年轻女子背部重新挺直，第一封工作邮件已打开但内容仍不可读；她左手把发圈微微拧紧，右手停在键盘上方准备打字，便利店咖啡仍在键盘旁。",
+        "visual_intent": "镜头从屏幕反光中观察她坐定和挺直背，再缓慢下移到键盘与手部，运动细腻克制；节奏留出打开邮件后的空白，写实职场质感，冷白顶灯和屏幕微蓝光让画面清醒而疏离。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_bathroom_morning_to_stairwell_descent",
+        "from_shot": "shot01_bathroom_morning",
+        "to_shot": "shot02_stairwell_descent",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr02_stairwell_descent_to_subway_reflection",
+        "from_shot": "shot02_stairwell_descent",
+        "to_shot": "shot03_subway_reflection",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr03_subway_reflection_to_office_first_email",
+        "from_shot": "shot03_subway_reflection",
+        "to_shot": "shot04_office_first_email",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ]
+  },
+  "render_plan": {
+    "portrait_plan": {
+      "young_woman": {
+        "id": "young_woman"
+      }
+    },
+    "location_plan": {
+      "small_apartment": {
+        "id": "small_apartment"
+      },
+      "apartment_stairwell": {
+        "id": "apartment_stairwell"
+      },
+      "subway_car": {
+        "id": "subway_car"
+      },
+      "office_workstation": {
+        "id": "office_workstation"
+      }
+    },
+    "prop_plan": {
+      "dripping_faucet": {
+        "id": "dripping_faucet"
+      },
+      "alarm_clock": {
+        "id": "alarm_clock"
+      },
+      "hair_tie": {
+        "id": "hair_tie"
+      },
+      "emergency_light": {
+        "id": "emergency_light"
+      },
+      "metal_earbud": {
+        "id": "metal_earbud"
+      },
+      "convenience_store_coffee": {
+        "id": "convenience_store_coffee"
+      },
+      "office_keyboard": {
+        "id": "office_keyboard"
+      }
+    },
+    "boundary_anchors": [
+      {
+        "id": "a01_bathroom_morning_start",
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "bathroom_mirror_zone",
+          "prop": "dripping_faucet,alarm_clock,hair_tie"
+        }
+      },
+      {
+        "id": "a02_stairwell_descent_start",
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "stairwell_landing_zone",
+          "prop": "emergency_light"
+        }
+      },
+      {
+        "id": "a03_subway_reflection_start",
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "crowded_subway_zone",
+          "prop": "metal_earbud"
+        }
+      },
+      {
+        "id": "a04_office_first_email_start",
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "desk_monitor_zone",
+          "prop": "convenience_store_coffee,office_keyboard,hair_tie"
+        }
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot01_bathroom_morning",
+        "duration_s": 18,
+        "story_goal": "建立她一天开始时的克制状态：疲惫、沉默、对外表和时间的自我整理，以及没有说出口的压力。",
+        "start_state": "年轻女子站在小公寓浴室镜前，穿浅蓝白细条纹衬衫，低头扣最上面一颗扣子，眉心轻皱；洗手池水龙头挂着水滴，黑色发圈在台面，门边电子闹钟显示 06:40。",
+        "end_state": "年轻女子已关掉闹钟，重新站回镜前，浅蓝白衬衫扣子扣紧，黑色中长发被普通发圈扎成低马尾，脸上仍是克制沉默的神情。",
+        "visual_intent": "镜头从镜中表情开始，缓慢横移并轻推，保持生活观察感；水滴、闹钟声和她的停顿组成节奏，动作不夸张，风格写实克制，色彩以冷蓝晨光和浴室暖白灯形成轻微反差。"
+      },
+      {
+        "id": "shot02_stairwell_descent",
+        "duration_s": 30,
+        "story_goal": "让她从私人空间进入公共日常，借楼层生活声展示城市清晨的密度，同时强调她不参与、不停留的通勤惯性。",
+        "start_state": "年轻女子扎着低马尾，穿深灰通勤外套，肩背包带，出现在老公寓昏暗楼梯间上层平台；绿色应急灯亮着，水泥台阶和金属扶手向下延伸。",
+        "end_state": "年轻女子经过三层楼梯口后重新加快脚步，低马尾和深灰外套背影靠近楼梯间出口方向；身后的三层半掩住户门透出电视蓝光，应急灯仍偏绿。",
+        "visual_intent": "手持肩后跟拍，一镜到底沿楼梯下行，轻微晃动贴近她肩膀；声音层次随楼层变化，一层炒菜、二层小孩哭、三层电视新闻依次掠过，节奏在三层短暂停顿后恢复，色彩偏绿冷、纪实而压抑。"
+      },
+      {
+        "id": "shot03_subway_reflection",
+        "duration_s": 24,
+        "story_goal": "表现她进入更大的通勤人群后仍保持内向封闭，耳机成为隔绝外界的符号，但她的内心内容仍不被揭示。",
+        "start_state": "年轻女子扎着低马尾，穿深灰通勤外套，被夹在早高峰地铁人群之间，身体靠近金属扶手；她耳侧的银灰金属外圈耳机可见，眼神低垂，没有看手机也没有看人。",
+        "end_state": "年轻女子仍被人群包围，脸出现在车窗倒影里，表情安静疲惫；窗外站台灯光形成冷白横向反射，周围通勤者有人靠着同伴打瞌睡。",
+        "visual_intent": "镜头从她耳侧缓慢推近到耳机金属外圈，再以极小幅度转向车窗倒影，避免揭示声音内容；节奏被地铁停站灯光切成一段段，风格写实纪实，氛围拥挤但安静，冷白与金属灰为主。"
+      },
+      {
+        "id": "shot04_office_first_email",
+        "duration_s": 18,
+        "story_goal": "完成通勤后的落点：她进入工作身份，延续沉默和自我控制，把一天真正开始前的犹豫停在打字之前。",
+        "start_state": "年轻女子扎着低马尾，穿浅蓝白衬衫和深灰通勤外套，坐在公司工位前；电脑屏幕刚亮起但内容不可读，便利店咖啡纸杯放在黑色键盘旁边。",
+        "end_state": "年轻女子背部重新挺直，第一封工作邮件已打开但内容仍不可读；她左手把发圈微微拧紧，右手停在键盘上方准备打字，便利店咖啡仍在键盘旁。",
+        "visual_intent": "镜头从屏幕反光中观察她坐定和挺直背，再缓慢下移到键盘与手部，运动细腻克制；节奏留出打开邮件后的空白，写实职场质感，冷白顶灯和屏幕微蓝光让画面清醒而疏离。"
+      }
+    ],
+    "transitions": [
+      {
+        "id": "tr01_bathroom_morning_to_stairwell_descent",
+        "from_shot": "shot01_bathroom_morning",
+        "to_shot": "shot02_stairwell_descent",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr02_stairwell_descent_to_subway_reflection",
+        "from_shot": "shot02_stairwell_descent",
+        "to_shot": "shot03_subway_reflection",
+        "mode": "bridge",
+        "duration_s": 6,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      },
+      {
+        "id": "tr03_subway_reflection_to_office_first_email",
+        "from_shot": "shot03_subway_reflection",
+        "to_shot": "shot04_office_first_email",
+        "mode": "bridge",
+        "duration_s": 5,
+        "first_frame": "from_shot_last_frame",
+        "last_frame": "to_shot_start_anchor"
+      }
+    ],
+    "segments": {
+      "seg_shot04_office_first_email_00": {
+        "id": "seg_shot04_office_first_email_00",
+        "segment_request": {
+          "prompt": "从贴近桌面的低平角开始，黑色键盘方向键和便利店咖啡纸杯占住前景，年轻女子扎着低马尾，浅蓝白衬衫与深灰外套在冷白灯下显得克制。镜头先借电脑屏幕反光看她把背慢慢挺直，右手落向键盘，屏幕微蓝光映出第一封工作邮件被打开但内容始终模糊不可读。画面安静停在她右手靠近方向键、左手垂在发圈旁的瞬间。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "desk_monitor_zone",
+          "prop": "convenience_store_coffee,office_keyboard,hair_tie"
+        },
+        "shot_id": "shot04_office_first_email",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a04_office_first_email_start"
+      },
+      "seg_shot04_office_first_email_01": {
+        "id": "seg_shot04_office_first_email_01",
+        "segment_request": {
+          "prompt": "承接她右手停在方向键附近的静止，镜头缓慢下移到键盘与手部，办公室冷白顶灯和屏幕微蓝光保持清醒疏离。她轻按一下方向键后没有立刻回信，沉默的空白被拉长；左手抬到低马尾根部，把普通黑色发圈微微拧紧，发圈的织物纹理和她克制的指节成为画面重点。最后镜头停在她左手扣紧发圈、右手悬在字母键上方的定格。",
+          "duration_s": 8,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "desk_monitor_zone",
+          "prop": "hair_tie,office_keyboard"
+        },
+        "shot_id": "shot04_office_first_email",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot03_subway_reflection_00": {
+        "id": "seg_shot03_subway_reflection_00",
+        "segment_request": {
+          "prompt": "从侧后方贴近她被人群挤住的肩颈开始，年轻女子扎着低马尾，深灰通勤外套被周围背包和衣袖压出褶皱，手仍扶着金属立杆。镜头极慢推向她耳侧，银灰金属外圈耳机成为画面最清晰的冷亮点，圆形边缘反射车厢顶灯和窗外站台横纹，却不透露她听见什么。她眼神始终低垂，不看手机也不看人，周围通勤者只剩模糊呼吸和轻微摇晃；镜头停在耳机金属外圈、她半垂的眼角和扶手冷光同框的近景。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "crowded_subway_zone",
+          "prop": "metal_earbud"
+        },
+        "shot_id": "shot03_subway_reflection",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a03_subway_reflection_start"
+      },
+      "seg_shot03_subway_reflection_01": {
+        "id": "seg_shot03_subway_reflection_01",
+        "segment_request": {
+          "prompt": "从耳机金属外圈的冷亮近景继续，年轻女子的低马尾和深灰外套没有变化，身体仍被早高峰人群固定在扶手旁。镜头以很小幅度从她耳侧转向车窗，银灰耳机的反光被玻璃上的冷白站台灯带接过去，一道道横向光斑滑过她安静疲惫的倒影。车厢里有人轻声咳嗽，有人的头靠在同伴肩上闭眼，拥挤却克制；镜头停在车窗倒影里的她的脸，窗外冷白横向反射横贯玻璃，旁边通勤者闭眼靠在同伴肩头。",
+          "duration_s": 13,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "crowded_subway_zone"
+        },
+        "shot_id": "shot03_subway_reflection",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot01_bathroom_morning_00": {
+        "id": "seg_shot01_bathroom_morning_00",
+        "segment_request": {
+          "prompt": "从镜中她轻皱的眉心开始，年轻女子低头把浅蓝白细条纹衬衫最上面一颗扣子扣紧，黑色中长发仍散在肩侧。水龙头口的水滴在前景冷光里悬亮，远处电子闹钟第二轮响声刺入安静浴室，她没有说话，只微微停顿后侧身伸手按向闹钟。镜头缓慢横移轻推，落在她右手压住闹钟按键、06:40 数字光变暗的一帧。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "bathroom_mirror_zone",
+          "prop": "dripping_faucet,alarm_clock,hair_tie"
+        },
+        "shot_id": "shot01_bathroom_morning",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a01_bathroom_morning_start"
+      },
+      "seg_shot01_bathroom_morning_01": {
+        "id": "seg_shot01_bathroom_morning_01",
+        "segment_request": {
+          "prompt": "从她右手停在闹钟上的静默姿态接起，年轻女子收回手，重新面对镜子，浅蓝白衬衫扣子扣紧，眉眼疲惫而克制。她看了一眼镜中的自己，低头拿起洗手池边那根普通黑色发圈，把散落的黑色中长发向后拢起；发圈的织物纹理在冷蓝晨光和暖白顶灯之间短暂清晰。镜头轻推到镜中脸和手部，落在低马尾扎好、她沉默站定的一帧。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "bathroom_mirror_zone",
+          "prop": "hair_tie"
+        },
+        "shot_id": "shot01_bathroom_morning",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot02_stairwell_descent_00": {
+        "id": "seg_shot02_stairwell_descent_00",
+        "segment_request": {
+          "prompt": "从肩后贴近她的深灰外套和低马尾开始，手持镜头随她迈下第一段水泥楼梯，背包带压在肩上轻轻晃动。绿色应急灯把旧墙和金属扶手染成冷暗色，楼下隐约传来炒菜声和锅铲碰撞声，她没有回头也没有停。镜头跟到转角平台，她的背影停在扶手内侧，低马尾和肩线被偏绿光勾出边缘。",
+          "duration_s": 11,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "stairwell_landing_zone",
+          "prop": "emergency_light"
+        },
+        "shot_id": "shot02_stairwell_descent",
+        "segment_index_in_shot": 0,
+        "start_anchor": "a02_stairwell_descent_start"
+      },
+      "seg_shot02_stairwell_descent_01": {
+        "id": "seg_shot02_stairwell_descent_01",
+        "segment_request": {
+          "prompt": "接着转角平台的背影，她继续沿下一段楼梯下行，手持镜头始终贴在她肩后，低马尾随步伐轻微摆动，深灰外套在昏暗里保持沉重轮廓。二层方向传来小孩哭声，声音贴着墙面回荡，她的步子没有回应，只在扶手拐角处收紧肩膀。镜头落到下一处平台，她站在楼梯口边缘，前方半掩住户门透出微弱蓝光。",
+          "duration_s": 9,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "stairwell_landing_zone",
+          "prop": "emergency_light"
+        },
+        "shot_id": "shot02_stairwell_descent",
+        "segment_index_in_shot": 1,
+        "start_anchor": null
+      },
+      "seg_shot02_stairwell_descent_02": {
+        "id": "seg_shot02_stairwell_descent_02",
+        "segment_request": {
+          "prompt": "从半掩门前的蓝光开始，镜头跟着她在三层楼梯口短暂放慢，电视新闻的冷蓝闪烁映到旧墙和她深灰外套肩线，她低马尾安静垂着，没有转头看门内。停顿很短，随即她重新加快脚步向楼梯间出口方向下去，绿色应急灯和电视蓝光在身后拉开距离。最后画面停在她加快后的背影，三层半掩住户门的蓝光留在身后。",
+          "duration_s": 10,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "reference_inputs": {
+          "portrait": "young_woman",
+          "place": "stairwell_landing_zone",
+          "prop": "emergency_light"
+        },
+        "shot_id": "shot02_stairwell_descent",
+        "segment_index_in_shot": 2,
+        "start_anchor": null
+      }
+    },
+    "boundary_policies": [
+      {
+        "id": "tr01_bathroom_morning_to_stairwell_descent",
+        "bridge_request": {
+          "prompt": "浴室镜前她扎好低马尾后的画面保持冷蓝晨光，镜中门框的暗影逐渐占满画面；镜面反光变暗，门外走廊的窄缝光线替代浴室灯，画面沿着门缝和旧墙面滑出私人空间。水龙头滴答声被楼道空旷回声覆盖，最后绿色应急灯的光斑在墙面上稳定下来，自然接入老公寓楼梯间的肩后视角。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot01_bathroom_morning",
+        "to_shot": "shot02_stairwell_descent"
+      },
+      {
+        "id": "tr02_stairwell_descent_to_subway_reflection",
+        "bridge_request": {
+          "prompt": "楼梯间出口方向的暗绿应急灯在她背后拉成长条反光，画面贴着金属扶手向前滑行，扶手冷光逐渐变成地铁车厢立杆的金属反射；楼道生活声被低频轨道声和车厢广播的模糊音色替代。墙面米黄色纹理淡出为车窗灰色反光，人群肩膀从画面边缘挤入，最后稳定在她被夹在扶手旁的早高峰车厢起始画面。",
+          "duration_s": 6,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot02_stairwell_descent",
+        "to_shot": "shot03_subway_reflection"
+      },
+      {
+        "id": "tr03_subway_reflection_to_office_first_email",
+        "bridge_request": {
+          "prompt": "地铁车窗里她疲惫的倒影停留片刻，窗外冷白站台灯横向滑过并逐渐变成电脑屏幕上的蓝白反光；车厢人群轮廓在玻璃反射里淡化为办公室隔板和椅背的模糊形状。轨道轰鸣降为办公室空调低声，金属扶手的竖线过渡成显示器边框，最后落到工位前刚亮起的屏幕与键盘旁便利店咖啡。",
+          "duration_s": 5,
+          "seed": 0,
+          "resolution": "1920x1080"
+        },
+        "from_shot": "shot03_subway_reflection",
+        "to_shot": "shot04_office_first_email"
+      }
+    ]
+  },
+  "media": {
+    "portraits": {
+      "young_woman": "https://net-oss.akclau.de/reca/morning-commute/portraits/young_woman.png"
+    },
+    "locations": {
+      "apartment_stairwell": "https://net-oss.akclau.de/reca/morning-commute/locations/apartment_stairwell.png",
+      "office_workstation": "https://net-oss.akclau.de/reca/morning-commute/locations/office_workstation.png",
+      "small_apartment": "https://net-oss.akclau.de/reca/morning-commute/locations/small_apartment.png",
+      "subway_car": "https://net-oss.akclau.de/reca/morning-commute/locations/subway_car.png"
+    },
+    "props": {
+      "alarm_clock": "https://net-oss.akclau.de/reca/morning-commute/props/alarm_clock.png",
+      "convenience_store_coffee": "https://net-oss.akclau.de/reca/morning-commute/props/convenience_store_coffee.png",
+      "dripping_faucet": "https://net-oss.akclau.de/reca/morning-commute/props/dripping_faucet.png",
+      "emergency_light": "https://net-oss.akclau.de/reca/morning-commute/props/emergency_light.png",
+      "hair_tie": "https://net-oss.akclau.de/reca/morning-commute/props/hair_tie.png",
+      "metal_earbud": "https://net-oss.akclau.de/reca/morning-commute/props/metal_earbud.png",
+      "office_keyboard": "https://net-oss.akclau.de/reca/morning-commute/props/office_keyboard.png"
+    },
+    "anchors": {
+      "a01_bathroom_morning_start": "https://net-oss.akclau.de/reca/morning-commute/anchors/a01_bathroom_morning_start.png",
+      "a02_stairwell_descent_start": "https://net-oss.akclau.de/reca/morning-commute/anchors/a02_stairwell_descent_start.png",
+      "a03_subway_reflection_start": "https://net-oss.akclau.de/reca/morning-commute/anchors/a03_subway_reflection_start.png",
+      "a04_office_first_email_start": "https://net-oss.akclau.de/reca/morning-commute/anchors/a04_office_first_email_start.png"
+    },
+    "segments": {
+      "seg_shot01_bathroom_morning_00": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_00.tail.png",
+      "seg_shot01_bathroom_morning_01": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_01.tail.png",
+      "seg_shot02_stairwell_descent_00": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_00.tail.png",
+      "seg_shot02_stairwell_descent_01": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_01.tail.png",
+      "seg_shot02_stairwell_descent_02": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_02.tail.png",
+      "seg_shot03_subway_reflection_00": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_00.tail.png",
+      "seg_shot03_subway_reflection_01": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_01.tail.png",
+      "seg_shot04_office_first_email_00": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_00.tail.png",
+      "seg_shot04_office_first_email_01": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_01.tail.png"
+    },
+    "bridges": {
+      "tr01_bathroom_morning_to_stairwell_descent": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr01_bathroom_morning_to_stairwell_descent.mp4",
+      "tr02_stairwell_descent_to_subway_reflection": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr02_stairwell_descent_to_subway_reflection.mp4",
+      "tr03_subway_reflection_to_office_first_email": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr03_subway_reflection_to_office_first_email.mp4"
+    },
+    "final_mp4": "https://net-oss.akclau.de/reca/morning-commute/final.mp4"
+  },
+  "events": [
+    {
+      "type": "spawn_ok",
+      "t": 0.15
+    },
+    {
+      "type": "planner_start",
+      "t": 0.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "① Planner LLM thinking",
+      "detail": "Decomposing your story into a tree of shots + per-shot segments…",
+      "t": 0.45
+    },
+    {
+      "type": "plan_ok",
+      "shots": 4,
+      "t": 5.6
+    },
+    {
+      "type": "phase_marker",
+      "stage": "⑤ State Memory",
+      "detail": "Rendering character portraits, locations and props that persist across shots…",
+      "t": 5.65
+    },
+    {
+      "type": "portrait_ready",
+      "id": "young_woman",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/portraits/young_woman.png",
+      "t": 10.75
+    },
+    {
+      "type": "location_ready",
+      "id": "apartment_stairwell",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/locations/apartment_stairwell.png",
+      "t": 10.85
+    },
+    {
+      "type": "location_ready",
+      "id": "office_workstation",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/locations/office_workstation.png",
+      "t": 10.95
+    },
+    {
+      "type": "location_ready",
+      "id": "small_apartment",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/locations/small_apartment.png",
+      "t": 11.05
+    },
+    {
+      "type": "location_ready",
+      "id": "subway_car",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/locations/subway_car.png",
+      "t": 11.15
+    },
+    {
+      "type": "prop_ready",
+      "id": "alarm_clock",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/alarm_clock.png",
+      "t": 11.25
+    },
+    {
+      "type": "prop_ready",
+      "id": "convenience_store_coffee",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/convenience_store_coffee.png",
+      "t": 11.35
+    },
+    {
+      "type": "prop_ready",
+      "id": "dripping_faucet",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/dripping_faucet.png",
+      "t": 11.45
+    },
+    {
+      "type": "prop_ready",
+      "id": "emergency_light",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/emergency_light.png",
+      "t": 11.55
+    },
+    {
+      "type": "prop_ready",
+      "id": "hair_tie",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/hair_tie.png",
+      "t": 11.65
+    },
+    {
+      "type": "prop_ready",
+      "id": "metal_earbud",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/metal_earbud.png",
+      "t": 11.75
+    },
+    {
+      "type": "prop_ready",
+      "id": "office_keyboard",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/props/office_keyboard.png",
+      "t": 11.85
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Anchor frames",
+      "detail": "Painting the first frame of each of the 4 shots — seeds the I2V chain…",
+      "t": 11.9
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a01_bathroom_morning_start",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/anchors/a01_bathroom_morning_start.png",
+      "t": 17.05
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a02_stairwell_descent_start",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/anchors/a02_stairwell_descent_start.png",
+      "t": 17.2
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a03_subway_reflection_start",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/anchors/a03_subway_reflection_start.png",
+      "t": 17.35
+    },
+    {
+      "type": "anchor_ready",
+      "id": "a04_office_first_email_start",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/anchors/a04_office_first_email_start.png",
+      "t": 17.5
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Render plan",
+      "detail": "Allocating segments per shot, deciding parallel vs serial dependency edges…",
+      "t": 17.55
+    },
+    {
+      "type": "render_plan_ok",
+      "segments": 9,
+      "t": 22.95
+    },
+    {
+      "type": "render_start",
+      "t": 23.05
+    },
+    {
+      "type": "phase_marker",
+      "stage": "② Segment rendering",
+      "detail": "9 leaves to render — within-shot serial (each seg = prev tail), cross-shot parallel.",
+      "t": 23.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_bathroom_morning_00",
+      "shot_id": "shot01_bathroom_morning",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_stairwell_descent_00",
+      "shot_id": "shot02_stairwell_descent",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_subway_reflection_00",
+      "shot_id": "shot03_subway_reflection",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_00.tail.png",
+      "duration_s": 8.0,
+      "t": 34.7
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_office_first_email_00",
+      "shot_id": "shot04_office_first_email",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_00.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_00.tail.png",
+      "duration_s": 8.0,
+      "t": 35.0
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot01_bathroom_morning_01",
+      "shot_id": "shot01_bathroom_morning",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot01_bathroom_morning_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.1
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_stairwell_descent_01",
+      "shot_id": "shot02_stairwell_descent",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.4
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot03_subway_reflection_01",
+      "shot_id": "shot03_subway_reflection",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot03_subway_reflection_01.tail.png",
+      "duration_s": 8.0,
+      "t": 40.7
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot04_office_first_email_01",
+      "shot_id": "shot04_office_first_email",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_01.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot04_office_first_email_01.tail.png",
+      "duration_s": 8.0,
+      "t": 41.0
+    },
+    {
+      "type": "seg_done",
+      "id": "seg_shot02_stairwell_descent_02",
+      "shot_id": "shot02_stairwell_descent",
+      "kind": "segment_r2v",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_02.tail.png",
+      "tail_url": "https://net-oss.akclau.de/reca/morning-commute/segment_tails/seg_shot02_stairwell_descent_02.tail.png",
+      "duration_s": 8.0,
+      "t": 46.4
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Cross-shot bridges",
+      "detail": "Stitching shot pairs with short transition clips…",
+      "t": 46.45
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr01_bathroom_morning_to_stairwell_descent",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr01_bathroom_morning_to_stairwell_descent.mp4",
+      "duration_s": 4.0,
+      "t": 51.57
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr02_stairwell_descent_to_subway_reflection",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr02_stairwell_descent_to_subway_reflection.mp4",
+      "duration_s": 4.0,
+      "t": 51.69
+    },
+    {
+      "type": "bridge_done",
+      "id": "tr03_subway_reflection_to_office_first_email",
+      "from_shot": "",
+      "to_shot": "",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/bridges/tr03_subway_reflection_to_office_first_email.mp4",
+      "duration_s": 4.0,
+      "t": 51.81
+    },
+    {
+      "type": "phase_marker",
+      "stage": "Final concat",
+      "detail": "Stitching every segment + bridge into the final video…",
+      "t": 51.86
+    },
+    {
+      "type": "final_done",
+      "url": "https://net-oss.akclau.de/reca/morning-commute/final.mp4",
+      "t": 57.46
+    },
+    {
+      "type": "done",
+      "final_url": "https://net-oss.akclau.de/reca/morning-commute/final.mp4",
+      "total_s": 57.5,
+      "t": 57.66
+    }
+  ],
+  "timeline_duration_s": 57.7
+}

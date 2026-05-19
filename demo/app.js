@@ -195,7 +195,7 @@ function preSeedRenderPlanFromManifest(manifest) {
     }
     if (!sid) continue;
     if (!segByShot[sid]) segByShot[sid] = [];
-    const flf2v = seg.flf2v_request || seg.request || {};
+    const flf2v = seg.flf2v_request || seg.segment_request || seg.bridge_request || seg.request || {};
     segByShot[sid].push({
       id: segId,
       status: "pending",
